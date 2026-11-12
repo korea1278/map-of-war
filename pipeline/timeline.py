@@ -367,6 +367,17 @@ def build(ep, mock=False, gap=None):
         })
         t += dur
     idx = {s["id"]: s for s in scenes_out}
+    # 롱폼 표준 (docs/LONGFORM_STANDARD.md, 2026-11-13): bgm_rel_db = 나레이션 대비 BGM 음량(dB, 예 -24)
+    rel = board.get("bgm_rel_db")
+    policy = board.get("sfx_policy")
+    narr = loud = None
+    if rel is not None or policy == "doc":
+        narr = narration_lufs([ROOT / "public" / s["audio"] for s in scenes_out if s.get("audio")])
+    if rel is not None:
+        loud = read_json(ROOT / "public" / "bgm" / "loudness.json", {})
+        print(f"BGM: 나레이션 {narr:.1f} LUFS 기준 {rel} dB")
+    if policy == "doc":
+        doc_sfx(scenes_out, narr)
     music = []
     for cue in board.get("music", []):
         a, b = idx[cue["from"]], idx[cue["to"]]
@@ -376,17 +387,92 @@ def build(ep, mock=False, gap=None):
         if not f.exists():  # 공용 BGM 라이브러리 (public/bgm)
             f = ROOT / "public" / "bgm" / f"{cue['id']}.mp3"
             src = f"bgm/{cue['id']}.mp3"
+        vol = cue["volume"] * MUSIC_GAIN
+        if rel is not None and cue["id"] in loud:
+            vol = min(1.0, 10 ** ((narr + rel - loud[cue["id"]]) / 20))
         music.append({"id": cue["id"], "start": round(start, 3), "dur": round(end - start, 3),
-                      "volume": round(cue["volume"] * MUSIC_GAIN, 3), "src": src if f.exists() else None,
+                      "volume": round(vol, 4), "src": src if f.exists() else None,
                       "fileDur": mp3_dur(f) if f.exists() else None})
     sfx_avail = sorted(p.stem for p in (ROOT / "public" / "sfx").glob("*.mp3"))
+    if board.get("sfx") is False:  # 효과음 전부 끔 (장면 sfx·자동 pop/whoosh 모두 — Video.tsx가 목록에 있는 것만 재생)
+        sfx_avail = []
     tl = {"lang": lang, "fps": FPS, "duration": round(t, 3), "title": board["title"], "places": board["places"],
           "views": board["views"], "scenes": scenes_out, "music": music, "rasters": rasters, "sfx": sfx_avail,
+          "sfxPolicy": policy,
           "hasWater": (ROOT / "public" / "geo" / "water.json").exists()}
     write_json(out / "timeline.json", tl)
     write_srt(scenes_out, out / f"{ep}.srt")
     print(f"timeline: {len(scenes_out)}장면, {int(t // 60)}분 {t % 60:.1f}초 (장면 간격 {GAP_:.3f}초)")
     return t, sum(1 for x in scenes_out if x["lines"]), board.get("target_sec", TARGET_SEC)
+
+
+# ===== 절제된 다큐멘터리 SFX 기준 (docs/LONGFORM_STANDARD.md 2번, 2026-11-13 사용자 수정 지시) =====
+SFX_BAN = {"boom", "hit", "artillery", "mg", "drum", "pop"}   # '꽝' 타격·근거리 폭발·UI pop 금지
+SFX_KIND_DB = {"whoosh": -26, "ping": -26, "artillery_far": -30, "wind": -30, "tank": -30, "water": -32, "birds": -32}
+SFX_COOLDOWN = 15.0  # 같은 효과음 최소 간격(초)
+
+
+def _at_sec(sc, at):
+    ls = sc["lines"]
+    if at is None:
+        return 0.0
+    if not ls:
+        return float(at)
+    i = int(math.floor(at))
+    if i >= len(ls):
+        return ls[-1]["end"]
+    l = ls[max(0, i)]
+    return l["start"] + (at - i) * max(0.6, l["end"] - l["start"])
+
+
+def doc_sfx(scenes, narr):
+    """장면 sfx를 다큐 기준으로 정리: 금지 효과음 삭제, 막 전환(chapter)마다 저음 스윕 whoosh 1회 자동,
+    같은 효과음 15초 쿨다운, 볼륨은 나레이션 대비 -24~-32dB (효과음별 LUFS: public/sfx/loudness.json).
+    결과는 장면 기준 절대 초(sec)로 기록 — Video.tsx는 sfxPolicy doc이면 자동 pop/whoosh를 더하지 않는다."""
+    loud = read_json(ROOT / "public" / "sfx" / "loudness.json", {})
+    last, kept, dropped = {}, 0, 0
+    for sc in scenes:
+        evs = []
+        if sc.get("chapter"):
+            evs.append({"id": "whoosh", "at": -1})
+        evs += [e for e in sc.get("sfx", [])]
+        out = []
+        for e in evs:
+            sid = e["id"]
+            if sid in SFX_BAN or sid not in loud:
+                dropped += 1
+                continue
+            rel_s = 0.0 if (e.get("at") is not None and e["at"] < 0) else _at_sec(sc, e.get("at"))
+            abs_t = sc["start"] + sc.get("audioAt", 0) + rel_s
+            if abs_t - last.get(sid, -1e9) < SFX_COOLDOWN:
+                dropped += 1
+                continue
+            last[sid] = abs_t
+            db = max(-32, min(-24, e.get("db", SFX_KIND_DB.get(sid, -28))))
+            vol = min(1.0, 10 ** ((narr + db - loud[sid]) / 20))
+            out.append({"id": sid, "sec": round(rel_s, 3), "volume": round(vol, 4)})
+            kept += 1
+        sc["sfx"] = out
+    print(f"효과음(다큐 기준): {kept}개 사용 · {dropped}개 제외(금지·쿨다운)")
+
+
+def narration_lufs(files):
+    """나레이션 통합 음량(LUFS) — 파일 최대 24개를 이어 붙여 ffmpeg ebur128로 측정. 실패하면 -18."""
+    files = [f for f in files if f.exists()]
+    if not files:
+        return -18.0
+    pick = files[:: max(1, len(files) // 24)][:24]
+    lst = ROOT / "logs" / "_lufs_list.txt"
+    lst.write_text("".join(f"file '{f}'\n" for f in pick), encoding="utf-8")
+    try:
+        r = subprocess.run(["ffmpeg", "-nostats", "-f", "concat", "-safe", "0", "-i", str(lst), "-af", "ebur128", "-f", "null", "-"],
+                           capture_output=True, text=True, timeout=300)
+        m = re.findall(r"I:\s+(-?[\d.]+) LUFS", r.stderr)
+        return float(m[-1]) if m else -18.0
+    except Exception:  # noqa: BLE001
+        return -18.0
+    finally:
+        lst.unlink(missing_ok=True)
 
 
 def fit(ep, mock=False):
