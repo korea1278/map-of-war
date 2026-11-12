@@ -1,11 +1,11 @@
-name: 영상 만들기
+name: 영상 만들기 (영문 Map of War)
 
-# 한 번 실행 = 한국어판 → (번역 파일이 있으면) 영문판 자동 렌더링
+# map-of-war는 영문 전용 저장소 — 한 번 실행 = 영문 에피소드 1편 렌더링
 on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "에피소드 폴더 이름 (episodes/ 아래, 한국어판 이름. 예: yongmunsan)"
+        description: "에피소드 폴더 이름 (episodes/ 아래. 예: ep08-chosin)"
         default: "ep08-chosin"
         required: true
       mode:
@@ -14,7 +14,7 @@ on:
         options: [full, preview, free, check, scout, thumb]
         default: full
       english:
-        description: "영문판(_en)도 이어서 렌더링"
+        description: "(사용 안 함 — 예전 호환용)"
         type: boolean
         default: false
       redo:
@@ -30,31 +30,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  ko:
+  en:
     uses: ./.github/workflows/render-episode.yml
     with:
       episode: ${{ github.event.inputs.episode }}
-      mode: ${{ github.event.inputs.mode }}
-      redo: ${{ github.event.inputs.redo }}
-    secrets: inherit
-
-  check-en:
-    runs-on: ubuntu-latest
-    outputs:
-      has_en: ${{ steps.c.outputs.has_en }}
-    steps:
-      - uses: actions/checkout@v4
-      - id: c
-        run: |
-          EP="${{ github.event.inputs.episode }}"
-          if [[ "$EP" != *_en && -f "episodes/${EP}_en/translation.json" ]]; then echo "has_en=true" >> $GITHUB_OUTPUT; else echo "has_en=false" >> $GITHUB_OUTPUT; fi
-
-  en:
-    needs: [ko, check-en]
-    if: ${{ github.event.inputs.english == 'true' && needs.check-en.outputs.has_en == 'true' && (github.event.inputs.mode == 'full' || github.event.inputs.mode == 'preview') }}
-    uses: ./.github/workflows/render-episode.yml
-    with:
-      episode: ${{ github.event.inputs.episode }}_en
       mode: ${{ github.event.inputs.mode }}
       redo: ${{ github.event.inputs.redo }}
     secrets: inherit
