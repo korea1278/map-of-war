@@ -197,9 +197,11 @@ jobs:
           df -h . | tail -1
           # 러너의 /tmp는 용량 한도가 따로 있어 20분 오디오 믹싱(구간별 wav 수백 MB) 중 'Disk quota exceeded'로 실패 (EP11) → 작업 폴더 디스크로 돌림
           export TMPDIR=$PWD/out/tmp && mkdir -p $TMPDIR && df -h /tmp | tail -1
+          # 러너 코어 수에 맞춤 (비공개 저장소 러너는 2코어 — 4로 고정하면 "Maximum for --concurrency is 2"로 실패, 2026-11-12)
+          CONC=$(( $(nproc) < 4 ? $(nproc) : 4 )); echo "코어 $(nproc)개 → concurrency $CONC"
           set -o pipefail
           if ! npx remotion render out/bundle Documentary out/$EP.mp4 \
-            --props="{\"ep\":\"$EP\"}" --concurrency=4 --codec=h264 --video-bitrate=8M --x264-preset=veryfast \
+            --props="{\"ep\":\"$EP\"}" --concurrency=$CONC --codec=h264 --video-bitrate=8M --x264-preset=veryfast \
             --audio-bitrate=192k --timeout=120000 --log=info 2>&1 | tee out/render.log; then
             { echo "== $EP 렌더 실패 $(date -u)"; df -h . | tail -1; free -m | head -2; tail -80 out/render.log; } > logs/render_fail_$EP.txt
             git config user.name "map-of-war-bot"; git config user.email "actions@users.noreply.github.com"
