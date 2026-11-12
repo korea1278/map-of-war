@@ -1,0 +1,377 @@
+"""지도 데이터 생성: SRTM 기반 음영기복(hillshade) 래스터 + OSM 하천·호수.
+
+python pipeline/geo.py
+결과: public/geo/rasters.json, public/geo/*.webp, public/geo/water.json
+한 번 만들면 저장소에 커밋되어 재사용됩니다(한반도 중부 기준).
+"""
+import io
+import math
+import sys
+from concurrent.futures import ThreadPoolExecutor
+
+import numpy as np
+from PIL import Image
+
+from common import ROOT, retry, session, write_json
+
+sys.setrecursionlimit(1000000)
+OUT = ROOT / "public" / "geo"
+TILE = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+
+# (이름, [서, 남, 동, 북], 줌, 과장계수, 가장자리 페더)
+RASTERS = [
+    ("korea", [122.5, 32.0, 132.5, 44.0], 8, 3.2, 0),
+    ("central", [125.9, 36.9, 129.2, 39.0], 11, 1.7, 48),
+    ("detail", [127.2, 37.38, 128.2, 38.32], 12, 1.35, 64),
+    # EP02 낙동강·대구 권역
+    ("south", [127.6, 34.9, 129.7, 36.8], 11, 1.7, 48),
+    ("south_detail", [128.2, 35.82, 128.9, 36.3], 12, 1.35, 64),
+    ("dabu_zoom", [128.42, 35.97, 128.72, 36.16], 13, 1.15, 64),
+    # EP03 철원·백마고지 권역
+    ("cheorwon", [126.95, 38.08, 127.62, 38.5], 12, 1.35, 64),
+    ("baengma_zoom", [127.11, 38.235, 127.3, 38.36], 13, 1.15, 64),
+    # EP04 양평 지평리 권역
+    ("jipyeong", [127.38, 37.24, 127.92, 37.6], 12, 1.35, 64),
+    ("jipyeong_zoom", [127.57, 37.43, 127.7, 37.52], 13, 1.15, 64),
+    # EP05 춘천 분지
+    ("chuncheon_zoom", [127.62, 37.83, 127.84, 37.98], 13, 1.15, 64),
+    # EP06 장진호·개마고원 (북한)
+    ("chosin", [126.85, 39.7, 127.85, 40.65], 11, 1.5, 48),
+    ("chosin_zoom", [127.03, 40.15, 127.45, 40.53], 12, 1.25, 64),
+    # EP07 연천 임진강·베티고지
+    ("imjin", [126.7, 37.95, 127.25, 38.3], 12, 1.35, 64),
+    ("betty_zoom", [126.89, 38.09, 127.03, 38.2], 13, 1.15, 64),
+    # EP08 영천·금호강·보현산 권역
+    ("yeongcheon", [128.62, 35.78, 129.3, 36.42], 12, 1.35, 64),
+    ("yeongcheon_zoom", [128.8, 35.88, 129.12, 36.2], 13, 1.15, 64),
+    # EP09 양구 북방·피의 능선(983-940-773고지)·펀치볼 권역
+    ("yanggu", [127.7, 37.95, 128.45, 38.5], 12, 1.35, 64),
+    ("bloody_zoom", [127.93, 38.17, 128.16, 38.33], 13, 1.15, 64),
+    # EP10 화천 북방·금성 돌출부·금성천·백암산–적근산 권역
+    ("kumsong", [127.2, 38.08, 127.95, 38.62], 12, 1.35, 64),
+    ("kumsong_zoom", [127.38, 38.22, 127.86, 38.5], 13, 1.15, 64),
+    # EP11 경기만·인천·경인 축선·서울 (해안 근접은 z14)
+    # *_sea: 해안선을 Natural Earth(1:10m, 월미도·섬 누락) 대신 DEM 높이로 칠함 — 바다(진회색)·갯벌(갈회색)
+    ("incheon_sea", [126.0, 37.05, 127.15, 37.75], 12, 1.35, 64, {"sea": True}),
+    ("incheon_zoom_sea", [126.54, 37.42, 126.69, 37.51], 14, 1.15, 64, {"sea": True}),
+    ("seoul_zoom", [126.8, 37.49, 127.06, 37.61], 14, 1.15, 64),
+    # EP12 단장의 능선(894-931-851고지)·문등리·사태리 계곡 근접
+    ("heartbreak_zoom", [127.92, 38.22, 128.12, 38.37], 13, 1.15, 64),
+    # EP13 파로호(화천 저수지)·화천댐·매봉·용화산–병풍산 협곡 근접 (북한강 상류 수계)
+    ("paroho_zoom", [127.62, 37.96, 128.02, 38.24], 13, 1.15, 64),
+    # EP15 흥남 철수 — 함흥·흥남·연포 해안(DEM 바다) + 흥남항 부두 근접(z14)
+    # (첫 버전 hungnam_sea는 바다가 갈색 갯벌·얼룩으로 칠해져 폐기 → 바다 씨앗 flood fill 버전으로 교체)
+    ("hungnam2_sea", [127.1, 39.5, 128.2, 40.2], 12, 1.35, 64, {"sea": True, "seeds": [[128.1, 39.55], [127.9, 39.65], [127.7, 39.75]]}),
+    ("hungnam2_zoom_sea", [127.52, 39.75, 127.74, 39.9], 14, 1.15, 64, {"sea": True, "seeds": [[127.7, 39.77], [127.6, 39.76], [127.68, 39.8]]}),
+    # EP16 낙동강 방어선 총력전 — 창녕·영산 낙동강 돌출부, 마산 서북산·진동리, 왜관철교 근접
+    ("naktong_bulge", [128.32, 35.36, 128.62, 35.58], 13, 1.15, 64),
+    ("masan_zoom", [128.2, 35.03, 128.62, 35.33], 13, 1.15, 64),
+    ("waegwan_zoom", [128.3, 35.92, 128.5, 36.08], 13, 1.15, 64),
+    # EP16 도솔산 (1951): 대암산~도솔산 칼날 능선 근접 (z14) — 넓은 범위는 yanggu · bloody_zoom 재사용
+    ("dosol_zoom", [128.03, 38.15, 128.24, 38.3], 14, 1.15, 64),
+    # EP18 군우리 전투·청천강 철수전 (1950): 청천강 유역(평안남북도) 넓은 범위 z11, 군우리–순천 권역 z12, 인디언 태형 협곡 근접 z14
+    ("chongchon", [125.2, 39.2, 126.85, 40.4], 11, 1.5, 48),
+    ("kunuri", [125.55, 39.35, 126.25, 39.9], 12, 1.35, 64),
+    ("gauntlet_zoom", [125.83, 39.5, 126.0, 39.72], 14, 1.15, 64),
+    # EP19 저격능선·삼각고지 (1952): 김화 북방 오성산 남쪽 두 고지 근접 (z15) — 넓은 범위는 kumsong · kumsong_zoom · cheorwon 재사용
+    ("sniper_zoom", [127.44, 38.3, 127.51, 38.35], 15, 1.1, 64),
+    # EP20 임진강(설마리) 전투 (1951): 적성–감악산–설마리 권역 z12, 글로스터 여울·성채 고지·235고지·설마리 계곡 근접 z14
+    ("imjin_w", [126.75, 37.84, 127.1, 38.1], 12, 1.35, 64),
+    ("gloster_zoom", [126.89, 37.89, 127.0, 38.0], 14, 1.15, 64),
+    # EP21 가평 전투 (1951): 677고지·가평천·504고지 근접 (z14, 뷰 span 0.1 이상) — 넓은 범위는 detail · central 재사용
+    ("gapyeong_zoom", [127.44, 37.82, 127.61, 37.94], 14, 1.15, 64),
+    # EP22 포크찹 고지 전투 (1953): 255고지·올드 발디·티본 고지·강뉴 대대 전초 근접 (z14, 뷰 span 0.1 이상) — 넓은 범위는 imjin · cheorwon · central 재사용
+    ("porkchop_zoom", [126.9, 38.19, 127.08, 38.3], 14, 1.15, 64),
+    ("jangsa_sea", [129.15, 36.05, 129.62, 36.47], 12, 1.35, 64, {"sea": True, "seeds": [[129.58, 36.1], [129.58, 36.3], [129.58, 36.45]]}),
+    ("jangsa_zoom_sea", [129.29, 36.225, 129.47, 36.335], 14, 1.15, 64, {"sea": True, "seeds": [[129.46, 36.24], [129.46, 36.28], [129.46, 36.33]]}),
+    # EP24 현리 전투 (1951): 인제·현리 분지~하진부리 권역 z12, 현리·오마치고개·방태산 근접 z14 (뷰 span 0.1 이상)
+    ("hyeonri", [127.85, 37.5, 128.75, 38.25], 12, 1.35, 64),
+    ("hyeonri_zoom", [128.18, 37.84, 128.42, 38.01], 14, 1.15, 64),
+    # EP25 수도고지·지형능선 전투 (1952): 수도고지(CT 905493)·지형능선(CT 878498)·금성천–북한강 합류부 근접 z14 (뷰 span 0.1 이상) — 넓은 범위는 kumsong · kumsong_zoom 재사용
+    ("capital_zoom", [127.64, 38.33, 127.83, 38.44], 14, 1.15, 64),
+    # EP08(영문 Map of War) 장진호 20분판 — 유담리~하갈우리~덕동 고개 근접, 황초령(수문교) 근접
+    ("yudam_zoom", [127.06, 40.36, 127.32, 40.52], 13, 1.15, 64),
+    ("funchilin_zoom", [127.28, 40.18, 127.42, 40.3], 14, 1.15, 64),
+]
+
+
+def lon2x(lon, z):
+    return (lon + 180) / 360 * 2 ** z
+
+
+def lat2y(lat, z):
+    r = math.radians(lat)
+    return (1 - math.log(math.tan(r) + 1 / math.cos(r)) / math.pi) / 2 * 2 ** z
+
+
+def x2lon(x, z):
+    return x / 2 ** z * 360 - 180
+
+
+def y2lat(y, z):
+    n = math.pi - 2 * math.pi * y / 2 ** z
+    return math.degrees(math.atan(math.sinh(n)))
+
+
+def fetch_tile(s, z, x, y):
+    def call():
+        r = s.get(TILE.format(z=z, x=x, y=y), timeout=60)
+        r.raise_for_status()
+        a = np.asarray(Image.open(io.BytesIO(r.content)).convert("RGB"), dtype=np.float64)
+        return a[..., 0] * 256 + a[..., 1] + a[..., 2] / 256 - 32768
+    return retry(call, label=f"tile {z}/{x}/{y}")
+
+
+def hillshade(elev, z, lat0, lat1, exag):
+    h, w = elev.shape
+    lats = np.linspace(lat1, lat0, h)[:, None]
+    res = 156543.03392 * np.cos(np.radians(lats)) / 2 ** z
+    e = np.where(elev < -50, 0, elev)
+    dy, dx = np.gradient(e)
+    dx = dx / res * exag
+    dy = dy / res * exag
+    slope = np.arctan(np.hypot(dx, dy))
+    aspect = np.arctan2(dy, -dx)
+
+    def shade(az_deg, alt_deg):
+        az = math.radians(360 - az_deg + 90)
+        zen = math.radians(90 - alt_deg)
+        return np.clip(np.cos(zen) * np.cos(slope) + np.sin(zen) * np.sin(slope) * np.cos(az - aspect), 0, 1)
+
+    hs = 0.6 * shade(315, 45) + 0.2 * shade(270, 45) + 0.2 * shade(0, 45)
+    flat = math.cos(math.radians(45))
+    v = np.clip(0.93 + 1.15 * (hs - flat), 0.30, 1.0)
+    return v
+
+
+def build_raster(s, name, bbox, z, exag, feather, opts=None):
+    opts = opts or {}
+    w, so, e, n = bbox
+    x0, x1 = int(lon2x(w, z)), int(lon2x(e, z))
+    y0, y1 = int(lat2y(n, z)), int(lat2y(so, z))
+    tiles = [(x, y) for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)]
+    print(f"RASTER {name}: z{z} {len(tiles)} tiles")
+    with ThreadPoolExecutor(16) as ex:
+        arrs = list(ex.map(lambda t: fetch_tile(s, z, *t), tiles))
+    cols = x1 - x0 + 1
+    rows = [np.hstack(arrs[r * cols:(r + 1) * cols]) for r in range(y1 - y0 + 1)]
+    elev = np.vstack(rows)
+    lon_w, lon_e = x2lon(x0, z), x2lon(x1 + 1, z)
+    lat_n, lat_s = y2lat(y0, z), y2lat(y1 + 1, z)
+    v = hillshade(elev, z, lat_s, lat_n, exag)
+    rgb = np.stack([v * 247, v * 248, v * 250], -1).astype(np.uint8)
+    if opts.get("sea") and opts.get("seeds"):
+        # EP15 흥남: 북한 동해안 DEM은 바다가 0m 근처라 '갯벌'로 잘못 칠해지고 저지대 논밭이 얼룩처럼 찍힘
+        # → 해수면(0.5m 미만) 픽셀 가운데 바다 씨앗 좌표와 이어진 덩어리만 바다로 칠함 (갯벌 색 없음)
+        from PIL import ImageDraw
+        low = Image.fromarray(np.where(elev < 0.5, 255, 0).astype(np.uint8), "L").copy()  # copy: numpy 공유 이미지는 floodfill이 안 먹음
+        h_, w_ = elev.shape
+        for lon, lat in opts["seeds"]:
+            px = int((lon - lon_w) / (lon_e - lon_w) * w_)
+            py = int((lat2y(lat, z) - y0) * 256)
+            if 0 <= px < w_ and 0 <= py < h_ and low.getpixel((px, py)) == 255:
+                ImageDraw.floodfill(low, (px, py), 128)
+        sea = np.array(low) == 128
+        rgb[sea] = (90, 95, 102)
+    elif opts.get("sea"):  # EP11: 바다 = 해수면 아래(지도 바다색 #5a5f66), 갯벌 = 얕은 바다(간조 때 드러나는 곳 개략)
+        sea = elev < -6
+        flat = (elev >= -6) & (elev < 0.5)
+        rgb[sea] = (90, 95, 102)
+        rgb[flat] = (128, 120, 108)
+    img = Image.fromarray(rgb, "RGB")
+    if feather:
+        h, w_ = v.shape
+        yy = np.minimum(np.arange(h), np.arange(h)[::-1])[:, None]
+        xx = np.minimum(np.arange(w_), np.arange(w_)[::-1])[None, :]
+        a = np.clip(np.minimum(yy, xx) / feather, 0, 1)
+        img.putalpha(Image.fromarray((a * 255).astype(np.uint8), "L"))
+    img.save(OUT / f"{name}.webp", quality=88, method=4)
+    return {"name": name, "file": f"geo/{name}.webp", "west": lon_w, "east": lon_e, "north": lat_n, "south": lat_s,
+            "w": img.width, "h": img.height}
+
+
+# ---------------- 하천 / 호수 (OpenStreetMap Overpass) ----------------
+OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
+            "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
+WBOX = (34.9, 126.3, 38.75, 129.6)  # 남한·중부 (큰 범위 — 한 번만 받음)
+# 범위 밖 전장은 작은 상자로 따로 받아 이어 붙임 (큰 요청은 Overpass 타임아웃)
+WEXTRA = {
+    "chosin": (39.85, 126.95, 40.65, 127.65),   # EP06 장진호·하갈우리·고토리·황초령
+    "chongchon": (39.2, 125.2, 40.4, 126.85),   # EP18 청천강·군우리·순천·덕천
+}
+
+
+def overpass(s, q):
+    last = None
+    for url in OVERPASS:
+        try:
+            r = s.post(url, data={"data": q}, timeout=300)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:  # noqa
+            last = e
+            print(f"  ! overpass {url}: {e}")
+    raise last
+
+
+def simplify(pts, tol):
+    """Douglas-Peucker (반복 버전)."""
+    n = len(pts)
+    if n < 3:
+        return list(pts)
+    P = np.array(pts, dtype=float)
+    keep = np.zeros(n, bool)
+    keep[0] = keep[-1] = True
+    stack = [(0, n - 1)]
+    while stack:
+        i0, i1 = stack.pop()
+        if i1 - i0 < 2:
+            continue
+        a, b = P[i0], P[i1]
+        ab = b - a
+        L = math.hypot(*ab)
+        seg = P[i0 + 1:i1]
+        if L == 0:
+            d = np.hypot(*(seg - a).T)
+        else:
+            d = np.abs(ab[0] * (seg[:, 1] - a[1]) - ab[1] * (seg[:, 0] - a[0])) / L
+        k = int(np.argmax(d))
+        if d[k] > tol:
+            m = i0 + 1 + k
+            keep[m] = True
+            stack += [(i0, m), (m, i1)]
+    return [tuple(p) for p in P[keep].tolist()]
+
+
+def ring_area_km2(r):
+    if len(r) < 3:
+        return 0
+    lat = math.radians(sum(p[1] for p in r) / len(r))
+    kx, ky = 111.32 * math.cos(lat), 110.57
+    s = 0
+    for (x1, y1), (x2, y2) in zip(r, r[1:] + r[:1]):
+        s += x1 * kx * y2 * ky - x2 * kx * y1 * ky
+    return abs(s) / 2
+
+
+def join_ways(ways):
+    ways = [list(w) for w in ways if len(w) > 1]
+    rings = []
+    while ways:
+        cur = ways.pop(0)
+        changed = True
+        while changed and cur[0] != cur[-1]:
+            changed = False
+            for i, w in enumerate(ways):
+                if w[0] == cur[-1]:
+                    cur += w[1:]
+                elif w[-1] == cur[-1]:
+                    cur += w[::-1][1:]
+                elif w[-1] == cur[0]:
+                    cur = w + cur[1:]
+                elif w[0] == cur[0]:
+                    cur = w[::-1] + cur[1:]
+                else:
+                    continue
+                ways.pop(i)
+                changed = True
+                break
+        rings.append(cur)
+    return rings
+
+
+def build_water(s, box=WBOX, base=None):
+    """box 범위의 하천·호수를 받아 water.json 저장. base가 있으면 기존 데이터에 이어 붙임 (북쪽 띠만 추가)."""
+    s_, w_, n_, e_ = box
+    bb = f"({s_},{w_},{n_},{e_})"
+    q = f"""[out:json][timeout:600][maxsize:1073741824];
+(
+ way["natural"="water"]{bb};
+ relation["natural"="water"]{bb};
+ way["waterway"="riverbank"]{bb};
+);
+out geom;"""
+    print("WATER polygons…")
+    data = overpass(s, q)
+    lakes = []
+    for el in data["elements"]:
+        if el["type"] == "way" and "geometry" in el:
+            pts = [(round(g["lon"], 5), round(g["lat"], 5)) for g in el["geometry"]]
+            rings = [pts]
+        elif el["type"] == "relation":
+            outers = [[(round(g["lon"], 5), round(g["lat"], 5)) for g in m.get("geometry", [])]
+                      for m in el.get("members", []) if m.get("role") == "outer"]
+            rings = join_ways(outers)
+        else:
+            continue
+        for r in rings:
+            if ring_area_km2(r) < 0.4:
+                continue
+            lakes.append([list(p) for p in simplify([tuple(p) for p in r], 0.00025)])
+    q2 = f"""[out:json][timeout:240];
+way["waterway"="river"]{bb};
+out geom;"""
+    print("WATER rivers…")
+    data2 = overpass(s, q2)
+    by = {}
+    for el in data2["elements"]:
+        if "geometry" not in el:
+            continue
+        nm = el.get("tags", {}).get("name", "")
+        pts = [(round(g["lon"], 5), round(g["lat"], 5)) for g in el["geometry"]]
+        by.setdefault(nm or f"_{el['id']}", []).append(pts)
+    rivers = []
+    for nm, segs in by.items():
+        length = 0
+        for sg in segs:
+            for (x1, y1), (x2, y2) in zip(sg, sg[1:]):
+                length += math.hypot((x2 - x1) * 88.5, (y2 - y1) * 110.6)
+        if length < 30:
+            continue
+        rivers.append({"len": round(length), "name": nm, "lines": [[list(p) for p in simplify(sg, 0.0003)] for sg in segs]})
+    if base is not None:
+        return lakes, rivers
+    write_json(OUT / "water.json", {"bbox": list(WBOX), "lakes": lakes, "rivers": rivers, "extra": []})
+    print(f"  호수/하천면 {len(lakes)}개, 하천선 {len(rivers)}개")
+
+
+def main(what="all"):
+    OUT.mkdir(parents=True, exist_ok=True)
+    s = session()
+    if what in ("all", "terrain", "auto"):
+        # 이미 만든 래스터는 재사용, 새로 추가된 권역만 생성
+        import json as _j
+        old = {m["name"]: m for m in (_j.loads((OUT / "rasters.json").read_text()) if (OUT / "rasters.json").exists() else [])}
+        meta = [old[r[0]] if r[0] in old and (OUT / f"{r[0]}.webp").exists() else build_raster(s, *r) for r in RASTERS]
+        write_json(OUT / "rasters.json", meta)
+    if what == "auto":  # 하천 데이터 범위가 바뀌었을 때만 다시 받기
+        import json as _j
+        w = _j.loads((OUT / "water.json").read_text()) if (OUT / "water.json").exists() else {}
+        what = "water" if w.get("bbox") != list(WBOX) else "none"
+        for name, box in WEXTRA.items():
+            if what != "none" or name in w.get("extra", []):
+                continue
+            try:
+                lk, rv = build_water(s, box, base=w)
+                w["lakes"] = w.get("lakes", []) + lk
+                w["rivers"] = w.get("rivers", []) + rv
+                w["extra"] = w.get("extra", []) + [name]
+                write_json(OUT / "water.json", w)
+                print(f"  추가 하천 {name}: 호수 {len(lk)} 하천 {len(rv)}")
+            except Exception as e:
+                from common import log_error
+                log_error(f"하천 데이터({name}) 실패(기존 유지): {e}")
+    if what in ("all", "water"):
+        try:
+            build_water(s)
+        except Exception as e:
+            # 실패해도 기존 하천 데이터는 지우지 않음 (이전 에피소드 지도 보호)
+            print(f"  ! 하천 데이터 실패 — 기존 water.json 유지: {e}")
+            from common import log_error
+            log_error(f"하천 데이터 갱신 실패(기존 유지): {e}")
+            if not (OUT / "water.json").exists():
+                write_json(OUT / "water.json", {"lakes": [], "rivers": []})
+
+
+if __name__ == "__main__":
+    main(sys.argv[1] if len(sys.argv) > 1 else "all")

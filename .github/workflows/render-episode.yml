@@ -1,0 +1,242 @@
+name: 에피소드 1개 렌더링 (내부용)
+
+on:
+  workflow_call:
+    inputs:
+      episode: { type: string, required: true }
+      mode: { type: string, default: full }
+      redo: { type: string, default: "" }
+
+permissions:
+  contents: write
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      EP: ${{ inputs.episode }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID || 'ZJCNdZEjYwkOElxugmW2' }}
+      ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
+      TTS_SPEED: ${{ vars.TTS_SPEED }}
+      OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+      IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}   # 앞 작업(한국어판)이 커밋한 재료까지 받기
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: 설치
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk ffmpeg > /dev/null
+          pip install -q requests numpy pillow
+          npm ci
+
+      - name: API 점검
+        if: inputs.mode == 'check'
+        run: |
+          cd pipeline && python check_api.py || true
+          cd .. && git config user.name "map-of-war-bot" && git config user.email "actions@users.noreply.github.com"
+          git add logs/api_check.txt && git commit -qm "API 점검 결과" || true
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push -q && break; sleep 15; done
+          exit 1
+
+      - name: 사진 후보 수집
+        if: inputs.mode == 'scout'
+        run: |
+          cd pipeline && python scout.py $EP || true
+          cd .. && git config user.name "map-of-war-bot" && git config user.email "actions@users.noreply.github.com"
+          git add -A previews && git commit -qm "사진 후보" && git pull --rebase -X theirs -q; git push -q
+          exit 1
+
+      - name: 썸네일만 (thumb 모드)
+        if: inputs.mode == 'thumb'
+        run: |
+          pip install -q "rembg[cpu]" || echo "rembg 설치 실패 — 대체 누끼 사용"
+          cd pipeline && python ai_images.py $EP --thumb && cd ..
+          npx remotion browser ensure
+          npx remotion bundle remotion/index.ts --out-dir=out/bundle --log=error
+          npx remotion still out/bundle Thumbnail thumbnails/${EP}_ko_A.png --props="{\"ep\":\"$EP\",\"variant\":\"A\",\"lang\":\"ko\"}" --log=error
+          # B안은 전용 디자인이 이미 있는 에피소드만 갱신
+          if [ -f thumbnails/${EP}_ko_B.png ]; then
+            npx remotion still out/bundle Thumbnail thumbnails/${EP}_ko_B.png --props="{\"ep\":\"$EP\",\"variant\":\"B\",\"lang\":\"ko\"}" --log=error
+          fi
+          npx remotion still out/bundle Thumbnail thumbnails/${EP}_en_A.png --props="{\"ep\":\"$EP\",\"variant\":\"A\",\"lang\":\"en\"}" --log=error
+          # EP16~: MAPT에 카피 시안(alts)이 있으면 A2·A3도 렌더 (같은 배경·인물, 문구만 교체)
+          ALTV=""
+          if grep -q "ALTS:${EP}\b" remotion/MapThumb.tsx; then ALTV="A2 A3"; elif grep -q "ALTS:${EP}\b" remotion/Thumbnail.tsx; then ALTV="A2"; fi  # EP19~: COLLAGE alt → A2만
+          for V in $ALTV; do
+            npx remotion still out/bundle Thumbnail thumbnails/${EP}_ko_${V}.png --props="{\"ep\":\"$EP\",\"variant\":\"$V\",\"lang\":\"ko\"}" --log=error
+          done
+          # 유튜브 썸네일 한도 2MB: 1.9MB 넘는 PNG는 업로드용 JPG를 함께 만든다
+          python3 -c "import glob,os; from PIL import Image; [Image.open(p).convert('RGB').save(p[:-4]+'.jpg', quality=90, optimize=True) for p in glob.glob('thumbnails/${EP}_*_A*.png') if os.path.getsize(p) > 1900000]"
+          git config user.name "map-of-war-bot" && git config user.email "actions@users.noreply.github.com"
+          git add -A public/ep/$EP thumbnails && git commit -qm "썸네일: $EP" || echo "변경 없음"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs -q && git push -q && break
+            sleep $((RANDOM % 20 + 10))
+          done
+
+      - name: 다시 만들 재료 지우기
+        if: inputs.redo != '' && inputs.mode != 'thumb'
+        run: |
+          R="${{ inputs.redo }}"
+          D=public/ep/$EP
+          [[ $R == *tts* ]] && rm -rf $D/tts || true
+          [[ $R == *photos* ]] && rm -rf $D/photos $D/photos.json || true
+          [[ $R == *ai* ]] && rm -rf $D/ai $D/ai.json || true
+          [[ $R == *sfx* ]] && rm -rf public/sfx || true
+          [[ $R == *music* ]] && rm -rf $D/music || true
+          [[ $R == *geo* ]] && rm -f public/geo/rasters.json || true
+
+      - name: 다국어판 스토리보드 생성 (_en 등)
+        if: inputs.mode != 'thumb'
+        run: |
+          if [ -f episodes/$EP/translation.json ]; then
+            SRC=${EP%_*}; LANG_CODE=${EP##*_}
+            cd pipeline && python make_lang.py $SRC $EP $LANG_CODE
+          fi
+
+      - name: 지도 지형·하천 (새 권역만 추가 생성)
+        if: inputs.mode != 'thumb'
+        run: cd pipeline && python geo.py auto
+
+      - name: 사료 사진 (위키미디어)
+        if: inputs.mode != 'thumb'
+        run: cd pipeline && python photos.py $EP
+
+      - name: 재연 일러스트 (OpenAI)
+        if: inputs.mode != 'free' && inputs.mode != 'thumb'
+        run: cd pipeline && python ai_images.py $EP
+
+      - name: 나레이션 (일레븐랩스)
+        if: inputs.mode != 'free' && inputs.mode != 'thumb'
+        run: |
+          cd pipeline && python tts.py $EP
+          python tighten.py $EP
+
+      - name: 효과음 + 배경음악 (일레븐랩스)
+        if: inputs.mode != 'free' && inputs.mode != 'thumb'
+        run: |
+          cd pipeline
+          python sfx.py $EP sfx
+          python timeline.py $EP
+          python sfx.py $EP music
+          python timeline.py $EP
+          python midroll.py $EP || true   # 20분 장편: 목차·미드롤 광고 위치 → logs/midroll_<ep>.txt
+
+      - name: 무료 점검용 타임라인
+        if: inputs.mode == 'free'
+        run: cd pipeline && python timeline.py $EP --mock
+
+      - name: 번들
+        if: inputs.mode != 'thumb'
+        run: npx remotion bundle remotion/index.ts --out-dir=out/bundle --log=error
+
+      - name: 재료 저장 (비용 드는 재료 먼저 보관)
+        if: (always()) && inputs.mode != 'thumb'
+        run: |
+          git config user.name "map-of-war-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "재료 생성: $EP" || echo "변경 없음"
+          git pull --rebase -X theirs -q || (git rebase --abort; git pull --no-rebase -X ours -q --no-edit) || true
+          git push
+
+      - name: 미리보기 시트
+        if: inputs.mode != 'thumb'
+        continue-on-error: true
+        run: |
+          npx remotion browser ensure
+          cd pipeline && python preview.py $EP ../out/bundle
+
+      - name: 미리보기 저장
+        if: inputs.mode != 'thumb'
+        run: |
+          git add -A
+          git commit -m "미리보기: $EP" || echo "변경 없음"
+          git pull --rebase -X theirs -q || (git rebase --abort; git pull --no-rebase -X ours -q --no-edit) || true
+          git push
+
+      # [자막 렌더링 무결성 원칙] 모든 장면·모든 줄에서 자막이 실제 화면에 보이는지 스틸로 확인 — 실패하면 MP4 렌더 중단
+      - name: 자막 노출 검사
+        if: inputs.mode != 'thumb'
+        run: |
+          npx remotion browser ensure
+          cd pipeline && python check_subs.py $EP ../out/bundle
+
+      # EP19~ 사용자 지시: 마지막 단어 발음 시점과 자막 종료 시간 오차 ±1.0초 이내 (자막이 몇 초씩 남아 도는 현상 방지)
+      - name: 음성–자막 싱크 검사
+        if: inputs.mode != 'thumb'
+        run: |
+          if ! (cd pipeline && python check_sync.py $EP); then
+            git config user.name "map-of-war-bot"; git config user.email "actions@users.noreply.github.com"
+            git add logs && git commit -qm "싱크 검사 실패: $EP" && git pull --rebase -X theirs -q && git push -q || true
+            exit 1
+          fi
+
+      - name: 최종 렌더링 (MP4)
+        if: inputs.mode == 'full'
+        run: |
+          # 20분 장편 대비: 디스크 확보 + 실패 원인을 저장소(logs/)에 남김 (세션에서 Actions 로그 직접 열람 불가)
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+          df -h . | tail -1
+          # 러너의 /tmp는 용량 한도가 따로 있어 20분 오디오 믹싱(구간별 wav 수백 MB) 중 'Disk quota exceeded'로 실패 (EP11) → 작업 폴더 디스크로 돌림
+          export TMPDIR=$PWD/out/tmp && mkdir -p $TMPDIR && df -h /tmp | tail -1
+          set -o pipefail
+          if ! npx remotion render out/bundle Documentary out/$EP.mp4 \
+            --props="{\"ep\":\"$EP\"}" --concurrency=4 --codec=h264 --video-bitrate=8M --x264-preset=veryfast \
+            --audio-bitrate=192k --timeout=120000 --log=info 2>&1 | tee out/render.log; then
+            { echo "== $EP 렌더 실패 $(date -u)"; df -h . | tail -1; free -m | head -2; tail -80 out/render.log; } > logs/render_fail_$EP.txt
+            git config user.name "map-of-war-bot"; git config user.email "actions@users.noreply.github.com"
+            git add logs/render_fail_$EP.txt && git commit -qm "렌더 실패 로그: $EP" && git pull --rebase -X theirs -q && git push -q || true
+            exit 1
+          fi
+          # 유튜브 기준 음량 맞추기 (-15 LUFS), 영상은 그대로 복사
+          ffmpeg -y -v error -i out/$EP.mp4 -c:v copy -af loudnorm=I=-15:TP=-1.5:LRA=11 -c:a aac -b:a 192k out/final.mp4
+          mv out/final.mp4 out/$EP.mp4
+          # 안전장치 (2026-11-01, EP16 naktong 2GB 초과로 Releases 업로드 실패): 1.9GB를 넘으면 목표 1.5GB 비트레이트로 다시 인코딩
+          SIZE=$(stat -c %s out/$EP.mp4); echo "MP4 용량: $((SIZE/1024/1024)) MB"
+          if [ "$SIZE" -gt 1900000000 ]; then
+            DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/$EP.mp4)
+            VB=$(python3 -c "print(int(1500*8*1024/float('$DUR') - 200))")
+            echo "용량 초과 → ${VB}k로 재인코딩"
+            ffmpeg -y -v error -i out/$EP.mp4 -c:v libx264 -preset veryfast -b:v ${VB}k -maxrate $((VB*3/2))k -bufsize $((VB*2))k -c:a copy -movflags +faststart out/small.mp4
+            mv out/small.mp4 out/$EP.mp4
+            echo "재인코딩 후: $(( $(stat -c %s out/$EP.mp4)/1024/1024 )) MB"
+          fi
+
+      - name: 결과물 올리기 (Releases)
+        if: inputs.mode == 'full'
+        continue-on-error: true   # 릴리스가 실패해도(용량 제한 등) 아래 Artifacts 백업은 진행
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="$EP-$(date +%Y%m%d-%H%M)"
+          gh release create "$TAG" "out/$EP.mp4" "public/ep/$EP/$EP.srt" previews/$EP/*.jpg \
+            --title "$EP 완성 영상 ($(date +%m/%d\ %H:%M))" --notes "Actions에서 자동 생성된 영상입니다."
+
+      - name: 결과물 올리기 (Artifacts 백업)
+        if: always() && inputs.mode == 'full'   # 앞 단계 성공·실패와 상관없이 항상 백업 (Artifacts는 5GB까지)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.episode }}-video
+          path: |
+            out/${{ inputs.episode }}.mp4
+            public/ep/${{ inputs.episode }}/${{ inputs.episode }}.srt
+          if-no-files-found: warn
+          retention-days: 3   # 3일 뒤 자동 삭제 (영상 원본은 Releases에 보관)
