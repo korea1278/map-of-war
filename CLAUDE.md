@@ -12,6 +12,9 @@
 > 2. **막(Act) 단위 통 MP3** — 문장·줄 단위 ElevenLabs 호출 금지, 막 1개 = 1회 호출 = `act1.mp3`~`act7.mp3` (`tts_mode: "act"`). 괄호 지문 금지, 쉼표 과다 금지
 > 3. **절제된 다큐 효과음** (2026-11-13 수정 — 전면 삭제 취소) — '꽝' 폭발·타격음과 UI Pop 금지, 같은 소리 15초 쿨다운. 막 전환·3D 비행 때 묵직한 스윕 1회, 클라이맥스에만 먼 포성·바람 앰비언스(-28~-32dB), 핵심 록온 때 레이더 핑 1회. BGM은 나레이션 대비 -22~-26dB, 효과음은 -24~-32dB (`"sfx_policy": "doc"`, `"bgm_rel_db": -24`)
 > 4. **결정론 렌더** — `Date.now()`·`setTimeout` 금지, `frame/30` 기반. MapView 3D 비행·진격선·스웜·전술 HUD 유지. 자막 싱크는 막 통 MP3 실제 파형 기준 ±0.5초 이내
+> 5. **초반 60초 모순 누적 후킹** (2026-11-18 war-docu에서 이식 · [`docs/HOOK_STANDARD.md`](docs/HOOK_STANDARD.md)) — 사건 직격 → 모순 3단 누적 → `X` 마크 반전 → 중앙 질문 카드. 장면 `"hook"` 필드(`hud`·`neg`·`question`) + `troops` 병력 대열
+> 6. **4~6초 단위 시각 레이어 교차** — 첫 60초는 4~6초마다 다른 종류의 화면(지도 비행·HUD·병력 대열·사료 강조·X·질문 카드), 같은 종류 연속 금지
+> 7. **GitHub Actions 비대기 실행** — dispatch 후 `gh run watch`·폴링으로 기다리지 않는다. dispatch 확인 즉시 "컴퓨터를 꺼도 된다" 안내를 첫 줄에 내고 완료 확인은 `send_later` 예약. 엔진·문서만 바꾸는 작업은 렌더를 돌리지 않고 push 후 종료
 
 ## 제작 이력
 
@@ -45,11 +48,17 @@
   4. 문서·조약·신문은 `document` 카드로 요점 2~4줄 + 도장/붉은 X, 목록·이유는 체크리스트·번호 카드로 하나씩 `on`에 맞춰 띄우고 지워 나간다
   5. 사료 사진은 좌상단 작은 출처 라벨 + 말하는 순간 뜨는 노란/빨간 강조 라벨
 
-## ☐ 화면 업그레이드 2단계 — war-docu에서 구현 완료(EP26 승호리), 이 저장소로는 아직 안 옮김 (2026-11-12)
-> 다음 영문 편 작업 지시가 오면 대본보다 먼저 war-docu에서 아래를 그대로 복사해 온다 — **추가 비용 0원** (그림을 새로 만들지 말 것, 수익 창출 전 사용자 지시)
-- `remotion/Stage.tsx`(stage·flatmap·flaggrid·checklist·reasons·PhotoTag/PhotoMarks·국기 SVG) + 이를 쓰는 `Video.tsx`·`Visuals.tsx`·`MapView.tsx`(plane) 변경분, `pipeline/timeline.py`(checkOn·xOn·chars), `public/ui/paper.jpg`, **캐릭터 42장 `public/chars/`**(war-docu에서 파일 복사 — 다시 생성 금지)
-- 사용법·필드는 war-docu `CLAUDE.md`의 '화면 업그레이드 2단계' 절과 `episodes/ep26-seungho/make_board.py` 헬퍼 참고. 영문 화면 문구(말풍선·카드)는 영어로
+## ☑ 화면 업그레이드 2단계 + 초반 후킹 부품 + 썸네일 v2 — war-docu에서 이식 완료 (2026-11-18, war-docu `e8ef7627` 기준)
+- `remotion/Stage.tsx`(stage·flatmap·flaggrid·checklist·reasons·PhotoTag/PhotoMarks·국기 SVG·캐릭터 face/prop/anim), `remotion/Hook.tsx`(LeftStatHud·NegationOverlay·CoreQuestionCard·TroopsV), 이를 쓰는 `Video.tsx`·`Visuals.tsx`·`MapView.tsx`(plane)·`theme.ts`·`Root.tsx`, `pipeline/timeline.py`(checkOn·xOn·hook·chars·sub_max)·`check_sync.py`(sync_limit)·`geo.py`·`chars.py`, `public/ui/paper.jpg`, **캐릭터 `public/chars/`**(파일 복사 — 다시 생성 금지, `make-chars.yml` 실행 금지)
+- 사용법·필드는 war-docu `CLAUDE.md`의 '화면 업그레이드 2단계' 절과 war-docu `episodes/ep26-seungho/make_board.py` 헬퍼(C·pop·stage·flat·fpin·route·reasons·checklist) 참고. 영문 화면 문구(말풍선·카드·HUD·질문 카드)는 영어로 (`question.kicker` 기본값은 영문 보드에서 `■ THE QUESTION ■`)
 - 새 나라 캐릭터는 SVG 볼 자동 대체(0원)
+
+## ★ 썸네일 표준 v2 (2026-11-18 war-docu에서 이식 · `ep09` 이후 영문 A안 기본 · `ep08-chosin`은 기존 공식 유지)
+- **고정 인물 흑백 사진 폐기** (반복 기시감·CTR 저하) → **에피소드 고유 전술 비주얼을 배경 전체(Full-Bleed)로** (결정적 전황 재연 그림 `ep/<ep>/ai/thumb_bg.jpg` 또는 3D 지형)
+- **하단 다크 비네팅** + 가장자리 비네트, **고대비 2줄 핵심 카피** — 기존 대비 2.5~3배(최대 340px, 최소 120px), 실측 폭으로 좌 60px~우측 재생시간 배지 여백 200px 안을 꽉 채움, 검은 외곽선 7% + 그림자. Line 1 흰색 / Line 2 머스터드 옐로 `#FFD400`(`color2`로 변경 가능). 영문 글꼴 Montserrat Black
+- 선택: 좌상단 붉은 배지(`badge`, 예: `"JULY 20, 1950"`), 타깃 링(`targets`)·화살표(`arrows`)
+- 등록: `remotion/Thumbnail.tsx`의 `PAROHO_V2` 표에 `"<ep>": { bg, bgPos, line1, line2, badge, alt: { line1, line2 } }` 추가 + 줄 끝에 `// ALTS:<ep>` → Actions `mode=thumb`가 `thumbnails/<ep>_en_A.png`·`_en_A2.png`를 1920×1080으로 렌더
+- 카피는 줄당 2~4단어 영어, 콜드 오프닝 앵글(갈등·숫자·질문)과 같은 프레임. 렌더 후 PNG를 직접 열어 확인, 1.9MB 넘으면 JPG 자동 생성
 
 ## ★ 캐릭터 반복 방지 규칙 (2026-11-12 사용자 지시 · EP26 다음 편부터 · war-docu·map-of-war 공통 · 추가 비용 0원)
 > 캐릭터 42장(`public/chars/`)은 계속 재사용하되, 매 편 같은 장면처럼 보이지 않게 아래를 지킨다. 전부 코드로 처리 — 그림을 새로 생성하지 말 것
@@ -70,7 +79,7 @@
    - 문장은 `.`/`?`에서 나뉜다 — `Oliver P. Smith`처럼 약자 마침표는 쓰지 말 것 (문장이 쪼개짐)
    - 사실은 웹 검색으로 확인, 확정 못 한 것(발언 원문·좌표·수치)은 목록으로 남겨 전달 때 알린다
 2. **스토리보드** — `episodes/<ep>/make_board.py`로 script.md 문장을 순서대로 장면에 배정해 `storyboard.json` 생성 (형식은 `episodes/ep08-chosin/`)
-   - 보드 상단: `"lang": "en"`, `"voice": "pNInz6obpgDQGcFmaJgB"`(Adam), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`
+   - 보드 상단: `"lang": "en"`, `"voice": "pNInz6obpgDQGcFmaJgB"`(Adam), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep09~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
    - 장면마다 `"act": n` — **막 단위 TTS**: 막마다 일레븐랩스 1회 호출 → `public/ep/<ep>/tts/acts/act<n>.mp3` (지시서의 act1~act7 통 MP3) → `tts.py`가 글자 타임스탬프로 장면별 mp3·json으로 잘라 자막 싱크를 맞춘다. 문장 단위 생성 금지
    - 막 하나의 문장을 바꾸면 **그 막 전체가 다시 생성**된다(크레딧 약 2,500자). 수정은 막 단위로 모아서
    - 지도: `flight`(카메라 비행), `hud: true`(전술 HUD) + **`temp: "-40°F"`(HUD 온도 표시, EP08 추가)**, `tilt`, 아이템 `swarm`·`obj`·`clash`·`lock`·`shock`·`radar`·`badge`·`line`·`unit`·`arrow`
@@ -89,7 +98,7 @@
      ```
    - dispatch 직후 `send_later`로 확인 예약(20분 장편 약 2시간 10분~3시간). "끝나면 말씀해 주세요"로 미루지 말 것
 5. **검증** — Releases MP4를 REST로 받아 길이(목표 ±10초), 음량 -15 LUFS ±1(`ffmpeg -af ebur128`), 지도 장면 프레임 포함 샘플 프레임 육안 확인, SRT·`logs/sync_check_<ep>.txt`·`logs/subs_check_<ep>.txt`
-6. **썸네일** — EP08 지시서 공식(영문): 좌측 3D 설산 작전 지도 + 우측 인물 흑백 누끼(`thumb_subject`) · 상단 인용 레드 `#FF3B30` · Line 1 흰색 100px · Line 2 옐로 `#FFE500` 112px · 우측 하단 재생시간 배지 여백 200px. 렌더 후 PNG를 직접 열어 확인, 1.9MB 넘으면 JPG
+6. **썸네일** — **`ep09`부터는 위 '썸네일 표준 v2'** (`PAROHO_V2` 등록 → `mode=thumb`). 아래는 EP08까지의 예전 공식(영문): 좌측 3D 설산 작전 지도 + 우측 인물 흑백 누끼(`thumb_subject`) · 상단 인용 레드 `#FF3B30` · Line 1 흰색 100px · Line 2 옐로 `#FFE500` 112px · 우측 하단 재생시간 배지 여백 200px. 렌더 후 PNG를 직접 열어 확인, 1.9MB 넘으면 JPG
 7. **전달** (한 번에) — Releases 링크, SRT, 썸네일, **영문** 제목 후보 3개·설명글(목차 타임스탬프는 SRT 실제 시각, 채널명·인사말 없이, 참고 자료·재연 일러스트 고지)·태그, 카테고리 Education, 확인 안 된 사실 목록. 설명은 한국어로
 
 ## 2. 고정 규격

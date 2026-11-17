@@ -231,7 +231,8 @@ def build(ep, mock=False, gap=None):
     photos = read_json(aout / "photos.json", {})
     ai = read_json(aout / "ai.json", {})
     global MAX_SUB
-    MAX_SUB = 44 if lang != "ko" else 21
+    # 2026-11-13 롱폼 표준(LONGFORM_STANDARD 3): 한 줄 25~35자 — 스토리보드 "sub_max"로 지정 (EP27부터 28, 없으면 예전 21)
+    MAX_SUB = 44 if lang != "ko" else int(board.get("sub_max", 21))
     global STYLE
     STYLE = int(board.get("style", 1))
     rasters = read_json(ROOT / "public" / "geo" / "rasters.json", [])
@@ -327,7 +328,7 @@ def build(ep, mock=False, gap=None):
             if not isinstance(o, dict):
                 return o
             o = {k: apply_on(v) for k, v in o.items()}
-            for key, tgt in (("on", "at"), ("untilOn", "until"), ("takenOn", "takenAt")):
+            for key, tgt in (("on", "at"), ("untilOn", "until"), ("takenOn", "takenAt"), ("checkOn", "checkAt"), ("xOn", "xAt")):
                 if isinstance(o.get(key), str):
                     s = word_time(o[key])
                     if s is not None:
@@ -362,7 +363,7 @@ def build(ep, mock=False, gap=None):
         scenes_out.append({
             "id": sc["id"], "start": round(t, 3), "dur": round(dur, 3), "audio": audio, "audioAt": pre, "tempo": 1,
             "lines": lines, "visual": vis, "label": sc.get("label"), "callouts": sc.get("callouts", []),
-            "sfx": sc.get("sfx", []), "chapter": sc.get("chapter"), "flash": sc.get("flash", False), "hudCta": sc.get("hudCta"),
+            "sfx": sc.get("sfx", []), "chapter": sc.get("chapter"), "flash": sc.get("flash", False), "hudCta": sc.get("hudCta"), "hook": sc.get("hook"),
             "visuals": extra,
         })
         t += dur
@@ -399,7 +400,9 @@ def build(ep, mock=False, gap=None):
     tl = {"lang": lang, "fps": FPS, "duration": round(t, 3), "title": board["title"], "places": board["places"],
           "views": board["views"], "scenes": scenes_out, "music": music, "rasters": rasters, "sfx": sfx_avail,
           "sfxPolicy": policy,
-          "hasWater": (ROOT / "public" / "geo" / "water.json").exists()}
+          "hasWater": (ROOT / "public" / "geo" / "water.json").exists(),
+          # 화면 업그레이드 2단계: 캐릭터 라이브러리에 있는 그림 목록 (없으면 stage 화면이 SVG 볼 캐릭터로 대체)
+          "chars": sorted(p.stem for p in (ROOT / "public" / "chars").glob("*.png"))}
     write_json(out / "timeline.json", tl)
     write_srt(scenes_out, out / f"{ep}.srt")
     print(f"timeline: {len(scenes_out)}장면, {int(t // 60)}분 {t % 60:.1f}초 (장면 간격 {GAP_:.3f}초)")

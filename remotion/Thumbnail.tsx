@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "@fontsource/montserrat/900.css";
 import { AbsoluteFill, continueRender, delayRender, Img, staticFile } from "remotion";
 import "@fontsource/black-han-sans/400.css";
 import "@fontsource/bebas-neue/400.css";
@@ -1186,6 +1187,65 @@ export const PAROHO_STD: Record<string, ThumbnailProps> = {
     ],
     characterPos: "50% 0%",
   },
+  // EP26 승호리 철교 — 지시서 카피 그대로 (미군 약 500소티 · 한국 공군 14소티: 국방부 군사편찬연구소). 철교 위치는 개략
+  "ep26-seungho": {
+    quote: "미군도 포기한 다리, 우리가 깨부순다",
+    titleLine1: "미군 500번 실패한 철교를",
+    titleLine2: "한국 공군이 박살 낸 방법",
+    mapImage: "geo/seungho_zoom.webp",
+    characterCutout: "ep/ep26-seungho/ai/thumb_cut.png",
+    mapCrop: { cx: 0.5, cy: 0.517, zoom: 1.15 },
+    targets: [{ x: 528, y: 520, r: 90, label: "승호리 철교" }],
+    places: [{ x: 300, y: 700, label: "남강" }],
+    arrows: [
+      { pts: [[960, 140], [780, 300], [600, 470]], color: "ally" },
+      { pts: [[1010, 400], [820, 460], [625, 510]], color: "ally" },
+    ],
+    stampText: "1,500피트",
+    stampPos: { x: 300, y: 250 },
+    characterPos: "50% 0%",
+  },
+  // EP27 통영상륙작전 — 사용자 지시서 카피 그대로 (따옴표의 '1개 연대'는 사료 미확인 · 전달 때 고지). 지도 = 통영반도 목(원문고개) 근접 z14, 좌표 개략
+  "ep27-tongyeong": {
+    quote: "원문고개를 막아라, 적 1개 연대를 가둔다",
+    titleLine1: "한국 최초의 단독 상륙작전",
+    titleLine2: "귀신 잡는 해병의 탄생",
+    mapImage: "geo/tongyeong_zoom_sea.webp",
+    characterCutout: "ep/ep27-tongyeong/ai/thumb_cut.png",
+    mapCrop: { cx: 0.685, cy: 0.5134, zoom: 1.0 },
+    targets: [
+      { x: 380, y: 300, r: 92, label: "원문고개" },
+      { x: 497, y: 489, r: 58, label: "망일봉" },
+    ],
+    places: [{ x: 905, y: 335, label: "견내량" }, { x: 470, y: 618, label: "통영" }],
+    arrows: [
+      { pts: [[990, 190], [820, 262], [690, 318], [500, 304]], color: "ally" },
+      { pts: [[690, 340], [600, 410], [535, 455]], color: "ally" },
+      { pts: [[70, 190], [180, 245], [275, 285]], color: "red" },
+    ],
+    stampText: "퇴로 차단",
+    stampPos: { x: 820, y: 470 },
+    characterPos: "50% 0%",
+  },
+  // EP28 포항 안강·기계 & 형산강 — 사용자 지시서 카피 그대로 (따옴표 '10시간'은 기록상 11시간 · 전달 때 고지). 지도 = 포항 시가지·형산강 하구 z14, 포항여중 위치 개략
+  "ep28-pohang": {
+    quote: "우리가 10시간을 버텨야 부산이 산다",
+    titleLine1: "부산 턱밑까지 밀려온 적을 막아선",
+    titleLine2: "학도병 71명과 포항 결전",
+    mapImage: "geo/pohang_zoom_sea.webp",
+    characterCutout: "ep/ep28-pohang/ai/thumb_cut.png",
+    mapCrop: { cx: 0.7166, cy: 0.5088, zoom: 0.8 },
+    targets: [{ x: 470, y: 230, r: 82 }],
+    places: [{ x: 470, y: 405, label: "포항여중" }, { x: 760, y: 560, label: "형산강" }, { x: 900, y: 235, label: "영일만" }],
+    arrows: [
+      { pts: [[150, 360], [280, 310], [392, 262]], color: "red" },
+      { pts: [[110, 80], [270, 160], [395, 210]], color: "red" },
+      { pts: [[520, 320], [555, 440], [585, 550]], color: "ally" },
+    ],
+    stampText: "11시간 사수",
+    stampPos: { x: 800, y: 400 },
+    characterPos: "50% 0%",
+  },
   "paroho:sample": {
     quote: "호수 전체가 시체로 뒤덮였다",
     titleLine1: "사흘 밤낮 60km를 쫓아가",
@@ -1243,15 +1303,15 @@ const useP5Water = (mapImage: string) => {
   return data;
 };
 
-const useP5Measure = (texts: string[]) => {
+const useP5Measure = (texts: string[], opt?: { load: string; font: string }) => {
   const [fn, setFn] = useState<((t: string) => number) | null>(null);
   const [hd] = useState(() => delayRender("p5-measure"));
   useEffect(() => {
-    document.fonts.load(`900 100px 'Pretendard'`, texts.join(""))
+    document.fonts.load(`900 100px '${opt?.load ?? "Pretendard"}'`, texts.join(""))
       .then(() => document.fonts.ready)
       .then(() => {
         const ctx = document.createElement("canvas").getContext("2d")!;
-        ctx.font = `900 100px ${P5.font}`;
+        ctx.font = `900 100px ${opt?.font ?? P5.font}`;
         setFn(() => (t: string) => (ctx.measureText(t).width - 2 * Math.max(0, [...t].length - 1)) / 100);
       })
       .finally(() => continueRender(hd));
@@ -1398,10 +1458,83 @@ export const ParohoThumb: React.FC<{ d: ThumbnailProps }> = ({ d }) => {
   );
 };
 
+
+/* =====================================================================================
+ * ★★★★ 썸네일 표준 PAROHO_STD v2 (2026-11-18 사용자 지시서 docs/HOOK_STANDARD.md B항 · EP29 ep29-daejeon부터 모든 신규 롱폼 한국어 A안)
+ *   - 고정 흑백 군인 얼굴 사진 전면 폐기 (반복 기시감·CTR 저하)
+ *   - 에피소드 고유 메인 비주얼을 배경 전체(Full-Bleed)로 — 결정적 전황 장면(AI 재연 그림 또는 3D 지형)
+ *   - 하단 다크 비네팅 위 대형 2줄 압축 카피(줄당 6~9자) — v5 대비 2.5~3배(최대 340px), 실측 폭으로 x 1720 안에 꽉 채움
+ *   - 카피 프레임: '열세를 뒤집은 통쾌한 역전·기습 승리'
+ * ===================================================================================== */
+export interface ThumbV2Props {
+  bg: string; // public 기준 메인 비주얼 경로 (Full-Bleed)
+  bgPos?: string; // object-position (기본 "50% 40%")
+  bgFilter?: string; // 기본: 살짝 대비 강조
+  line1: string; // 위 줄 (흰색)
+  line2: string; // 아래 줄 (강조색)
+  color2?: string; // 기본 #FFD400 (머스터드 옐로) — 붉은 화염 배경이면 노랑이 더 잘 보임
+  badge?: string; // 선택: 좌상단 작은 배지 (예: "1950. 7. 20 대전")
+  targets?: ThumbTarget[];
+  arrows?: ThumbArrow[];
+  alt?: { line1: string; line2: string; color2?: string }; // A2 카피 시안
+}
+export const PAROHO_V2: Record<string, ThumbV2Props> = {
+  // map-of-war(영문): 새 에피소드마다 여기에 항목을 추가하면 A안(en)이 v2 디자인으로 렌더된다. 카피는 100% 영어, 줄당 2~4단어.
+  // 예시 (war-docu EP29 대전 원본 — 배경 파일은 해당 에피소드 폴더에 있을 때만 렌더 가능):
+  // "ep09-xxx": { bg: "ep/ep09-xxx/ai/thumb_bg.jpg", bgPos: "50% 38%", line1: "THE GENERAL", line2: "KILLED A TANK", badge: "JULY 20, 1950", alt: { line1: "FIRST STRIKE", line2: "10 T-34s DOWN" } }, // ALTS:ep09-xxx
+};
+const V2 = { left: 60, safeRight: 200, bottom: 40, max: 340, min: 120, gap: -0.06 };
+// 영문 카피 글꼴 (사용자 표준: 영문 Montserrat Black) — map-of-war 이식 때 추가 (2026-11-18)
+const V2_EN_FONT = "'Montserrat', 'Anton', sans-serif";
+export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, en }) => {
+  const font = en ? V2_EN_FONT : P5.font;
+  const measure = useP5Measure([d.line1, d.line2, d.badge || ""], en ? { load: "Montserrat", font: V2_EN_FONT } : undefined);
+  const W = CW - V2.left - V2.safeRight - 16;
+  const fit = (t: string, cap: number) => (measure ? Math.max(V2.min, Math.min(cap, Math.floor(W / Math.max(0.5, measure(t))))) : 200);
+  const s2 = fit(d.line2, V2.max);
+  const s1 = Math.min(fit(d.line1, V2.max), Math.round(s2 * 0.92));
+  const c2 = d.color2 || "#FFD400";
+  const txt = (t: string, size: number, color: string): React.ReactNode => (
+    <div
+      style={{
+        fontFamily: font, fontWeight: 900, fontSize: size, lineHeight: 1.0, letterSpacing: "-0.02em", color, whiteSpace: "nowrap",
+        WebkitTextStroke: `${Math.round(size * 0.07)}px #000`, paintOrder: "stroke fill",
+        textShadow: `0 ${Math.round(size * 0.03)}px 0 #000, 0 ${Math.round(size * 0.06)}px 0 #000, 0 ${Math.round(size * 0.1)}px ${Math.round(size * 0.12)}px rgba(0,0,0,.9)`,
+      }}
+    >
+      {t}
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <style>{`@font-face{font-family:'Pretendard';font-weight:900;font-style:normal;src:url(${staticFile("fonts/Pretendard-Black.woff2")}) format('woff2');}`}</style>
+      <Img src={staticFile(d.bg)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: d.bgPos || "50% 40%", filter: d.bgFilter || "contrast(1.12) saturate(1.08)" }} />
+      {/* 하단 다크 비네팅 + 가장자리 비네트 */}
+      <AbsoluteFill style={{ background: "linear-gradient(to top, rgba(0,0,0,.96) 0%, rgba(0,0,0,.9) 30%, rgba(0,0,0,.55) 52%, rgba(0,0,0,0) 70%)" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%)" }} />
+      <svg width={CW} height={1080} style={{ position: "absolute", inset: 0 }}>
+        {(d.targets || []).map((t, i) => <P5Target key={i} t={t} />)}
+        {(d.arrows || []).map((a, i) => <P5Arrow key={i} a={a} />)}
+      </svg>
+      {d.badge && (
+        <div style={{ position: "absolute", left: 50, top: 44, padding: "10px 26px 12px", background: "#C9242C", border: "5px solid #fff", fontFamily: font, fontWeight: 900, fontSize: 54, color: "#fff", boxShadow: "0 8px 24px rgba(0,0,0,.6)" }}>{d.badge}</div>
+      )}
+      <div style={{ position: "absolute", left: V2.left, bottom: V2.bottom, display: "flex", flexDirection: "column", gap: Math.round(s2 * V2.gap) }}>
+        {txt(d.line1, s1, "#FFFFFF")}
+        {txt(d.line2, s2, c2)}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 export const Thumbnail: React.FC<{ ep: string; variant: "A" | "A2" | "A3" | "B"; lang?: string }> = ({ ep, variant, lang }) => {
   setLang(lang);
   const refKey = ep.replace(/_en$/, "");
   const refD = (lang === "en" ? REF_EN : REF)[refKey];
+  // ★★★★ 썸네일 표준 v2 (2026-11-18~, 고정 인물 폐기·Full-Bleed·대형 2줄): PAROHO_V2 표에 있는 에피소드
+  //    map-of-war는 영문 전용 → 언어 제한 없이 적용, en이면 Montserrat Black
+  if (variant === "A" && PAROHO_V2[refKey]) return <ParohoV2Thumb d={PAROHO_V2[refKey]} en={lang === "en"} />;
+  if (variant === "A2" && PAROHO_V2[refKey]?.alt) return <ParohoV2Thumb d={{ ...PAROHO_V2[refKey], ...PAROHO_V2[refKey].alt! }} en={lang === "en"} />;
   // ★★★ 썸네일 표준 v5 (파로호 공식, 2026-11-08~): PAROHO_STD 표에 있는 에피소드는 한국어 A안을 이 디자인으로
   if (variant === "A" && lang !== "en" && PAROHO_STD[refKey]) return <ParohoThumb d={PAROHO_STD[refKey]} />;
   // ★★ 썸네일 표준 v4 (스토리텔링 꼴라주 + 3D 몬스터 타이포, 2026-11-02~): COLLAGE 표에 있는 에피소드는 한국어 A안을 이 디자인으로

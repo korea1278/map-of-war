@@ -82,6 +82,10 @@ jobs:
           for V in $ALTV; do
             npx remotion still out/bundle Thumbnail thumbnails/${EP}_ko_${V}.png --props="{\"ep\":\"$EP\",\"variant\":\"$V\",\"lang\":\"ko\"}" --log=error
           done
+          # 썸네일 v2(PAROHO_V2, 2026-11-18 war-docu에서 이식): 영문 A2 카피 시안도 렌더 (map-of-war는 영문 전용)
+          if grep -q "ALTS:${EP}\b" remotion/Thumbnail.tsx; then
+            npx remotion still out/bundle Thumbnail thumbnails/${EP}_en_A2.png --props="{\"ep\":\"$EP\",\"variant\":\"A2\",\"lang\":\"en\"}" --log=error
+          fi
           # 유튜브 썸네일 한도 2MB: 1.9MB 넘는 PNG는 업로드용 JPG를 함께 만든다
           python3 -c "import glob,os; from PIL import Image; [Image.open(p).convert('RGB').save(p[:-4]+'.jpg', quality=90, optimize=True) for p in glob.glob('thumbnails/${EP}_*_A*.png') if os.path.getsize(p) > 1900000]"
           git config user.name "map-of-war-bot" && git config user.email "actions@users.noreply.github.com"

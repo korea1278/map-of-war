@@ -32,8 +32,22 @@
    - `MapView` 3D 지형 비행(`CatmullRomCurve3`), SVG Path 스트로크 진격선 및 파티클 스웜, 밀리터리 Tactical HUD 오버레이 표준 유지.
    - 자막 싱크는 통으로 추출된 `act1.mp3` ~ `act7.mp3`의 실제 음파 파형에 맞춰 동기화할 것 (오차 ±0.5초 이내).
 
+5. 초반 60초 모순 누적 후킹 구조 (2026-11-18 war-docu EP29에서 이식 · 상세는 [`docs/HOOK_STANDARD.md`](HOOK_STANDARD.md))
+   - **사건 직격(0~10초) → 모순 3단 누적(10~40초, "A였다. 그런데도 B였다." × 3) → `X` 마크 반전(통념 부정 + "Or was it?") → 중앙 핵심 질문 카드(50~60초)** 순서를 지킬 것.
+   - 앵글 후보 3개(갈등형·숫자형·질문형)를 모순 3단에 순서대로 쓰고, 핵심 질문은 본편 후반에 명시적으로 회수(대본 머리에 `회수 표시`).
+   - 화면 부품: `LeftStatHud`(좌측 수치 HUD) · `NegationOverlay`(붉은 X) · `CoreQuestionCard`(중앙 질문 카드) · `troops`(병력 대비 대열) — 장면 `"hook"` 필드.
+
+6. 4~6초 단위 시각 레이어 교차
+   - 첫 60초는 4~6초마다 서로 다른 종류의 화면 레이어(3D 지도 비행 · HUD 수치 · 병력 대열 · 사료 사진 강조 · X 반전 · 질문 카드)로 교차하고, 같은 종류를 2회 연속 쓰지 않는다. 본편은 3~5초마다 장면 전환 또는 `on` 팝업 1개.
+
+7. GitHub Actions 비대기(Non-Blocking) 실행 원칙
+   - 렌더링(`make-video.yml`) dispatch 후 **세션 안에서 `gh run watch`·폴링으로 완료를 기다리지 않는다.** dispatch 성공을 확인하면 즉시 사용자에게 "컴퓨터를 꺼도 된다" 안내를 맨 첫 줄로 출력하고, 완료 확인은 `send_later` 예약으로 넘긴다 (사용자는 PC방에서 작업 — 대기 시간이 곧 비용).
+   - 엔진·문서만 바꾸는 작업(이번 이식처럼)은 렌더 워크플로를 실행하지 않고 push 후 바로 종료한다.
+
 ---
 ## 구현 메모 (Claude용 · 엔진 현황과의 차이)
 - 2번: 이미 구현됨 — 보드 `"tts_mode": "act"` + 장면별 `"act": n` → `pipeline/tts.py main_acts()`가 막마다 1회 호출해 `public/ep/<ep>/tts/acts/act<n>.mp3` 저장 후 글자 타임스탬프로 장면 분할
 - 3번: **구현 완료 (2026-11-13, war-docu와 같은 엔진 코드)** — 보드 최상단 `"sfx_policy": "doc"` + `"bgm_rel_db": -24`. `pipeline/timeline.py doc_sfx()`가 금지 효과음(`boom`·`hit`·`artillery`(근거리)·`mg`·`drum`·`pop`) 삭제, 콜아웃 자동 pop 제거, 막 전환(`chapter`)마다 `whoosh` 스윕 1회 자동, 같은 효과음 15초 쿨다운, 볼륨은 나레이션 대비 dB(`whoosh`·`ping` -26 / `artillery_far`·`wind`·`tank` -30 / `water`·`birds` -32, cue `"db"`로 -24~-32 조정). 효과음·BGM LUFS는 `public/sfx/loudness.json`·`public/bgm/loudness.json`. 레이더 핑 `public/sfx/ping.mp3`(ffmpeg 합성, 비용 0). 장면에 넣을 것: 3D 비행 `whoosh`, 클라이맥스 `artillery_far`·`wind`, 핵심 록온 `ping`. 적용 사례: war-docu `episodes/ep26-seungho/storyboard.json`
-- 4번: 자막 싱크 허용 오차를 ±0.5초로 — `pipeline/check_sync.py` 기준(현재 ±1.0초)을 영문 보드에서 0.5로 강화
+- 4번: **구현 완료 (2026-11-18 war-docu에서 이식)** — 보드 최상단 `"sync_limit": 0.5`를 넣으면 `pipeline/check_sync.py`가 ±0.5초로 검사 (없으면 예전 ±1.0초). 영문 자막 한 줄은 44자 고정(`sub_max`는 한국어 보드 전용)
+- 5·6번: **구현 완료 (2026-11-18 war-docu EP29 `e8ef7627`에서 이식)** — `remotion/Hook.tsx`(HookOverlays·TroopsV), `Video.tsx`(장면 `hook` 있으면 오버레이), `Visuals.tsx`(`troops`), `timeline.py`(장면 `hook` 통과 · `xOn`/`checkOn` 변환). 사용법은 `docs/HOOK_STANDARD.md`
+- 화면 업그레이드 2단계(`Stage.tsx` stage·flatmap·flaggrid·checklist·reasons·PhotoTag/PhotoMarks · 캐릭터 face/prop/anim)·`public/chars/` 44장·`public/ui/paper.jpg`도 같은 날 이식 완료
