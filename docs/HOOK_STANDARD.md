@@ -2,7 +2,7 @@
 
 > 2026-11-18 `war-docu`에서 이식. 원본은 war-docu EP29 대전(`ep29-daejeon`)에 처음 적용된 후킹 구조와 `remotion/Hook.tsx` 부품이다.
 > ⚠️ war-docu 코드·대본은 `docs/HOOK_STANDARD.md`를 참조하지만, 이식 시점(2026-11-18 커밋 `e8ef7627`)에 war-docu 저장소에는 이 문서도, 이식 지시서에 적힌 `docs/HOOK_ANALYSIS_JIDOSA.md`도 커밋돼 있지 않았다. 그래서 이 문서는 EP29 대본(`episodes/ep29-daejeon/script.md`)·`Hook.tsx`·이식 지시서 요약으로 다시 정리한 것이다. 원본 분석 문서가 war-docu에 올라오면 이 문서에 합칠 것.
-> 적용: **`ep09` 이후 모든 영문 롱폼** (`ep08-chosin`은 제외). `docs/LONGFORM_STANDARD.md`와 함께 지킨다. 화면 문구·대사는 100% 영어.
+> 적용: **`ep01`부터 모든 영문 롱폼** (참고용 `ep08-chosin`은 제외). `docs/LONGFORM_STANDARD.md`와 함께 지킨다. 화면 문구·대사는 100% 영어.
 
 ## 1. 첫 60초 구조 — 모순 누적형 콜드 오프닝
 

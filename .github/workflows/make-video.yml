@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "에피소드 폴더 이름 (episodes/ 아래. 예: ep08-chosin)"
-        default: "ep08-chosin"
+        description: "에피소드 폴더 이름 (episodes/ 아래. 예: ep01-marathon)"
+        default: "ep01-marathon"
         required: true
       mode:
         description: "full = 최종 MP4 / preview = 재료+미리보기만 / free = 무료 점검 / check = API 점검 / scout = 사진 후보 수집 / thumb = 썸네일 그림 생성+렌더링만"

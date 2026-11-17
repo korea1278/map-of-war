@@ -6,7 +6,7 @@
 - 사용자는 PC방에서 작업한다. 로컬 설치를 요구하지 말고 모든 렌더링은 GitHub Actions에서 한다.
 - 엔진 코드(pipeline·remotion·workflows)는 `war-docu`에서 복사해 왔다. 두 저장소는 자동 동기화되지 않으므로, `war-docu`의 엔진 개선이 영문판에 필요하면 그때 옮겨 온다.
 
-> ## ⚠️ 필수: [`docs/LONGFORM_STANDARD.md`](docs/LONGFORM_STANDARD.md) 영구 제작 표준 준수 (2026-11-13 사용자 지시 · `ep09` 이후 모든 영문 롱폼 · `ep08-chosin`은 제외·API 재호출 금지)
+> ## ⚠️ 필수: [`docs/LONGFORM_STANDARD.md`](docs/LONGFORM_STANDARD.md) 영구 제작 표준 준수 (2026-11-13 사용자 지시 · **`ep01`부터 모든 영문 롱폼** · 참고용 `ep08-chosin`은 제외·API 재호출 금지)
 > 새 에피소드 작업 전에 이 문서를 먼저 읽고 따른다. 아래 규칙과 충돌하면 그 문서가 우선. 핵심 요약:
 > 1. **언어 분리** — 대화·보고·오류 안내는 한국어 / 대본·자막·썸네일 카피·제목·설명은 100% 영어(US 군사 다큐 톤)
 > 2. **막(Act) 단위 통 MP3** — 문장·줄 단위 ElevenLabs 호출 금지, 막 1개 = 1회 호출 = `act1.mp3`~`act7.mp3` (`tts_mode: "act"`). 괄호 지문 금지, 쉼표 과다 금지
@@ -18,11 +18,13 @@
 
 ## 제작 이력
 
+> ⚠️ **이 채널의 정식 에피소드는 아직 0편이다 (2026-11-18 사용자 확인).** 첫 편은 `ep01`부터 시작하고, 기획은 [`docs/EPISODE_ROADMAP_50.md`](docs/EPISODE_ROADMAP_50.md)의 EP01~EP50 순서를 따른다. 아래 `ep08-chosin`은 war-docu에서 분리할 때 함께 가져온 **참고용** 편(번호 체계에 포함하지 않음, 업로드된 정식 편 아님)이다.
+
 | EP | id | 나레이션 | 결과 | 메모 |
 |---|---|---|---|---|
 | 08 Battle of Chosin Reservoir (1950): The 17-Day March Out of Frozen Hell · 7막 | `ep08-chosin` | 3,175단어 · 약 18,000자 · 92장면 · target_sec 1230 | 미리보기 20:18 (war-docu에서 실행, 2026-11-12, 3,149단어) → 7막 s87에 2문장 보강(+약 12초) · s63 어두운 코르세어 사진을 근접 항공 지원 사진으로 교체 | 지시서 2,600~2,900단어는 실측 환산 18:50이라 러닝타임 우선 보강. 미드롤 `s31`·`s56`·`s80`, CTA1 3막 끝 `s43`, CTA2 7막 끝 `s91`. 그림 9장은 war-docu EP06 `jangjin`에서 복사(파일·서명) + 새 그림 14장, 사진 26장 war-docu 검증 핀. 지형 `yudam_zoom`(z13)·`funchilin_zoom`(z14). 고지 1282·1240·1403·1081·헬파이어 밸리 좌표 개략 |
 
-**분량 환산 (영문 Adam 1.02배속 실측 — 새 내레이터는 말 속도가 다를 수 있으니 ep09 미리보기 실측으로 갱신할 것)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
+**분량 환산 (영문 Adam 1.02배속 실측 — 새 내레이터는 말 속도가 다를 수 있으니 ep01 미리보기 실측으로 갱신할 것)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
 
 ## ★ 기획 원칙 — 앵글 전환 & 도입부 1분 (2026-11-12 사용자 지시 · 유튜브 피드백 반영 · 다음 편부터 war-docu·map-of-war 공통 영구 적용)
 1. **소재를 풀어내는 앵글 전환** — 전투명에 기대지 말고 **인간적 갈등 · 극적인 숫자 · 미스터리 질문**으로 포장한다
@@ -53,7 +55,7 @@
 - 사용법·필드는 war-docu `CLAUDE.md`의 '화면 업그레이드 2단계' 절과 war-docu `episodes/ep26-seungho/make_board.py` 헬퍼(C·pop·stage·flat·fpin·route·reasons·checklist) 참고. 영문 화면 문구(말풍선·카드·HUD·질문 카드)는 영어로 (`question.kicker` 기본값은 영문 보드에서 `■ THE QUESTION ■`)
 - 새 나라 캐릭터는 SVG 볼 자동 대체(0원)
 
-## ★ 썸네일 표준 v2 (2026-11-18 war-docu에서 이식 · `ep09` 이후 영문 A안 기본 · `ep08-chosin`은 기존 공식 유지)
+## ★ 썸네일 표준 v2 (2026-11-18 war-docu에서 이식 · `ep01`부터 영문 A안 기본 · 참고용 `ep08-chosin`은 기존 공식 유지)
 - **고정 인물 흑백 사진 폐기** (반복 기시감·CTR 저하) → **에피소드 고유 전술 비주얼을 배경 전체(Full-Bleed)로** (결정적 전황 재연 그림 `ep/<ep>/ai/thumb_bg.jpg` 또는 3D 지형)
 - **하단 다크 비네팅** + 가장자리 비네트, **고대비 2줄 핵심 카피** — 기존 대비 2.5~3배(최대 340px, 최소 120px), 실측 폭으로 좌 60px~우측 재생시간 배지 여백 200px 안을 꽉 채움, 검은 외곽선 7% + 그림자. Line 1 흰색 / Line 2 머스터드 옐로 `#FFD400`(`color2`로 변경 가능). 영문 글꼴 Montserrat Black
 - 선택: 좌상단 붉은 배지(`badge`, 예: `"JULY 20, 1950"`), 타깃 링(`targets`)·화살표(`arrows`)
@@ -79,7 +81,7 @@
    - 문장은 `.`/`?`에서 나뉜다 — `Oliver P. Smith`처럼 약자 마침표는 쓰지 말 것 (문장이 쪼개짐)
    - 사실은 웹 검색으로 확인, 확정 못 한 것(발언 원문·좌표·수치)은 목록으로 남겨 전달 때 알린다
 2. **스토리보드** — `episodes/<ep>/make_board.py`로 script.md 문장을 순서대로 장면에 배정해 `storyboard.json` 생성 (형식은 `episodes/ep08-chosin/`)
-   - 보드 상단: `"lang": "en"`, `"voice": "Srd5jY77m6kKijR9vy6R"`(채널 기본 내레이터, 2026-11-18~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep09~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
+   - 보드 상단: `"lang": "en"`, `"voice": "Srd5jY77m6kKijR9vy6R"`(채널 기본 내레이터, 2026-11-18~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep01~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
    - 장면마다 `"act": n` — **막 단위 TTS**: 막마다 일레븐랩스 1회 호출 → `public/ep/<ep>/tts/acts/act<n>.mp3` (지시서의 act1~act7 통 MP3) → `tts.py`가 글자 타임스탬프로 장면별 mp3·json으로 잘라 자막 싱크를 맞춘다. 문장 단위 생성 금지
    - 막 하나의 문장을 바꾸면 **그 막 전체가 다시 생성**된다(크레딧 약 2,500자). 수정은 막 단위로 모아서
    - 지도: `flight`(카메라 비행), `hud: true`(전술 HUD) + **`temp: "-40°F"`(HUD 온도 표시, EP08 추가)**, `tilt`, 아이템 `swarm`·`obj`·`clash`·`lock`·`shock`·`radar`·`badge`·`line`·`unit`·`arrow`
@@ -98,7 +100,7 @@
      ```
    - dispatch 직후 `send_later`로 확인 예약(20분 장편 약 2시간 10분~3시간). "끝나면 말씀해 주세요"로 미루지 말 것
 5. **검증** — Releases MP4를 REST로 받아 길이(목표 ±10초), 음량 -15 LUFS ±1(`ffmpeg -af ebur128`), 지도 장면 프레임 포함 샘플 프레임 육안 확인, SRT·`logs/sync_check_<ep>.txt`·`logs/subs_check_<ep>.txt`
-6. **썸네일** — **`ep09`부터는 위 '썸네일 표준 v2'** (`PAROHO_V2` 등록 → `mode=thumb`). 아래는 EP08까지의 예전 공식(영문): 좌측 3D 설산 작전 지도 + 우측 인물 흑백 누끼(`thumb_subject`) · 상단 인용 레드 `#FF3B30` · Line 1 흰색 100px · Line 2 옐로 `#FFE500` 112px · 우측 하단 재생시간 배지 여백 200px. 렌더 후 PNG를 직접 열어 확인, 1.9MB 넘으면 JPG
+6. **썸네일** — **`ep01`부터는 위 '썸네일 표준 v2'** (`PAROHO_V2` 등록 → `mode=thumb`). 아래는 참고용 `ep08-chosin`에 쓴 예전 공식(영문): 좌측 3D 설산 작전 지도 + 우측 인물 흑백 누끼(`thumb_subject`) · 상단 인용 레드 `#FF3B30` · Line 1 흰색 100px · Line 2 옐로 `#FFE500` 112px · 우측 하단 재생시간 배지 여백 200px. 렌더 후 PNG를 직접 열어 확인, 1.9MB 넘으면 JPG
 7. **전달** (한 번에) — Releases 링크, SRT, 썸네일, **영문** 제목 후보 3개·설명글(목차 타임스탬프는 SRT 실제 시각, 채널명·인사말 없이, 참고 자료·재연 일러스트 고지)·태그, 카테고리 Education, 확인 안 된 사실 목록. 설명은 한국어로
 
 ## 2. 고정 규격
@@ -107,7 +109,7 @@
 |---|---|
 | 해상도 / 인코딩 | 1920×1080, 30fps, H.264 8Mbps, AAC 192k (20분 약 1.2GB) |
 | 음량 | 렌더 후 `loudnorm` -15 LUFS |
-| 나레이션 | ElevenLabs `Srd5jY77m6kKijR9vy6R` (2026-11-18~ 기본 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(완성편·API 재호출 금지) |
+| 나레이션 | ElevenLabs `Srd5jY77m6kKijR9vy6R` (2026-11-18~ 기본 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — 참고용 `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(API 재호출 금지) |
 | 하단 자막 | Roboto Condensed 64px · 한 줄 44자 · 루트 글로벌 오버레이(z 9999)에서만 |
 | 제목 글꼴 | Oswald |
 | BGM | `public/bgm/` 공용 6곡 고정 (drone·theme·tension·march·analysis·somber), Music API 호출 금지 |

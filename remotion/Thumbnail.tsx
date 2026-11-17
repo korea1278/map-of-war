@@ -1481,7 +1481,7 @@ export interface ThumbV2Props {
 export const PAROHO_V2: Record<string, ThumbV2Props> = {
   // map-of-war(영문): 새 에피소드마다 여기에 항목을 추가하면 A안(en)이 v2 디자인으로 렌더된다. 카피는 100% 영어, 줄당 2~4단어.
   // 예시 (war-docu EP29 대전 원본 — 배경 파일은 해당 에피소드 폴더에 있을 때만 렌더 가능):
-  // "ep09-xxx": { bg: "ep/ep09-xxx/ai/thumb_bg.jpg", bgPos: "50% 38%", line1: "THE GENERAL", line2: "KILLED A TANK", badge: "JULY 20, 1950", alt: { line1: "FIRST STRIKE", line2: "10 T-34s DOWN" } }, // ALTS:ep09-xxx
+  // "ep01-xxx": { bg: "ep/ep01-xxx/ai/thumb_bg.jpg", bgPos: "50% 38%", line1: "THE GENERAL", line2: "KILLED A TANK", badge: "JULY 20, 1950", alt: { line1: "FIRST STRIKE", line2: "10 T-34s DOWN" } }, // ALTS:ep01-xxx
 };
 const V2 = { left: 60, safeRight: 200, bottom: 40, max: 340, min: 120, gap: -0.06 };
 // 영문 카피 글꼴 (사용자 표준: 영문 Montserrat Black) — map-of-war 이식 때 추가 (2026-11-18)
