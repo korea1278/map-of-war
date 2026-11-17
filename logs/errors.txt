@@ -1,1 +1,4 @@
 2026-11-17 21:27:23 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-17 21:44:04 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-17 21:50:58 ep01-marathon: 러닝타임 28분 18초 — 목표 20분 30초와 10초 이상 차이 (대본 분량 조정 필요)
+2026-11-17 21:51:08 ep01-marathon: 러닝타임 28분 18초 — 목표 20분 30초와 10초 이상 차이 (대본 분량 조정 필요)
