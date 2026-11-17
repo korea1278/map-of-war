@@ -1482,8 +1482,8 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
   // map-of-war(영문): 새 에피소드마다 여기에 항목을 추가하면 A안(en)이 v2 디자인으로 렌더된다. 카피는 100% 영어, 줄당 2~4단어.
   // 예시 (war-docu EP29 대전 원본 — 배경 파일은 해당 에피소드 폴더에 있을 때만 렌더 가능):
   // "ep01-xxx": { bg: "ep/ep01-xxx/ai/thumb_bg.jpg", bgPos: "50% 38%", line1: "THE GENERAL", line2: "KILLED A TANK", badge: "JULY 20, 1950", alt: { line1: "FIRST STRIKE", line2: "10 T-34s DOWN" } }, // ALTS:ep01-xxx
-  // EP01 마라톤 (기원전 490): 양익 포위 전술 비주얼 Full-Bleed — A안 = 로드맵 카피(THEY CHARGED / AT A RUN), A2 = 숫자형 앵글
-  "ep01-marathon": { bg: "ep/ep01-marathon/ai/thumb_bg.jpg", bgPos: "50% 40%", line1: "THEY CHARGED", line2: "AT A RUN", badge: "490 BC · MARATHON", alt: { line1: "10,000 FARMERS", line2: "VS AN EMPIRE" } }, // ALTS:ep01-marathon
+  // EP01 마라톤 (기원전 490, 한국어판): 양익 포위 전술 비주얼 Full-Bleed — A안 = 로드맵 카피, A2 = 질문형 앵글
+  "ep01-marathon": { bg: "ep/ep01-marathon/ai/thumb_bg.jpg", bgPos: "50% 40%", line1: "달려서 덮쳤다", line2: "제국이 도망쳤다", badge: "기원전 490년 · 마라톤", alt: { line1: "기병도 궁수도 없이", line2: "어떻게 이겼을까?" } }, // ALTS:ep01-marathon
 };
 const V2 = { left: 60, safeRight: 200, bottom: 40, max: 340, min: 120, gap: -0.06 };
 // 영문 카피 글꼴 (사용자 표준: 영문 Montserrat Black) — map-of-war 이식 때 추가 (2026-11-18)

@@ -86,10 +86,10 @@ jobs:
           if grep -q "ALTS:${EP}\b" remotion/Thumbnail.tsx; then
             npx remotion still out/bundle Thumbnail thumbnails/${EP}_en_A2.png --props="{\"ep\":\"$EP\",\"variant\":\"A2\",\"lang\":\"en\"}" --log=error
           fi
-          # map-of-war EP01~: 지시서 파일명으로도 복사 — thumbnails/<ep>/thumb_a.png (A안) · thumb_b.png (A2 시안)
+          # map-of-war EP01~ (2026-11-18 한국어 채널 '격전의 세계사'로 전환): 지시서 파일명으로도 복사 — thumbnails/<ep>/thumb_a.png (한국어 A안) · thumb_b.png (한국어 A2 시안)
           mkdir -p thumbnails/$EP
-          [ -f thumbnails/${EP}_en_A.png ] && cp thumbnails/${EP}_en_A.png thumbnails/$EP/thumb_a.png || true
-          [ -f thumbnails/${EP}_en_A2.png ] && cp thumbnails/${EP}_en_A2.png thumbnails/$EP/thumb_b.png || true
+          [ -f thumbnails/${EP}_ko_A.png ] && cp thumbnails/${EP}_ko_A.png thumbnails/$EP/thumb_a.png || true
+          [ -f thumbnails/${EP}_ko_A2.png ] && cp thumbnails/${EP}_ko_A2.png thumbnails/$EP/thumb_b.png || true
           # 유튜브 썸네일 한도 2MB: 1.9MB 넘는 PNG는 업로드용 JPG를 함께 만든다
           python3 -c "import glob,os; from PIL import Image; [Image.open(p).convert('RGB').save(p[:-4]+'.jpg', quality=90, optimize=True) for p in glob.glob('thumbnails/${EP}_*_A*.png') if os.path.getsize(p) > 1900000]"
           git config user.name "map-of-war-bot" && git config user.email "actions@users.noreply.github.com"

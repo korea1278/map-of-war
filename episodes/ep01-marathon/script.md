@@ -1,408 +1,408 @@
-# [Map of War EP01] They Charged at a Run: How Greek Farmers Drove an Empire Into the Sea (Battle of Marathon, 490 BC)
-### Episode ID `ep01-marathon` · 7 acts (Act 1 = cold open) · target 20:30 · narrator ElevenLabs Srd5jY77m6kKijR9vy6R · style v2 · LONGFORM_STANDARD · HOOK_STANDARD
-> Pure narration text for TTS: numbers spelled out, no stage directions, no parentheses, minimal commas. Screen design lives in storyboard.json.
-> Angle candidates: (1) Conflict: "Farmers with no horses and no bows attacked the army that had crushed every revolt" (2) Numbers: "Outnumbered two to one, yet the Persian dead outnumbered theirs more than thirty to one" (3) Question: "How did citizen-farmer hoplites with no cavalry or archers drive the world's largest empire into the sea?" → Hook stacks (1)→(2)→(3); the question card uses (3); thumbnail copy THEY CHARGED / AT A RUN.
-> Sources: Herodotus Histories 6.94–6.124 (Godley tr.), Cornelius Nepos Miltiades, the Suda (chōris hippeis), Pausanias 1.15 and 1.32, Plutarch, livius.org Marathon, World History Encyclopedia, historyofwar.org, modern estimates (Persian landing force ~20,000–25,000; Athenian ~9,000–10,000 + ~1,000 Plataeans).
-> Callback marks: the core question is answered explicitly in Act 7 · "no cavalry no archers" → Act 4 and Act 7 · "6,400 vs 192" → Act 6 · "at a run" → Act 5.
+# [격전의 세계사 EP01] 기병도 궁수도 없이 제국을 바다로 몰아낸 만 명의 농민 — 마라톤 전투 (기원전 490)
+### 에피소드 ID `ep01-marathon` · 7막(1막 = 콜드 오프닝) · 목소리 ElevenLabs Srd5jY77m6kKijR9vy6R · 연출 스타일 v2 · 롱폼 표준 · 초반 후킹 표준
+> 낭독용 순수 텍스트 (숫자는 한글 발음 · 괄호 지문·한자·영문 없음 · 쉼표 없음). 화면 구성은 storyboard.json
+> 앵글 후보: ① 갈등형 "말도 활도 없는 농민들이 제국 군대에 달려들었다" ② 숫자형 "두 배 열세인데 전사자는 서른 배 차이" ③ 질문형 "기병도 궁수도 없던 농민 중장보병은 어떻게 세계 최대 제국을 바다로 몰아냈을까" → 훅은 ①→②→③ 순서로 모순 누적, 질문 카드는 ③, 썸네일 "달려서 덮쳤다 / 제국이 도망쳤다"
+> 사료: 헤로도토스 『역사』 6권 94~124절, 코르넬리우스 네포스 『밀티아데스』, 『수다』 사전, 파우사니아스 1권, 플루타르코스, livius.org, World History Encyclopedia, historyofwar.org (현대 추정: 페르시아 상륙군 약 2만~2만 5천, 아테네 약 9천 + 플라타이아 약 1천)
+> 회수 표시: 핵심 질문은 제7막에서 회수 · '기병도 궁수도 없다'는 제4막·제7막 · '서른 배'는 제6막(6,400 대 192) · '달려서 돌격'은 제5막
 
-## ACT 1 · COLD OPEN [00:00–01:00]
+## 제1막 콜드 오프닝 [00:00–01:00]
 
-September four hundred ninety BC.
-The plain of Marathon twenty-six miles from Athens.
-Ten thousand Greek farmers in bronze stand in a single line.
-Across the plain waits the army of the largest empire the world had ever seen.
-Then the Greeks begin to run.
-Persia brought cavalry and archers.
-Yet the men running at them had neither.
-They were outnumbered at least two to one.
-Yet by sunset the Persian dead outnumbered theirs more than thirty to one.
-Every rule of war said a phalanx must advance slowly or it would fall apart.
-Yet these men ran straight into the arrows.
-It sounds like a miracle.
-A lucky charge by desperate men.
-Or was it?
-How did citizen-farmer hoplites with no cavalry or archers drive the world's largest empire into the sea?
-The story begins with a king who wanted to hear one sentence every single day.
+기원전 사백구십년 구월.
+아테네에서 약 사십 킬로미터 떨어진 마라톤 평원.
+청동 갑옷을 입은 그리스 농민 만 명이 한 줄로 늘어섭니다.
+평원 건너편에는 세상에서 가장 큰 제국의 군대가 기다리고 있었죠.
+그런데 그리스군이 갑자기 달리기 시작합니다.
+페르시아는 기병과 궁수를 데려왔습니다.
+그런데 달려드는 그리스군에게는 둘 다 없었죠.
+병력은 적어도 두 배 이상 밀렸습니다.
+그런데 해가 질 무렵 페르시아 전사자는 그리스의 서른 배가 넘었습니다.
+전쟁의 상식은 밀집 대형은 천천히 걸어야 무너지지 않는다고 말합니다.
+그런데 이들은 화살 속으로 곧장 뛰어들었습니다.
+마치 기적처럼 들리죠.
+궁지에 몰린 사람들의 운 좋은 돌격 말입니다.
+그런데 정말 그랬을까요?
+기병도 궁수도 없던 농민 중장보병은 어떻게 세계 최대 제국을 바다로 몰아냈을까요?
+이야기는 날마다 같은 말을 듣고 싶어 했던 한 왕에게서 시작합니다.
 
-## ACT 2 · THE KING WHO REMEMBERED [01:00–04:00]
+## 제2막 잊지 않은 왕
 
-His name was Darius.
-Great King of Persia.
-His empire stretched from the Aegean Sea to the Indus River.
-It held perhaps a third of all the people on Earth.
-In four hundred ninety-nine BC the Greek cities of Ionia rose against him.
-They were Greeks living under Persian rule on the coast of what is now Turkey.
-Across the sea two small cities sent ships to help them.
-Athens sent twenty ships.
-Eretria sent five.
-Together the rebels marched inland and burned Sardis.
-Sardis was the seat of Persian power in the west.
-The revolt took six years to crush.
-But Darius did not forget the strangers who had joined it.
-Herodotus tells us that when he heard the name Athens he asked who the Athenians were.
-Then he took his bow and shot an arrow into the sky.
-He ordered a servant to speak to him three times before every dinner.
-Master remember the Athenians.
-In four hundred ninety-two BC the first punishment sailed west.
-A storm off Mount Athos smashed much of the fleet against the rocks.
-Darius tried again.
-Two years later a new fleet crossed the Aegean.
-Herodotus says it had six hundred warships.
-Modern historians think it carried perhaps twenty to twenty-five thousand fighting men.
-It also carried something Greek armies rarely had.
-Horses.
-Transports were built just to carry cavalry across the sea.
-The commanders were Datis a Mede and Artaphernes the king's own nephew.
-Their orders were simple.
-Enslave Athens and Eretria and bring the prisoners to the king.
-The fleet moved from island to island.
-Naxos was burned.
-On the sacred island of Delos the Persians did something unexpected.
-They spared the temples and burned incense on the altar.
-The Great King wanted the Greeks to know he could be generous.
-To those who submitted.
-Then the Persians landed on the island of Euboea and laid siege to Eretria.
-For six days the city held.
-On the seventh day two of its own citizens opened the gates.
-The temples were burned.
-The people were put in chains.
-Eretria was gone.
-And Athens lay just across a narrow strait.
-On board the Persian fleet was an old Athenian.
-His name was Hippias.
-Twenty years earlier he had ruled Athens as a tyrant until the Athenians threw him out.
-Now he was coming home with a Persian army.
-If Athens fell Hippias would rule it again as the king's servant.
-He knew exactly where to land.
-A long bay on the east coast of Attica.
-Flat ground where horses could run.
-A place named after the wild fennel that grew there.
-Marathon.
+그의 이름은 다리우스.
+페르시아의 대왕이었습니다.
+그의 제국은 에게해에서 인더스강까지 뻗어 있었죠.
+당시 세계 인구의 삼분의 일쯤이 이 제국에 살았다고 합니다.
+기원전 사백구십구년 이오니아의 그리스 도시들이 반란을 일으킵니다.
+지금의 튀르키예 해안에 살며 페르시아의 지배를 받던 그리스인들이었죠.
+바다 건너 작은 두 도시가 이들을 돕겠다며 배를 보냈습니다.
+아테네가 배 스무 척을 보냈고요.
+에레트리아가 다섯 척을 보냈습니다.
+반란군은 내륙으로 쳐들어가 사르디스를 불태웁니다.
+사르디스는 페르시아 서부 통치의 중심지였거든요.
+반란을 진압하는 데 육 년이 걸렸습니다.
+하지만 다리우스는 반란을 도운 바다 건너 이방인들을 잊지 않았죠.
+헤로도토스에 따르면 그는 아테네라는 이름을 듣고 아테네인이 누구냐고 물었다고 합니다.
+그러고는 활을 들어 하늘로 화살을 쏘았죠.
+그리고 하인에게 저녁 식사 때마다 세 번씩 이렇게 말하라고 명령합니다.
+주인이시여 아테네인을 잊지 마소서.
+기원전 사백구십이년 첫 번째 응징 함대가 서쪽으로 떠납니다.
+그런데 아토스산 앞바다에서 폭풍을 만나 함대 상당수가 바위에 부서지고 말죠.
+다리우스는 다시 시도합니다.
+이 년 뒤 새 함대가 에게해를 건넙니다.
+헤로도토스는 전함이 육백 척이었다고 적습니다.
+현대 학자들은 싸울 병력을 이만에서 이만오천 명 정도로 봅니다.
+이 함대에는 그리스 군대에 거의 없던 것이 실려 있었습니다.
+바로 말이었죠.
+기병을 바다 건너 실어 나르기 위한 수송선까지 따로 만들었거든요.
+지휘관은 메디아 출신 다티스와 왕의 조카 아르타페르네스였습니다.
+명령은 간단했죠.
+아테네와 에레트리아를 노예로 만들어 대왕 앞에 끌고 오라.
+함대는 섬에서 섬으로 건너갔습니다.
+낙소스섬은 불에 탔죠.
+그런데 성스러운 섬 델로스에서는 뜻밖의 일이 벌어집니다.
+페르시아군이 신전을 건드리지 않고 제단에 향까지 피운 겁니다.
+대왕은 자비로울 수도 있다는 걸 그리스인들에게 보여 주고 싶었던 거죠.
+단 고개를 숙이는 자들에게만요.
+이어서 페르시아군은 에우보이아섬에 상륙해 에레트리아를 포위합니다.
+도시는 엿새를 버텼습니다.
+그런데 이레째 되는 날 시민 두 명이 안에서 성문을 열어 버립니다.
+신전은 불탔고요.
+주민들은 쇠사슬에 묶여 끌려갔습니다.
+에레트리아는 그렇게 사라졌죠.
+그리고 좁은 해협 바로 건너편에 아테네가 있었습니다.
+페르시아 함대에는 늙은 아테네인 한 명이 타고 있었습니다.
+그의 이름은 히피아스.
+이십 년 전 아테네를 다스리던 참주였는데 시민들에게 쫓겨난 인물이죠.
+그런 그가 이제 페르시아 군대를 이끌고 고향으로 돌아오고 있었습니다.
+아테네가 무너지면 히피아스는 대왕의 하수인으로 다시 아테네를 다스리게 되는 거죠.
+그는 어디에 상륙해야 할지 정확히 알고 있었습니다.
+아티카 동쪽 해안의 길쭉한 만.
+말이 마음껏 달릴 수 있는 평평한 땅.
+야생 회향이 자라서 그 풀 이름을 딴 곳.
+바로 마라톤이었습니다.
 
-## ACT 3 · THE PLAIN OF FENNEL [04:00–07:20]
+## 제3막 회향의 평원
 
-Imagine the plain from the hills above it.
-In front of you a curved beach about six miles long.
-Behind the beach at the northern end a great marsh.
-At the southern end a smaller marsh.
-And between them a flat open plain ringed by mountains.
-Two narrow roads led out of it toward Athens.
-For cavalry it was perfect ground.
-For a city with no cavalry it was a nightmare.
-When the news reached Athens the city split into two camps.
-One side wanted to stay behind the walls and wait.
-The other wanted to march out and meet the Persians at the beach.
-Walls had not saved Eretria.
-Traitors had opened them in a week.
-The man who argued hardest for marching out was a general named Miltiades.
-Miltiades was about sixty years old.
-And he knew the Persians better than any man in Athens.
-For years he had ruled a Greek colony on the shores of the Hellespont.
-He had served as a vassal of Darius himself.
-He had marched with the Persian army into Scythia.
-Herodotus even claims that Miltiades once urged the Greeks to destroy the king's bridge over the Danube and leave Darius stranded.
-The plan failed.
-But Miltiades had seen the Persian army up close.
-He knew how it fought.
-And he knew what it feared.
-Then he had joined the Ionian revolt and fled when it failed.
-A Persian squadron chased him all the way to Athens.
-They captured his eldest son.
-Back home his enemies put him on trial for tyranny.
-He was acquitted.
-Now this former servant of the Great King stood up in the Assembly and said march.
-Athens voted with him.
-Every man who could afford a shield a spear and a bronze helmet went.
-They were not professional soldiers.
-They were farmers potters olive growers and shopkeepers.
-They paid for their own armor.
-They fought beside their neighbors because their neighbors were the army.
-About nine thousand of them marched north over the mountains.
-At the same time Athens sent a runner to Sparta for help.
-His name was Philippides.
-He covered about one hundred fifty miles over mountain tracks.
-And he reached Sparta on the day after he left Athens.
-The Spartans said yes.
-But not yet.
-They were in the middle of a sacred festival.
-Their law forbade them to march before the full moon.
-That meant waiting about six days.
-So Athens would face the empire alone.
-Or almost alone.
-As the Athenians took up their positions a column appeared on the road from the west.
-It was the whole army of Plataea.
-About one thousand men from a small town in Boeotia.
-Years earlier Athens had protected Plataea from its powerful neighbor Thebes.
-Plataea had not forgotten.
-Together they made about ten thousand men.
-They camped at a sanctuary of Heracles at the edge of the plain.
-From there they blocked the road to Athens.
-A later Roman writer adds that they cut down trees and laid them across the ground in front of the camp.
-Any horseman who tried to charge would ride straight into a tangle of branches.
-On the beach below the Persian ships were drawn up in a long line.
-Their camp stretched along the shore near the great marsh.
-And somewhere in that camp an old man had a strange accident.
-Herodotus says Hippias sneezed so hard that one of his loose old teeth flew out.
-It fell into the sand and he could not find it.
-Hippias groaned.
-This land is not ours he said.
-My tooth has all the share of it.
+언덕 위에서 이 평원을 내려다본다고 상상해 보시죠.
+눈앞에 약 십 킬로미터 길이의 활처럼 휜 해변이 펼쳐집니다.
+해변 뒤 북쪽 끝에는 커다란 늪이 있고요.
+남쪽 끝에는 작은 늪이 있습니다.
+그리고 그 사이에 산으로 둘러싸인 평평한 들판이 펼쳐져 있죠.
+이 들판에서 아테네로 가는 길은 좁은 길 두 개뿐이었습니다.
+기병에게는 더없이 좋은 땅이었죠.
+하지만 기병이 없는 도시에는 악몽 같은 땅이었습니다.
+소식이 전해지자 아테네는 두 편으로 갈라졌습니다.
+한쪽은 성벽 안에서 기다리자고 했고요.
+다른 쪽은 해변으로 나가 페르시아군을 맞서자고 했습니다.
+성벽은 에레트리아를 지켜 주지 못했거든요.
+배신자들이 일주일 만에 성문을 열었으니까요.
+나가서 싸우자고 가장 강하게 주장한 사람은 밀티아데스라는 장군이었습니다.
+밀티아데스는 예순 살쯤 된 인물이었는데요.
+아테네에서 페르시아를 그보다 잘 아는 사람은 없었습니다.
+그는 헬레스폰토스 해협 근처 그리스 식민지를 오랫동안 다스렸고요.
+다리우스의 신하로 일한 적도 있었습니다.
+페르시아군을 따라 스키타이 원정에 나선 적도 있었죠.
+헤로도토스는 밀티아데스가 도나우강에 놓인 대왕의 다리를 끊어 다리우스를 고립시키자고 그리스인들을 부추겼다고까지 전합니다.
+그 계획은 실패했습니다.
+하지만 밀티아데스는 페르시아군을 아주 가까이서 지켜봤죠.
+그들이 어떻게 싸우는지 알았고요.
+무엇을 두려워하는지도 알았습니다.
+그 뒤 그는 이오니아 반란에 가담했다가 반란이 실패하자 달아났습니다.
+페르시아 함대가 아테네까지 그를 뒤쫓았고요.
+그의 맏아들은 붙잡히고 말았죠.
+고향에 돌아오자 정적들은 그를 참주 정치 혐의로 재판에 세웠습니다.
+하지만 그는 무죄를 받았죠.
+그렇게 한때 대왕의 신하였던 사람이 민회에서 일어나 출전하자고 외친 겁니다.
+아테네는 그의 말에 따랐습니다.
+방패와 창과 청동 투구를 마련할 수 있는 남자는 모두 나섰습니다.
+이들은 직업 군인이 아니었어요.
+농부와 도공과 올리브 농사꾼과 가게 주인들이었죠.
+갑옷도 자기 돈으로 마련했습니다.
+이웃이 곧 군대였기에 이웃과 나란히 싸웠던 거죠.
+약 구천 명이 산을 넘어 북쪽으로 행군했습니다.
+같은 때 아테네는 스파르타에 도움을 청하러 전령을 보냅니다.
+그의 이름은 필리피데스.
+그는 산길로 약 이백사십 킬로미터를 달렸는데요.
+아테네를 떠난 다음 날 스파르타에 도착했습니다.
+스파르타의 대답은 좋다였습니다.
+하지만 지금은 아니라고 했죠.
+마침 성스러운 축제 기간이었거든요.
+보름달이 뜨기 전에는 군대를 움직일 수 없다는 법이 있었습니다.
+엿새쯤 더 기다려야 한다는 뜻이었죠.
+아테네는 홀로 제국과 맞서야 했습니다.
+아니 거의 홀로였죠.
+아테네군이 자리를 잡을 무렵 서쪽 길에서 한 무리의 군대가 나타났습니다.
+플라타이아의 전군이었죠.
+보이오티아의 작은 도시에서 온 약 천 명이었습니다.
+몇 해 전 아테네는 강한 이웃 테베로부터 플라타이아를 지켜 준 적이 있었거든요.
+플라타이아는 그 은혜를 잊지 않았던 겁니다.
+이렇게 모인 병력은 약 만 명이었습니다.
+이들은 평원 가장자리의 헤라클레스 성역에 진을 쳤습니다.
+그곳에서 아테네로 가는 길을 막았죠.
+훗날 한 로마 작가는 이들이 나무를 베어 진영 앞에 깔아 두었다고 전합니다.
+돌격해 오는 기병은 나뭇가지 더미에 그대로 걸려 넘어지게 되는 거죠.
+해변 아래에는 페르시아 배들이 길게 줄지어 올라와 있었습니다.
+그들의 진영은 큰 늪 근처 해안을 따라 펼쳐져 있었죠.
+그리고 그 진영 어딘가에서 한 노인에게 묘한 일이 벌어집니다.
+헤로도토스에 따르면 히피아스가 재채기를 너무 세게 해서 흔들리던 이 하나가 빠져 버렸다고 합니다.
+이는 모래 속으로 떨어졌고 끝내 찾지 못했죠.
+히피아스는 탄식했습니다.
+이 땅은 우리 것이 아니구나.
+내 이빨이 차지한 몫이 전부로구나.
 
-## ACT 4 · FIVE VOTES AGAINST FIVE [07:20–10:40]
+## 제4막 다섯 대 다섯
 
-For several days nothing happened.
-The Greeks stayed on the high ground at the edge of the plain.
-The Persians stayed near the beach and their ships.
-Each side had a good reason to wait.
-The Greeks were waiting for Sparta.
-On open ground Persian cavalry and archers could destroy a line of heavy infantry from a distance.
-The Persians had their own reason.
-Hippias still had friends inside Athens.
-Every day the army sat at Marathon was another day for a traitor to open a gate.
-Athens had ten generals.
-One from each of its ten tribes.
-Each one commanded the whole army for one day in turn.
-And the ten were split exactly in half.
-Five said wait for the Spartans.
-Five said attack.
-One more man had a vote.
-The polemarch Callimachus.
-The war ruler of Athens for that year.
-Miltiades went to him.
-Herodotus gives us his words.
-Callimachus it is up to you now whether you enslave Athens or make her free.
-If we do not fight soon some great quarrel will shake our people.
-And they will go over to the Persians.
-But if we fight before the rot sets in we can win.
-Callimachus voted to fight.
-The generals who favored battle then handed their days of command to Miltiades.
-He accepted the gift.
-But he did not attack on their days.
-He waited until his own turn came.
-Why did he wait?
-Herodotus does not say.
-And here our sources go quiet.
-Look at the Greek army on paper.
-Heavy infantry and nothing else.
-No cavalry.
-No archers worth the name.
-The Persians had both.
-On any open field that should have decided the battle.
-But a much later Byzantine dictionary preserves a strange story.
-One night Ionian Greeks serving in the Persian army slipped across to the Athenian lines.
-They brought a message of only three words.
-The cavalry are away.
-Was it true?
-Historians still argue about it.
-The story appears only in sources written many centuries later.
-One theory goes like this.
-The Persians grew tired of the standoff.
-They decided to sail around the cape to Phaleron the harbor of Athens.
-They began loading the horses back onto the ships first.
-Horses are slow to load and could not be rushed.
-If that is right the Persian army on the beach was splitting in two.
-And for a few hours its most dangerous weapon was out of the fight.
-Whatever the reason something changed.
-At dawn the omens were good.
-Miltiades gave the order.
-The Greek army came down from the hills onto the plain.
+그 뒤 며칠 동안 아무 일도 일어나지 않았습니다.
+그리스군은 평원 가장자리 높은 곳에 머물렀고요.
+페르시아군은 해변과 배 근처에 머물렀죠.
+양쪽 모두 기다릴 이유가 있었습니다.
+그리스군은 스파르타를 기다리고 있었고요.
+탁 트인 들판에서는 페르시아의 기병과 궁수가 멀리서 중장보병을 무너뜨릴 수 있었거든요.
+페르시아에도 나름의 이유가 있었습니다.
+히피아스에게는 아테네 안에 아직 친구들이 있었던 거죠.
+군대가 마라톤에 머무는 하루하루가 배신자가 성문을 열 수 있는 하루였던 겁니다.
+아테네에는 장군이 열 명 있었습니다.
+열 개 부족에서 한 명씩 뽑았죠.
+장군들은 하루씩 돌아가며 전군을 지휘했습니다.
+그런데 이 열 명의 의견이 정확히 반으로 갈렸습니다.
+다섯은 스파르타를 기다리자고 했고요.
+다섯은 공격하자고 했죠.
+표를 가진 사람이 한 명 더 있었습니다.
+폴레마르코스 칼리마코스.
+그해 아테네의 전쟁 장관이었죠.
+밀티아데스는 그를 찾아갑니다.
+헤로도토스는 그때 밀티아데스가 한 말을 전합니다.
+칼리마코스여 아테네를 노예로 만들지 자유롭게 할지는 이제 당신에게 달렸소.
+지금 싸우지 않으면 시민들 사이에 큰 분열이 일어날 것이오.
+그러면 사람들은 페르시아 편으로 넘어갈 것이오.
+하지만 썩은 기운이 퍼지기 전에 싸운다면 우리는 이길 수 있소.
+칼리마코스는 싸우는 쪽에 표를 던졌습니다.
+그러자 싸우자는 쪽 장군들은 자기 지휘 날을 밀티아데스에게 넘겨줬죠.
+밀티아데스는 그 선물을 받았습니다.
+하지만 그들의 날에는 공격하지 않았어요.
+자기 차례가 올 때까지 기다렸습니다.
+그는 왜 기다렸을까요?
+헤로도토스는 말하지 않습니다.
+그리고 여기서 사료들은 입을 다뭅니다.
+그리스군을 장부로 한번 살펴보죠.
+중장보병뿐이었습니다.
+기병은 없었고요.
+궁수라 부를 만한 병력도 없었죠.
+페르시아에는 둘 다 있었습니다.
+탁 트인 들판이라면 그것만으로 승부가 났어야 했죠.
+그런데 훨씬 뒤에 만들어진 비잔티움의 한 사전에 묘한 이야기가 남아 있습니다.
+어느 날 밤 페르시아군에 있던 이오니아 그리스인들이 아테네 진영으로 몰래 건너왔다는 겁니다.
+그들이 전한 말은 단 몇 마디였습니다.
+기병이 떠났다.
+이게 사실이었을까요?
+역사가들은 지금도 논쟁하고 있습니다.
+이 이야기는 수백 년 뒤에 쓰인 기록에만 나오거든요.
+이런 학설이 있습니다.
+페르시아군은 대치에 지쳐 갔습니다.
+그래서 곶을 돌아 아테네의 항구 팔레론으로 배를 몰기로 합니다.
+그러려면 말부터 배에 실어야 했죠.
+말은 싣는 데 시간이 오래 걸리고 서두를 수도 없었거든요.
+이 학설이 맞다면 해변의 페르시아군은 둘로 나뉘고 있었던 겁니다.
+그리고 몇 시간 동안 가장 무서운 무기가 전장에서 빠져 있었던 거죠.
+이유가 무엇이든 무언가가 바뀌었습니다.
+새벽에 올린 제사의 징조는 좋았습니다.
+밀티아데스가 명령을 내립니다.
+그리스군이 언덕에서 내려와 평원으로 나아갔습니다.
 
-## ACT 5 · EIGHT STADES AT A RUN [10:40–14:20]
+## 제5막 팔 스타디온을 달리다
 
-Miltiades had a problem.
-The Persian line was much longer than his.
-If the Greeks formed up in their usual deep ranks the Persians would wrap around both ends.
-So he stretched his line to match theirs.
-To do it he made a choice that broke the rules.
-He thinned out the center.
-Only a few ranks deep.
-But he kept the two wings strong and deep.
-On the right stood Callimachus the polemarch.
-That was the place of honor.
-On the far left stood the Plataeans.
-In the thin center stood two of the tribes.
-Plutarch tells us who led them.
-Themistocles and Aristides.
-Two men who would shape the next twenty years of Greek history.
-Across the plain the Persians placed their best troops in the middle.
-Native Persians and the Saka.
-Fierce fighters from the steppes of Central Asia.
-The weaker contingents stood on the wings.
-Between the two armies lay at least eight stades of open ground.
-About a mile.
-Then came the moment that made the battle famous.
-The Greeks did not walk.
-They ran.
-Think about what that meant.
-A hoplite carried a round shield of wood and bronze nearly three feet across.
-He wore a bronze helmet and body armor.
-In all perhaps fifty pounds or more of equipment.
-A phalanx stayed alive only as long as it stayed together.
-Every man covered the man on his left with his shield.
-Running could tear that wall apart.
-The Persians watching from across the plain thought the Greeks had gone mad.
-Herodotus says they saw a small army without horses or archers rushing at them.
-They thought it was madness and certain death.
-But there was a reason for the run.
-Persian archers could fill the air with arrows.
-The faster you crossed the killing ground the fewer volleys you had to take.
-Many historians think the Greeks walked most of the way.
-Then they broke into a run for the last stretch inside bowshot.
-Either way Herodotus says they were the first Greeks he knew of to charge at a run.
-And the first to face the sight of Persian dress without fear.
-Until that day the very name of the Medes had terrified the Greeks.
-The two lines met with a crash of bronze on wicker.
-Persian infantry carried light shields of woven reeds.
-Many wore quilted linen instead of metal.
-Against heavy Greek spears and shields that was a deadly mismatch.
-But in the center the story was different.
-The Persians and the Saka struck the thin Greek center.
-And the center broke.
-The Greeks there gave way and fell back toward the hills.
-The Persians poured after them across the plain.
-For a moment it looked like the old story was repeating.
-Then came the turn.
-On both wings the deep Greek ranks crushed the weaker troops in front of them.
-The Persian wings broke and ran for the ships.
-Now the Greek wings faced the hardest test of all.
-The enemy was running.
-Every instinct said chase them.
-Kill them on the beach.
-Take the loot.
-They did not.
-The two wings let the beaten enemy go.
-They turned inward.
-And closed on the Persians who were still chasing the broken center.
-The Persian elite had pushed forward into a trap.
-Now Greek spears were coming at them from both sides.
-Two thousand years later military writers would call it a double envelopment.
-On that morning it was simply a slaughter.
+밀티아데스에게는 고민이 하나 있었습니다.
+페르시아군의 전열이 그리스군보다 훨씬 길었던 거죠.
+평소처럼 두껍게 대열을 짜면 페르시아군이 양쪽 끝을 감싸 버릴 수 있었습니다.
+그래서 그는 전열을 상대만큼 길게 늘였습니다.
+그러려면 상식을 깨는 선택을 해야 했죠.
+가운데를 얇게 만든 겁니다.
+겨우 몇 줄 깊이였습니다.
+대신 양쪽 날개는 두껍고 단단하게 남겨 뒀죠.
+오른쪽에는 폴레마르코스 칼리마코스가 섰습니다.
+그 자리는 가장 명예로운 자리였거든요.
+맨 왼쪽에는 플라타이아군이 섰습니다.
+얇은 가운데에는 두 부족이 섰는데요.
+플루타르코스는 이들을 이끈 사람이 누구였는지 전합니다.
+테미스토클레스와 아리스테이데스였죠.
+앞으로 이십 년 동안 그리스 역사를 움직일 두 사람이었습니다.
+평원 건너편 페르시아군은 가장 강한 부대를 가운데에 세웠습니다.
+페르시아 본토 병사들과 사카족이었죠.
+중앙아시아 초원에서 온 사나운 전사들이었습니다.
+약한 부대들은 양쪽 날개에 섰고요.
+두 군대 사이에는 적어도 팔 스타디온의 빈 땅이 있었습니다.
+약 일점오 킬로미터였죠.
+그리고 이 전투를 유명하게 만든 순간이 찾아옵니다.
+그리스군은 걷지 않았습니다.
+달렸습니다.
+이게 무슨 뜻인지 생각해 보시죠.
+중장보병은 지름이 거의 일 미터나 되는 나무와 청동으로 된 둥근 방패를 들었습니다.
+청동 투구를 쓰고 몸에는 갑옷을 걸쳤죠.
+다 합치면 이십 킬로그램이 넘는 무게였을 겁니다.
+밀집 대형은 함께 붙어 있을 때만 살아남을 수 있었습니다.
+병사마다 방패로 왼쪽 동료를 가려 줬거든요.
+달리다 보면 이 방패 벽이 찢어질 수 있었죠.
+평원 건너편에서 지켜보던 페르시아군은 그리스군이 미쳤다고 생각했습니다.
+헤로도토스에 따르면 그들 눈에는 말도 궁수도 없는 작은 군대가 달려오는 것으로 보였다고 하죠.
+그들은 그것을 광기이자 확실한 죽음이라고 여겼습니다.
+하지만 달린 데에는 이유가 있었습니다.
+페르시아 궁수들은 하늘을 화살로 뒤덮을 수 있었거든요.
+죽음의 땅을 빨리 건널수록 맞아야 할 화살 세례가 줄어드는 겁니다.
+많은 역사가들은 그리스군이 대부분 걸어서 다가갔다고 봅니다.
+그리고 화살이 닿는 마지막 구간에서 뛰기 시작했다는 거죠.
+어느 쪽이든 헤로도토스는 이들이 자신이 아는 그리스인 가운데 처음으로 달려서 돌격했다고 적습니다.
+그리고 페르시아 복장을 보고도 두려워하지 않은 첫 그리스인이었다고요.
+그날까지 메디아인이라는 이름만 들어도 그리스인들은 겁에 질렸거든요.
+두 전열이 청동과 고리버들이 부딪치는 굉음과 함께 맞붙었습니다.
+페르시아 보병은 갈대를 엮은 가벼운 방패를 들었고요.
+많은 병사가 쇠 대신 누빈 아마포 옷을 입었죠.
+그리스군의 무거운 창과 방패 앞에서 이건 치명적인 차이였습니다.
+하지만 가운데에서는 사정이 달랐습니다.
+페르시아 병사들과 사카족이 얇은 그리스군 가운데를 들이쳤습니다.
+그리고 가운데가 무너졌죠.
+그곳의 그리스군은 밀려나 언덕 쪽으로 물러났습니다.
+페르시아군은 그 뒤를 쫓아 평원으로 쏟아져 들어갔습니다.
+잠깐 동안은 익숙한 이야기가 되풀이되는 듯 보였죠.
+그런데 바로 그때 판이 뒤집힙니다.
+양쪽 날개에서 두꺼운 그리스 대열이 앞의 약한 부대들을 짓밟아 버린 겁니다.
+페르시아의 양 날개는 무너져 배를 향해 달아났습니다.
+이제 그리스 날개들은 가장 어려운 시험대에 올랐습니다.
+적이 도망치고 있었거든요.
+본능은 쫓으라고 외쳤습니다.
+해변에서 끝장을 내라고요.
+전리품을 챙기라고요.
+하지만 그들은 그러지 않았습니다.
+두 날개는 무너진 적을 그냥 보내 줬습니다.
+그리고 안쪽으로 방향을 틀었죠.
+무너진 그리스 가운데를 쫓던 페르시아군을 양쪽에서 조여 들어간 겁니다.
+앞으로 밀고 나가던 페르시아 정예는 덫 속으로 들어간 셈이었죠.
+이제 그리스군의 창이 양쪽에서 그들을 덮쳤습니다.
+이천 년 뒤 군사 이론가들은 이것을 양익 포위라고 부르게 됩니다.
+하지만 그날 아침에는 그저 일방적인 학살이었습니다.
 
-## ACT 6 · FIRE AT THE SHIPS [14:20–17:40]
+## 제6막 배를 불태워라
 
-The Persian center collapsed.
-Thousands of men ran for the only safety they had left.
-The ships.
-Some fled into the great marsh.
-They did not know the ground.
-The marsh swallowed them.
-The rest streamed down to the beach.
-Herodotus says the Greeks chased them all the way to the sea shouting for fire.
-They wanted to burn the ships before they could escape.
-The fight at the water's edge was the bloodiest of the day.
-The polemarch Callimachus was killed there.
-So was Stesilaus one of the ten generals.
-An Athenian named Cynegirus grabbed the stern of a Persian ship as it pulled away.
-Someone on board cut off his hand with an axe.
-His brother was a young man named Aeschylus.
-Years later Aeschylus would become the first great playwright of Athens.
-The Greeks captured seven ships.
-But the rest got away.
-The Persian fleet backed off the beach and rowed out into the bay.
-In the middle of the fighting an Athenian named Epizelus suddenly lost his sight.
-No sword or arrow had touched him.
-Herodotus says he stayed blind for the rest of his life.
-He told people he had seen a giant warrior in heavy armor pass him by and strike down the man beside him.
-Today we might call it the shock of combat.
-Then the Greeks counted the dead.
-Herodotus gives the numbers.
-About six thousand four hundred Persians.
-One hundred ninety-two Athenians.
-Thirty-three Persians for every Athenian.
-The Persian figure may be rounded up and the Greek one may be too low.
-But even historians who doubt the numbers agree on one thing.
-It was a crushing defeat.
-And the day was not over.
-As the Persian ships pulled away someone on the mountain was seen flashing a shield in the sun.
-A signal.
-Herodotus says the Athenians later accused a powerful family in the city of treason.
-No one ever proved who did it.
-But the meaning was clear.
-The Persian fleet was not going home.
-It was heading south around Cape Sounion toward Phaleron.
-Toward Athens itself.
-And Athens had no army inside its walls.
-Every fighting man was at Marathon.
-So the exhausted Greeks did something almost as remarkable as the battle.
-They left a guard over the dead and the captured spoils.
-Then they marched back to Athens in full armor.
-About twenty-six miles.
-On the same day they had fought.
-When the Persian fleet finally appeared off Phaleron the army was already there.
-Camped at another sanctuary of Heracles outside the city.
-The same men the Persians had just met at Marathon.
-Datis looked at the shore.
-For a while his ships rode at anchor.
-Then they turned and sailed back to Asia.
-Two thousand Spartans arrived soon after the full moon.
-They had marched so fast that they reached Attica on the third day after leaving Sparta.
-They were too late.
-They asked to see the battlefield anyway.
-They walked among the Persian dead at Marathon.
-Then they praised the Athenians and went home.
+페르시아군의 가운데가 무너졌습니다.
+수천 명이 마지막으로 남은 피난처를 향해 달렸죠.
+바로 배였습니다.
+일부는 큰 늪으로 도망쳤는데요.
+그들은 그 땅을 몰랐습니다.
+늪이 그들을 집어삼켰죠.
+나머지는 해변으로 몰려갔습니다.
+헤로도토스에 따르면 그리스군은 불을 가져오라고 외치며 바다까지 그들을 쫓았다고 합니다.
+배가 달아나기 전에 불태우려 한 거죠.
+물가의 싸움은 그날 가장 처절했습니다.
+폴레마르코스 칼리마코스가 그곳에서 전사했습니다.
+열 명의 장군 가운데 한 명인 스테실라오스도 쓰러졌죠.
+키네게이로스라는 아테네인은 떠나는 페르시아 배의 고물을 붙잡았습니다.
+그러자 배 위의 누군가가 도끼로 그의 손을 내리쳤죠.
+그의 동생은 아이스킬로스라는 젊은이였습니다.
+훗날 아테네 최초의 위대한 비극 작가가 되는 인물이죠.
+그리스군은 배 일곱 척을 빼앗았습니다.
+하지만 나머지는 빠져나갔죠.
+페르시아 함대는 해변에서 물러나 만 바깥으로 노를 저어 나갔습니다.
+싸움이 한창일 때 에피젤로스라는 아테네인이 갑자기 앞을 보지 못하게 됐습니다.
+칼이나 화살에 맞은 것도 아니었죠.
+헤로도토스에 따르면 그는 평생 앞을 보지 못했다고 합니다.
+그는 무거운 갑옷을 입은 거대한 전사가 자기 곁을 지나 옆 사람을 쓰러뜨리는 것을 봤다고 말했습니다.
+오늘날로 치면 전투 충격이라고 부를 만한 일이죠.
+이윽고 그리스군은 전사자를 셌습니다.
+헤로도토스는 숫자를 전합니다.
+페르시아군 약 육천사백 명.
+아테네군 백구십이 명.
+아테네인 한 명당 페르시아인 서른세 명꼴이었죠.
+페르시아 쪽 숫자는 부풀려졌을 수 있고 그리스 쪽 숫자는 너무 적을 수도 있습니다.
+하지만 숫자를 의심하는 역사가들도 한 가지에는 동의합니다.
+페르시아의 참패였다는 겁니다.
+그런데 그날은 아직 끝나지 않았습니다.
+페르시아 배들이 물러날 때 산 위에서 누군가 햇빛에 방패를 번쩍이는 모습이 보였습니다.
+신호였죠.
+헤로도토스에 따르면 아테네인들은 훗날 도시의 한 유력 가문을 반역 혐의로 의심했다고 합니다.
+누가 그랬는지는 끝내 밝혀지지 않았죠.
+하지만 그 뜻은 분명했습니다.
+페르시아 함대는 집으로 돌아가는 게 아니었습니다.
+남쪽으로 수니온곶을 돌아 팔레론으로 향하고 있었죠.
+바로 아테네였습니다.
+그런데 아테네 성벽 안에는 군대가 없었습니다.
+싸울 수 있는 남자는 모두 마라톤에 있었거든요.
+그래서 지친 그리스군은 전투만큼이나 놀라운 일을 해냅니다.
+전사자와 전리품을 지킬 병력만 남겨 두고요.
+갑옷을 입은 채 아테네로 행군했습니다.
+약 사십 킬로미터였죠.
+전투를 치른 바로 그날이었습니다.
+페르시아 함대가 마침내 팔레론 앞바다에 나타났을 때 그리스군은 이미 그곳에 와 있었습니다.
+도시 밖 또 다른 헤라클레스 성역에 진을 친 채였죠.
+방금 마라톤에서 만났던 바로 그 사람들이었습니다.
+다티스는 해안을 바라봤습니다.
+그의 배들은 한동안 닻을 내리고 머물렀는데요.
+결국 뱃머리를 돌려 아시아로 돌아갔습니다.
+보름달이 지나고 얼마 뒤 스파르타군 이천 명이 도착했습니다.
+얼마나 서둘렀던지 스파르타를 떠난 지 사흘째에 아티카에 닿았다고 하죠.
+하지만 너무 늦었습니다.
+그래도 그들은 전장을 보고 싶다고 했습니다.
+그리고 마라톤에 쓰러진 페르시아 병사들 사이를 걸었죠.
+그러고는 아테네인들을 칭찬하고 돌아갔습니다.
 
-## ACT 7 · THE ANSWER [17:40–20:30]
+## 제7막 답
 
-The Athenians did something unusual with their dead.
-Normally the fallen were brought home and buried in the city.
-The men of Marathon were not.
-They were burned and buried where they fell under a great mound of earth.
-It still stands on the plain today.
-About thirty feet high.
-The Greeks call it the Soros.
-The Plataeans received a mound of their own nearby.
-The Athenians honored the one hundred ninety-two as heroes.
-Years later Aeschylus wrote some of the greatest plays of the ancient world.
-But according to an ancient biography his own epitaph did not mention a single play.
-It said only that he had fought at Marathon.
-And that the long-haired Mede knew his courage.
-There is one more famous story.
-A runner races from Marathon to Athens with news of the victory.
-He cries rejoice we have won and falls dead.
-That story first appears in writers who lived more than five hundred years later.
-Herodotus never tells it.
-His real runner was Philippides and his real run was to Sparta.
-But in eighteen ninety-six the first modern Olympics turned the legend into a race.
-They called it the marathon.
-Today it is run over twenty-six miles.
-So let us go back to the question we asked at the start.
-How did citizen-farmer hoplites with no cavalry or archers drive the world's largest empire into the sea?
-The answer is not a miracle.
-It is a chain of decisions.
-First the ground.
-The Greeks chose to block the roads at the edge of the plain where horses could not easily reach them.
-The marshes and the mountains protected their flanks.
-Second the timing.
-They waited until the Persian army was at its weakest.
-Perhaps because the cavalry was away.
-Third the run.
-It cut the time spent under Persian arrows to almost nothing.
-Fourth the armor.
-Once the lines met bronze and heavy spears beat wicker and linen.
-Fifth the formation.
-A thin center that could bend without breaking the whole line.
-Strong wings that won first.
-And discipline.
-The discipline to stop chasing a beaten enemy and turn inward when every instinct said run after them.
-And one more thing.
-Seventeen years before Marathon Athens had become a democracy.
-The men on that plain had voted to be there.
-They were not fighting for a king.
-They were fighting for their own city.
-Marathon did not end the war.
-Ten years later Darius's son Xerxes came back with a far larger army.
-And Miltiades did not live to see it.
-A year after his greatest victory he led a failed attack on the island of Paros.
-He came home wounded.
-Athens put him on trial and fined him fifty talents.
-He died of his wound before he could pay.
-His son paid the debt.
-But Marathon proved something no one in Greece had believed.
-The Great King could be beaten.
-His army could be broken.
-And free men fighting for their own city could stand their ground against an empire.
-The servant of Darius kept repeating the same sentence.
-Master remember the Athenians.
-In the end Persia had every reason to remember them.
-If you want to see how the Greeks faced the far larger invasion that came ten years later subscribe to Map of War.
-Like this video and share it with someone who loves history.
+아테네인들은 전사자를 특별한 방식으로 기렸습니다.
+원래 전사자는 고향으로 데려와 도시에 묻는 것이 관례였는데요.
+마라톤의 전사자들은 달랐습니다.
+그들은 쓰러진 자리에서 화장되어 커다란 흙무덤 아래 묻혔습니다.
+그 무덤은 지금도 평원에 남아 있습니다.
+높이는 약 구 미터.
+그리스인들은 이 무덤을 소로스라고 부릅니다.
+플라타이아인들도 근처에 따로 무덤을 받았죠.
+아테네인들은 백구십이 명을 영웅으로 받들었습니다.
+훗날 아이스킬로스는 고대 세계에서 가장 위대한 비극들을 씁니다.
+그런데 한 고대 전기에 따르면 그의 묘비명에는 작품 이야기가 한 줄도 없었다고 합니다.
+오직 그가 마라톤에서 싸웠다는 것뿐이었죠.
+그리고 머리를 길게 기른 메디아인이 그의 용기를 안다는 것뿐이었습니다.
+유명한 이야기가 하나 더 있습니다.
+한 전령이 승리 소식을 들고 마라톤에서 아테네까지 달려갑니다.
+기뻐하라 우리가 이겼다라고 외치고는 쓰러져 숨을 거두죠.
+이 이야기는 오백 년도 더 지난 뒤의 작가들에게서 처음 나옵니다.
+헤로도토스는 이 이야기를 전하지 않죠.
+그의 진짜 전령은 필리피데스였고 진짜 달리기는 스파르타까지였습니다.
+하지만 천팔백구십육년 첫 근대 올림픽이 이 전설을 경기로 만들었습니다.
+그 이름이 바로 마라톤이었죠.
+오늘날에는 사십이 점 일구오 킬로미터를 달립니다.
+이제 처음에 던진 질문으로 돌아가 보죠.
+기병도 궁수도 없던 농민 중장보병은 어떻게 세계 최대 제국을 바다로 몰아냈을까요?
+답은 기적이 아니었습니다.
+결정들이 이어진 사슬이었죠.
+첫째는 땅이었습니다.
+그리스군은 말이 쉽게 닿지 못하는 평원 가장자리에서 길을 막았습니다.
+늪과 산이 양옆을 지켜 줬죠.
+둘째는 때였습니다.
+그들은 페르시아군이 가장 약해진 순간까지 기다렸습니다.
+어쩌면 기병이 떠났기 때문일지도 모르죠.
+셋째는 달리기였습니다.
+페르시아의 화살 아래 있는 시간을 거의 없애 버렸거든요.
+넷째는 갑옷이었습니다.
+두 전열이 맞붙자 청동과 무거운 창이 고리버들과 아마포를 이겼습니다.
+다섯째는 대형이었습니다.
+전열 전체를 무너뜨리지 않고 휘어질 수 있는 얇은 가운데.
+그리고 먼저 이긴 단단한 양 날개.
+그리고 규율이었습니다.
+모든 본능이 쫓으라고 외칠 때 도망치는 적을 놓아주고 안쪽으로 돌아설 수 있는 규율 말이죠.
+그리고 한 가지가 더 있습니다.
+마라톤 전투 십칠 년 전 아테네는 민주정이 되었습니다.
+그 평원에 선 사람들은 스스로 투표해서 그 자리에 나온 겁니다.
+그들은 왕을 위해 싸운 게 아니었습니다.
+자기 도시를 위해 싸웠던 거죠.
+마라톤으로 전쟁이 끝난 것은 아닙니다.
+십 년 뒤 다리우스의 아들 크세르크세스가 훨씬 더 큰 군대를 이끌고 돌아오거든요.
+그리고 밀티아데스는 그날을 보지 못했습니다.
+최고의 승리를 거둔 이듬해 그는 파로스섬을 공격했다가 실패합니다.
+그는 다친 채 돌아왔습니다.
+아테네는 그를 재판에 세워 오십 탈란톤의 벌금을 물렸죠.
+그는 벌금을 내기도 전에 상처가 덧나 세상을 떠났습니다.
+빚은 그의 아들이 갚았습니다.
+하지만 마라톤은 그리스의 누구도 믿지 않던 것을 증명했습니다.
+대왕도 질 수 있다는 것.
+그의 군대도 무너질 수 있다는 것.
+그리고 자기 도시를 위해 싸우는 자유로운 시민들이 제국에 맞서 버틸 수 있다는 것을요.
+다리우스의 하인은 날마다 같은 말을 되풀이했습니다.
+주인이시여 아테네인을 잊지 마소서.
+결국 페르시아는 아테네인을 잊으려야 잊을 수 없게 됐습니다.
+십 년 뒤 그리스가 훨씬 더 큰 침공에 어떻게 맞섰는지 궁금하시다면 격전의 세계사를 구독해 주세요.
+좋아요와 함께 역사를 사랑하는 분께 이 영상을 나눠 주시면 큰 힘이 됩니다.

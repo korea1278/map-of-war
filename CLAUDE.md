@@ -1,14 +1,19 @@
-# map-of-war — 영문 전쟁사 다큐 《Map of War》 제작 운영 규칙 (SOP)
+# map-of-war — 한국어 전쟁사 다큐 《격전의 세계사》 제작 운영 규칙 (SOP)
 
-**이 저장소는 영문판 전용**이다 (2026-11-12 사용자 지시로 한국어 채널 '격전의 지도' 저장소 `korea1278/war-docu`에서 분리).
-- 영문판은 **사용자가 요청할 때만** 만든다. 한국어판은 `war-docu`에서 만들고 이 저장소에 넣지 않는다.
-- 사용자와의 대화·설명은 **항상 한국어**. 영상 에셋(대본·오디오·자막·썸네일 문구·제목·설명·태그)은 **100% 영어** (미국 시청자 · 켄 번스 다큐 톤 · US Western Military History 스타일).
+> ## 🔄 2026-11-18 사용자 지시: **이 저장소는 한국어 채널 '격전의 세계사'로 전환** (이전 '영문판 전용' 규칙 폐기)
+> - 영상 에셋(대본·나레이션·자막·화면 문구·질문 카드·썸네일 카피·제목·설명·태그)은 **100% 한국어**. 사용자와의 대화도 한국어
+> - 대본 문체는 격전의 지도(war-docu) 한국어 편과 같게: 낭독용 순수 텍스트, 숫자는 한글 발음(자막은 `SUBS`로 숫자), 괄호 지문·한자·영문·쉼표 없음, "~습니다/~죠/~거든요" 다큐 톤. 보드 `"lang": "ko"`, `"sub_max": 28`
+> - 목소리는 **ElevenLabs `Srd5jY77m6kKijR9vy6R` 그대로** (eleven_multilingual_v2 · stability 0.55 · similarity 0.78 · style 0.0)
+> - 썸네일 카피도 한국어 (`PAROHO_V2` → thumb 모드 `thumbnails/<ep>_ko_A.png`·`_ko_A2.png`, `thumbnails/<ep>/thumb_a.png`·`thumb_b.png`)
+> - 아래 본문에 남아 있는 '영문·영어' 표현은 참고용 `ep08-chosin`(영문, 건드리지 않음) 시절 기록이다. 새 편은 위 한국어 규칙이 우선
+> - 한국 전쟁(6·25) 위주의 '격전의 지도'는 계속 `korea1278/war-docu`에서 만든다. 이 저장소는 로드맵 `docs/EPISODE_ROADMAP_50.md`의 세계 전쟁사 50편
+
 - 사용자는 PC방에서 작업한다. 로컬 설치를 요구하지 말고 모든 렌더링은 GitHub Actions에서 한다.
-- 엔진 코드(pipeline·remotion·workflows)는 `war-docu`에서 복사해 왔다. 두 저장소는 자동 동기화되지 않으므로, `war-docu`의 엔진 개선이 영문판에 필요하면 그때 옮겨 온다.
+- 엔진 코드(pipeline·remotion·workflows)는 `war-docu`에서 복사해 왔다. 두 저장소는 자동 동기화되지 않으므로, `war-docu`의 엔진 개선이 필요하면 그때 옮겨 온다.
 
 > ## ⚠️ 필수: [`docs/LONGFORM_STANDARD.md`](docs/LONGFORM_STANDARD.md) 영구 제작 표준 준수 (2026-11-13 사용자 지시 · **`ep01`부터 모든 영문 롱폼** · 참고용 `ep08-chosin`은 제외·API 재호출 금지)
 > 새 에피소드 작업 전에 이 문서를 먼저 읽고 따른다. 아래 규칙과 충돌하면 그 문서가 우선. 핵심 요약:
-> 1. **언어 분리** — 대화·보고·오류 안내는 한국어 / 대본·자막·썸네일 카피·제목·설명은 100% 영어(US 군사 다큐 톤)
+> 1. **언어** — (2026-11-18 전환) 대화·보고와 영상 에셋 모두 한국어 (참고용 `ep08-chosin`만 영문)
 > 2. **막(Act) 단위 통 MP3** — 문장·줄 단위 ElevenLabs 호출 금지, 막 1개 = 1회 호출 = `act1.mp3`~`act7.mp3` (`tts_mode: "act"`). 괄호 지문 금지, 쉼표 과다 금지
 > 3. **절제된 다큐 효과음** (2026-11-13 수정 — 전면 삭제 취소) — '꽝' 폭발·타격음과 UI Pop 금지, 같은 소리 15초 쿨다운. 막 전환·3D 비행 때 묵직한 스윕 1회, 클라이맥스에만 먼 포성·바람 앰비언스(-28~-32dB), 핵심 록온 때 레이더 핑 1회. BGM은 나레이션 대비 -22~-26dB, 효과음은 -24~-32dB (`"sfx_policy": "doc"`, `"bgm_rel_db": -24`)
 > 4. **결정론 렌더** — `Date.now()`·`setTimeout` 금지, `frame/30` 기반. MapView 3D 비행·진격선·스웜·전술 HUD 유지. 자막 싱크는 막 통 MP3 실제 파형 기준 ±0.5초 이내
@@ -22,7 +27,7 @@
 
 | EP | id | 나레이션 | 결과 | 메모 |
 |---|---|---|---|---|
-| 01 They Charged at a Run: The Battle of Marathon (490 BC) · 7막(1막=콜드 오프닝) | `ep01-marathon` | 3,284단어 · 약 17,700자 · 181장면 · target_sec 1230 | 미리보기 실행 (2026-11-18, 새 내레이터 첫 실측 대기) | 한반도 밖 첫 전장 — 보드 `land`(그리스+주변국 ISO) · 래스터 `aegean_sea`·`attica_sea`·`marathon_zoom_sea`. 새 부품: 지도 `phalanx`(얇은 중앙·두꺼운 날개 전열 띠, bend/wrap/run) · `zone`(늪 빗금) · `ships`(해안 함선·출항), `troops` `profile` 정면 전열(gr/pe · runOn/bendOn/wrapOn). stage 미사용(고대 캐릭터 없음). 미드롤 `s042`·`s096`·`s125`, 사진 17장 핀(웹 검색 확인), AI 44장. 확인 안 된 사실 `episodes/ep01-marathon/unverified_facts.md`. 썸네일 v2 `PAROHO_V2["ep01-marathon"]` → thumb 모드가 `thumbnails/ep01-marathon/thumb_a.png`·`thumb_b.png`로도 복사 |
+| 01 달려서 덮쳤다: 마라톤 전투 (기원전 490) · 7막(1막=콜드 오프닝) · **한국어** | `ep01-marathon` | 약 10,000자 · 181장면 · target_sec 1230 | 처음엔 영문으로 만들었다가 사용자 지시로 한국어 전환(영문 미리보기는 TTS 전에 취소), 한국어 미리보기 실행 (2026-11-18, 새 내레이터 한국어 첫 실측 대기) | 격전의 지도 EP29 실측 8,632자 = 20:30 (Minho) — 이번 편은 약 10,000자라 새 내레이터 속도에 따라 23분 안팎 예상, 미리보기 실측 뒤 분량 판단. 한반도 밖 첫 전장 — 보드 `land`(그리스+주변국 ISO) · 래스터 `aegean_sea`·`attica_sea`·`marathon_zoom_sea`. 새 부품: 지도 `phalanx`·`zone`·`ships`, `troops` `profile` 정면 전열(gr/pe). stage 미사용. 미드롤 `s042`·`s096`·`s125`, 사진 17장 핀, AI 44장. 확인 안 된 사실 `episodes/ep01-marathon/unverified_facts.md`. 썸네일 v2 한국어 카피(달려서 덮쳤다 / 제국이 도망쳤다 · A2 기병도 궁수도 없이 / 어떻게 이겼을까?) |
 | 08 Battle of Chosin Reservoir (1950): The 17-Day March Out of Frozen Hell · 7막 | `ep08-chosin` | 3,175단어 · 약 18,000자 · 92장면 · target_sec 1230 | 미리보기 20:18 (war-docu에서 실행, 2026-11-12, 3,149단어) → 7막 s87에 2문장 보강(+약 12초) · s63 어두운 코르세어 사진을 근접 항공 지원 사진으로 교체 | 지시서 2,600~2,900단어는 실측 환산 18:50이라 러닝타임 우선 보강. 미드롤 `s31`·`s56`·`s80`, CTA1 3막 끝 `s43`, CTA2 7막 끝 `s91`. 그림 9장은 war-docu EP06 `jangjin`에서 복사(파일·서명) + 새 그림 14장, 사진 26장 war-docu 검증 핀. 지형 `yudam_zoom`(z13)·`funchilin_zoom`(z14). 고지 1282·1240·1403·1081·헬파이어 밸리 좌표 개략 |
 
 **분량 환산 (영문 Adam 1.02배속 실측 — 새 내레이터는 말 속도가 다를 수 있으니 ep01 미리보기 실측으로 갱신할 것)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
@@ -60,7 +65,7 @@
 - **육지 마스크**: 보드 최상단 `"land": {"home": ["300"], "foreign": ["792", ...]}` (world-atlas ISO 숫자 코드). 없으면 예전 한반도 기본값. 보이는 나라만 넣을 것(러시아 643처럼 큰 나라는 렌더가 느려짐)
 - **지형 래스터**: `pipeline/geo.py` `RASTERS`에 권역 추가(Actions `geo.py auto`가 새 권역만 생성). 바다는 `{"sea": True, "seeds": [...]}`, 근접 지도 장면은 `demSea: true`(make_board `m()`가 ZOOM 뷰에 자동)
 - **지도 아이템**: `phalanx` `{path:[왼끝,오른끝], depth:[열마다 두께], face:±1(정면), px, color, run/runOn, bend/bendOn(가운데 후퇴), wrap/wrapOn(양익 포위), text}` · `zone` `{path:[다각형], color, text}` · `ships` `{pts, rot, dx, dy, sailOn, n}`
-- **정면 전열 대열**: `troops` + `profile:[열마다 깊이]`, `side:"gr"|"pe"`, `vs:{side, profile}`, `runOn`·`bendOn`·`wrapOn`(상대의 얕은 날개 열은 wrap 때 패주해 사라짐). 라벨 `labels[].y`는 0.6 이하로(하단 자막 영역 피하기)
+- **정면 전열 대열**: `troops` + `profile:[열마다 깊이]`, `side:"gr"|"pe"`, `vs:{side, profile}`, `runOn`·`bendOn`·`wrapOn`(상대의 얕은 날개 열은 wrap 때 패주해 사라짐). 라벨 `labels[].y`는 0.52 이하로(하단 자막 영역 피하기)
 - 질문 카드 줄바꿈은 `\n` (`|` 아님). 사진 `tag`는 문자열
 
 ## ★ 썸네일 표준 v2 (2026-11-18 war-docu에서 이식 · `ep01`부터 영문 A안 기본 · 참고용 `ep08-chosin`은 기존 공식 유지)

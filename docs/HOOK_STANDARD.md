@@ -1,4 +1,6 @@
-# Map of War 초반 후킹 표준 (첫 60초 · 영문 롱폼)
+# 격전의 세계사 초반 후킹 표준 (첫 60초 · 롱폼)
+
+> 🔄 2026-11-18 한국어 채널로 전환 — 화면 문구·대사는 100% 한국어 (아래 영어 예시는 틀만 참고)
 
 > 2026-11-18 `war-docu`에서 이식. 원본은 war-docu EP29 대전(`ep29-daejeon`)에 처음 적용된 후킹 구조와 `remotion/Hook.tsx` 부품이다.
 > ⚠️ war-docu 코드·대본은 `docs/HOOK_STANDARD.md`를 참조하지만, 이식 시점(2026-11-18 커밋 `e8ef7627`)에 war-docu 저장소에는 이 문서도, 이식 지시서에 적힌 `docs/HOOK_ANALYSIS_JIDOSA.md`도 커밋돼 있지 않았다. 그래서 이 문서는 EP29 대본(`episodes/ep29-daejeon/script.md`)·`Hook.tsx`·이식 지시서 요약으로 다시 정리한 것이다. 원본 분석 문서가 war-docu에 올라오면 이 문서에 합칠 것.
