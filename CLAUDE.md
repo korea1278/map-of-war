@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | 08 Battle of Chosin Reservoir (1950): The 17-Day March Out of Frozen Hell · 7막 | `ep08-chosin` | 3,175단어 · 약 18,000자 · 92장면 · target_sec 1230 | 미리보기 20:18 (war-docu에서 실행, 2026-11-12, 3,149단어) → 7막 s87에 2문장 보강(+약 12초) · s63 어두운 코르세어 사진을 근접 항공 지원 사진으로 교체 | 지시서 2,600~2,900단어는 실측 환산 18:50이라 러닝타임 우선 보강. 미드롤 `s31`·`s56`·`s80`, CTA1 3막 끝 `s43`, CTA2 7막 끝 `s91`. 그림 9장은 war-docu EP06 `jangjin`에서 복사(파일·서명) + 새 그림 14장, 사진 26장 war-docu 검증 핀. 지형 `yudam_zoom`(z13)·`funchilin_zoom`(z14). 고지 1282·1240·1403·1081·헬파이어 밸리 좌표 개략 |
 
-**분량 환산 (영문 Adam 1.02배속 실측)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
+**분량 환산 (영문 Adam 1.02배속 실측 — 새 내레이터는 말 속도가 다를 수 있으니 ep09 미리보기 실측으로 갱신할 것)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
 
 ## ★ 기획 원칙 — 앵글 전환 & 도입부 1분 (2026-11-12 사용자 지시 · 유튜브 피드백 반영 · 다음 편부터 war-docu·map-of-war 공통 영구 적용)
 1. **소재를 풀어내는 앵글 전환** — 전투명에 기대지 말고 **인간적 갈등 · 극적인 숫자 · 미스터리 질문**으로 포장한다
@@ -79,7 +79,7 @@
    - 문장은 `.`/`?`에서 나뉜다 — `Oliver P. Smith`처럼 약자 마침표는 쓰지 말 것 (문장이 쪼개짐)
    - 사실은 웹 검색으로 확인, 확정 못 한 것(발언 원문·좌표·수치)은 목록으로 남겨 전달 때 알린다
 2. **스토리보드** — `episodes/<ep>/make_board.py`로 script.md 문장을 순서대로 장면에 배정해 `storyboard.json` 생성 (형식은 `episodes/ep08-chosin/`)
-   - 보드 상단: `"lang": "en"`, `"voice": "pNInz6obpgDQGcFmaJgB"`(Adam), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep09~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
+   - 보드 상단: `"lang": "en"`, `"voice": "Srd5jY77m6kKijR9vy6R"`(채널 기본 내레이터, 2026-11-18~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep09~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
    - 장면마다 `"act": n` — **막 단위 TTS**: 막마다 일레븐랩스 1회 호출 → `public/ep/<ep>/tts/acts/act<n>.mp3` (지시서의 act1~act7 통 MP3) → `tts.py`가 글자 타임스탬프로 장면별 mp3·json으로 잘라 자막 싱크를 맞춘다. 문장 단위 생성 금지
    - 막 하나의 문장을 바꾸면 **그 막 전체가 다시 생성**된다(크레딧 약 2,500자). 수정은 막 단위로 모아서
    - 지도: `flight`(카메라 비행), `hud: true`(전술 HUD) + **`temp: "-40°F"`(HUD 온도 표시, EP08 추가)**, `tilt`, 아이템 `swarm`·`obj`·`clash`·`lock`·`shock`·`radar`·`badge`·`line`·`unit`·`arrow`
@@ -107,7 +107,7 @@
 |---|---|
 | 해상도 / 인코딩 | 1920×1080, 30fps, H.264 8Mbps, AAC 192k (20분 약 1.2GB) |
 | 음량 | 렌더 후 `loudnorm` -15 LUFS |
-| 나레이션 | ElevenLabs 'Adam' `pNInz6obpgDQGcFmaJgB`, 1.02배속, `tts_mode: act` |
+| 나레이션 | ElevenLabs `Srd5jY77m6kKijR9vy6R` (2026-11-18~ 기본 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(완성편·API 재호출 금지) |
 | 하단 자막 | Roboto Condensed 64px · 한 줄 44자 · 루트 글로벌 오버레이(z 9999)에서만 |
 | 제목 글꼴 | Oswald |
 | BGM | `public/bgm/` 공용 6곡 고정 (drone·theme·tension·march·analysis·somber), Music API 호출 금지 |

@@ -10,7 +10,7 @@ import sys
 
 from common import ep_dirs, env, line_say, load_board, read_json, retry, session, write_json
 
-DEFAULT_VOICE = "pNInz6obpgDQGcFmaJgB"  # Adam (multilingual). 원하는 목소리 ID로 교체 권장
+DEFAULT_VOICE = "Srd5jY77m6kKijR9vy6R"  # 채널 기본 내레이터 (2026-11-18 교체, 이전 Adam pNInz6obpgDQGcFmaJgB — ep08-chosin 보드에만 남음)
 
 
 def scene_tts_text(sc):
@@ -115,8 +115,9 @@ def main(ep):
     print(f"목소리: {voice} / 모델: {model}")
     settings = {
         "stability": float(env("TTS_STABILITY", "0.55")),
-        "similarity_boost": float(env("TTS_SIMILARITY", "0.8")),
-        "style": float(env("TTS_STYLE", "0.15")),
+        # 2026-11-18 차분하고 또박또박한 다큐 내레이션 톤 기준: stability 0.55 · similarity_boost 0.78 · style 0.0(과장된 억양 방지)
+        "similarity_boost": float(env("TTS_SIMILARITY", "0.78")),
+        "style": float(env("TTS_STYLE", "0.0")),
         "use_speaker_boost": True,
         "speed": float(env("TTS_SPEED", "1.0")),
     }
