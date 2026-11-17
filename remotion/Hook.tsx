@@ -191,6 +191,9 @@ const SIDE: Record<string, { body: string; helm: string; glow: string }> = {
   kr: { body: "#7b8452", helm: "#5b6440", glow: "#7fd3ff" },
   nk: { body: "#7d6a45", helm: "#5e4f31", glow: "#ff4a4a" },
   cn: { body: "#7a7a55", helm: "#5c5c3d", glow: "#ff4a4a" },
+  // map-of-war EP01 고대: gr = 그리스 중장보병(붉은 튜닉·청동 투구·둥근 청동 방패), pe = 페르시아 보병(남색 옷·천 모자·고리버들 방패)
+  gr: { body: "#8e2b22", helm: "#b8893b", glow: "#7fd3ff" },
+  pe: { body: "#3c4f86", helm: "#d9c9a0", glow: "#ff4a4a" },
 };
 const hash = (i: number) => {
   const x = Math.sin(i * 127.1 + 311.7) * 43758.5453;
@@ -215,7 +218,90 @@ const Soldier: React.FC<{ x: number; y: number; s: number; side: string; op: num
       {/* 얼굴·철모 */}
       <circle cx={0} cy={-57} r={7} fill="#d9b48f" />
       <path d="M -10 -58 Q 0 -72 10 -58 Z" fill={c.helm} />
+      {side === "gr" && <path d="M -2 -68 Q 4 -80 12 -70" stroke="#c9242c" strokeWidth={4} fill="none" strokeLinecap="round" />}
+      {side === "gr" && <circle cx={-7} cy={-33} r={13} fill="#b8893b" stroke="#6b4a18" strokeWidth={2.5} />}
+      {side === "pe" && <rect x={-17} y={-48} width={13} height={30} rx={2} fill="#c8a96a" stroke="#7a5f2e" strokeWidth={2} />}
     </g>
+  );
+};
+
+/* map-of-war EP01: 정면 전열 대열 (visual.type "troops" + profile)
+   visual: { type:"troops", side:"gr", profile:[8,8,8,4,4,4,4,8,8,8] (열마다 대열 깊이 — 가운데 얇게·양 날개 두껍게),
+             vs?: { side:"pe", profile:[...] } (위쪽 상대 전열), runAt/runOn (아군 전열이 위로 돌격), bendAt/bendOn (가운데 열이 뒤로 밀림),
+             wrapAt/wrapOn (양 날개가 안쪽·앞쪽으로 휘어 감싸기 = 양익 포위), title, labels } */
+const PhalanxTroops: React.FC = () => {
+  const sc = useScene();
+  const t = useT();
+  const v = sc.visual;
+  const tk = (k: number | undefined, dur: number) => (k === undefined ? 0 : easeInOut(clamp((t - atSec(sc, k)) / dur)));
+  const rk = tk(v.runAt, 1.8), bk = tk(v.bendAt, 1.4), wk = tk(v.wrapAt, 2.4);
+  const cam = easeOut(t / 2.4);
+  const out: { y: number; el: React.ReactNode }[] = [];
+  const layout = (prof: number[], side: string, gi: number, baseY: number, dir: number) => {
+    const cols = prof.length;
+    const maxD = Math.max(...prof);
+    const colW = Math.min(150, 1560 / cols);
+    const per = 2; // 한 열(column)을 병사 2명 폭으로
+    const minD = Math.min(...prof);
+    prof.forEach((depth, c) => {
+      const isWing = depth >= maxD && gi === 0;
+      const wingSide = c < cols / 2 ? 1 : -1;
+      // 양익 포위(wrap) 때 상대(페르시아)의 얕은 날개 열은 패주해 사라짐
+      const fled = gi === 1 && depth <= minD + 1 ? wk : 0;
+      const centerness = Math.exp(-(((c - (cols - 1) / 2) / (cols * 0.18)) ** 2));
+      for (let r = 0; r < depth; r++) {
+        for (let k = 0; k < per; k++) {
+          const idx = gi * 10000 + c * 100 + r * per + k;
+          const appear = clamp((t - 0.05 - hash(idx) * 0.5) / 0.35);
+          let x = 960 + (c - (cols - 1) / 2) * colW + (k - (per - 1) / 2) * (colW / per);
+          // 뒤 열일수록 화면 안쪽(아군은 아래→위가 정면이라 뒤 열이 아래, 상대는 위쪽으로) · 열 간격은 병사 키의 약 1/3
+          let y = baseY + dir * r * 18;
+          x += dir * r * 3;
+          if (gi === 0) {
+            y -= rk * 150; // 돌격
+            y += bk * 120 * centerness; // 가운데가 밀려남
+            if (isWing) {
+              // 날개가 위로 올라가 상대 중앙 덩어리의 옆구리에 붙음
+              x += wingSide * wk * colW * 1.5;
+              y -= wk * 330;
+            }
+          }
+          if (fled > 0) y -= fled * 120;
+          const s = (0.75 + 0.55 * (y / 1080)) * (gi === 0 ? 1.0 : 0.85);
+          const step = gi === 0 && rk > 0 && rk < 1 ? t * 9 + idx : 0;
+          out.push({ y, el: <Soldier key={idx} x={x} y={y - (1 - appear) * 30} s={s} side={side} op={appear * (1 - fled)} step={step} /> });
+        }
+      }
+    });
+  };
+  layout(v.profile, v.side || "gr", 0, 760, 1);
+  if (v.vs?.profile) layout(v.vs.profile, v.vs.side || "pe", 1, 400, -1);
+  out.sort((a, b) => a.y - b.y);
+  return (
+    <AbsoluteFill>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 60%, #4a4434 0%, #23201a 70%, #100e0b 100%)" }} />
+      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
+        <g opacity={0.18} transform={`translate(0 ${-cam * 14})`}>
+          {Array.from({ length: 13 }).map((_, i) => (
+            <line key={i} x1={0} y1={300 + i * 60} x2={1920} y2={300 + i * 60} stroke="#e8dcc0" strokeWidth={1.5} />
+          ))}
+        </g>
+        {out.map((o) => o.el)}
+      </svg>
+      {v.title && (
+        <div style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center", fontFamily: F.head, fontSize: 78, color: "#fff", textShadow: "0 4px 0 #000, 0 0 24px rgba(0,0,0,.8)", opacity: clamp(t * 2) }}>{v.title}</div>
+      )}
+      {(v.labels || []).map((l: any, i: number) => {
+        const a = atSec(sc, l.at ?? 0);
+        const o = popIn((t - a) / 0.4);
+        if (t < a) return null;
+        return (
+          <div key={i} style={{ position: "absolute", left: l.x * 1920, top: l.y * 1080, transform: `translate(-50%,-50%) scale(${o})`, padding: "8px 24px", background: l.color === "red" ? "#c9242c" : l.color === "blue" ? "#1f5fbf" : l.color === "yellow" ? "#d9a400" : "#111", border: "4px solid #fff", fontFamily: F.head, fontSize: 48, color: "#fff", whiteSpace: "nowrap", boxShadow: "0 8px 24px rgba(0,0,0,.6)" }}>
+            {l.text}
+          </div>
+        );
+      })}
+    </AbsoluteFill>
   );
 };
 
@@ -223,6 +309,7 @@ export const TroopsV: React.FC = () => {
   const sc = useScene();
   const t = useT();
   const v = sc.visual;
+  if (v.profile) return <PhalanxTroops />;
   const groups: { n: number; cols: number; side: string; ox: number }[] = [];
   const vs = v.vs;
   groups.push({ n: v.n || 31, cols: v.cols || 8, side: v.side || "us", ox: vs ? 560 : 960 });

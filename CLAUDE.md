@@ -22,6 +22,7 @@
 
 | EP | id | 나레이션 | 결과 | 메모 |
 |---|---|---|---|---|
+| 01 They Charged at a Run: The Battle of Marathon (490 BC) · 7막(1막=콜드 오프닝) | `ep01-marathon` | 3,284단어 · 약 17,700자 · 181장면 · target_sec 1230 | 미리보기 실행 (2026-11-18, 새 내레이터 첫 실측 대기) | 한반도 밖 첫 전장 — 보드 `land`(그리스+주변국 ISO) · 래스터 `aegean_sea`·`attica_sea`·`marathon_zoom_sea`. 새 부품: 지도 `phalanx`(얇은 중앙·두꺼운 날개 전열 띠, bend/wrap/run) · `zone`(늪 빗금) · `ships`(해안 함선·출항), `troops` `profile` 정면 전열(gr/pe · runOn/bendOn/wrapOn). stage 미사용(고대 캐릭터 없음). 미드롤 `s042`·`s096`·`s125`, 사진 17장 핀(웹 검색 확인), AI 44장. 확인 안 된 사실 `episodes/ep01-marathon/unverified_facts.md`. 썸네일 v2 `PAROHO_V2["ep01-marathon"]` → thumb 모드가 `thumbnails/ep01-marathon/thumb_a.png`·`thumb_b.png`로도 복사 |
 | 08 Battle of Chosin Reservoir (1950): The 17-Day March Out of Frozen Hell · 7막 | `ep08-chosin` | 3,175단어 · 약 18,000자 · 92장면 · target_sec 1230 | 미리보기 20:18 (war-docu에서 실행, 2026-11-12, 3,149단어) → 7막 s87에 2문장 보강(+약 12초) · s63 어두운 코르세어 사진을 근접 항공 지원 사진으로 교체 | 지시서 2,600~2,900단어는 실측 환산 18:50이라 러닝타임 우선 보강. 미드롤 `s31`·`s56`·`s80`, CTA1 3막 끝 `s43`, CTA2 7막 끝 `s91`. 그림 9장은 war-docu EP06 `jangjin`에서 복사(파일·서명) + 새 그림 14장, 사진 26장 war-docu 검증 핀. 지형 `yudam_zoom`(z13)·`funchilin_zoom`(z14). 고지 1282·1240·1403·1081·헬파이어 밸리 좌표 개략 |
 
 **분량 환산 (영문 Adam 1.02배속 실측 — 새 내레이터는 말 속도가 다를 수 있으니 ep01 미리보기 실측으로 갱신할 것)**: 3,045단어(18,130자) = 20:16 · 17,824자 = 20:18 (92장면). 20분 30초를 맞추려면 약 18,000자 / 3,180단어.
@@ -54,6 +55,13 @@
 - `remotion/Stage.tsx`(stage·flatmap·flaggrid·checklist·reasons·PhotoTag/PhotoMarks·국기 SVG·캐릭터 face/prop/anim), `remotion/Hook.tsx`(LeftStatHud·NegationOverlay·CoreQuestionCard·TroopsV), 이를 쓰는 `Video.tsx`·`Visuals.tsx`·`MapView.tsx`(plane)·`theme.ts`·`Root.tsx`, `pipeline/timeline.py`(checkOn·xOn·hook·chars·sub_max)·`check_sync.py`(sync_limit)·`geo.py`·`chars.py`, `public/ui/paper.jpg`, **캐릭터 `public/chars/`**(파일 복사 — 다시 생성 금지, `make-chars.yml` 실행 금지)
 - 사용법·필드는 war-docu `CLAUDE.md`의 '화면 업그레이드 2단계' 절과 war-docu `episodes/ep26-seungho/make_board.py` 헬퍼(C·pop·stage·flat·fpin·route·reasons·checklist) 참고. 영문 화면 문구(말풍선·카드·HUD·질문 카드)는 영어로 (`question.kicker` 기본값은 영문 보드에서 `■ THE QUESTION ■`)
 - 새 나라 캐릭터는 SVG 볼 자동 대체(0원)
+
+## ☑ 한반도 밖 전장 · 고대 전투 부품 (2026-11-18 EP01 마라톤에서 추가 · 이후 편 공통)
+- **육지 마스크**: 보드 최상단 `"land": {"home": ["300"], "foreign": ["792", ...]}` (world-atlas ISO 숫자 코드). 없으면 예전 한반도 기본값. 보이는 나라만 넣을 것(러시아 643처럼 큰 나라는 렌더가 느려짐)
+- **지형 래스터**: `pipeline/geo.py` `RASTERS`에 권역 추가(Actions `geo.py auto`가 새 권역만 생성). 바다는 `{"sea": True, "seeds": [...]}`, 근접 지도 장면은 `demSea: true`(make_board `m()`가 ZOOM 뷰에 자동)
+- **지도 아이템**: `phalanx` `{path:[왼끝,오른끝], depth:[열마다 두께], face:±1(정면), px, color, run/runOn, bend/bendOn(가운데 후퇴), wrap/wrapOn(양익 포위), text}` · `zone` `{path:[다각형], color, text}` · `ships` `{pts, rot, dx, dy, sailOn, n}`
+- **정면 전열 대열**: `troops` + `profile:[열마다 깊이]`, `side:"gr"|"pe"`, `vs:{side, profile}`, `runOn`·`bendOn`·`wrapOn`(상대의 얕은 날개 열은 wrap 때 패주해 사라짐). 라벨 `labels[].y`는 0.6 이하로(하단 자막 영역 피하기)
+- 질문 카드 줄바꿈은 `\n` (`|` 아님). 사진 `tag`는 문자열
 
 ## ★ 썸네일 표준 v2 (2026-11-18 war-docu에서 이식 · `ep01`부터 영문 A안 기본 · 참고용 `ep08-chosin`은 기존 공식 유지)
 - **고정 인물 흑백 사진 폐기** (반복 기시감·CTR 저하) → **에피소드 고유 전술 비주얼을 배경 전체(Full-Bleed)로** (결정적 전황 재연 그림 `ep/<ep>/ai/thumb_bg.jpg` 또는 3D 지형)

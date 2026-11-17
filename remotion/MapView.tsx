@@ -15,6 +15,23 @@ const ALL = (feature(countries10m as any, (countries10m as any).objects.countrie
 const KOREA = ALL.filter((f) => KEEP[String(f.id)] === "korea");
 const FOREIGN = ALL.filter((f) => KEEP[String(f.id)] === "foreign");
 const LAND = ALL.filter((f) => KEEP[String(f.id)]);
+// map-of-war EP01~: 한반도 밖 전장 — 보드 최상단 "land": {"home": ["300"], "foreign": ["792", ...]} (ISO 숫자 코드)를 주면
+// 그 나라들로 바다 마스크·외국 채색을 만든다 (없으면 예전 한반도 기본값 그대로)
+const LAND_CACHE: Record<string, { land: any[]; foreign: any[] }> = {};
+const landOf = (tl: Timeline): { land: any[]; foreign: any[] } => {
+  const L = (tl as any).land as { home?: string[]; foreign?: string[] } | undefined;
+  if (!L) return { land: LAND, foreign: FOREIGN };
+  const key = JSON.stringify(L);
+  if (!LAND_CACHE[key]) {
+    const home = new Set((L.home || []).map(String));
+    const fo = new Set((L.foreign || []).map(String));
+    LAND_CACHE[key] = {
+      land: ALL.filter((f) => home.has(String(f.id)) || fo.has(String(f.id))),
+      foreign: ALL.filter((f) => fo.has(String(f.id))),
+    };
+  }
+  return LAND_CACHE[key];
+};
 
 let WATER: any = null;
 const useWater = (enabled: boolean) => {
@@ -278,8 +295,9 @@ export const MapView: React.FC<{ tl: Timeline }> = ({ tl }) => {
     })
     .filter((r) => r.w < 40000 && r.x0 < 2160 && r.x0 + r.w > -240 && r.y0 < 1320 && r.y0 + r.h > -240); // 틸트 여백까지 포함, 확대 시 넓은 래스터도 바탕으로 유지
 
-  const landD = LAND.map((f) => path(f) || "").join(" ");
-  const foreignD = FOREIGN.map((f) => path(f) || "").join(" ");
+  const LS = landOf(tl);
+  const landD = LS.land.map((f) => path(f) || "").join(" ");
+  const foreignD = LS.foreign.map((f) => path(f) || "").join(" ");
   const scaleK = 1920 / span;
   const detail = span < 4;
 
@@ -585,6 +603,116 @@ export const MapView: React.FC<{ tl: Timeline }> = ({ tl }) => {
           </g>
         );
       }
+    } else if (it.k === "zone") {
+      // map-of-war EP01: 늪·지대 표시 — path(경위도 다각형)를 빗금 + 점선 외곽으로 채우고, text가 있으면 가운데 라벨
+      const pts = (it.path as LonLat[]).map(P);
+      const k = easeOut(since / 0.8);
+      const c = colorOf(it.color || "#3fb6a8");
+      const pid = `zh${i}`;
+      const cx = pts.reduce((a, p) => a + p[0], 0) / pts.length,
+        cy = pts.reduce((a, p) => a + p[1], 0) / pts.length;
+      svgItems.push(
+        <g key={i} opacity={k}>
+          <defs>
+            <pattern id={pid} width={18} height={18} patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+              <rect width={18} height={18} fill={c} opacity={0.22} />
+              <line x1={0} y1={0} x2={0} y2={18} stroke={c} strokeWidth={5} opacity={0.75} />
+            </pattern>
+          </defs>
+          <path d={`M${pts.map((p) => p.join(",")).join("L")}Z`} fill={`url(#${pid})`} stroke="#fff" strokeWidth={4} strokeDasharray="14 9" strokeLinejoin="round" />
+        </g>
+      );
+      if (it.text) html.push(<Pill key={"z" + i} x={cx + (it.dx || 0)} y={cy + (it.dy || 0)} text={it.text} bg={c} s={popIn(since / 0.4)} anchor="center" size={30} />);
+    } else if (it.k === "ships") {
+      // map-of-war EP01: 해안에 늘어선 고대 함선(위에서 본 삼단노선 실루엣) — pts 위치마다 1척, rot(도)=선수 방향(화면 기준, 0=오른쪽)
+      // sailAt(줄 번호, sailOn 단어 가능)부터 dx·dy(경위도)만큼 바다로 빠져나감 (4초) + 흰 항적
+      const sailS = it.sailAt !== undefined ? atSec(sc, it.sailAt) : null;
+      const sk = sailS !== null ? easeInOut(clamp((t - sailS) / (it.sailDur || 4))) : 0;
+      const sz = 30 * (it.size || 1);
+      const c = colorOf(it.color || "#8a2a22");
+      const ships: React.ReactNode[] = [];
+      (it.pts as LonLat[]).forEach((ll, j) => {
+        const jit = hash(j + 3) * 0.25;
+        const kj = clamp(sk * (1.25 + jit) - jit);
+        const [x0, y0] = P(ll);
+        const [x1, y1] = P([ll[0] + (it.dx || 0) * (0.85 + hash(j + 11) * 0.3), ll[1] + (it.dy || 0) * (0.85 + hash(j + 17) * 0.3)]);
+        const x = x0 + (x1 - x0) * kj,
+          y = y0 + (y1 - y0) * kj;
+        const ang = sailS !== null && kj > 0 ? (Math.atan2(y1 - y0, x1 - x0) * 180) / Math.PI : it.rot ?? -90;
+        const s = popIn((since - hash(j) * 0.4) / 0.35);
+        if (s <= 0) return;
+        if (kj > 0.02)
+          ships.push(<line key={"w" + j} x1={x0} y1={y0} x2={x} y2={y} stroke="rgba(255,255,255,.55)" strokeWidth={5} strokeDasharray="6 8" />);
+        const oar = Math.sin(t * 6 + j) * 2;
+        ships.push(
+          <g key={j} transform={`translate(${x},${y}) rotate(${ang}) scale(${(s * sz) / 30})`}>
+            <ellipse cx={0} cy={4} rx={34} ry={10} fill="rgba(0,0,0,.3)" />
+            {[-18, -10, -2, 6, 14].map((ox) => (
+              <g key={ox}>
+                <line x1={ox} y1={-6} x2={ox - 3 + oar} y2={-17} stroke="#2a1c12" strokeWidth={2} />
+                <line x1={ox} y1={6} x2={ox - 3 + oar} y2={17} stroke="#2a1c12" strokeWidth={2} />
+              </g>
+            ))}
+            <path d="M32 0 L22 -7 L-26 -7 L-32 0 L-26 7 L22 7 Z" fill={c} stroke="#111" strokeWidth={2} strokeLinejoin="round" />
+            <path d="M32 0 L40 0" stroke="#111" strokeWidth={3} />
+            <rect x={-6} y={-2} width={14} height={4} fill="#e8dcc0" />
+          </g>
+        );
+      });
+      svgItems.push(
+        <g key={i} filter="url(#tacticalShadow)">
+          {ships}
+        </g>
+      );
+    } else if (it.k === "phalanx") {
+      // map-of-war EP01: 전열 띠 — path [왼끝, 오른끝](경위도), depth 배열(가운데 얇게·양 날개 두껍게 등 대열 두께), face 1/-1 = 정면 방향
+      // bendAt(bendOn): 가운데가 bend px 뒤로 밀림 · wrapAt(wrapOn): 양 끝이 wrap px 앞으로 휘어 감싸기(양익 포위) · runAt(runOn): 전체가 run px 전진
+      const [A, B] = (it.path as LonLat[]).map(P);
+      const len = Math.hypot(B[0] - A[0], B[1] - A[1]) || 1;
+      const ux = (B[0] - A[0]) / len,
+        uy = (B[1] - A[1]) / len;
+      const f = it.face ?? 1;
+      const nx = -uy * f,
+        ny = ux * f;
+      const dep: number[] = it.depth || [6, 6, 6];
+      const px = it.px || 4;
+      const kin = easeOut(since / 0.9);
+      const tk = (k?: number, dur = 1.6) => (k === undefined ? 0 : easeInOut(clamp((t - atSec(sc, k)) / dur)));
+      const bk = tk(it.bendAt), wk = tk(it.wrapAt, 2.2), rk = tk(it.runAt, 1.8);
+      const N = 48;
+      const front: [number, number][] = [],
+        back: [number, number][] = [];
+      for (let j = 0; j <= N; j++) {
+        const q = j / N;
+        const fi = q * (dep.length - 1);
+        const i0 = Math.floor(fi),
+          i1 = Math.min(dep.length - 1, i0 + 1);
+        const dd = dep[i0] + (dep[i1] - dep[i0]) * (fi - i0);
+        const th = dd * px * kin;
+        const edge = Math.max(0, Math.abs(q - 0.5) - 0.22) / 0.28;
+        const fwd = (it.run || 0) * rk - (it.bend || 0) * bk * Math.exp(-(((q - 0.5) / 0.16) ** 2)) + (it.wrap || 0) * wk * edge * edge;
+        const side = -(Math.sign(q - 0.5) || 0) * (it.wrap || 0) * 0.55 * wk * edge * edge;
+        const bx = A[0] + (B[0] - A[0]) * q + nx * fwd + ux * side,
+          by = A[1] + (B[1] - A[1]) * q + ny * fwd + uy * side;
+        front.push([bx, by]);
+        back.push([bx - nx * th, by - ny * th]);
+      }
+      const c = colorOf(it.color || "blue");
+      const poly = [...front, ...back.reverse()];
+      svgItems.push(
+        <g key={i} filter="url(#tacticalShadow)" opacity={clamp(since * 4)}>
+          <path d={`M${poly.map((p) => p.map((v) => v.toFixed(1)).join(",")).join("L")}Z`} fill={c} fillOpacity={0.88} stroke="#fff" strokeWidth={4} strokeLinejoin="round" />
+          {front
+            .filter((_, j) => j % 3 === 0)
+            .map((p, j) => (
+              <line key={j} x1={p[0]} y1={p[1]} x2={p[0] + nx * 12} y2={p[1] + ny * 12} stroke="#f2e6c8" strokeWidth={3} strokeLinecap="round" />
+            ))}
+        </g>
+      );
+      if (it.text) {
+        const m = front[Math.round(N / 2)];
+        html.push(<Pill key={"ph" + i} x={m[0] - nx * 70} y={m[1] - ny * 70} text={it.text} bg={c} s={popIn(since / 0.4)} anchor="center" size={30} />);
+      }
     } else if (it.k === "badge") {
       const [x, y] = P(resolveP(tl, it.p));
       const s = popIn(since / 0.35);
@@ -712,7 +840,7 @@ export const MapView: React.FC<{ tl: Timeline }> = ({ tl }) => {
 
       {/* 군용 전술 HUD 모서리 표식 */}
       <div style={{ position: "absolute", top: 20, left: 24, fontFamily: F.body, fontSize: 13, color: "rgba(255,255,255,0.4)", letterSpacing: 2 }}>
-        GRID: 38°N 127°E // TACTICAL MAP
+        GRID: {Math.round(Math.abs(center[1]))}°{center[1] >= 0 ? "N" : "S"} {Math.round(Math.abs(center[0]))}°{center[0] >= 0 ? "E" : "W"} // TACTICAL MAP
       </div>
 
       {/* 우측 상단 지역명 */}

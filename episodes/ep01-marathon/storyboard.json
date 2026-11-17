@@ -1,0 +1,6935 @@
+{
+ "title": "They Charged at a Run: The Battle of Marathon (490 BC)",
+ "subtitle": "How Greek farmers drove an empire into the sea · 490 BC",
+ "lang": "en",
+ "voice": "Srd5jY77m6kKijR9vy6R",
+ "tempo": 1.02,
+ "tts_mode": "act",
+ "style": 2,
+ "sfx_policy": "doc",
+ "bgm_rel_db": -24,
+ "sync_limit": 0.5,
+ "target_sec": 1230,
+ "midrolls": [
+  "s042",
+  "s096",
+  "s125"
+ ],
+ "land": {
+  "home": [
+   "300"
+  ],
+  "foreign": [
+   "792",
+   "100",
+   "8",
+   "807",
+   "196",
+   "380",
+   "364",
+   "368",
+   "760",
+   "818",
+   "400",
+   "422",
+   "376",
+   "275",
+   "682",
+   "434",
+   "642",
+   "688",
+   "51",
+   "31",
+   "268",
+   "4",
+   "795",
+   "586",
+   "414",
+   "48",
+   "634",
+   "784",
+   "512",
+   "887",
+   "860",
+   "762",
+   "398",
+   "804",
+   "498",
+   "348",
+   "191",
+   "70",
+   "499",
+   "703",
+   "705",
+   "729",
+   "788",
+   "12",
+   "248"
+  ]
+ },
+ "places": {
+  "athens": [
+   23.727,
+   37.972,
+   "Athens"
+  ],
+  "phaleron": [
+   23.68,
+   37.935,
+   "Phaleron"
+  ],
+  "sounion": [
+   24.026,
+   37.651,
+   "Cape Sounion"
+  ],
+  "eretria": [
+   23.795,
+   38.395,
+   "Eretria"
+  ],
+  "plataea": [
+   23.27,
+   38.215,
+   "Plataea"
+  ],
+  "thebes": [
+   23.32,
+   38.32,
+   "Thebes"
+  ],
+  "sparta": [
+   22.43,
+   37.075,
+   "Sparta"
+  ],
+  "naxos": [
+   25.38,
+   37.1,
+   "Naxos"
+  ],
+  "delos": [
+   25.268,
+   37.396,
+   "Delos"
+  ],
+  "carystus": [
+   24.42,
+   38.015,
+   "Carystus"
+  ],
+  "paros": [
+   25.15,
+   37.08,
+   "Paros"
+  ],
+  "sardis": [
+   28.04,
+   38.49,
+   "Sardis"
+  ],
+  "miletus": [
+   27.278,
+   37.53,
+   "Miletus"
+  ],
+  "athos": [
+   24.33,
+   40.157,
+   "Mount Athos"
+  ],
+  "samos": [
+   26.95,
+   37.73,
+   "Samos"
+  ],
+  "chersonese": [
+   26.45,
+   40.35,
+   "Thracian Chersonese"
+  ],
+  "susa": [
+   48.25,
+   32.19,
+   "Susa"
+  ],
+  "persepolis": [
+   52.89,
+   29.935,
+   "Persepolis"
+  ],
+  "babylon": [
+   44.42,
+   32.54,
+   "Babylon"
+  ],
+  "indus": [
+   67.6,
+   26.2,
+   "Indus"
+  ],
+  "marathon": [
+   23.98,
+   38.125,
+   "Marathon"
+  ],
+  "soros": [
+   23.9783,
+   38.1186,
+   "Soros"
+  ],
+  "herakleion": [
+   23.948,
+   38.128,
+   "Herakleion · Greek camp"
+  ],
+  "gmarsh": [
+   24.022,
+   38.148,
+   "Great Marsh"
+  ],
+  "smarsh": [
+   23.998,
+   38.1,
+   "Small Marsh"
+  ],
+  "pcamp": [
+   24.018,
+   38.138,
+   "Persian camp"
+  ],
+  "pentelikon": [
+   23.885,
+   38.05,
+   "Mt Pentelikon"
+  ],
+  "agrieliki": [
+   23.955,
+   38.098,
+   "Mt Agrieliki"
+  ],
+  "kotroni": [
+   23.935,
+   38.158,
+   "Mt Kotroni"
+  ]
+ },
+ "views": {
+  "empire": {
+   "center": [
+    46.5,
+    30.0
+   ],
+   "span": 50
+  },
+  "aegean": {
+   "center": [
+    25.4,
+    38.6
+   ],
+   "span": 8.5
+  },
+  "ionia": {
+   "center": [
+    26.6,
+    38.2
+   ],
+   "span": 4.6
+  },
+  "greece": {
+   "center": [
+    23.3,
+    37.85
+   ],
+   "span": 3.4
+  },
+  "attica": {
+   "center": [
+    23.8,
+    38.08
+   ],
+   "span": 1.5
+  },
+  "marathon": {
+   "center": [
+    23.99,
+    38.125
+   ],
+   "span": 0.16
+  },
+  "plain": {
+   "center": [
+    23.985,
+    38.124
+   ],
+   "span": 0.085
+  },
+  "beach": {
+   "center": [
+    24.015,
+    38.13
+   ],
+   "span": 0.075
+  }
+ },
+ "music": [
+  {
+   "id": "drone",
+   "from": "s001",
+   "to": "s010",
+   "volume": 0.2
+  },
+  {
+   "id": "theme",
+   "from": "s011",
+   "to": "s041",
+   "volume": 0.16
+  },
+  {
+   "id": "analysis",
+   "from": "s042",
+   "to": "s073",
+   "volume": 0.16
+  },
+  {
+   "id": "tension",
+   "from": "s074",
+   "to": "s095",
+   "volume": 0.17
+  },
+  {
+   "id": "march",
+   "from": "s096",
+   "to": "s124",
+   "volume": 0.16
+  },
+  {
+   "id": "tension",
+   "from": "s125",
+   "to": "s150",
+   "volume": 0.17
+  },
+  {
+   "id": "somber",
+   "from": "s151",
+   "to": "s181",
+   "volume": 0.17
+  }
+ ],
+ "ai_images": {
+  "persian_host": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a vast army of ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears drawn up on a coastal plain at dawn, dozens of beached triremes behind them, cavalry and archers in the ranks, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "sardis_burning": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Greek rebels, ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears, setting fire to the reed-roofed houses of the ancient Lydian city of Sardis at night, flames and smoke, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "darius_arrow": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an Achaemenid Persian Great King whose head is a round ball painted deep purple with a golden winged-disc emblem, wearing a tall golden crenellated crown, a long square curled black beard and royal purple robes standing on a palace terrace in Persepolis, angrily shooting an arrow straight up into the sky, courtiers watching, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "servant_dinner": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an Achaemenid Persian Great King whose head is a round ball painted deep purple with a golden winged-disc emblem, wearing a tall golden crenellated crown, a long square curled black beard and royal purple robes seated at a long dinner table in a lamp-lit palace hall while a bowing servant whose head is a round ball painted deep purple speaks to him, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "horse_transport": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Persian horse-transport ships at sea, horses being led up wooden ramps into broad-hulled ships by ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears, a large fleet of triremes behind, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "delos_incense": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears burning incense on a stone altar in front of a small ancient Greek temple on the sacred island of Delos, calm sea behind, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "eretria_gates": "Night scene, two cloaked figures secretly opening the heavy wooden gate of an ancient Greek walled city, Persian soldiers waiting in the shadows outside, torches, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "eretria_chains": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: captive Greek townspeople being led in chains to the shore by ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears, an ancient walled Greek city smoking behind them, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "hippias_ship": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a very old exiled Athenian man whose head is a round ball painted white and faded grey, with a long white beard and a Persian-style embroidered robe standing at the bow of a Persian trireme, staring toward a distant coastline, the Persian fleet sailing behind him, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "assembly_debate": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a crowded ancient Athenian assembly on a rocky hillside, citizens whose heads are round balls painted white with a small golden owl emblem, arguing and raising hands, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "danube_bridge": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a long bridge of boats across a wide river, an older Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short grey beard, a bronze Corinthian helmet pushed up on top, and a red cloak pointing at it and urging other Greek commanders to cut it, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "miltiades_assembly": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an older Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short grey beard, a bronze Corinthian helmet pushed up on top, and a red cloak standing on a stone speaker's platform addressing the Athenian assembly, pointing north, citizens listening, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "hoplites_neighbors": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears of different ages, a farmer, a potter and an olive grower, strapping on their own armor in a village courtyard, families watching, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "runner_mountains": "A lone ancient Greek runner in a short tunic running along a rocky mountain track at sunrise in the Peloponnese, long shadows, dust, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "plataeans_arrive": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a column of ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears marching down a mountain road into a camp, other hoplites cheering their arrival, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "felled_trees": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears cutting down trees and dragging branches across open ground in front of their hillside camp to block cavalry, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "hippias_sneeze": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a very old exiled Athenian man whose head is a round ball painted white and faded grey, with a long white beard and a Persian-style embroidered robe sneezing violently on a sandy beach, a single loose tooth flying out, Persian soldiers looking on in surprise, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "hippias_tooth": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a very old exiled Athenian man whose head is a round ball painted white and faded grey, with a long white beard and a Persian-style embroidered robe kneeling in the sand searching for his lost tooth, sad and resigned, beached Persian ships behind, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "traitor_gate": "An ancient Athenian city gate at night, a hooded figure waiting in the shadows beside it, distant torches, tension, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "callimachus": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: the Athenian war ruler, a stern hoplite commander whose head is a round ball painted white with a small golden owl emblem, wearing a crested bronze helmet and a blue cloak, standing in a hillside camp, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "miltiades_callimachus": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an older Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short grey beard, a bronze Corinthian helmet pushed up on top, and a red cloak earnestly speaking to a stern Athenian commander in a blue cloak inside a tent lit by an oil lamp at night, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "ionian_deserters": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: two Ionian Greek soldiers in Persian service slipping across a dark plain at night toward a hillside camp fire, whispering to an Athenian sentry, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "horses_loading": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Persian grooms, ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears, leading horses up wooden ramps onto beached transport ships at dawn, the beach busy and disordered, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "dawn_omens": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an Athenian priest examining a sacrifice at an altar at dawn while ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears stand ready behind him, mist over the plain, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "saka_warriors": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: fierce Saka warriors from the Central Asian steppe whose heads are round balls painted ochre and black, wearing tall pointed caps, holding battle axes and bows, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "persians_watch": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears in a long line staring in disbelief as a distant line of Greek hoplites runs toward them across the plain, some laughing, some pointing, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "clash": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears crashing at full speed into a line of ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears, bronze shields smashing wicker shields, spears and dust, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "wings_temptation": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears on the wing of the battle watching beaten Persian soldiers flee toward beached ships, a few hoplites starting to chase, an officer raising his arm to stop them, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "wings_turn": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: two blocks of ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears wheeling inward from both sides onto a mass of surprised ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears in the middle of a plain, dust clouds, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "fire_at_ships": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears charging into the shallow surf toward beached Persian triremes, holding burning torches and shouting for fire, smoke rising, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "battle_at_ships": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: desperate fighting at the water's edge between ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears and ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps, colorful embroidered tunics and trousers, carrying wicker shields, bows and short spears around the sterns of beached triremes, chaos and splashing water, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "cynegirus": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an ancient Athenian hoplite whose head is a round ball painted white with a small golden owl emblem, wearing a bronze Corinthian helmet with a red horsehair crest, a bronze cuirass and a red tunic, carrying a large round bronze-faced shield and a long spear grabbing the curved wooden stern of a Persian trireme as it pulls away from the beach, a Persian sailor raising an axe above, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "epizelus": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an ancient Athenian hoplite whose head is a round ball painted white with a small golden owl emblem, wearing a bronze Corinthian helmet with a red horsehair crest, a bronze cuirass and a red tunic, carrying a large round bronze-faced shield and a long spear standing frozen in the middle of the battle, his hands over his eyes, dust and fighting all around him, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "shield_flash": "A bright flash of sunlight reflected from a raised bronze shield on a mountainside above a coastal plain, a fleet of ancient ships pulling away from the shore below, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "march_back": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an exhausted column of ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears marching fast along a dusty mountain road in the afternoon heat toward a distant city, carrying their shields, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "phaleron_wait": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets with red horsehair crests, bronze cuirasses and red tunics, carrying large round bronze-faced shields and long spears standing in a long line on a beach near Athens in the evening, staring at a Persian fleet anchored offshore, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "datis_turn": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a Persian admiral whose head is a round ball painted deep purple, standing on the deck of a trireme looking at Greek troops lined up on the distant shore, then turning away, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "spartans_view": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Spartan hoplites whose heads are round balls painted red with a white lambda emblem, wearing red cloaks and bronze helmets, walking across a quiet battlefield at sunset, a burial mound in the distance, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "runner_rejoice": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an ancient Athenian hoplite whose head is a round ball painted white with a small golden owl emblem, wearing a bronze Corinthian helmet with a red horsehair crest, a bronze cuirass and a red tunic, carrying a large round bronze-faced shield and a long spear collapsing after running into an ancient Athenian marketplace, arms raised, citizens rushing toward him, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "olympics_1896": "Runners in 1896 athletic clothing on a dusty country road in Greece, spectators in period clothing cheering, sepia tones, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "pnyx_vote": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian citizens whose heads are round balls painted white with a small golden owl emblem, voting by raising their hands on the Pnyx hill, the Acropolis behind, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "miltiades_paros": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an older Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short grey beard, a bronze Corinthian helmet pushed up on top, and a red cloak limping with a bandaged leg away from the walls of an island town, his soldiers retreating to their ships, 490 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "marathon_dawn": "The quiet plain of Marathon at dawn seen from the hills, a large earthen burial mound in the middle, the bay and the sea beyond, golden light, painterly realistic digital illustration, cinematic, desaturated palette, film grain, no people's faces in close-up, no text, no letters.",
+  "thumb_bg": "Cinematic photorealistic war painting, 16:9 wide high-angle shot over the plain of Marathon at dawn: a long line of ancient Greek hoplites with round bronze shields and red crests running forward in a cloud of dust, both wings of their line curving inward to envelop a dense mass of Persian soldiers with wicker shields, dozens of beached triremes and the sea behind, golden backlight, high contrast, dramatic, the lower third of the frame darker, no text, no letters, no logos."
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "act": 1,
+   "lines": [
+    {
+     "t": "September 490 BC.",
+     "say": "September four hundred ninety BC."
+    },
+    {
+     "t": "The plain of Marathon 26 miles from Athens.",
+     "say": "The plain of Marathon twenty-six miles from Athens."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "lock",
+      "p": "soros",
+      "text": "MARATHON",
+      "at": 0.9
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "aegean",
+     "attica",
+     "marathon"
+    ],
+    "flightDur": 4.2,
+    "hud": true,
+    "tilt": 26
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "490 BC",
+      "sub": "The plain of Marathon",
+      "sub2": "26 miles from Athens",
+      "at": 0.0,
+      "count": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s002",
+   "act": 1,
+   "lines": [
+    {
+     "t": "10,000 Greek farmers in bronze stand in a single line.",
+     "say": "Ten thousand Greek farmers in bronze stand in a single line."
+    }
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "title": "ONE LINE OF BRONZE"
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "10,000",
+      "sub": "Athenian & Plataean hoplites",
+      "sub2": "approximate",
+      "on": "Ten thousand"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s003",
+   "act": 1,
+   "lines": [
+    "Across the plain waits the army of the largest empire the world had ever seen."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "persian_host",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "hook": {
+    "hud": [
+     {
+      "big": "20,000–25,000",
+      "sub": "Persian landing force",
+      "sub2": "modern estimates · ancient sources: far more",
+      "on": "largest",
+      "color": "#FF3B30"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "id": "s004",
+   "act": 1,
+   "lines": [
+    "Then the Greeks begin to run."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0,
+      "run": 60,
+      "runOn": "run"
+     },
+     {
+      "k": "badge",
+      "p": "soros",
+      "text": "AT A RUN",
+      "color": "#c9242c",
+      "dy": -90,
+      "on": "run"
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s005",
+   "act": 1,
+   "lines": [
+    "Persia brought cavalry and archers.",
+    "Yet the men running at them had neither."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s005-photo",
+    "tag": "SUSA · GLAZED BRICK · c. 510 BC",
+    "pos": "50% 40%",
+    "marks": [
+     {
+      "text": "ARCHERS",
+      "x": 0.5,
+      "y": 0.18,
+      "color": "red",
+      "on": "archers"
+     },
+     {
+      "text": "GREEK CAVALRY: 0",
+      "x": 0.5,
+      "y": 0.82,
+      "color": "yellow",
+      "on": "neither"
+     }
+    ]
+   },
+   "label": "Frieze of Archers · Palace of Darius I, Susa (c. 510 BC) · Louvre",
+   "hook": {
+    "hud": [
+     {
+      "big": "0",
+      "sub": "Greek cavalry · Greek archers",
+      "sub2": "at Marathon",
+      "on": "neither",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s006",
+   "act": 1,
+   "lines": [
+    {
+     "t": "They were outnumbered at least 2 to 1.",
+     "say": "They were outnumbered at least two to one."
+    },
+    {
+     "t": "Yet by sunset the Persian dead outnumbered theirs more than 30 to 1.",
+     "say": "Yet by sunset the Persian dead outnumbered theirs more than thirty to one."
+    }
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "MEN IN THE FIELD",
+     "big": "1 : 2",
+     "icon": "none",
+     "color": "blue"
+    },
+    "right": {
+     "title": "DEAD BY SUNSET",
+     "big": "33 : 1",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "act": 1,
+   "lines": [
+    "Every rule of war said a phalanx must advance slowly or it would fall apart.",
+    "Yet these men ran straight into the arrows."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      3,
+      3,
+      4,
+      6,
+      8,
+      8,
+      8,
+      8,
+      6,
+      4,
+      3,
+      3
+     ]
+    },
+    "title": "NO WALKING",
+    "runOn": "ran"
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "8 STADES",
+      "sub": "of open ground · about a mile",
+      "sub2": "crossed at a run",
+      "on": "ran",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s008",
+   "act": 1,
+   "lines": [
+    "It sounds like a miracle.",
+    "A lucky charge by desperate men.",
+    "Or was it?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "A LUCKY",
+    "accent": "MIRACLE?",
+    "accentAt": 0.5
+   },
+   "hook": {
+    "neg": {
+     "text": "A LUCKY MIRACLE",
+     "on": "miracle",
+     "xOn": "Or was it"
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "act": 1,
+   "lines": [
+    "How did citizen-farmer hoplites with no cavalry or archers drive the world's largest empire into the sea?"
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   },
+   "hook": {
+    "question": {
+     "text": "How did citizen-farmer hoplites\nwith no cavalry or archers\ndrive the world's largest empire into the sea?",
+     "at": 0.02
+    }
+   }
+  },
+  {
+   "id": "s010",
+   "act": 1,
+   "lines": [
+    "The story begins with a king who wanted to hear one sentence every single day."
+   ],
+   "visual": {
+    "type": "titlecard",
+    "title": "THEY CHARGED AT A RUN",
+    "sub": "The Battle of Marathon · 490 BC",
+    "at": 0,
+    "q": "s010-photo"
+   },
+   "flash": true
+  },
+  {
+   "id": "s011",
+   "act": 2,
+   "lines": [
+    "His name was Darius.",
+    "Great King of Persia."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s011-photo",
+    "tag": "PERSEPOLIS · RELIEF · c. 500 BC",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "DARIUS I",
+      "x": 0.5,
+      "y": 0.16,
+      "color": "yellow",
+      "on": "Darius"
+     }
+    ]
+   },
+   "label": "Darius I enthroned · Persepolis relief",
+   "chapter": {
+    "num": "ACT 2",
+    "title": "THE KING WHO REMEMBERED"
+   }
+  },
+  {
+   "id": "s012",
+   "act": 2,
+   "lines": [
+    "His empire stretched from the Aegean Sea to the Indus River."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "empire",
+    "to": "empire",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        26.0,
+        41.6
+       ],
+       [
+        29.5,
+        41.8
+       ],
+       [
+        35,
+        41.8
+       ],
+       [
+        41,
+        41.6
+       ],
+       [
+        47,
+        42
+       ],
+       [
+        53,
+        40.5
+       ],
+       [
+        58,
+        38.5
+       ],
+       [
+        63,
+        37.5
+       ],
+       [
+        67.5,
+        37.2
+       ],
+       [
+        70.5,
+        34.5
+       ],
+       [
+        71.5,
+        31
+       ],
+       [
+        70,
+        27
+       ],
+       [
+        66,
+        25
+       ],
+       [
+        61,
+        25.2
+       ],
+       [
+        57,
+        26.5
+       ],
+       [
+        52,
+        28
+       ],
+       [
+        50,
+        29.8
+       ],
+       [
+        48,
+        30
+       ],
+       [
+        45,
+        31.5
+       ],
+       [
+        40,
+        30
+       ],
+       [
+        36,
+        29.5
+       ],
+       [
+        34.5,
+        28
+       ],
+       [
+        33.5,
+        25
+       ],
+       [
+        32.8,
+        22
+       ],
+       [
+        31,
+        22
+       ],
+       [
+        29,
+        25
+       ],
+       [
+        25.5,
+        30.8
+       ],
+       [
+        26.8,
+        34
+       ],
+       [
+        27.2,
+        36.6
+       ],
+       [
+        26.6,
+        39.8
+       ],
+       [
+        26.0,
+        41.6
+       ]
+      ],
+      "color": "#ff3b30",
+      "glow": true,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "persepolis",
+      "color": "red",
+      "at": 0.4
+     },
+     {
+      "k": "marker",
+      "p": "susa",
+      "color": "red",
+      "at": 0.6
+     },
+     {
+      "k": "marker",
+      "p": "indus",
+      "color": "dark",
+      "on": "Indus"
+     }
+    ],
+    "tilt": 10
+   },
+   "callouts": [
+    {
+     "text": "THE ACHAEMENID PERSIAN EMPIRE · c. 500 BC",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s013",
+   "act": 2,
+   "lines": [
+    "It held perhaps a third of all the people on Earth."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "PERHAPS 1 IN 3",
+    "style": "red",
+    "sub": "of all people on Earth · modern estimate",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s014",
+   "act": 2,
+   "lines": [
+    {
+     "t": "In 499 BC the Greek cities of Ionia rose against him.",
+     "say": "In four hundred ninety-nine BC the Greek cities of Ionia rose against him."
+    },
+    "They were Greeks living under Persian rule on the coast of what is now Turkey."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "ionia",
+    "items": [
+     {
+      "k": "unit",
+      "p": "miletus",
+      "text": "IONIAN REVOLT",
+      "color": "blue",
+      "at": 0.2,
+      "pulse": true
+     },
+     {
+      "k": "marker",
+      "p": "sardis",
+      "color": "red",
+      "at": 0.5
+     }
+    ],
+    "flight": [
+     "aegean",
+     "ionia"
+    ],
+    "flightDur": 2.6
+   },
+   "callouts": [
+    {
+     "text": "499 BC · IONIA",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s015",
+   "act": 2,
+   "lines": [
+    "Across the sea two small cities sent ships to help them."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.727,
+        37.972
+       ],
+       [
+        24.9,
+        37.9
+       ],
+       [
+        26.6,
+        37.97
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.3
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "marker",
+      "p": "eretria",
+      "color": "blue",
+      "at": 0.2
+     }
+    ]
+   }
+  },
+  {
+   "id": "s016",
+   "act": 2,
+   "lines": [
+    {
+     "t": "Athens sent 20 ships.",
+     "say": "Athens sent twenty ships."
+    },
+    {
+     "t": "Eretria sent 5.",
+     "say": "Eretria sent five."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "Ships sent to help the revolt",
+    "items": [
+     {
+      "label": "Athens",
+      "value": 20,
+      "display": "20 ships",
+      "color": "blue",
+      "on": "twenty"
+     },
+     {
+      "label": "Eretria",
+      "value": 5,
+      "display": "5 ships",
+      "color": "blue",
+      "on": "five"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s017",
+   "act": 2,
+   "lines": [
+    "Together the rebels marched inland and burned Sardis.",
+    "Sardis was the seat of Persian power in the west."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "sardis_burning",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "498 BC · SARDIS BURNS",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s018",
+   "act": 2,
+   "lines": [
+    {
+     "t": "The revolt took 6 years to crush.",
+     "say": "The revolt took six years to crush."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "6 YEARS",
+    "style": "dark",
+    "sub": "to crush the Ionian revolt · 499–493 BC",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s019",
+   "act": 2,
+   "lines": [
+    "But Darius did not forget the strangers who had joined it."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "BUT DARIUS",
+    "accent": "DID NOT FORGET",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s020",
+   "act": 2,
+   "lines": [
+    "Herodotus tells us that when he heard the name Athens he asked who the Athenians were.",
+    "Then he took his bow and shot an arrow into the sky."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "darius_arrow",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s021",
+   "act": 2,
+   "lines": [
+    {
+     "t": "He ordered a servant to speak to him 3 times before every dinner.",
+     "say": "He ordered a servant to speak to him three times before every dinner."
+    },
+    "Master remember the Athenians."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "servant_dinner",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "“MASTER, REMEMBER THE ATHENIANS”",
+     "style": "dark",
+     "at": 1,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s022",
+   "act": 2,
+   "lines": [
+    {
+     "t": "In 492 BC the first punishment sailed west.",
+     "say": "In four hundred ninety-two BC the first punishment sailed west."
+    },
+    "A storm off Mount Athos smashed much of the fleet against the rocks."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        26.6,
+        40.42
+       ],
+       [
+        25.6,
+        40.62
+       ],
+       [
+        24.6,
+        40.28
+       ],
+       [
+        24.38,
+        40.18
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "shock",
+      "pts": [
+       "athos"
+      ],
+      "at": 1.2,
+      "period": 0.8
+     },
+     {
+      "k": "marker",
+      "p": "athos",
+      "color": "dark",
+      "on": "Athos"
+     }
+    ],
+    "tilt": 16
+   },
+   "callouts": [
+    {
+     "text": "492 BC · MOUNT ATHOS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s023",
+   "act": 2,
+   "lines": [
+    "Darius tried again.",
+    "Two years later a new fleet crossed the Aegean."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "DARIUS",
+    "accent": "TRIED AGAIN",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s024",
+   "act": 2,
+   "lines": [
+    {
+     "t": "Herodotus says it had 600 warships.",
+     "say": "Herodotus says it had six hundred warships."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "600 WARSHIPS",
+    "style": "red",
+    "sub": "according to Herodotus",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s025",
+   "act": 2,
+   "lines": [
+    {
+     "t": "Modern historians think it carried perhaps 20,000 to 25,000 fighting men.",
+     "say": "Modern historians think it carried perhaps twenty to twenty-five thousand fighting men."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "Persian landing force · modern estimates",
+    "items": [
+     {
+      "label": "Low",
+      "value": 20000,
+      "display": "20,000",
+      "color": "red",
+      "on": "twenty"
+     },
+     {
+      "label": "High",
+      "value": 25000,
+      "display": "25,000",
+      "color": "red",
+      "on": "twenty-five"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s026",
+   "act": 2,
+   "lines": [
+    "It also carried something Greek armies rarely had.",
+    "Horses.",
+    "Transports were built just to carry cavalry across the sea."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "horse_transport",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s027",
+   "act": 2,
+   "lines": [
+    "The commanders were Datis a Mede and Artaphernes the king's own nephew."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s027-photo",
+    "tag": "SUSA · ROYAL GUARD · 521–500 BC",
+    "pos": "50% 30%"
+   },
+   "label": "Persian royal guard · glazed brick, Susa · British Museum",
+   "callouts": [
+    {
+     "text": "DATIS & ARTAPHERNES",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s028",
+   "act": 2,
+   "lines": [
+    "Their orders were simple.",
+    "Enslave Athens and Eretria and bring the prisoners to the king."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Herodotus 6.94",
+    "head": "THE KING'S ORDERS",
+    "rows": [
+     "Enslave Athens",
+     "Enslave Eretria",
+     "Bring the prisoners to the king"
+    ],
+    "stamp": "ROYAL",
+    "note": "Summary"
+   }
+  },
+  {
+   "id": "s029",
+   "act": 2,
+   "lines": [
+    "The fleet moved from island to island.",
+    "Naxos was burned."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        26.95,
+        37.73
+       ],
+       [
+        25.6,
+        37.2
+       ],
+       [
+        25.38,
+        37.12
+       ],
+       [
+        25.27,
+        37.42
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "naxos",
+      "color": "red",
+      "on": "Naxos"
+     },
+     {
+      "k": "marker",
+      "p": "delos",
+      "color": "dark",
+      "at": 0.6
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "490 BC · ISLAND BY ISLAND",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s030",
+   "act": 2,
+   "lines": [
+    "On the sacred island of Delos the Persians did something unexpected.",
+    "They spared the temples and burned incense on the altar."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "delos_incense",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s031",
+   "act": 2,
+   "lines": [
+    "The Great King wanted the Greeks to know he could be generous.",
+    "To those who submitted."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "GENEROUS",
+    "style": "yellow",
+    "sub": "to those who submitted",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s032",
+   "act": 2,
+   "lines": [
+    "Then the Persians landed on the island of Euboea and laid siege to Eretria.",
+    {
+     "t": "For 6 days the city held.",
+     "say": "For six days the city held."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        25.27,
+        37.42
+       ],
+       [
+        24.45,
+        37.98
+       ],
+       [
+        24.0,
+        38.25
+       ],
+       [
+        23.84,
+        38.37
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "eretria",
+      "text": "Eretria",
+      "at": 1.2
+     }
+    ],
+    "flight": [
+     "aegean",
+     "attica"
+    ],
+    "flightDur": 2.6,
+    "hud": true
+   },
+   "callouts": [
+    {
+     "text": "SIEGE OF ERETRIA · 6 DAYS",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s033",
+   "act": 2,
+   "lines": [
+    {
+     "t": "On the 7th day two of its own citizens opened the gates.",
+     "say": "On the seventh day two of its own citizens opened the gates."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "eretria_gates",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s034",
+   "act": 2,
+   "lines": [
+    "The temples were burned.",
+    "The people were put in chains."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "eretria_chains",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s035",
+   "act": 2,
+   "lines": [
+    "Eretria was gone."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "ERETRIA",
+    "accent": "WAS GONE",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s036",
+   "act": 2,
+   "lines": [
+    "And Athens lay just across a narrow strait."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "attica",
+    "items": [
+     {
+      "k": "marker",
+      "p": "eretria",
+      "color": "dark",
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        23.795,
+        38.39
+       ],
+       [
+        23.86,
+        38.3
+       ],
+       [
+        23.95,
+        38.16
+       ]
+      ],
+      "color": "#ff3b30",
+      "glow": true,
+      "at": 0.2
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0.5
+     }
+    ],
+    "tilt": 20
+   },
+   "callouts": [
+    {
+     "text": "ACROSS A NARROW STRAIT",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s037",
+   "act": 2,
+   "lines": [
+    "On board the Persian fleet was an old Athenian.",
+    "His name was Hippias."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "hippias_ship",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s038",
+   "act": 2,
+   "lines": [
+    {
+     "t": "20 years earlier he had ruled Athens as a tyrant until the Athenians threw him out.",
+     "say": "Twenty years earlier he had ruled Athens as a tyrant until the Athenians threw him out."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "HIPPIAS",
+    "style": "dark",
+    "sub": "Former tyrant of Athens · expelled 510 BC",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s039",
+   "act": 2,
+   "lines": [
+    "Now he was coming home with a Persian army.",
+    "If Athens fell Hippias would rule it again as the king's servant."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "IF ATHENS FELL",
+    "items": [
+     {
+      "text": "Hippias returns",
+      "on": "Hippias"
+     },
+     {
+      "text": "Rules as the king's servant",
+      "on": "servant"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s040",
+   "act": 2,
+   "lines": [
+    "He knew exactly where to land.",
+    "A long bay on the east coast of Attica.",
+    "Flat ground where horses could run."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "at": 1.2
+     },
+     {
+      "k": "marker",
+      "p": "marathon",
+      "color": "red",
+      "at": 0.4
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "attica",
+     "marathon"
+    ],
+    "flightDur": 3.0,
+    "tilt": 24
+   },
+   "callouts": [
+    {
+     "text": "THE EAST COAST OF ATTICA",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s041",
+   "act": 2,
+   "lines": [
+    "A place named after the wild fennel that grew there.",
+    "Marathon."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s041-photo",
+    "tag": "MARATHON · MARSHLAND · 2016",
+    "marks": [
+     {
+      "text": "MARATHON = “FENNEL”",
+      "x": 0.5,
+      "y": 0.18,
+      "color": "yellow",
+      "on": "fennel"
+     }
+    ]
+   },
+   "label": "Marshland at Marathon with Mount Pentelikon behind (2016)"
+  },
+  {
+   "id": "s042",
+   "act": 3,
+   "lines": [
+    "Imagine the plain from the hills above it.",
+    {
+     "t": "In front of you a curved beach about 6 miles long.",
+     "say": "In front of you a curved beach about six miles long."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "at": 0.6
+     }
+    ],
+    "demSea": true,
+    "tilt": 34,
+    "hud": true
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "ACT 3",
+    "title": "THE PLAIN OF FENNEL"
+   },
+   "sfx": [
+    {
+     "id": "water",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s043",
+   "act": 3,
+   "lines": [
+    "Behind the beach at the northern end a great marsh.",
+    "At the southern end a smaller marsh."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "GREAT MARSH",
+      "on": "great marsh"
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.988,
+        38.104
+       ],
+       [
+        24.0,
+        38.109
+       ],
+       [
+        24.012,
+        38.101
+       ],
+       [
+        24.003,
+        38.092
+       ],
+       [
+        23.99,
+        38.095
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "SMALL MARSH",
+      "on": "smaller marsh"
+     }
+    ],
+    "demSea": true,
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s044",
+   "act": 3,
+   "lines": [
+    "And between them a flat open plain ringed by mountains."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "GREAT MARSH",
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.988,
+        38.104
+       ],
+       [
+        24.0,
+        38.109
+       ],
+       [
+        24.012,
+        38.101
+       ],
+       [
+        24.003,
+        38.092
+       ],
+       [
+        23.99,
+        38.095
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "SMALL MARSH",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "agrieliki",
+      "text": "MOUNTAINS",
+      "color": "#111",
+      "dy": -70,
+      "at": 0.3
+     },
+     {
+      "k": "badge",
+      "p": "kotroni",
+      "text": "MOUNTAINS",
+      "color": "#111",
+      "dy": -70,
+      "at": 0.5
+     }
+    ],
+    "demSea": true,
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s045",
+   "act": 3,
+   "lines": [
+    "Two narrow roads led out of it toward Athens."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        23.95,
+        38.125
+       ],
+       [
+        23.93,
+        38.1
+       ],
+       [
+        23.9,
+        38.075
+       ],
+       [
+        23.86,
+        38.045
+       ]
+      ],
+      "color": "#ffd400",
+      "glow": true,
+      "at": 0.1
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        23.945,
+        38.14
+       ],
+       [
+        23.925,
+        38.16
+       ],
+       [
+        23.895,
+        38.175
+       ]
+      ],
+      "color": "#ffd400",
+      "glow": true,
+      "at": 0.4
+     },
+     {
+      "k": "badge",
+      "p": "herakleion",
+      "text": "ROADS TO ATHENS",
+      "color": "#111",
+      "dy": -80,
+      "at": 0.6
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s046",
+   "act": 3,
+   "lines": [
+    "For cavalry it was perfect ground.",
+    "For a city with no cavalry it was a nightmare."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "FOR CAVALRY",
+     "big": "PERFECT",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "FOR ATHENS",
+     "big": "NIGHTMARE",
+     "icon": "none",
+     "color": "dark",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s047",
+   "act": 3,
+   "lines": [
+    "When the news reached Athens the city split into two camps.",
+    "One side wanted to stay behind the walls and wait.",
+    "The other wanted to march out and meet the Persians at the beach."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "assembly_debate",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s048",
+   "act": 3,
+   "lines": [
+    "Walls had not saved Eretria.",
+    "Traitors had opened them in a week."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "WALLS HAD NOT",
+    "accent": "SAVED ERETRIA",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s049",
+   "act": 3,
+   "lines": [
+    "The man who argued hardest for marching out was a general named Miltiades.",
+    {
+     "t": "Miltiades was about 60 years old.",
+     "say": "Miltiades was about sixty years old."
+    },
+    "And he knew the Persians better than any man in Athens."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s049-photo",
+    "tag": "MILTIADES · ROMAN COPY",
+    "pos": "50% 30%",
+    "marks": [
+     {
+      "text": "MILTIADES",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "Miltiades"
+     }
+    ]
+   },
+   "label": "Miltiades · Roman copy of a Greek bust · National Gallery of Slovenia"
+  },
+  {
+   "id": "s050",
+   "act": 3,
+   "lines": [
+    "For years he had ruled a Greek colony on the shores of the Hellespont.",
+    "He had served as a vassal of Darius himself.",
+    "He had marched with the Persian army into Scythia."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "unit",
+      "p": "chersonese",
+      "text": "MILTIADES' COLONY",
+      "color": "blue",
+      "at": 0.1,
+      "pulse": true
+     },
+     {
+      "k": "marker",
+      "p": "sardis",
+      "color": "red",
+      "at": 0.5
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "THE HELLESPONT",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s051",
+   "act": 3,
+   "lines": [
+    "Herodotus even claims that Miltiades once urged the Greeks to destroy the king's bridge over the Danube and leave Darius stranded.",
+    "The plan failed."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "danube_bridge",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s052",
+   "act": 3,
+   "lines": [
+    "But Miltiades had seen the Persian army up close.",
+    "He knew how it fought.",
+    "And he knew what it feared."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "HE KNEW HOW IT FOUGHT",
+    "style": "yellow",
+    "sub": "and what it feared",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s053",
+   "act": 3,
+   "lines": [
+    "Then he had joined the Ionian revolt and fled when it failed.",
+    "A Persian squadron chased him all the way to Athens.",
+    "They captured his eldest son."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        26.45,
+        40.35
+       ],
+       [
+        25.6,
+        39.8
+       ],
+       [
+        24.6,
+        38.8
+       ],
+       [
+        23.727,
+        37.972
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0.6
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "493 BC · CHASED TO ATHENS",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s054",
+   "act": 3,
+   "lines": [
+    "Back home his enemies put him on trial for tyranny.",
+    "He was acquitted."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Athenian court · 493 BC",
+    "head": "CHARGE: TYRANNY",
+    "rows": [
+     "Defendant: Miltiades",
+     "Verdict: acquitted"
+    ],
+    "stamp": "ACQUITTED",
+    "note": "Herodotus 6.104 · summary"
+   }
+  },
+  {
+   "id": "s055",
+   "act": 3,
+   "lines": [
+    "Now this former servant of the Great King stood up in the Assembly and said march.",
+    "Athens voted with him."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "miltiades_assembly",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s056",
+   "act": 3,
+   "lines": [
+    "Every man who could afford a shield a spear and a bronze helmet went."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s056-photo",
+    "tag": "RECONSTRUCTION · 2010",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "SHIELD",
+      "x": 0.35,
+      "y": 0.6,
+      "color": "yellow",
+      "on": "shield"
+     },
+     {
+      "text": "SPEAR",
+      "x": 0.7,
+      "y": 0.3,
+      "color": "red",
+      "on": "spear"
+     },
+     {
+      "text": "BRONZE HELMET",
+      "x": 0.5,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "helmet"
+     }
+    ]
+   },
+   "label": "Reconstructed Athenian hoplite equipment · Zappeion exhibition, Athens (2010)"
+  },
+  {
+   "id": "s057",
+   "act": 3,
+   "lines": [
+    "They were not professional soldiers.",
+    "They were farmers potters olive growers and shopkeepers."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "WHO THEY WERE",
+    "items": [
+     {
+      "text": "Farmers",
+      "on": "farmers"
+     },
+     {
+      "text": "Potters",
+      "on": "potters"
+     },
+     {
+      "text": "Olive growers",
+      "on": "olive"
+     },
+     {
+      "text": "Shopkeepers",
+      "on": "shopkeepers"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s058",
+   "act": 3,
+   "lines": [
+    "They paid for their own armor.",
+    "They fought beside their neighbors because their neighbors were the army."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "hoplites_neighbors",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "hudCta": {
+    "at": 0,
+    "dur": 7.0
+   }
+  },
+  {
+   "id": "s059",
+   "act": 3,
+   "lines": [
+    {
+     "t": "About 9,000 of them marched north over the mountains.",
+     "say": "About nine thousand of them marched north over the mountains."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.727,
+        37.972
+       ],
+       [
+        23.8,
+        38.02
+       ],
+       [
+        23.88,
+        38.08
+       ],
+       [
+        23.945,
+        38.125
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "marker",
+      "p": "marathon",
+      "color": "red",
+      "at": 0.6
+     }
+    ],
+    "tilt": 20
+   },
+   "callouts": [
+    {
+     "text": "≈9,000 ATHENIANS MARCH",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s060",
+   "act": 3,
+   "lines": [
+    "At the same time Athens sent a runner to Sparta for help.",
+    "His name was Philippides."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "greece",
+    "to": "greece",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        23.727,
+        37.972
+       ],
+       [
+        23.4,
+        37.98
+       ],
+       [
+        22.95,
+        37.93
+       ],
+       [
+        22.75,
+        37.72
+       ],
+       [
+        22.6,
+        37.5
+       ],
+       [
+        22.47,
+        37.28
+       ],
+       [
+        22.43,
+        37.075
+       ]
+      ],
+      "color": "#ffd400",
+      "glow": true,
+      "on": "runner"
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "marker",
+      "p": "sparta",
+      "color": "dark",
+      "at": 0.6
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "PHILIPPIDES",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s061",
+   "act": 3,
+   "lines": [
+    {
+     "t": "He covered about 150 miles over mountain tracks.",
+     "say": "He covered about one hundred fifty miles over mountain tracks."
+    },
+    "And he reached Sparta on the day after he left Athens."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "runner_mountains",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "≈150 MILES · REACHED SPARTA THE NEXT DAY",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s062",
+   "act": 3,
+   "lines": [
+    "The Spartans said yes.",
+    "But not yet.",
+    "They were in the middle of a sacred festival."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Herodotus 6.106",
+    "head": "SPARTA'S ANSWER",
+    "rows": [
+     "Yes",
+     "But not before the full moon"
+    ],
+    "stamp": "SPARTA",
+    "note": "Summary"
+   }
+  },
+  {
+   "id": "s063",
+   "act": 3,
+   "lines": [
+    "Their law forbade them to march before the full moon.",
+    {
+     "t": "That meant waiting about 6 days.",
+     "say": "That meant waiting about six days."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "≈6 DAYS",
+    "style": "red",
+    "sub": "until the full moon",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s064",
+   "act": 3,
+   "lines": [
+    "So Athens would face the empire alone.",
+    "Or almost alone."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "ATHENS ALONE",
+    "accent": "OR ALMOST",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s065",
+   "act": 3,
+   "lines": [
+    "As the Athenians took up their positions a column appeared on the road from the west.",
+    "It was the whole army of Plataea."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "plataeans_arrive",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s066",
+   "act": 3,
+   "lines": [
+    {
+     "t": "About 1,000 men from a small town in Boeotia.",
+     "say": "About one thousand men from a small town in Boeotia."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.27,
+        38.215
+       ],
+       [
+        23.5,
+        38.2
+       ],
+       [
+        23.75,
+        38.17
+       ],
+       [
+        23.94,
+        38.13
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "plataea",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "marker",
+      "p": "thebes",
+      "color": "dark",
+      "at": 0.4
+     }
+    ],
+    "tilt": 18
+   },
+   "callouts": [
+    {
+     "text": "PLATAEA · ≈1,000 MEN",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s067",
+   "act": 3,
+   "lines": [
+    "Years earlier Athens had protected Plataea from its powerful neighbor Thebes.",
+    "Plataea had not forgotten."
+   ],
+   "visual": {
+    "type": "flatmap",
+    "center": [
+     23.5,
+     38.1
+    ],
+    "span": 1.7,
+    "fill": {
+     "300": "#f1e4c6"
+    },
+    "pins": [
+     {
+      "ll": [
+       23.27,
+       38.215
+      ],
+      "text": "Plataea",
+      "side": "below",
+      "at": 0
+     },
+     {
+      "ll": [
+       23.32,
+       38.32
+      ],
+      "text": "Thebes",
+      "side": "right",
+      "on": "Thebes"
+     },
+     {
+      "ll": [
+       23.727,
+       37.972
+      ],
+      "text": "Athens",
+      "side": "below",
+      "at": 0.3
+     }
+    ],
+    "routes": [
+     {
+      "from": [
+       23.727,
+       37.972
+      ],
+      "to": [
+       23.27,
+       38.215
+      ],
+      "bend": 0.2,
+      "dur": 1.4,
+      "label": "Protection",
+      "on": "protected"
+     }
+    ],
+    "labels": [],
+    "zoomTo": 0.92
+   }
+  },
+  {
+   "id": "s068",
+   "act": 3,
+   "lines": [
+    {
+     "t": "Together they made about 10,000 men.",
+     "say": "Together they made about ten thousand men."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "The Greek army at Marathon (approx.)",
+    "items": [
+     {
+      "label": "Athenians",
+      "value": 9000,
+      "display": "≈9,000",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "label": "Plataeans",
+      "value": 1000,
+      "display": "≈1,000",
+      "color": "blue",
+      "at": 0.3
+     },
+     {
+      "label": "Total",
+      "value": 10000,
+      "display": "≈10,000",
+      "color": "dark",
+      "on": "ten thousand"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s069",
+   "act": 3,
+   "lines": [
+    "They camped at a sanctuary of Heracles at the edge of the plain.",
+    "From there they blocked the road to Athens."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "unit",
+      "p": "herakleion",
+      "text": "GREEK CAMP",
+      "color": "blue",
+      "at": 0.1,
+      "pulse": true
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        23.95,
+        38.125
+       ],
+       [
+        23.93,
+        38.1
+       ],
+       [
+        23.9,
+        38.075
+       ],
+       [
+        23.86,
+        38.045
+       ]
+      ],
+      "color": "#2e66d8",
+      "glow": true,
+      "at": 0.5
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   },
+   "callouts": [
+    {
+     "text": "SANCTUARY OF HERACLES",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s070",
+   "act": 3,
+   "lines": [
+    "A later Roman writer adds that they cut down trees and laid them across the ground in front of the camp.",
+    "Any horseman who tried to charge would ride straight into a tangle of branches."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "felled_trees",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s071",
+   "act": 3,
+   "lines": [
+    "On the beach below the Persian ships were drawn up in a long line.",
+    "Their camp stretched along the shore near the great marsh."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "beach",
+    "to": "beach",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ],
+       [
+        24.029200000000003,
+        38.1308
+       ],
+       [
+        24.0334,
+        38.133599999999994
+       ],
+       [
+        24.0376,
+        38.136399999999995
+       ],
+       [
+        24.041800000000002,
+        38.139199999999995
+       ],
+       [
+        24.046000000000003,
+        38.141999999999996
+       ],
+       [
+        24.0502,
+        38.1448
+       ]
+      ],
+      "at": 0,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025
+     },
+     {
+      "k": "unit",
+      "p": "pcamp",
+      "text": "PERSIAN CAMP",
+      "color": "red",
+      "at": 0.6,
+      "pulse": true
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "GREAT MARSH",
+      "at": 0.9
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "water",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s072",
+   "act": 3,
+   "lines": [
+    "And somewhere in that camp an old man had a strange accident.",
+    "Herodotus says Hippias sneezed so hard that one of his loose old teeth flew out.",
+    "It fell into the sand and he could not find it."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "hippias_sneeze",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s073",
+   "act": 3,
+   "lines": [
+    "Hippias groaned.",
+    "This land is not ours he said.",
+    "My tooth has all the share of it."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "hippias_tooth",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "“THIS LAND IS NOT OURS.”",
+     "style": "dark",
+     "at": 1,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s074",
+   "act": 4,
+   "lines": [
+    "For several days nothing happened.",
+    "The Greeks stayed on the high ground at the edge of the plain.",
+    "The Persians stayed near the beach and their ships."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "unit",
+      "p": "herakleion",
+      "text": "GREEKS",
+      "color": "blue",
+      "at": 0.1
+     },
+     {
+      "k": "unit",
+      "p": "pcamp",
+      "text": "PERSIANS",
+      "color": "red",
+      "at": 0.4
+     },
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ],
+       [
+        24.029200000000003,
+        38.1308
+       ],
+       [
+        24.0334,
+        38.133599999999994
+       ],
+       [
+        24.0376,
+        38.136399999999995
+       ],
+       [
+        24.041800000000002,
+        38.139199999999995
+       ],
+       [
+        24.046000000000003,
+        38.141999999999996
+       ],
+       [
+        24.0502,
+        38.1448
+       ]
+      ],
+      "at": 0.2,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025
+     }
+    ],
+    "demSea": true,
+    "tilt": 30,
+    "hud": true
+   },
+   "chapter": {
+    "num": "ACT 4",
+    "title": "FIVE VOTES AGAINST FIVE"
+   },
+   "callouts": [
+    {
+     "text": "STANDOFF · SEVERAL DAYS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s075",
+   "act": 4,
+   "lines": [
+    "Each side had a good reason to wait.",
+    "The Greeks were waiting for Sparta.",
+    "On open ground Persian cavalry and archers could destroy a line of heavy infantry from a distance."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "WHY THE GREEKS WAITED",
+    "items": [
+     {
+      "text": "Sparta was coming",
+      "on": "Sparta"
+     },
+     {
+      "text": "Open ground favored horse and bow",
+      "on": "open ground"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s076",
+   "act": 4,
+   "lines": [
+    "The Persians had their own reason.",
+    "Hippias still had friends inside Athens.",
+    "Every day the army sat at Marathon was another day for a traitor to open a gate."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "traitor_gate",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "WHY PERSIA WAITED",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s077",
+   "act": 4,
+   "lines": [
+    {
+     "t": "Athens had 10 generals.",
+     "say": "Athens had ten generals."
+    },
+    {
+     "t": "One from each of its 10 tribes.",
+     "say": "One from each of its ten tribes."
+    },
+    "Each one commanded the whole army for one day in turn."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "title": "10 GENERALS",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.3,
+      "text": "1 per tribe · 1 day of command each",
+      "color": "dark",
+      "on": "turn"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s078",
+   "act": 4,
+   "lines": [
+    "And the ten were split exactly in half.",
+    {
+     "t": "5 said wait for the Spartans.",
+     "say": "Five said wait for the Spartans."
+    },
+    {
+     "t": "5 said attack.",
+     "say": "Five said attack."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "The ten generals",
+    "items": [
+     {
+      "label": "Wait",
+      "value": 5,
+      "display": "5",
+      "color": "blue",
+      "on": "wait"
+     },
+     {
+      "label": "Attack",
+      "value": 5,
+      "display": "5",
+      "color": "red",
+      "on": "attack"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s079",
+   "act": 4,
+   "lines": [
+    "One more man had a vote.",
+    "The polemarch Callimachus.",
+    "The war ruler of Athens for that year."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "callimachus",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "THE POLEMARCH CALLIMACHUS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s080",
+   "act": 4,
+   "lines": [
+    "Miltiades went to him.",
+    "Herodotus gives us his words."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "miltiades_callimachus",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s081",
+   "act": 4,
+   "lines": [
+    "Callimachus it is up to you now whether you enslave Athens or make her free.",
+    "If we do not fight soon some great quarrel will shake our people.",
+    "And they will go over to the Persians.",
+    "But if we fight before the rot sets in we can win."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Herodotus 6.109",
+    "head": "TO CALLIMACHUS",
+    "rows": [
+     "Enslave Athens or make her free",
+     "Wait and the city will split",
+     "Fight now and we can win"
+    ],
+    "stamp": "VOTE",
+    "note": "Paraphrase"
+   }
+  },
+  {
+   "id": "s082",
+   "act": 4,
+   "lines": [
+    "Callimachus voted to fight."
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "The deciding vote",
+    "items": [
+     {
+      "label": "Wait",
+      "value": 5,
+      "display": "5",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "label": "Attack",
+      "value": 6,
+      "display": "6",
+      "color": "red",
+      "on": "fight"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s083",
+   "act": 4,
+   "lines": [
+    "The generals who favored battle then handed their days of command to Miltiades.",
+    "He accepted the gift.",
+    "But he did not attack on their days.",
+    "He waited until his own turn came."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "HE WAITED",
+    "style": "yellow",
+    "sub": "for his own day of command",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s084",
+   "act": 4,
+   "lines": [
+    "Why did he wait?",
+    "Herodotus does not say.",
+    "And here our sources go quiet."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "WHY DID",
+    "accent": "HE WAIT?",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s085",
+   "act": 4,
+   "lines": [
+    "Look at the Greek army on paper.",
+    "Heavy infantry and nothing else.",
+    "No cavalry.",
+    "No archers worth the name."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "THE GREEK ARMY",
+    "items": [
+     {
+      "text": "Heavy infantry",
+      "on": "Heavy"
+     },
+     {
+      "text": "Cavalry",
+      "on": "No cavalry",
+      "checkOn": "No cavalry",
+      "bad": true
+     },
+     {
+      "text": "Archers",
+      "on": "No archers",
+      "checkOn": "No archers",
+      "bad": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "s086",
+   "act": 4,
+   "lines": [
+    "The Persians had both.",
+    "On any open field that should have decided the battle."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s086-photo",
+    "tag": "SUSA · GLAZED BRICK · c. 510 BC",
+    "pos": "50% 55%"
+   },
+   "label": "Frieze of Archers · Palace of Darius I, Susa (c. 510 BC) · Louvre",
+   "callouts": [
+    {
+     "text": "PERSIA HAD BOTH",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s087",
+   "act": 4,
+   "lines": [
+    "But a much later Byzantine dictionary preserves a strange story."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "A STRANGE STORY",
+    "style": "dark",
+    "sub": "The Suda · Byzantine dictionary · c. AD 1000",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s088",
+   "act": 4,
+   "lines": [
+    "One night Ionian Greeks serving in the Persian army slipped across to the Athenian lines."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "ionian_deserters",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s089",
+   "act": 4,
+   "lines": [
+    {
+     "t": "They brought a message of only 3 words.",
+     "say": "They brought a message of only three words."
+    },
+    "The cavalry are away."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "The Suda (chōris hippeis)",
+    "head": "A MESSAGE IN THE NIGHT",
+    "rows": [
+     "“The cavalry are away.”"
+    ],
+    "stamp": "?",
+    "note": "Late source · disputed"
+   }
+  },
+  {
+   "id": "s090",
+   "act": 4,
+   "lines": [
+    "Was it true?",
+    "Historians still argue about it.",
+    "The story appears only in sources written many centuries later."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "WAS IT",
+    "accent": "TRUE?",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s091",
+   "act": 4,
+   "lines": [
+    "One theory goes like this.",
+    "The Persians grew tired of the standoff.",
+    "They decided to sail around the cape to Phaleron the harbor of Athens."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        24.04,
+        38.11
+       ],
+       [
+        24.12,
+        37.95
+       ],
+       [
+        24.1,
+        37.72
+       ],
+       [
+        24.0,
+        37.61
+       ],
+       [
+        23.85,
+        37.7
+       ],
+       [
+        23.72,
+        37.86
+       ],
+       [
+        23.68,
+        37.925
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.6
+     },
+     {
+      "k": "marker",
+      "p": "phaleron",
+      "color": "red",
+      "at": 1.2
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 1.4
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "marathon",
+     "attica"
+    ],
+    "flightDur": 2.6
+   },
+   "callouts": [
+    {
+     "text": "ONE THEORY · SAIL FOR PHALERON",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s092",
+   "act": 4,
+   "lines": [
+    "They began loading the horses back onto the ships first.",
+    "Horses are slow to load and could not be rushed."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "horses_loading",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s093",
+   "act": 4,
+   "lines": [
+    "If that is right the Persian army on the beach was splitting in two.",
+    "And for a few hours its most dangerous weapon was out of the fight."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "beach",
+    "to": "beach",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ]
+      ],
+      "at": 0,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025,
+      "sailOn": "splitting"
+     },
+     {
+      "k": "unit",
+      "p": "pcamp",
+      "text": "CAVALRY BOARDING?",
+      "color": "red",
+      "at": 0.2,
+      "pulse": true
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0.4
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   },
+   "callouts": [
+    {
+     "text": "THEORY · NOT PROVEN",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s094",
+   "act": 4,
+   "lines": [
+    "Whatever the reason something changed.",
+    "At dawn the omens were good."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "dawn_omens",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s095",
+   "act": 4,
+   "lines": [
+    "Miltiades gave the order.",
+    "The Greek army came down from the hills onto the plain."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "plain",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.948,
+        38.128
+       ],
+       [
+        23.958,
+        38.124
+       ],
+       [
+        23.966,
+        38.121
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.3
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0.9
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "marathon",
+     "plain"
+    ],
+    "flightDur": 2.4,
+    "tilt": 30
+   },
+   "callouts": [
+    {
+     "text": "DAWN · THE GREEKS DESCEND",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s096",
+   "act": 5,
+   "lines": [
+    "Miltiades had a problem.",
+    "The Persian line was much longer than his.",
+    "If the Greeks formed up in their usual deep ranks the Persians would wrap around both ends."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    "title": "THE PROBLEM",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.2,
+      "text": "PERSIAN LINE: LONGER",
+      "color": "red",
+      "on": "longer"
+     },
+     {
+      "x": 0.5,
+      "y": 0.6,
+      "text": "WRAPPED AROUND BOTH ENDS",
+      "color": "dark",
+      "on": "wrap"
+     }
+    ]
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "ACT 5",
+    "title": "EIGHT STADES AT A RUN"
+   }
+  },
+  {
+   "id": "s097",
+   "act": 5,
+   "lines": [
+    "So he stretched his line to match theirs.",
+    "To do it he made a choice that broke the rules.",
+    "He thinned out the center.",
+    "Only a few ranks deep.",
+    "But he kept the two wings strong and deep."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    "title": "BREAKING THE RULES",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.6,
+      "text": "THIN CENTER",
+      "color": "red",
+      "on": "thinned"
+     },
+     {
+      "x": 0.15,
+      "y": 0.6,
+      "text": "STRONG WING",
+      "color": "blue",
+      "on": "wings"
+     },
+     {
+      "x": 0.85,
+      "y": 0.6,
+      "text": "STRONG WING",
+      "color": "blue",
+      "on": "wings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s098",
+   "act": 5,
+   "lines": [
+    "On the right stood Callimachus the polemarch.",
+    "That was the place of honor.",
+    "On the far left stood the Plataeans."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": [
+       23.973,
+       38.111
+      ],
+      "text": "CALLIMACHUS",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "right"
+     },
+     {
+      "k": "badge",
+      "p": [
+       23.962,
+       38.131
+      ],
+      "text": "PLATAEANS",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "Plataeans"
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s099",
+   "act": 5,
+   "lines": [
+    "In the thin center stood two of the tribes.",
+    "Plutarch tells us who led them.",
+    "Themistocles and Aristides."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "THEMISTOCLES · ARISTIDES",
+    "style": "dark",
+    "sub": "in the thin center · according to Plutarch",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s100",
+   "act": 5,
+   "lines": [
+    {
+     "t": "Two men who would shape the next 20 years of Greek history.",
+     "say": "Two men who would shape the next twenty years of Greek history."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "THE NEXT 20 YEARS",
+    "style": "yellow",
+    "sub": "Salamis · Plataea · the Athenian empire",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s101",
+   "act": 5,
+   "lines": [
+    "Across the plain the Persians placed their best troops in the middle.",
+    "Native Persians and the Saka."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0.2,
+      "text": "PERSIANS & SAKA"
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s102",
+   "act": 5,
+   "lines": [
+    "Fierce fighters from the steppes of Central Asia.",
+    "The weaker contingents stood on the wings."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "saka_warriors",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s103",
+   "act": 5,
+   "lines": [
+    {
+     "t": "Between the two armies lay at least 8 stades of open ground.",
+     "say": "Between the two armies lay at least eight stades of open ground."
+    },
+    "About a mile."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        23.968,
+        38.121
+       ],
+       [
+        23.991,
+        38.128
+       ]
+      ],
+      "color": "#ffffff",
+      "glow": true,
+      "at": 0.3
+     },
+     {
+      "k": "badge",
+      "p": "soros",
+      "text": "8 STADES ≈ 1 MILE",
+      "color": "#111",
+      "dy": -60,
+      "on": "eight"
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s104",
+   "act": 5,
+   "lines": [
+    "Then came the moment that made the battle famous."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THEN CAME",
+    "accent": "THE MOMENT",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s105",
+   "act": 5,
+   "lines": [
+    "The Greeks did not walk.",
+    "They ran."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THE GREEKS DID NOT WALK",
+    "accent": "THEY RAN",
+    "accentAt": 0.5
+   },
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s106",
+   "act": 5,
+   "lines": [
+    "Think about what that meant.",
+    {
+     "t": "A hoplite carried a round shield of wood and bronze nearly 3 feet across.",
+     "say": "A hoplite carried a round shield of wood and bronze nearly three feet across."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s106-photo",
+    "tag": "CHIGI VASE · c. 650 BC",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "SHIELD ≈ 3 FT ACROSS",
+      "x": 0.5,
+      "y": 0.2,
+      "color": "yellow",
+      "on": "shield"
+     }
+    ]
+   },
+   "label": "Hoplites in battle · Chigi vase (c. 650 BC)"
+  },
+  {
+   "id": "s107",
+   "act": 5,
+   "lines": [
+    "He wore a bronze helmet and body armor."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s107-photo",
+    "tag": "OLYMPIA · BRONZE HELMET · c. 490 BC",
+    "pos": "50% 45%",
+    "marks": [
+     {
+      "text": "BRONZE HELMET",
+      "x": 0.5,
+      "y": 0.82,
+      "color": "yellow",
+      "on": "helmet"
+     }
+    ]
+   },
+   "label": "Bronze helmet dedicated by Miltiades at Olympia · Archaeological Museum of Olympia"
+  },
+  {
+   "id": "s108",
+   "act": 5,
+   "lines": [
+    {
+     "t": "In all perhaps 50 pounds or more of equipment.",
+     "say": "In all perhaps fifty pounds or more of equipment."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "50+ POUNDS",
+    "style": "red",
+    "sub": "estimated weight of a hoplite's equipment",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s109",
+   "act": 5,
+   "lines": [
+    "A phalanx stayed alive only as long as it stayed together.",
+    "Every man covered the man on his left with his shield.",
+    "Running could tear that wall apart."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "title": "THE SHIELD WALL",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.28,
+      "text": "EACH SHIELD COVERS THE MAN ON THE LEFT",
+      "color": "dark",
+      "on": "covered"
+     }
+    ],
+    "runOn": "Running"
+   }
+  },
+  {
+   "id": "s110",
+   "act": 5,
+   "lines": [
+    "The Persians watching from across the plain thought the Greeks had gone mad.",
+    "Herodotus says they saw a small army without horses or archers rushing at them.",
+    "They thought it was madness and certain death."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "persians_watch",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "“MADNESS”",
+     "style": "red",
+     "at": 1,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s111",
+   "act": 5,
+   "lines": [
+    "But there was a reason for the run.",
+    "Persian archers could fill the air with arrows.",
+    "The faster you crossed the killing ground the fewer volleys you had to take."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "WHY RUN?",
+    "items": [
+     {
+      "text": "Arrows fill the air",
+      "on": "arrows"
+     },
+     {
+      "text": "Less time in the killing ground",
+      "on": "faster"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s112",
+   "act": 5,
+   "lines": [
+    "Many historians think the Greeks walked most of the way.",
+    "Then they broke into a run for the last stretch inside bowshot."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0,
+      "run": 55,
+      "runOn": "run"
+     },
+     {
+      "k": "badge",
+      "p": [
+       23.98,
+       38.124
+      ],
+      "text": "INSIDE BOWSHOT",
+      "color": "#c9242c",
+      "dy": -50,
+      "on": "bowshot"
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s113",
+   "act": 5,
+   "lines": [
+    "Either way Herodotus says they were the first Greeks he knew of to charge at a run.",
+    "And the first to face the sight of Persian dress without fear.",
+    "Until that day the very name of the Medes had terrified the Greeks."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Herodotus · Histories",
+    "head": "HERODOTUS 6.112",
+    "rows": [
+     "First Greeks to charge at a run",
+     "First to face Persian dress without fear"
+    ],
+    "stamp": "RECORD",
+    "note": "Paraphrase"
+   }
+  },
+  {
+   "id": "s114",
+   "act": 5,
+   "lines": [
+    "The two lines met with a crash of bronze on wicker."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "clash",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s115",
+   "act": 5,
+   "lines": [
+    "Persian infantry carried light shields of woven reeds.",
+    "Many wore quilted linen instead of metal.",
+    "Against heavy Greek spears and shields that was a deadly mismatch."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "PERSIAN",
+     "big": "WICKER · LINEN",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "GREEK",
+     "big": "BRONZE · WOOD",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s116",
+   "act": 5,
+   "lines": [
+    "But in the center the story was different.",
+    "The Persians and the Saka struck the thin Greek center.",
+    "And the center broke.",
+    "The Greeks there gave way and fell back toward the hills.",
+    "The Persians poured after them across the plain."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      3,
+      3,
+      4,
+      6,
+      8,
+      8,
+      8,
+      8,
+      6,
+      4,
+      3,
+      3
+     ]
+    },
+    "title": "THE CENTER",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.6,
+      "text": "THE CENTER BREAKS",
+      "color": "red",
+      "on": "broke"
+     }
+    ],
+    "bendOn": "broke"
+   }
+  },
+  {
+   "id": "s117",
+   "act": 5,
+   "lines": [
+    "For a moment it looked like the old story was repeating."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THE OLD STORY",
+    "accent": "REPEATING?",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s118",
+   "act": 5,
+   "lines": [
+    "Then came the turn.",
+    "On both wings the deep Greek ranks crushed the weaker troops in front of them.",
+    "The Persian wings broke and ran for the ships."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0,
+      "bend": 30,
+      "bendAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        23.99,
+        38.135
+       ],
+       [
+        24.0,
+        38.137
+       ],
+       [
+        24.012,
+        38.132
+       ]
+      ],
+      "at": 1.0,
+      "n": 70,
+      "width": 0.4
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        23.993,
+        38.116
+       ],
+       [
+        24.004,
+        38.118
+       ],
+       [
+        24.012,
+        38.124
+       ]
+      ],
+      "at": 1.2,
+      "n": 70,
+      "width": 0.4
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   },
+   "callouts": [
+    {
+     "text": "THE WINGS WIN",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s119",
+   "act": 5,
+   "lines": [
+    "Now the Greek wings faced the hardest test of all.",
+    "The enemy was running."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "wings_temptation",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s120",
+   "act": 5,
+   "lines": [
+    "Every instinct said chase them.",
+    "Kill them on the beach.",
+    "Take the loot."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "EVERY INSTINCT SAID",
+    "items": [
+     {
+      "text": "Chase them",
+      "on": "chase"
+     },
+     {
+      "text": "Kill them on the beach",
+      "on": "Kill"
+     },
+     {
+      "text": "Take the loot",
+      "on": "loot"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s121",
+   "act": 5,
+   "lines": [
+    "They did not."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THEY",
+    "accent": "DID NOT",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s122",
+   "act": 5,
+   "lines": [
+    "The two wings let the beaten enemy go.",
+    "They turned inward.",
+    "And closed on the Persians who were still chasing the broken center.",
+    "The Persian elite had pushed forward into a trap."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      3,
+      3,
+      4,
+      6,
+      8,
+      8,
+      8,
+      8,
+      6,
+      4,
+      3,
+      3
+     ]
+    },
+    "title": "THE TRAP",
+    "labels": [
+     {
+      "x": 0.5,
+      "y": 0.6,
+      "text": "THE WINGS TURN INWARD",
+      "color": "blue",
+      "on": "turned"
+     }
+    ],
+    "bendAt": 0,
+    "wrapOn": "turned"
+   }
+  },
+  {
+   "id": "s123",
+   "act": 5,
+   "lines": [
+    "Now Greek spears were coming at them from both sides."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "wings_turn",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s124",
+   "act": 5,
+   "lines": [
+    {
+     "t": "2,000 years later military writers would call it a double envelopment.",
+     "say": "Two thousand years later military writers would call it a double envelopment."
+    },
+    "On that morning it was simply a slaughter."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "plain",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.973,
+        38.111
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       8,
+       7,
+       4,
+       3,
+       3,
+       4,
+       7,
+       8,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.2,
+      "color": "blue",
+      "at": 0,
+      "bend": 30,
+      "bendAt": 0,
+      "wrap": 70,
+      "wrapAt": 0.2
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.962,
+        38.131
+       ],
+       [
+        23.976,
+        38.136
+       ],
+       [
+        23.986,
+        38.132
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.6
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.973,
+        38.111
+       ],
+       [
+        23.985,
+        38.111
+       ],
+       [
+        23.993,
+        38.117
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.8
+     },
+     {
+      "k": "lock",
+      "p": "soros",
+      "text": "DOUBLE ENVELOPMENT",
+      "at": 1.0
+     }
+    ],
+    "demSea": true,
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s125",
+   "act": 6,
+   "lines": [
+    "The Persian center collapsed.",
+    "Thousands of men ran for the only safety they had left.",
+    "The ships."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "plain",
+    "to": "beach",
+    "items": [
+     {
+      "k": "swarm",
+      "path": [
+       [
+        23.985,
+        38.125
+       ],
+       [
+        24.0,
+        38.124
+       ],
+       [
+        24.012,
+        38.124
+       ]
+      ],
+      "at": 0.2,
+      "n": 150,
+      "width": 0.6
+     },
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ],
+       [
+        24.029200000000003,
+        38.1308
+       ],
+       [
+        24.0334,
+        38.133599999999994
+       ],
+       [
+        24.0376,
+        38.136399999999995
+       ],
+       [
+        24.041800000000002,
+        38.139199999999995
+       ],
+       [
+        24.046000000000003,
+        38.141999999999996
+       ],
+       [
+        24.0502,
+        38.1448
+       ]
+      ],
+      "at": 0,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "plain",
+     "beach"
+    ],
+    "flightDur": 2.4,
+    "tilt": 32
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "ACT 6",
+    "title": "FIRE AT THE SHIPS"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s126",
+   "act": 6,
+   "lines": [
+    "Some fled into the great marsh.",
+    "They did not know the ground.",
+    "The marsh swallowed them."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "beach",
+    "to": "beach",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "GREAT MARSH",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        24.0,
+        38.135
+       ],
+       [
+        24.012,
+        38.143
+       ],
+       [
+        24.022,
+        38.15
+       ]
+      ],
+      "at": 0.3,
+      "n": 90,
+      "width": 0.5
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s127",
+   "act": 6,
+   "lines": [
+    "The rest streamed down to the beach.",
+    "Herodotus says the Greeks chased them all the way to the sea shouting for fire.",
+    "They wanted to burn the ships before they could escape."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "fire_at_ships",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "sfx": [
+    {
+     "id": "water",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s128",
+   "act": 6,
+   "lines": [
+    "The fight at the water's edge was the bloodiest of the day.",
+    "The polemarch Callimachus was killed there.",
+    {
+     "t": "So was Stesilaus one of the 10 generals.",
+     "say": "So was Stesilaus one of the ten generals."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "battle_at_ships",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "CALLIMACHUS KILLED",
+     "style": "red",
+     "at": 1,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s129",
+   "act": 6,
+   "lines": [
+    "An Athenian named Cynegirus grabbed the stern of a Persian ship as it pulled away.",
+    "Someone on board cut off his hand with an axe."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "cynegirus",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s130",
+   "act": 6,
+   "lines": [
+    "His brother was a young man named Aeschylus.",
+    "Years later Aeschylus would become the first great playwright of Athens."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "AESCHYLUS",
+    "style": "dark",
+    "sub": "his brother · the future playwright",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s131",
+   "act": 6,
+   "lines": [
+    {
+     "t": "The Greeks captured 7 ships.",
+     "say": "The Greeks captured seven ships."
+    },
+    "But the rest got away.",
+    "The Persian fleet backed off the beach and rowed out into the bay."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "beach",
+    "to": "beach",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ],
+       [
+        24.029200000000003,
+        38.1308
+       ],
+       [
+        24.0334,
+        38.133599999999994
+       ],
+       [
+        24.0376,
+        38.136399999999995
+       ],
+       [
+        24.041800000000002,
+        38.139199999999995
+       ],
+       [
+        24.046000000000003,
+        38.141999999999996
+       ],
+       [
+        24.0502,
+        38.1448
+       ]
+      ],
+      "at": 0,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025,
+      "sailOn": "rest"
+     },
+     {
+      "k": "badge",
+      "p": [
+       24.012,
+       38.119
+      ],
+      "text": "7 SHIPS CAPTURED",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "seven"
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s132",
+   "act": 6,
+   "lines": [
+    "In the middle of the fighting an Athenian named Epizelus suddenly lost his sight.",
+    "No sword or arrow had touched him.",
+    "Herodotus says he stayed blind for the rest of his life."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "epizelus",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s133",
+   "act": 6,
+   "lines": [
+    "He told people he had seen a giant warrior in heavy armor pass him by and strike down the man beside him.",
+    "Today we might call it the shock of combat."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "THE SHOCK OF COMBAT",
+    "style": "dark",
+    "sub": "Herodotus 6.117 · the story of Epizelus",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s134",
+   "act": 6,
+   "lines": [
+    "Then the Greeks counted the dead.",
+    "Herodotus gives the numbers.",
+    {
+     "t": "About 6,400 Persians.",
+     "say": "About six thousand four hundred Persians."
+    },
+    {
+     "t": "192 Athenians.",
+     "say": "One hundred ninety-two Athenians."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "The dead · according to Herodotus",
+    "items": [
+     {
+      "label": "Persians",
+      "value": 6400,
+      "display": "≈6,400",
+      "color": "red",
+      "on": "six thousand"
+     },
+     {
+      "label": "Athenians",
+      "value": 192,
+      "display": "192",
+      "color": "blue",
+      "on": "ninety-two"
+     }
+    ]
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "6,400",
+      "sub": "Persian dead",
+      "sub2": "Herodotus",
+      "on": "six thousand",
+      "color": "#FF3B30"
+     },
+     {
+      "big": "192",
+      "sub": "Athenian dead",
+      "sub2": "Herodotus",
+      "on": "ninety-two"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s135",
+   "act": 6,
+   "lines": [
+    {
+     "t": "33 Persians for every Athenian.",
+     "say": "Thirty-three Persians for every Athenian."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "33 : 1",
+    "style": "red",
+    "sub": "Persian dead for every Athenian",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s136",
+   "act": 6,
+   "lines": [
+    "The Persian figure may be rounded up and the Greek one may be too low.",
+    "But even historians who doubt the numbers agree on one thing.",
+    "It was a crushing defeat."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "THE NUMBERS",
+    "items": [
+     {
+      "text": "Persian figure may be rounded up",
+      "on": "rounded"
+     },
+     {
+      "text": "Greek figure may be too low",
+      "on": "too low"
+     },
+     {
+      "text": "Still a crushing defeat",
+      "on": "crushing"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s137",
+   "act": 6,
+   "lines": [
+    "And the day was not over."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THE DAY",
+    "accent": "WAS NOT OVER",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s138",
+   "act": 6,
+   "lines": [
+    "As the Persian ships pulled away someone on the mountain was seen flashing a shield in the sun.",
+    "A signal."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "shield_flash",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s139",
+   "act": 6,
+   "lines": [
+    "Herodotus says the Athenians later accused a powerful family in the city of treason.",
+    "No one ever proved who did it.",
+    "But the meaning was clear."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "TREASON?",
+    "style": "red",
+    "sub": "accusation never proved · Herodotus 6.115",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s140",
+   "act": 6,
+   "lines": [
+    "The Persian fleet was not going home.",
+    "It was heading south around Cape Sounion toward Phaleron."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        24.04,
+        38.11
+       ],
+       [
+        24.12,
+        37.95
+       ],
+       [
+        24.1,
+        37.72
+       ],
+       [
+        24.0,
+        37.61
+       ],
+       [
+        23.85,
+        37.7
+       ],
+       [
+        23.72,
+        37.86
+       ],
+       [
+        23.68,
+        37.925
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.4
+     },
+     {
+      "k": "marker",
+      "p": "sounion",
+      "color": "dark",
+      "on": "Sounion"
+     }
+    ],
+    "demSea": true,
+    "flight": [
+     "marathon",
+     "attica"
+    ],
+    "flightDur": 2.6,
+    "tilt": 18
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s141",
+   "act": 6,
+   "lines": [
+    "Toward Athens itself.",
+    "And Athens had no army inside its walls.",
+    "Every fighting man was at Marathon."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        24.04,
+        38.11
+       ],
+       [
+        24.12,
+        37.95
+       ],
+       [
+        24.1,
+        37.72
+       ],
+       [
+        24.0,
+        37.61
+       ],
+       [
+        23.85,
+        37.7
+       ],
+       [
+        23.72,
+        37.86
+       ],
+       [
+        23.68,
+        37.925
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "athens",
+      "text": "ATHENS · NO ARMY",
+      "at": 0.5
+     }
+    ],
+    "tilt": 18,
+    "hud": true
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "s142",
+   "act": 6,
+   "lines": [
+    "So the exhausted Greeks did something almost as remarkable as the battle."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "ALMOST AS REMARKABLE",
+    "accent": "AS THE BATTLE",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s143",
+   "act": 6,
+   "lines": [
+    "They left a guard over the dead and the captured spoils.",
+    "Then they marched back to Athens in full armor."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "march_back",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s144",
+   "act": 6,
+   "lines": [
+    {
+     "t": "About 26 miles.",
+     "say": "About twenty-six miles."
+    },
+    "On the same day they had fought."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "attica",
+    "to": "attica",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.95,
+        38.12
+       ],
+       [
+        23.88,
+        38.075
+       ],
+       [
+        23.81,
+        38.02
+       ],
+       [
+        23.727,
+        37.975
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "badge",
+      "p": [
+       23.84,
+       38.05
+      ],
+      "text": "≈26 MILES · SAME DAY",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "twenty-six"
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0.6
+     }
+    ],
+    "tilt": 20
+   }
+  },
+  {
+   "id": "s145",
+   "act": 6,
+   "lines": [
+    "When the Persian fleet finally appeared off Phaleron the army was already there.",
+    "Camped at another sanctuary of Heracles outside the city.",
+    "The same men the Persians had just met at Marathon."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "phaleron_wait",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s146",
+   "act": 6,
+   "lines": [
+    "Datis looked at the shore.",
+    "For a while his ships rode at anchor."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "datis_turn",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s147",
+   "act": 6,
+   "lines": [
+    "Then they turned and sailed back to Asia."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.68,
+        37.925
+       ],
+       [
+        24.2,
+        37.75
+       ],
+       [
+        25.5,
+        37.6
+       ],
+       [
+        26.9,
+        37.75
+       ],
+       [
+        27.2,
+        37.9
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.1
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "BACK TO ASIA",
+     "style": "dark",
+     "at": 0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s148",
+   "act": 6,
+   "lines": [
+    {
+     "t": "2,000 Spartans arrived soon after the full moon.",
+     "say": "Two thousand Spartans arrived soon after the full moon."
+    },
+    {
+     "t": "They had marched so fast that they reached Attica on the 3rd day after leaving Sparta.",
+     "say": "They had marched so fast that they reached Attica on the third day after leaving Sparta."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "greece",
+    "to": "greece",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        22.43,
+        37.075
+       ],
+       [
+        22.6,
+        37.5
+       ],
+       [
+        22.95,
+        37.93
+       ],
+       [
+        23.4,
+        37.98
+       ],
+       [
+        23.727,
+        37.972
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "sparta",
+      "color": "dark",
+      "at": 0
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "2,000 SPARTANS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s149",
+   "act": 6,
+   "lines": [
+    "They were too late."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "TOO LATE",
+    "style": "red"
+   }
+  },
+  {
+   "id": "s150",
+   "act": 6,
+   "lines": [
+    "They asked to see the battlefield anyway.",
+    "They walked among the Persian dead at Marathon.",
+    "Then they praised the Athenians and went home."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "spartans_view",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s151",
+   "act": 7,
+   "lines": [
+    "The Athenians did something unusual with their dead.",
+    "Normally the fallen were brought home and buried in the city.",
+    "The men of Marathon were not."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "THE DEAD",
+    "accent": "STAYED AT MARATHON",
+    "accentAt": 0.5
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "ACT 7",
+    "title": "THE ANSWER"
+   }
+  },
+  {
+   "id": "s152",
+   "act": 7,
+   "lines": [
+    "They were burned and buried where they fell under a great mound of earth.",
+    "It still stands on the plain today."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s152-photo",
+    "tag": "THE SOROS · 2019",
+    "marks": [
+     {
+      "text": "THE SOROS",
+      "x": 0.5,
+      "y": 0.16,
+      "color": "yellow",
+      "on": "mound"
+     }
+    ]
+   },
+   "label": "The Soros · burial mound of the Athenians at Marathon (2019)"
+  },
+  {
+   "id": "s153",
+   "act": 7,
+   "lines": [
+    {
+     "t": "About 30 feet high.",
+     "say": "About thirty feet high."
+    },
+    "The Greeks call it the Soros."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s153-photo",
+    "tag": "EDWARD DODWELL · 1819",
+    "marks": [
+     {
+      "text": "≈30 FEET HIGH",
+      "x": 0.5,
+      "y": 0.2,
+      "color": "yellow",
+      "on": "thirty"
+     }
+    ]
+   },
+   "label": "The great tumulus at Marathon · Edward Dodwell (1819)"
+  },
+  {
+   "id": "s154",
+   "act": 7,
+   "lines": [
+    "The Plataeans received a mound of their own nearby."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s154-photo",
+    "tag": "TUMULUS OF THE PLATAEANS · 2019"
+   },
+   "label": "Burial mound of the Plataeans at Marathon (2019)"
+  },
+  {
+   "id": "s155",
+   "act": 7,
+   "lines": [
+    {
+     "t": "The Athenians honored the 192 as heroes.",
+     "say": "The Athenians honored the one hundred ninety-two as heroes."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "192 HEROES",
+    "style": "yellow",
+    "sub": "honored with a hero cult",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s156",
+   "act": 7,
+   "lines": [
+    "Years later Aeschylus wrote some of the greatest plays of the ancient world."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s156-photo",
+    "tag": "STOA POIKILE · RECONSTRUCTION · ATHENS"
+   },
+   "label": "Battle of Marathon painting in the Stoa Poikile · modern reconstruction"
+  },
+  {
+   "id": "s157",
+   "act": 7,
+   "lines": [
+    "But according to an ancient biography his own epitaph did not mention a single play.",
+    "It said only that he had fought at Marathon.",
+    "And that the long-haired Mede knew his courage."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Ancient Life of Aeschylus",
+    "head": "EPITAPH OF AESCHYLUS",
+    "rows": [
+     "No word of his plays",
+     "Only: he fought at Marathon",
+     "The long-haired Mede knew it"
+    ],
+    "stamp": "MARATHON",
+    "note": "Paraphrase"
+   }
+  },
+  {
+   "id": "s158",
+   "act": 7,
+   "lines": [
+    "There is one more famous story.",
+    "A runner races from Marathon to Athens with news of the victory.",
+    "He cries rejoice we have won and falls dead."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "runner_rejoice",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "LEGEND",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s159",
+   "act": 7,
+   "lines": [
+    {
+     "t": "That story first appears in writers who lived more than 500 years later.",
+     "say": "That story first appears in writers who lived more than five hundred years later."
+    },
+    "Herodotus never tells it.",
+    "His real runner was Philippides and his real run was to Sparta."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "THE LEGEND",
+     "big": "RUNNER TO ATHENS",
+     "icon": "none",
+     "color": "dark"
+    },
+    "right": {
+     "title": "HERODOTUS",
+     "big": "RUNNER TO SPARTA",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s160",
+   "act": 7,
+   "lines": [
+    {
+     "t": "But in 1896 the first modern Olympics turned the legend into a race.",
+     "say": "But in eighteen ninety-six the first modern Olympics turned the legend into a race."
+    },
+    "They called it the marathon.",
+    {
+     "t": "Today it is run over 26 miles.",
+     "say": "Today it is run over twenty-six miles."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "olympics_1896",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "1896 · ATHENS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s161",
+   "act": 7,
+   "lines": [
+    "So let us go back to the question we asked at the start.",
+    "How did citizen-farmer hoplites with no cavalry or archers drive the world's largest empire into the sea?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": " "
+   },
+   "hook": {
+    "question": {
+     "text": "How did citizen-farmer hoplites\nwith no cavalry or archers\ndrive the world's largest empire into the sea?",
+     "on": "How did",
+     "kicker": "■ THE ANSWER ■"
+    }
+   }
+  },
+  {
+   "id": "s162",
+   "act": 7,
+   "lines": [
+    "The answer is not a miracle.",
+    "It is a chain of decisions."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "NOT A MIRACLE",
+    "style": "yellow",
+    "sub": "a chain of decisions",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s163",
+   "act": 7,
+   "lines": [
+    "First the ground.",
+    "The Greeks chose to block the roads at the edge of the plain where horses could not easily reach them.",
+    "The marshes and the mountains protected their flanks."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "marathon",
+    "to": "marathon",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.996,
+        38.146
+       ],
+       [
+        24.012,
+        38.161
+       ],
+       [
+        24.035,
+        38.163
+       ],
+       [
+        24.05,
+        38.152
+       ],
+       [
+        24.04,
+        38.141
+       ],
+       [
+        24.02,
+        38.137
+       ],
+       [
+        24.004,
+        38.139
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "MARSH",
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        23.988,
+        38.104
+       ],
+       [
+        24.0,
+        38.109
+       ],
+       [
+        24.012,
+        38.101
+       ],
+       [
+        24.003,
+        38.092
+       ],
+       [
+        23.99,
+        38.095
+       ]
+      ],
+      "color": "#3fb6a8",
+      "text": "MARSH",
+      "at": 0
+     },
+     {
+      "k": "unit",
+      "p": "herakleion",
+      "text": "GREEK CAMP",
+      "color": "blue",
+      "at": 0.2
+     }
+    ],
+    "demSea": true,
+    "tilt": 32
+   },
+   "callouts": [
+    {
+     "text": "1 · THE GROUND",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s164",
+   "act": 7,
+   "lines": [
+    "Second the timing.",
+    "They waited until the Persian army was at its weakest.",
+    "Perhaps because the cavalry was away."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "beach",
+    "to": "beach",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        24.004,
+        38.114
+       ],
+       [
+        24.008200000000002,
+        38.1168
+       ],
+       [
+        24.012400000000003,
+        38.1196
+       ],
+       [
+        24.0166,
+        38.1224
+       ],
+       [
+        24.0208,
+        38.1252
+       ],
+       [
+        24.025000000000002,
+        38.128
+       ]
+      ],
+      "at": 0,
+      "rot": -55,
+      "dx": 0.03,
+      "dy": -0.025,
+      "sailOn": "cavalry"
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        23.986,
+        38.139
+       ],
+       [
+        23.997,
+        38.117
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       4,
+       6,
+       8,
+       8,
+       8,
+       8,
+       6,
+       4,
+       3,
+       3
+      ],
+      "face": 1,
+      "px": 3.2,
+      "color": "red",
+      "at": 0
+     }
+    ],
+    "demSea": true,
+    "tilt": 30
+   },
+   "callouts": [
+    {
+     "text": "2 · THE TIMING",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s165",
+   "act": 7,
+   "lines": [
+    "Third the run.",
+    "It cut the time spent under Persian arrows to almost nothing."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      3,
+      3,
+      4,
+      6,
+      8,
+      8,
+      8,
+      8,
+      6,
+      4,
+      3,
+      3
+     ]
+    },
+    "title": "3 · THE RUN",
+    "runAt": 0
+   }
+  },
+  {
+   "id": "s166",
+   "act": 7,
+   "lines": [
+    "Fourth the armor.",
+    "Once the lines met bronze and heavy spears beat wicker and linen."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "WICKER · LINEN",
+     "big": "LIGHT",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "BRONZE · SPEAR",
+     "big": "HEAVY",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   },
+   "callouts": [
+    {
+     "text": "4 · THE ARMOR",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s167",
+   "act": 7,
+   "lines": [
+    "Fifth the formation.",
+    "A thin center that could bend without breaking the whole line.",
+    "Strong wings that won first."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     8,
+     7,
+     4,
+     3,
+     3,
+     4,
+     7,
+     8,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      3,
+      3,
+      4,
+      6,
+      8,
+      8,
+      8,
+      8,
+      6,
+      4,
+      3,
+      3
+     ]
+    },
+    "title": "5 · THE FORMATION",
+    "bendAt": 0.3,
+    "wrapOn": "wings"
+   }
+  },
+  {
+   "id": "s168",
+   "act": 7,
+   "lines": [
+    "And discipline.",
+    "The discipline to stop chasing a beaten enemy and turn inward when every instinct said run after them."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "wings_turn",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "6 · DISCIPLINE",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s169",
+   "act": 7,
+   "lines": [
+    "And one more thing."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "ONE MORE THING",
+    "style": "dark"
+   }
+  },
+  {
+   "id": "s170",
+   "act": 7,
+   "lines": [
+    {
+     "t": "17 years before Marathon Athens had become a democracy.",
+     "say": "Seventeen years before Marathon Athens had become a democracy."
+    },
+    "The men on that plain had voted to be there."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "pnyx_vote",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "ATHENIAN DEMOCRACY · c. 508 BC",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s171",
+   "act": 7,
+   "lines": [
+    "They were not fighting for a king.",
+    "They were fighting for their own city."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "WHY MARATHON WAS WON",
+    "items": [
+     {
+      "text": "The ground",
+      "at": 0
+     },
+     {
+      "text": "The timing",
+      "at": 0.1
+     },
+     {
+      "text": "The run",
+      "at": 0.2
+     },
+     {
+      "text": "The armor",
+      "at": 0.3
+     },
+     {
+      "text": "The formation",
+      "at": 0.4
+     },
+     {
+      "text": "Discipline",
+      "at": 0.5
+     },
+     {
+      "text": "Free citizens",
+      "on": "own city"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s172",
+   "act": 7,
+   "lines": [
+    "Marathon did not end the war."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "MARATHON DID NOT",
+    "accent": "END THE WAR",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s173",
+   "act": 7,
+   "lines": [
+    {
+     "t": "10 years later Darius's son Xerxes came back with a far larger army.",
+     "say": "Ten years later Darius's son Xerxes came back with a far larger army."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "aegean",
+    "to": "aegean",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        29.0,
+        39.8
+       ],
+       [
+        27.0,
+        40.4
+       ],
+       [
+        25.0,
+        40.7
+       ],
+       [
+        23.2,
+        40.6
+       ],
+       [
+        22.6,
+        39.6
+       ],
+       [
+        23.3,
+        38.4
+       ]
+      ],
+      "color": "red",
+      "width": 1.4,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0.4
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "480 BC · XERXES",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s174",
+   "act": 7,
+   "lines": [
+    "And Miltiades did not live to see it."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s174-photo",
+    "tag": "MILTIADES · ROMAN COPY",
+    "pos": "50% 35%"
+   },
+   "label": "Miltiades · Roman copy of a Greek bust · National Gallery of Slovenia"
+  },
+  {
+   "id": "s175",
+   "act": 7,
+   "lines": [
+    "A year after his greatest victory he led a failed attack on the island of Paros.",
+    "He came home wounded."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "miltiades_paros",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "489 BC · PAROS",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s176",
+   "act": 7,
+   "lines": [
+    {
+     "t": "Athens put him on trial and fined him 50 talents.",
+     "say": "Athens put him on trial and fined him fifty talents."
+    },
+    "He died of his wound before he could pay."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "Athenian court · 489 BC",
+    "head": "VERDICT",
+    "rows": [
+     "Defendant: Miltiades",
+     "Fine: 50 talents"
+    ],
+    "stamp": "GUILTY",
+    "note": "Herodotus 6.136 · summary"
+   }
+  },
+  {
+   "id": "s177",
+   "act": 7,
+   "lines": [
+    "His son paid the debt."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "HIS SON PAID THE DEBT",
+    "style": "dark",
+    "sub": "Cimon",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s178",
+   "act": 7,
+   "lines": [
+    "But Marathon proved something no one in Greece had believed.",
+    "The Great King could be beaten.",
+    "His army could be broken.",
+    "And free men fighting for their own city could stand their ground against an empire."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "marathon_dawn",
+    "kb": "in"
+   },
+   "label": "Dramatization"
+  },
+  {
+   "id": "s179",
+   "act": 7,
+   "lines": [
+    "The servant of Darius kept repeating the same sentence.",
+    "Master remember the Athenians."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "servant_dinner",
+    "kb": "in"
+   },
+   "label": "Dramatization",
+   "callouts": [
+    {
+     "text": "“MASTER, REMEMBER THE ATHENIANS”",
+     "style": "dark",
+     "at": 1,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s180",
+   "act": 7,
+   "lines": [
+    "In the end Persia had every reason to remember them."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s180-photo",
+    "tag": "THE SOROS · 2019",
+    "pos": "50% 60%"
+   },
+   "label": "The Soros · burial mound of the Athenians at Marathon (2019)"
+  },
+  {
+   "id": "s181",
+   "act": 7,
+   "lines": [
+    {
+     "t": "If you want to see how the Greeks faced the far larger invasion that came 10 years later subscribe to Map of War.",
+     "say": "If you want to see how the Greeks faced the far larger invasion that came ten years later subscribe to Map of War."
+    },
+    "Like this video and share it with someone who loves history."
+   ],
+   "visual": {
+    "type": "endcard",
+    "title": "To the men who ran at Marathon",
+    "q": "s181-photo"
+   },
+   "tail": 1.0
+  }
+ ]
+}

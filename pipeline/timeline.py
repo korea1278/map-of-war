@@ -328,7 +328,7 @@ def build(ep, mock=False, gap=None):
             if not isinstance(o, dict):
                 return o
             o = {k: apply_on(v) for k, v in o.items()}
-            for key, tgt in (("on", "at"), ("untilOn", "until"), ("takenOn", "takenAt"), ("checkOn", "checkAt"), ("xOn", "xAt")):
+            for key, tgt in (("on", "at"), ("untilOn", "until"), ("takenOn", "takenAt"), ("checkOn", "checkAt"), ("xOn", "xAt"), ("runOn", "runAt"), ("wrapOn", "wrapAt"), ("bendOn", "bendAt"), ("sailOn", "sailAt")):
                 if isinstance(o.get(key), str):
                     s = word_time(o[key])
                     if s is not None:
@@ -401,6 +401,8 @@ def build(ep, mock=False, gap=None):
           "views": board["views"], "scenes": scenes_out, "music": music, "rasters": rasters, "sfx": sfx_avail,
           "sfxPolicy": policy,
           "hasWater": (ROOT / "public" / "geo" / "water.json").exists(),
+          # map-of-war EP01~: 한반도 밖 전장의 육지 마스크 (ISO 숫자 코드) — MapView.landOf
+          **({"land": board["land"]} if board.get("land") else {}),
           # 화면 업그레이드 2단계: 캐릭터 라이브러리에 있는 그림 목록 (없으면 stage 화면이 SVG 볼 캐릭터로 대체)
           "chars": sorted(p.stem for p in (ROOT / "public" / "chars").glob("*.png"))}
     write_json(out / "timeline.json", tl)
