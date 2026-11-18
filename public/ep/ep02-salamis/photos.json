@@ -339,5 +339,16 @@
   "h": 610,
   "pin": "File:Battle of Salamis by Wilhelm von Kaulbach.jpg",
   "cands": []
+ },
+ "s048-photo#0": {
+  "file": "photos/s048_photo_0.jpg",
+  "title": "File:Trireme Olympias.jpg",
+  "credit": "출처: Wikimedia Commons",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trireme_Olympias.jpg",
+  "w": 1920,
+  "h": 1440,
+  "pin": "File:Trireme Olympias.jpg",
+  "cands": []
  }
 }

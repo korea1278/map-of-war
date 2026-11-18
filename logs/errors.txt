@@ -15,3 +15,4 @@
 2026-11-18 18:31:30 ep02-salamis: ⚠ 그림 aristides_writes 생성 실패 → 어두운 자리 표시 그림으로 렌더 계속 (업로드 전 교체 필요): 503 application/json; charset=utf-8 {"status":503,"success":false,"error":{"code":"SERVICE_UNAVAILABLE","message":"The C
 2026-11-18 18:31:54 ep02-salamis: 그림 ostracism_vote → cloudflare 실패로 무료 pollinations 그림으로 대체 (확인 필요)
 2026-11-18 18:33:17 ep02-salamis: 그림 staff_raised → cloudflare 실패로 무료 pollinations 그림으로 대체 (확인 필요)
+2026-11-18 18:50:22 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
