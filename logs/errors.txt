@@ -5,3 +5,7 @@
 2026-11-18 01:58:03 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
 2026-11-18 02:01:24 image assembly_debate: 402 {   "error": {     "code": 402,     "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",     "status": "RESOURCE_EXHAUSTED"   } } 
 2026-11-18 02:26:21 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-18 17:41:47 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Time-out for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-18 17:43:20 ep02-salamis: 새 그림 29장 (cloudflare) · 약 1682뉴런 사용 (하루 무료 1만, 두 저장소 공용)
+2026-11-18 17:51:22 ep02-salamis: 러닝타임 16분 40초 — 목표 19분 50초와 10초 이상 차이 (대본 분량 조정 필요)
+2026-11-18 17:51:29 ep02-salamis: 러닝타임 16분 40초 — 목표 19분 50초와 10초 이상 차이 (대본 분량 조정 필요)
