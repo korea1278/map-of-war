@@ -3,7 +3,18 @@
 후보 = 지금 목소리 설정 변형 + Minho + 일레븐랩스 공유 라이브러리의 한국어 남성 나레이션 인기 목소리 몇 개(자동 검색)."""
 import json, os, re, sys
 from pathlib import Path
+import time
 import requests
+
+def req(method, url, tries=4, **kw):
+    """일레븐랩스가 가끔 응답이 늦어 타임아웃 — 재시도"""
+    kw.setdefault("timeout", 90)
+    for i in range(tries):
+        try:
+            return requests.request(method, url, **kw)
+        except requests.RequestException as e:
+            print(f"  재시도 {i + 1}/{tries}: {e.__class__.__name__}"); time.sleep(5 * (i + 1))
+    return None
 
 KEY = os.environ.get("ELEVENLABS_API_KEY") or sys.exit("ELEVENLABS_API_KEY 비어 있음")
 H = {"xi-api-key": KEY}
@@ -16,12 +27,13 @@ TEXT = os.environ.get("TEXT") or (
 BASE = {"stability": 0.55, "similarity_boost": 0.78, "style": 0.0, "use_speaker_boost": True}
 
 try:
-    sub = requests.get(f"{API}/user/subscription", headers=H, timeout=30).json()
+    sub = req("GET", f"{API}/user/subscription", headers=H).json()
     print(f"남은 글자 크레딧: {sub.get('character_limit', 0) - sub.get('character_count', 0)} / 목소리 칸 {sub.get('voice_slots_used')}/{sub.get('voice_limit')}")
 except Exception as e:
     print("구독 정보 확인 실패:", e)
 
-mine = {v["voice_id"]: v for v in requests.get(f"{API}/voices", headers=H, timeout=30).json().get("voices", [])}
+rv = req("GET", f"{API}/voices", headers=H)
+mine = {v["voice_id"]: v for v in (rv.json().get("voices", []) if rv is not None and rv.ok else [])}
 print("내 목소리:", ", ".join(f"{v['name']}({k})" for k, v in mine.items()))
 
 cands = [
@@ -35,7 +47,7 @@ cands = [
 seen, shared = set(c["voice"] for c in cands), []
 for params in ({"use_cases": "narrative_story"}, {"use_cases": "informative_educational"}, {}):
     try:
-        r = requests.get(f"{API}/shared-voices", headers=H, timeout=30,
+        r = req("GET", f"{API}/shared-voices", headers=H,
                          params={"language": "ko", "gender": "male", "page_size": 40, "sort": "usage_character_count_1y", **params})
         vs = r.json().get("voices", [])
     except Exception as e:
@@ -50,8 +62,8 @@ for v in shared[:20]:
 
 def tts(c):
     body = {"text": TEXT, "model_id": c["model"], "voice_settings": c["set"]}
-    return requests.post(f"{API}/text-to-speech/{c['voice']}", params={"output_format": "mp3_44100_128"},
-                         headers={**H, "Content-Type": "application/json"}, json=body, timeout=120)
+    return req("POST", f"{API}/text-to-speech/{c['voice']}", params={"output_format": "mp3_44100_128"},
+               headers={**H, "Content-Type": "application/json"}, json=body, timeout=120)
 
 n = 5
 for v in shared:
@@ -64,14 +76,16 @@ for v in shared:
 report = []
 for c in cands:
     r = tts(c)
+    if r is None:
+        print("실패(응답 없음)", c["tag"]); report.append({"tag": c["tag"], "ok": False}); continue
     if r.status_code != 200 and c.get("owner"):
         # 공유 목소리는 내 목소리 목록에 추가해야 쓸 수 있는 경우가 있음 (목소리 칸 1개 사용)
-        a = requests.post(f"{API}/voices/add/{c['owner']}/{c['voice']}", headers={**H, "Content-Type": "application/json"},
-                          json={"new_name": c.get("name", c["tag"])}, timeout=60)
-        print("  추가 시도", c["tag"], a.status_code, a.text[:150])
-        if a.status_code == 200:
+        a = req("POST", f"{API}/voices/add/{c['owner']}/{c['voice']}", headers={**H, "Content-Type": "application/json"},
+                json={"new_name": c.get("name", c["tag"])})
+        print("  추가 시도", c["tag"], a.status_code if a is not None else "응답 없음", a.text[:150] if a is not None else "")
+        if a is not None and a.status_code == 200:
             c["voice"] = a.json().get("voice_id", c["voice"]); c["added"] = True
-            r = tts(c)
+            r = tts(c) or r
     ok = r.status_code == 200 and r.headers.get("content-type", "").startswith("audio")
     if ok:
         (OUT / f"{c['tag']}.mp3").write_bytes(r.content)
