@@ -78,8 +78,26 @@ def gen_gemini(s, prompt):
     raise RuntimeError(f"그림 없음: {r.text[:300]}")
 
 
+CF_ACC = {}
+
+
+def cf_account(s, tok):
+    """CF_ACCOUNT_ID가 비어 있으면 토큰으로 계정 목록을 조회해 첫 계정을 쓴다 (2026-11-18 · 계정 ID 비밀값을 못 찾은 경우 대비)"""
+    if env("CF_ACCOUNT_ID"):
+        return env("CF_ACCOUNT_ID")
+    if "id" not in CF_ACC:
+        r = s.get("https://api.cloudflare.com/client/v4/accounts", headers={"Authorization": f"Bearer {tok}"}, timeout=60)
+        res = (r.json() or {}).get("result") or [] if r.status_code < 400 else []
+        if not res:
+            raise RuntimeError(f"403 CF_ACCOUNT_ID 비어 있음 + 토큰으로 계정 조회 불가 ({r.status_code} {r.text[:150]})")
+        CF_ACC["id"] = res[0]["id"]
+        print(f"  Cloudflare 계정 자동 확인: {res[0].get('name', '')} (계정 {len(res)}개 중 첫 번째)")
+    return CF_ACC["id"]
+
+
 def gen_cloudflare(s, prompt, seed=0):
-    acc, tok = env("CF_ACCOUNT_ID", required=True), env("CF_API_TOKEN", required=True)
+    tok = env("CF_API_TOKEN", required=True)
+    acc = cf_account(s, tok)
     r = s.post(
         f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {tok}"},
@@ -127,7 +145,7 @@ def placeholder():
 def main(ep, thumb=False):
     prov = (env("IMAGE_PROVIDER") or "auto").lower()
     if prov == "auto":
-        prov = "cloudflare" if env("CF_ACCOUNT_ID") and env("CF_API_TOKEN") else "pollinations"
+        prov = "cloudflare" if env("CF_API_TOKEN") else "pollinations"  # 계정 ID는 비어 있어도 토큰으로 자동 조회
     board = load_board(ep)
     if board.get("assets_ep"):
         print(f"AI 이미지: {board['assets_ep']} 에피소드 것을 재사용")
