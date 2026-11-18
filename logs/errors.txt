@@ -4,3 +4,4 @@
 2026-11-17 21:51:08 ep01-marathon: 러닝타임 28분 18초 — 목표 20분 30초와 10초 이상 차이 (대본 분량 조정 필요)
 2026-11-18 01:58:03 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
 2026-11-18 02:01:24 image assembly_debate: 402 {   "error": {     "code": 402,     "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",     "status": "RESOURCE_EXHAUSTED"   } } 
+2026-11-18 02:26:21 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
