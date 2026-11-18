@@ -10,7 +10,7 @@ import sys
 
 from common import ep_dirs, env, line_say, load_board, read_json, retry, session, write_json
 
-DEFAULT_VOICE = "Srd5jY77m6kKijR9vy6R"  # 채널 기본 내레이터 (2026-11-18 교체, 이전 Adam pNInz6obpgDQGcFmaJgB — ep08-chosin 보드에만 남음)
+DEFAULT_VOICE = "ZJCNdZEjYwkOElxugmW2"  # 채널 기본 내레이터 창욱 (2026-11-19 교체 — 이전 Srd5jY77m6kKijR9vy6R은 저음 갈라짐(지지직)으로 교체, ep01-marathon 보드에만 남음 · 그 전 Adam은 ep08-chosin)
 
 
 def scene_tts_text(sc):

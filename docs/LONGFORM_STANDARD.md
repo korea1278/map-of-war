@@ -11,7 +11,7 @@
 2. 오디오 막(Act) 단위 통파일 생성 원칙 (Strict Act-by-Act Single MP3)
    - 문장이나 자막 줄 단위로 쪼개서 ElevenLabs API를 호출하는 행위 전면 금지 (문장 끝음 단절 및 디지털 팝 노이즈 원천 차단).
    - 반드시 **1개 막(Act) 전체 영문 텍스트를 1회의 API 호출로 단일 통파일(`act1.mp3` ~ `act7.mp3`)**로 추출하여 문단 단위의 자연스러운 호흡과 억양을 유지할 것.
-   - 기본 내레이터 (2026-11-18 교체): ElevenLabs Voice ID **`Srd5jY77m6kKijR9vy6R`**, `model_id` `eleven_multilingual_v2`, `stability` 0.55 · `similarity_boost` 0.78 · `style` 0.0 (차분하고 또박또박한 다큐 톤, 과장된 억양 방지). 믹싱 밸런스는 나레이션 0dB · BGM -24dB 그대로. 참고용 `ep08-chosin`은 예전 Adam 유지
+   - 기본 내레이터 (2026-11-19 교체): ElevenLabs 창욱 **`ZJCNdZEjYwkOElxugmW2`** (이전 `Srd5jY77m6kKijR9vy6R`은 저음 갈라짐으로 EP01만 사용) —, `model_id` `eleven_multilingual_v2`, `stability` 0.55 · `similarity_boost` 0.78 · `style` 0.0 (차분하고 또박또박한 다큐 톤, 과장된 억양 방지). 믹싱 밸런스는 나레이션 0dB · BGM -24dB 그대로. 참고용 `ep08-chosin`은 예전 Adam 유지
    - 대본 정제 규칙:
      * `(dramatically)`, `(pause)` 등 **괄호 연출 지문 전면 금지** (순수 낭독 텍스트만 작성).
      * TTS 엔진이 부자연스럽게 숨을 멈추지 않도록 **불필요한 쉼표(`,`) 과다 사용 금지**.

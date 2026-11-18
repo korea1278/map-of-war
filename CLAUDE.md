@@ -3,7 +3,7 @@
 > ## 🔄 2026-11-18 사용자 지시: **이 저장소는 한국어 채널 '격전의 세계사'로 전환** (이전 '영문판 전용' 규칙 폐기)
 > - 영상 에셋(대본·나레이션·자막·화면 문구·질문 카드·썸네일 카피·제목·설명·태그)은 **100% 한국어**. 사용자와의 대화도 한국어
 > - 대본 문체는 격전의 지도(war-docu) 한국어 편과 같게: 낭독용 순수 텍스트, 숫자는 한글 발음(자막은 `SUBS`로 숫자), 괄호 지문·한자·영문·쉼표 없음, "~습니다/~죠/~거든요" 다큐 톤. 보드 `"lang": "ko"`, `"sub_max": 28`
-> - 목소리는 **ElevenLabs `Srd5jY77m6kKijR9vy6R` 그대로** (eleven_multilingual_v2 · stability 0.55 · similarity 0.78 · style 0.0)
+> - 목소리는 **ElevenLabs 창욱 `ZJCNdZEjYwkOElxugmW2`** (2026-11-19 교체 · eleven_multilingual_v2 · stability 0.55 · similarity 0.78 · style 0.0). 예전 `Srd5jY77m6kKijR9vy6R`은 아주 낮은 저음(평균 85Hz)이라 헤드셋에서 목소리마다 '지지직' 갈라짐이 들려 폐기 — 설정(안정성 0.75·turbo 모델)을 바꿔도 그대로였음. EP01 마라톤만 Srd5로 완성됨. 목소리 비교는 Actions '목소리 비교 샘플'(`voice-test.yml`, 브랜치 `voice-test`)
 > - 썸네일 카피도 한국어 (`PAROHO_V2` → thumb 모드 `thumbnails/<ep>_ko_A.png`·`_ko_A2.png`, `thumbnails/<ep>/thumb_a.png`·`thumb_b.png`)
 > - 아래 본문에 남아 있는 '영문·영어' 표현은 참고용 `ep08-chosin`(영문, 건드리지 않음) 시절 기록이다. 새 편은 위 한국어 규칙이 우선
 > - 한국 전쟁(6·25) 위주의 '격전의 지도'는 계속 `korea1278/war-docu`에서 만든다. 이 저장소는 로드맵 `docs/EPISODE_ROADMAP_50.md`의 세계 전쟁사 50편
@@ -29,6 +29,8 @@
 |---|---|---|---|---|
 | 01 달려서 덮쳤다: 마라톤 전투 (기원전 490) · 7막(1막=콜드 오프닝) · **한국어** | `ep01-marathon` | 약 10,000자 · 181장면 · target_sec 1697 · **본 렌더 28:18 · -15.2 LUFS · 1.74GB · 자막 381/381 · 싱크 ±0.5초 통과 · 릴리스 `ep01-marathon-20261118-0415`** | 처음엔 영문으로 만들었다가 사용자 지시로 한국어 전환(영문 미리보기는 TTS 전에 취소), 한국어 미리보기 28:17 (2026-11-18, 목표 20:30보다 7분 47초 김 → 사용자 결정: 대본 그대로 28분 본 렌더, target_sec 1697). 미리보기 뒤 수정: `marathon` 뷰 중심·범위(작은 늪·산 라벨이 화면 밖), s005 강조 라벨 위치, s047 그림(돌에 '490 BC' 글자)은 프롬프트를 되돌리고 파일에서 글자 부분만 지움(서명 유지·재생성 0). **2026-11-18 본 렌더 1차 실패**: 그 그림 하나를 다시 그리려다 Gemini 선불 크레딧 소진(402)으로 '재연 일러스트' 단계에서 전체 중단 → `ai_images.py`에 대체 경로 추가 | 격전의 지도 EP29 실측 8,632자 = 20:30 (Minho) — 이번 편은 약 10,000자라 새 내레이터 속도에 따라 23분 안팎 예상, 미리보기 실측 뒤 분량 판단. 한반도 밖 첫 전장 — 보드 `land`(그리스+주변국 ISO) · 래스터 `aegean_sea`·`attica_sea`·`marathon_zoom_sea`. 새 부품: 지도 `phalanx`·`zone`·`ships`, `troops` `profile` 정면 전열(gr/pe). stage 미사용. 미드롤 `s042`·`s096`·`s125`, 사진 17장 핀, AI 44장. 확인 안 된 사실 `episodes/ep01-marathon/unverified_facts.md`. 썸네일 v2 한국어 카피(달려서 덮쳤다 / 제국이 도망쳤다 · A2 기병도 궁수도 없이 / 어떻게 이겼을까?) |
 | 08 Battle of Chosin Reservoir (1950): The 17-Day March Out of Frozen Hell · 7막 | `ep08-chosin` | 3,175단어 · 약 18,000자 · 92장면 · target_sec 1230 | 미리보기 20:18 (war-docu에서 실행, 2026-11-12, 3,149단어) → 7막 s87에 2문장 보강(+약 12초) · s63 어두운 코르세어 사진을 근접 항공 지원 사진으로 교체 | 지시서 2,600~2,900단어는 실측 환산 18:50이라 러닝타임 우선 보강. 미드롤 `s31`·`s56`·`s80`, CTA1 3막 끝 `s43`, CTA2 7막 끝 `s91`. 그림 9장은 war-docu EP06 `jangjin`에서 복사(파일·서명) + 새 그림 14장, 사진 26장 war-docu 검증 핀. 지형 `yudam_zoom`(z13)·`funchilin_zoom`(z14). 고지 1282·1240·1403·1081·헬파이어 밸리 좌표 개략 |
+
+**분량 환산 — 창욱(2026-11-19~)**: 같은 문장 샘플에서 Srd5보다 약 3% 느림(15.7초 대 15.3초) → 1.02배속 기준 20분 30초 ≈ 약 7,000~7,100자 (첫 미리보기 실측으로 갱신할 것)
 
 **분량 환산 — 한국어 Srd5jY77m6kKijR9vy6R 1.02배속 실측 (2026-11-18 EP01 미리보기)**: 10,000자(181장면) = 28:17 → 초당 약 5.9자. 20분 30초를 맞추려면 약 7,200~7,300자. (격전의 지도 Minho는 8,632자 = 20:30으로 이보다 약 20% 빠름)
 
@@ -108,7 +110,7 @@
    - 문장은 `.`/`?`에서 나뉜다 — `Oliver P. Smith`처럼 약자 마침표는 쓰지 말 것 (문장이 쪼개짐)
    - 사실은 웹 검색으로 확인, 확정 못 한 것(발언 원문·좌표·수치)은 목록으로 남겨 전달 때 알린다
 2. **스토리보드** — `episodes/<ep>/make_board.py`로 script.md 문장을 순서대로 장면에 배정해 `storyboard.json` 생성 (형식은 `episodes/ep08-chosin/`)
-   - 보드 상단: `"lang": "en"`, `"voice": "Srd5jY77m6kKijR9vy6R"`(채널 기본 내레이터, 2026-11-18~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep01~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
+   - 보드 상단: `"lang": "en"`, `"voice": "ZJCNdZEjYwkOElxugmW2"`(채널 기본 내레이터 창욱, 2026-11-19~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep01~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
    - 장면마다 `"act": n` — **막 단위 TTS**: 막마다 일레븐랩스 1회 호출 → `public/ep/<ep>/tts/acts/act<n>.mp3` (지시서의 act1~act7 통 MP3) → `tts.py`가 글자 타임스탬프로 장면별 mp3·json으로 잘라 자막 싱크를 맞춘다. 문장 단위 생성 금지
    - 막 하나의 문장을 바꾸면 **그 막 전체가 다시 생성**된다(크레딧 약 2,500자). 수정은 막 단위로 모아서
    - 지도: `flight`(카메라 비행), `hud: true`(전술 HUD) + **`temp: "-40°F"`(HUD 온도 표시, EP08 추가)**, `tilt`, 아이템 `swarm`·`obj`·`clash`·`lock`·`shock`·`radar`·`badge`·`line`·`unit`·`arrow`
@@ -136,7 +138,7 @@
 |---|---|
 | 해상도 / 인코딩 | 1920×1080, 30fps, H.264 8Mbps, AAC 192k (20분 약 1.2GB) |
 | 음량 | 렌더 후 `loudnorm` -15 LUFS |
-| 나레이션 | ElevenLabs `Srd5jY77m6kKijR9vy6R` (2026-11-18~ 기본 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — 참고용 `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(API 재호출 금지) |
+| 나레이션 | ElevenLabs 창욱 `ZJCNdZEjYwkOElxugmW2` (2026-11-19~ 기본 · 이전 Srd5는 EP01만 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — 참고용 `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(API 재호출 금지) |
 | 하단 자막 | Roboto Condensed 64px · 한 줄 44자 · 루트 글로벌 오버레이(z 9999)에서만 |
 | 제목 글꼴 | Oswald |
 | BGM | `public/bgm/` 공용 6곡 고정 (drone·theme·tension·march·analysis·somber), Music API 호출 금지 |
