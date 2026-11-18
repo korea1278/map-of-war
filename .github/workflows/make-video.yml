@@ -1,6 +1,6 @@
-name: 영상 만들기 (영문 Map of War)
+name: 영상 만들기 (격전의 세계사)
 
-# map-of-war는 영문 전용 저장소 — 한 번 실행 = 영문 에피소드 1편 렌더링
+# map-of-war = 한국어 채널 '격전의 세계사' (2026-11-18 전환) — 한 번 실행 = 에피소드 1편 렌더링
 on:
   workflow_dispatch:
     inputs:
@@ -30,7 +30,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  en:
+  render:
     uses: ./.github/workflows/render-episode.yml
     with:
       episode: ${{ github.event.inputs.episode }}

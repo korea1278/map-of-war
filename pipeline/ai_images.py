@@ -22,7 +22,7 @@ import urllib.parse
 
 from PIL import Image
 
-from common import ep_dirs, env, load_board, read_json, retry, session, write_json
+from common import ep_dirs, env, load_board, log_error, read_json, retry, session, write_json
 
 W, H = 1536, 1024
 
@@ -102,6 +102,25 @@ def gen_pollinations(s, prompt, seed):
     return Image.open(io.BytesIO(r.content))
 
 
+def no_credit(e) -> bool:
+    """크레딧·한도 소진 (다시 시도해도 안 되는 오류) — 2026-11-18 EP01 본 렌더가 Gemini 402로 통째로 실패한 뒤 추가"""
+    t = str(e)
+    return any(k in t for k in ("402", "RESOURCE_EXHAUSTED", "insufficient_quota", "credits are depleted", "billing", "quota", "401", "403"))
+
+
+def placeholder():
+    """그림을 끝내 못 만들었을 때 렌더가 멈추지 않도록 쓰는 어두운 자리 표시 그림 (logs/errors.txt에 반드시 기록)"""
+    img = Image.new("RGB", (W, H), (24, 22, 20))
+    px = img.load()
+    for y in range(H):
+        for x in range(0, W, 4):
+            v = int(24 + 18 * (1 - abs(y - H / 2) / (H / 2)))
+            for k in range(4):
+                if x + k < W:
+                    px[x + k, y] = (v, v - 2, v - 4)
+    return img
+
+
 def main(ep, thumb=False):
     prov = (env("IMAGE_PROVIDER") or "auto").lower()
     if prov == "auto":
@@ -122,6 +141,7 @@ def main(ep, thumb=False):
     used |= {k for k in board.get("ai_images", {}) if k.startswith("thumb_")}  # 썸네일 전용 그림
     s = session()
     print(f"이미지 엔진: {prov}")
+    DEAD = {"credit": False}
     for name in sorted(used):
         prompt = board["ai_images"][name]
         # 서명은 예전 공식 그대로 (엔진을 바꿔도 이미 만든 그림을 다시 그리지 않도록)
@@ -141,7 +161,38 @@ def main(ep, thumb=False):
             call = lambda: gen_cloudflare(s, prompt)  # noqa: E731
         else:
             call = lambda: gen_pollinations(s, prompt, seed)  # noqa: E731
-        img = retry(call, tries=4, wait=20, label=f"image {name}")
+        # 크레딧 소진이면 같은 엔진을 4번 다시 부르지 않고 곧바로 대체 경로로 (렌더 전체가 멈추지 않게)
+        img, err = None, None
+        if not DEAD["credit"]:
+            try:
+                img = call()
+            except Exception as e:  # noqa: BLE001
+                err = e
+                if no_credit(e):
+                    DEAD["credit"] = True
+                    log_error(f"{ep}: 이미지 엔진 {prov} 크레딧·권한 문제({str(e)[:120]}) → 이번 실행은 대체 경로 사용")
+                else:
+                    try:
+                        img = retry(call, tries=3, wait=20, label=f"image {name}")
+                    except Exception as e2:  # noqa: BLE001
+                        err = e2
+        if img is None:
+            if p.exists():
+                # 예전 그림이 있으면 그대로 쓰고 서명은 그대로 둔다 (크레딧이 돌아오면 다음 실행 때 다시 그림)
+                log_error(f"{ep}: 그림 {name} 새로 그리기 실패 → 기존 그림 유지 ({str(err)[:100]})")
+                continue
+            if prov != "pollinations":
+                try:
+                    img = retry(lambda: gen_pollinations(s, prompt, seed), tries=3, wait=20, label=f"image {name} (pollinations 대체)")
+                    log_error(f"{ep}: 그림 {name} → {prov} 실패로 무료 pollinations 그림으로 대체 (확인 필요)")
+                except Exception as e3:  # noqa: BLE001
+                    err = e3
+            if img is None:
+                placeholder().save(p, quality=92)
+                log_error(f"{ep}: ⚠ 그림 {name} 생성 실패 → 어두운 자리 표시 그림으로 렌더 계속 (업로드 전 교체 필요): {str(err)[:120]}")
+                continue
+            fit(img).save(p, quality=92)
+            continue  # 대체 그림은 서명을 남기지 않음 → 원래 엔진이 살아나면 다시 그림
         fit(img).save(p, quality=92)
         man[name] = sig
         write_json(out / "ai.json", man)
