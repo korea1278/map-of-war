@@ -25,7 +25,7 @@ SUBS = [
     ("약 일점오 킬로미터", "약 1.5km"), ("천이백일곱 척", "1,207척"), ("삼백칠십팔 척", "378척"), ("백팔십 척", "180척"), ("이백만 명", "200만 명"),
     ("삼십칠 미터", "37m"), ("백칠십 명", "170명"), ("열 드라크마", "10드라크마"), ("사백 명", "400명"), ("이백 척", "200척"), ("사십 척", "40척"),
     ("채찍질 삼백 번", "채찍질 300번"), ("서른 곳", "30곳"), ("이천오백 년", "2,500년"), ("십 년", "10년"), ("팔 년", "8년"),
-    ("두 배", "2배"), ("다섯 배", "5배"), ("세 층", "3층"),
+    ("십이 년 전", "12년 전"), ("삼 년이", "3년이"), ("정예 삼백 명", "정예 300명"), ("열여섯 척", "16척"), ("열네 명", "14명"), ("네 명만", "4명만"), ("두 배", "2배"), ("다섯 배", "5배"), ("세 층", "3층"),
 ]
 
 
@@ -181,27 +181,27 @@ DRAMA = "재연 일러스트"
 # 좌표는 개략 (함대 위치·전열은 통설 재구성 기준 모식 배치)
 P = {
     "athens": [23.727, 37.972, "아테네"], "salamis": [23.5, 37.94, "살라미스섬"], "ampelakia": [23.538, 37.951, "살라미스 · 그리스 함대 기지"],
-    "psyttaleia": [23.588, 37.943, "프시탈레이아"], "piraeus": [23.635, 37.942, "페이라이에우스"], "phaleron": [23.68, 37.935, "팔레론"],
-    "aigaleos": [23.592, 37.978, "아이갈레오스산 · 크세르크세스의 자리"], "kynosoura": [23.579, 37.927, "키노수라곶"], "narrows": [23.556, 37.959, "가장 좁은 곳"],
+    "psyttaleia": [23.594, 37.937, "프시탈레이아"], "piraeus": [23.635, 37.942, "페이라이에우스"], "phaleron": [23.68, 37.935, "팔레론"],
+    "aigaleos": [23.59, 37.963, "아이갈레오스산 · 크세르크세스의 자리"], "kynosoura": [23.579, 37.927, "키노수라곶"], "narrows": [23.566, 37.952, "가장 좁은 곳"],
     "westch": [23.405, 37.975, "서쪽 물길"], "megara": [23.345, 37.996, "메가라"], "eleusis": [23.542, 38.041, "엘레우시스"],
     "aegina": [23.43, 37.745, "아이기나"], "troezen": [23.36, 37.5, "트로이젠"], "isthmus": [22.99, 37.92, "코린토스 지협"], "corinth": [22.88, 37.906, "코린토스"],
     "laurion": [24.05, 37.715, "라우리온"], "delphi": [22.501, 38.482, "델포이"], "thermopylae": [22.536, 38.796, "테르모필레"], "artemision": [23.25, 39.0, "아르테미시온"],
     "sardis": [28.04, 38.49, "사르디스"], "abydos": [26.41, 40.195, "헬레스폰토스"], "halicarnassus": [27.424, 37.038, "할리카르나소스"],
-    "magnesia": [27.53, 37.853, "마그네시아"], "plataea": [23.27, 38.215, "플라타이아"], "mycale": [27.15, 37.66, "미칼레"], "marathon": [23.98, 38.125, "마라톤"],
+    "magnesia": [27.53, 37.853, "마그네시아"], "plataea": [23.27, 38.215, "플라타이아"], "mycale": [27.15, 37.66, "미칼레"], "marathon": [23.98, 38.125, "마라톤"], "athos": [24.33, 40.157, "아토스곶"],
     "susa": [48.25, 32.19, "수사"], "persepolis": [52.89, 29.935, "페르세폴리스"], "sparta": [22.43, 37.075, "스파르타"],
 }
 V = {
     "aegean": {"center": [25.4, 38.6], "span": 8.5}, "central": {"center": [23.2, 38.35], "span": 3.0},
-    "saronic": {"center": [23.48, 37.8], "span": 1.15}, "salamis": {"center": [23.52, 37.95], "span": 0.24}, "strait": {"center": [23.575, 37.948], "span": 0.085},
+    "saronic": {"center": [23.48, 37.8], "span": 1.15}, "salamis": {"center": [23.52, 37.95], "span": 0.24}, "strait": {"center": [23.575, 37.948], "span": 0.085}, "north": {"center": [25.0, 39.4], "span": 6.5},
 }
 ZOOM = {"salamis", "strait"}
 LAND = {"home": ["300"], "foreign": ["792", "100", "8", "807", "196", "380", "642", "688", "499", "70"]}
 
 # --- 해전 기하 (개략) ---
-G_SHIPS = [[23.553, 37.959], [23.5545, 37.9555], [23.556, 37.952], [23.5575, 37.9485], [23.559, 37.945], [23.5605, 37.9415], [23.562, 37.938], [23.5635, 37.9345]]
-P_SHIPS = [[23.604, 37.934], [23.6005, 37.9375], [23.597, 37.941], [23.5935, 37.9445], [23.59, 37.948], [23.5865, 37.9515], [23.583, 37.955], [23.5795, 37.9585]]
-P_COLUMN = [[23.66, 37.905], [23.625, 37.925], [23.6, 37.94], [23.578, 37.956]]
-JAM = [[23.6, 37.94], [23.585, 37.95], [23.572, 37.957]]
+G_SHIPS = [[23.557, 37.9565], [23.556, 37.955], [23.555, 37.9535], [23.554, 37.952], [23.553, 37.9505], [23.552, 37.949], [23.551, 37.9475], [23.55, 37.946]]  # 2026-11-19 미리보기 후 키노수라곶 위에서 물 위로
+P_SHIPS = [[23.604, 37.9465], [23.6005, 37.947], [23.597, 37.9475], [23.5935, 37.948], [23.59, 37.9485], [23.5865, 37.949], [23.583, 37.9495], [23.5795, 37.95]]  # 프시탈레이아 북쪽 물길
+P_COLUMN = [[23.645, 37.946], [23.615, 37.948], [23.595, 37.95], [23.578, 37.952]]
+JAM = [[23.6, 37.949], [23.588, 37.95], [23.576, 37.951]]
 ENTRANCE = [[23.64, 37.915], [23.615, 37.928], [23.6, 37.936]]
 WEST_BLOCK = [[23.62, 37.9], [23.5, 37.86], [23.42, 37.88], [23.39, 37.93], [23.405, 37.97]]
 TO_PHALERON = [[23.585, 37.948], [23.62, 37.93], [23.66, 37.932], [23.68, 37.935]]
@@ -257,15 +257,19 @@ sc(1, ph("treasury", pos="50% 50%", marks=[mk("아버지와 아들?", 0.5, 0.18,
 sc(1, m("aegean", "aegean", [mark("sardis", "red", 0.2), red_a(XERXES[:3], 0.6)], tilt=12), callouts=top("기원전 480년 봄 · 사르디스 출발", "red"))
 sc(3, bars("크세르크세스의 군대", [{"label": "헤로도토스", "value": 2000000, "display": "200만 명 이상", "color": "red", "on": "이백만"},
                                  {"label": "현대 추정", "value": 300000, "display": "수십만 명?", "color": "dark", "on": "수십만"}]))
-sc(1, m("aegean", "aegean", [LOCK("abydos", 0.4), red_a(XERXES[1:4], 0.5)], tilt=14), callouts=top("유럽과 아시아 사이 · 헬레스폰토스"), sfx=PING(1.0))
+sc(1, m("north", "north", [LOCK("abydos", 0.4), red_a(XERXES[1:4], 0.5)], tilt=14), callouts=top("유럽과 아시아 사이 · 헬레스폰토스"), sfx=PING(1.0))
 sc(2, ai("boat_bridge_whip"), label=DRAMA, callouts=low("“바다에 채찍질 300번” · 헤로도토스", "dark", 1))
 sc(1, text("7일 밤낮", "yellow", "다리를 건넌 군대 · 헤로도토스의 기록"))
+sc(4, m("north", "north", [LOCK("athos", text="아토스곶 운하", on="아토스곶"), mark("abydos", "red", 0)], tilt=14), callouts=top("크세르크세스 운하 · 헤로도토스 7권 22절"), sfx=PING(1.4))
 sc(2, m("aegean", "aegean", [red_a(XERXES, 0.1, 1.2), red_a(FLEET, 0.4), badge("artemision", "전함 1,207척", "#c9242c", on="천이백일곱", dy=-80)], tilt=12))
 sc(3, ai("earth_water"), label=DRAMA, callouts=top("흙과 물 = 항복의 표시"))
 sc(2, text("30여 곳", "blue", "끝까지 싸우겠다고 모인 그리스 도시"))
 sc(2, m("aegean", "central", [LOCK("thermopylae", 0.8)], flight=["aegean", "central"], flightDur=2.6, tilt=20), callouts=top("기원전 480년 8월 · 테르모필레"), sfx=SW(0))
+sc(1, text("스파르타 정예 300명", "red", "그리고 그리스 동맹군 수천 명"))
 sc(2, m("central", "central", [unit("artemision", "그리스 함대", "blue", 0.1, pulse=True), clash("artemision", 0.6)], tilt=18), callouts=top("아르테미시온 · 사흘"))
+sc(1, m("central", "central", [{"k": "shock", "pts": ["artemision"], "at": 0.5, "period": 0.8}, badge("artemision", "폭풍 · 페르시아 배 수백 척?", "#c9242c", on="폭풍이", dy=-80)], tilt=18), sfx=WIND(0))
 sc(1, ph("leonidas", pos="50% 40%"), label=plabel("leonidas"))
+sc(1, text("에피알테스", "dark", "산길을 알려 준 그리스인 · 헤로도토스"))
 sc(2, m("central", "saronic", [dash_b([[23.25, 39.0], [23.9, 38.6], [24.1, 38.0], [23.6, 37.9]], 0.2), red_a([[22.536, 38.796], [23.0, 38.4], [23.5, 38.1], [23.727, 37.972]], 0.8)],
         flight=["central", "saronic"], flightDur=2.6, tilt=18), sfx=SW(0))
 sc(2, black("아테네의 결정", "도시를 비우자"))
@@ -286,19 +290,24 @@ sc(3, ph("themis", pos="50% 30%", marks=[mk("테미스토클레스", 0.5, 0.14, 
 sc(1, ai("themis_sea"), label=DRAMA)
 sc(2, text("마라톤의 승리", "dark", "기원전 490년 · “이제 끝났다”"))
 sc(3, doc("테미스토클레스의 생각", ["페르시아는 반드시 다시 온다", "다음에는 바다로 온다"], "예견", "플루타르코스 『테미스토클레스 전』"))
+sc(1, m("saronic", "saronic", [LOCK("piraeus", text="페이라이에우스 군항", on="페이라이에우스"), mark("athens", "blue", 0)], tilt=18))
 sc(3, m("saronic", "saronic", [LOCK("laurion", 1.0), mark("athens", "blue", 0.2)], tilt=18), callouts=top("기원전 483년 무렵 · 라우리온 은광"), sfx=PING(1.2))
 sc(2, ph("lavrio", marks=[mk("1인당 10드라크마?", 0.5, 0.2, "열")]), label=plabel("lavrio"))
 sc(2, black("그 돈으로", "배를 만들자"))
 sc(3, m("saronic", "saronic", [mark("athens", "blue", 0), mark("aegina", "red", on="아이기나와의"), badge("aegina", "명분: 숙적 아이기나", "#c9242c", on="숙적", dy=-80)], tilt=16))
 sc(1, text("삼단노선 200척", "blue", "아테네 함대"))
+sc(3, ai("ostracism_vote"), label=DRAMA, callouts=top("정의로운 사람 · 아리스테이데스"))
+sc(5, ai("aristides_writes"), label=DRAMA, callouts=low("“여기에 아리스테이데스라고 써 주시오” · 플루타르코스", "dark", 1))
+sc(2, ph("ostraka", marks=[mk("도편추방 투표 조각", 0.5, 0.18, "쫓겨납니다")]), label=plabel("ostraka"))
 sc(3, ph("olympias", pos="50% 55%", marks=[mk("노 3층", 0.5, 0.25, "세 층"), mk("길이 약 37m", 0.5, 0.75, "삼십칠", "red")]), label=plabel("olympias"))
 sc(2, ai("ram_closeup"), label=DRAMA, callouts=low("청동 충각"))
 sc(2, ph("lenormant", marks=[mk("노 젓는 시민", 0.5, 0.18, "가난한")]), label=plabel("lenormant"))
+sc(2, text("노 젓는 시민", "blue", "아테네의 새 주인공"))
 sc(1, m("central", "central", [LOCK("delphi", 0.4), mark("athens", "blue", 0)], tilt=16), callouts=top("델포이 신탁"))
 sc(2, doc("첫 번째 신탁", ["도망쳐라 땅끝까지"], "흉", "헤로도토스 7권 140절"))
 sc(4, doc("두 번째 신탁", ["나무 성벽만은 무너지지 않으리라", "신성한 살라미스여", "너는 여인의 자식들을 죽이리라"], "신탁", "헤로도토스 7권 141절"))
 sc(3, cmp("나무 성벽은", "아크로폴리스 울타리", "나무 성벽은", "배", "dark", "blue"))
-sc(4, ai("themis_assembly"), label=DRAMA, callouts=low("“나무 성벽은 배다”", "dark", 1))
+sc(5, ai("themis_assembly"), label=DRAMA, callouts=low("“나무 성벽은 배다”", "dark", 1))
 sc(1, ai("evacuation_ships"), label=DRAMA, sfx=SEA(0))
 sc(2, black("진짜 싸움은", "자기 편과의 싸움"))
 next_act()
@@ -308,9 +317,11 @@ sc(1, m("saronic", "salamis", [GS(0.6)], flight=["saronic", "salamis"], flightDu
 sc(3, bars("살라미스의 그리스 함대 · 헤로도토스", [{"label": "전체", "value": 378, "display": "378척", "color": "blue", "on": "삼백칠십팔"},
                                              {"label": "아테네", "value": 180, "display": "180척", "color": "blue", "on": "백팔십"}]))
 sc(3, ai("eurybiades"), label=DRAMA, callouts=top("총사령관 · 스파르타의 에우리비아데스"))
+sc(1, bars("살라미스 함대 · 헤로도토스", [{"label": "아테네", "value": 180, "display": "180척", "color": "blue", "at": 0}, {"label": "스파르타", "value": 16, "display": "16척", "color": "red", "on": "열여섯"}]))
 sc(5, m("saronic", "saronic", [mark("salamis", "blue", 0), dash_b(TO_ISTHMUS, on="지협으로"), LOCK("isthmus", text="코린토스 지협", on="지협으로")], tilt=18),
    callouts=top("펠로폰네소스파: 지협으로 가자", "red"))
 sc(3, ai("council_panic"), label=DRAMA, callouts=low("“아테네가 불타고 있다”", "red", 1))
+sc(3, ai("staff_raised"), label=DRAMA, callouts=low("“때리시오 그러나 내 말은 들으시오” · 플루타르코스", "dark", 2))
 sc(3, cmp("지협 앞바다", "넓다", "살라미스 해협", "좁다", "red", "blue"), callouts=top("수가 많은 쪽이 이기는 곳은?"))
 sc(2, m("salamis", "strait", [GS(0), badge("narrows", "좁은 물길", "#1f5fbf", on="좁은", dy=-60)], flight=["salamis", "strait"], flightDur=2.2, tilt=30))
 sc(3, ai("adeimantus_mock"), label=DRAMA, callouts=low("“나라도 없는 자가”", "red", 1))
@@ -320,10 +331,13 @@ sc(3, {"type": "flatmap", "center": [20.0, 38.9], "span": 12, "fill": {"300": "#
        "routes": [{"from": [23.5, 37.94], "to": [16.6, 40.2], "bend": 0.2, "dur": 1.6, "label": "새 도시", "on": "이탈리아로"}], "labels": [], "zoomTo": 0.92})
 sc(1, bars("아테네 배가 빠지면", [{"label": "그리스 함대", "value": 378, "display": "378척", "color": "blue", "at": 0},
                               {"label": "남는 배", "value": 198, "display": "절반", "color": "red", "on": "반 토막"}]))
-sc(2, black("남기로 했다", "하지만"))
+sc(1, black("에우리비아데스는", "남기로 했다"))
+sc(2, m("saronic", "saronic", [line([[23.0, 37.96], [22.97, 37.885]], on="성벽을"), LOCK("isthmus", text="지협을 막는 성벽", on="성벽을"), mark("salamis", "blue", 0)], tilt=18))
+sc(1, black("하지만", "오래가지 못했다"))
 sc(3, ai("xerxes_council"), label=DRAMA, callouts=top("페르시아 작전 회의", "red"))
 sc(3, ph("artemisia", pos="50% 30%", marks=[mk("아르테미시아", 0.5, 0.14, "아르테미시아")]), label=plabel("artemisia"))
 sc(3, doc("아르테미시아의 조언", ["바다에서 싸우지 마십시오", "기다리면 그리스 함대는 저절로 흩어집니다"], "반대", "헤로도토스 8권 68절"))
+sc(2, m("saronic", "saronic", [red_a([[23.727, 37.972], [23.35, 37.97], [22.99, 37.92]], on="진격하면"), mark("isthmus", "blue", 0.3)], tilt=18), callouts=top("아르테미시아의 예측", "red"))
 sc(3, text("싸우자", "red", "크세르크세스의 결정"))
 sc(3, ai("council_again"), label=DRAMA, callouts=low("다시 열린 그리스 작전 회의"))
 next_act()
@@ -331,20 +345,24 @@ next_act()
 # ===== 제5막 · 거짓 밀서 =====
 MID.append(nid())
 sc(3, ai("sicinnus_boat"), label=DRAMA, pauseBefore=0.5, chapter={"num": "제5막", "title": "거짓 밀서"}, sfx=SEA(0))
+sc(2, text("목숨을 건 심부름", "yellow", "훗날 큰 재산과 테스피아이 시민권 · 헤로도토스"))
 sc(3, ai("sicinnus_persians"), label=DRAMA, callouts=top("시킨노스 · 테미스토클레스의 하인"))
 sc(3, doc("테미스토클레스의 전갈", ["그리스군은 도망치려 한다", "지금 막으면 한 척도 못 빠져나간다", "그들은 서로 다투고 있다"], "밀서", "헤로도토스 8권 75절"))
 sc(3, black("배신자의 밀서", "왜 믿었을까?"))
 sc(4, reasons("크세르크세스가 믿은 이유", [{"text": "그리스 함대의 다툼은 사실", "on": "사실이었거든요"}, {"text": "마라톤 때도 내통자", "on": "내통하는"},
                                           {"text": "듣고 싶던 말", "on": "듣고"}]))
+sc(2, text("포위 · 섬멸", "red", "대왕이 처음부터 바라던 그림"))
 sc(3, m("salamis", "salamis", [dash_r(WEST_BLOCK, on="서쪽"), badge("westch", "이집트 배 200척?", "#c9242c", on="이집트", dy=-60)], tilt=22),
    callouts=top("밤 · 서쪽 물길 봉쇄", "red"))
 sc(3, m("salamis", "strait", [PS(0.2), LOCK("psyttaleia", text="프시탈레이아 · 약 400명", on="프시탈레이아")], flight=["salamis", "strait"], flightDur=2.2, tilt=28), sfx=PING(1.6))
 sc(2, ai("rowers_night"), label=DRAMA, callouts=top("밤새 노를 잡고"))
+sc(2, m("salamis", "salamis", [PS(0), red_a(ENTRANCE, 0.2), mark("ampelakia", "blue", 0.5)], tilt=24), callouts=top("그리스 진영은 아무도 몰랐다"))
 sc(3, ai("aristides_arrives"), label=DRAMA, callouts=top("아리스테이데스"))
 sc(2, ph("ostraka", marks=[mk("도편추방", 0.5, 0.18, "도편추방")]), label=plabel("ostraka"))
 sc(1, m("saronic", "saronic", [dash_b([[23.43, 37.745], [23.5, 37.84], [23.54, 37.93]], on="아이기나"), mark("aegina", "dark", 0)], tilt=16), callouts=top("아이기나에서 밤바다를 건너"))
 sc(4, doc("아리스테이데스의 말", ["다툴 때가 아니다", "떠나고 싶어도 떠날 수 없다", "우리는 포위됐다"], "포위", "헤로도토스 8권 79절"))
 sc(2, ai("themis_smile"), label=DRAMA, callouts=low("“그건 내가 한 일이다”", "dark", 1))
+sc(3, text("“당신이 직접 말해 주시오”", "dark", "테미스토클레스가 아리스테이데스에게 · 헤로도토스 8권 80절"))
 sc(2, m("strait", "strait", [PS(0), GS(0), blue_a([[23.595, 37.94], [23.578, 37.943], [23.565, 37.946]], on="넘어온")], tilt=30), callouts=top("페르시아 편에서 넘어온 배"))
 sc(2, black("남은 길은", "싸우는 것"))
 sc(1, m("salamis", "salamis", [dash_r(WEST_BLOCK, 0), red_a(ENTRANCE, 0.1), LOCK("salamis", 0.4, "퇴로 차단")], tilt=24), sfx=PING(0.8))
@@ -356,6 +374,7 @@ sc(3, ai("xerxes_throne"), label=DRAMA, pauseBefore=0.5, chapter={"num": "제6�
 sc(2, text("서기들", "dark", "잘 싸운 선장의 이름을 적다 · 헤로도토스 8권 90절"))
 sc(1, m("strait", "strait", [GS(0.2), LOCK("aigaleos", 0.6)], tilt=30, hud=True), sfx=SEA(0))
 sc(5, ai("greek_paean"), label=DRAMA, callouts=low("“그리스의 아들들이여 나아가라” · 아이스킬로스", "dark", 0))
+sc(1, text("겁먹은 페르시아", "red", "아이스킬로스 『페르시아인들』"))
 sc(1, ph("aeschylus", pos="50% 30%", marks=[mk("아이스킬로스", 0.5, 0.14, "아이스킬로스")]), label=plabel("aeschylus"))
 sc(4, m("strait", "strait", [GS(0), dash_b([[23.562, 37.946], [23.552, 37.946], [23.545, 37.947]], on="뒤로"), badge("narrows", "뒤로 노를 젓다", "#1f5fbf", on="거꾸로", dy=-70)], tilt=30))
 sc(3, m("strait", "strait", [GS(0), PS(0, sailOn="들어옵니다", dx=-0.012, dy=0.008), swarm(P_COLUMN, 0.3, 150, 0.5)], tilt=32))
@@ -363,6 +382,7 @@ sc(3, m("salamis", "strait", [badge("piraeus", "입구 · 넓다", "#111", on="�
         flight=["salamis", "strait"], flightDur=2.4, tilt=30), sfx=SW(0))
 sc(3, ai("jam"), label=DRAMA)
 sc(2, cmp("달리는 삼단노선", "창", "멈춘 삼단노선", "표적", "blue", "red"))
+sc(4, checklist("아테네 삼단노선", [{"text": "낮고 무거운 배", "on": "무겁고"}, {"text": "중장보병 14명", "on": "열네"}, {"text": "궁수 4명", "on": "네 명만"}, {"text": "무기는 충각", "on": "들이받는"}]))
 sc(4, m("strait", "strait", [GS(0), PS(0), swarm(JAM, 0, 160, 0.4), blue_a([[23.562, 37.952], [23.574, 37.953]], on="튀어나옵니다"), clash([23.576, 37.953], on="들이받습니다"),
                              badge([23.562, 37.952], "아메이니아스", "#1f5fbf", on="아메이니아스", dy=-70)], tilt=32), sfx=PING(2.0))
 sc(1, ai("ram_impact"), label=DRAMA)
@@ -371,13 +391,17 @@ sc(3, m("strait", "strait", [GS(0), swarm(JAM, 0, 160, 0.4), line([[23.6, 37.925
 sc(3, reasons("페르시아 함대", [{"text": "페니키아", "on": "페니키아"}, {"text": "이집트", "on": "이집트"}, {"text": "키프로스", "on": "키프로스"}, {"text": "이오니아", "on": "이오니아"},
                               {"text": "말도 신호도 제각각", "on": "말도"}]))
 sc(1, ai("rowers_night"), label=DRAMA, callouts=top("밤새 한숨도 못 잔 노잡이들"))
-sc(4, m("strait", "strait", [GS(0), swarm(JAM, 0, 200, 0.35), clash([23.584, 37.95], 0.3), clash([23.592, 37.944], on="부딪힙니다"), clash([23.578, 37.955], on="짓누르는"),
-                             LOCK("aigaleos", text="대왕의 눈", on="대왕이")], tilt=34, hud=True), callouts=top("숫자가 무게가 되다", "red"), sfx=WIND(0))
+sc(3, m("strait", "strait", [GS(0), swarm(JAM, 0, 200, 0.35), clash([23.584, 37.95], 0.3), clash([23.592, 37.949], on="부딪힙니다"),
+                             LOCK("aigaleos", text="대왕의 눈", on="대왕이")], tilt=34, hud=True), sfx=WIND(0))
+sc(3, text("에우보이아 때보다 용감하게", "red", "대왕이 지켜본다는 두려움 · 헤로도토스 8권 86절"))
+sc(1, m("strait", "strait", [GS(0), swarm(JAM, 0, 220, 0.35), clash([23.58, 37.952], on="짓누르는")], tilt=34), callouts=top("숫자가 무게가 되다", "red"))
 sc(4, ai("artemisia_ram"), label=DRAMA, callouts=low("자기 편 배를 들이받다", "red", 2))
 sc(3, ph("wrath", pos="50% 30%"), label=plabel("wrath"), callouts=low("“내 남자들은 여자가 되었고 내 여자들은 남자가 되었구나”", "dark", 2))
 sc(2, ai("persians_in_water"), label=DRAMA)
 sc(1, text("아리아비그네스 전사", "red", "크세르크세스의 동생 · 해군 사령관"))
+sc(1, ph("kaulbach", pos="50% 50%"), label=plabel("kaulbach"))
 sc(3, m("strait", "strait", [blue_a([[23.556, 37.94], [23.572, 37.941], [23.584, 37.943]], on="이끌고"), LOCK("psyttaleia", text="프시탈레이아", on="프시탈레이아섬")], tilt=30), sfx=PING(1.4))
+sc(2, m("salamis", "salamis", [red_a([[23.585, 37.95], [23.6, 37.948], [23.625, 37.944]], 0.1), clash([23.615, 37.946], on="들이받았거든요"), badge([23.615, 37.946], "아이기나 배의 매복", "#1f5fbf", on="아이기나", dy=-70)], tilt=26))
 sc(1, m("salamis", "saronic", [red_a(TO_PHALERON, 0.2), mark("phaleron", "red", 0.8)], flight=["salamis", "saronic"], flightDur=2.2, tilt=20))
 sc(2, bars("잃은 배 · 디오도로스", [{"label": "페르시아", "value": 200, "display": "약 200척", "color": "red", "on": "이백"},
                                {"label": "그리스", "value": 40, "display": "약 40척", "color": "blue", "on": "사십"}]))
@@ -385,7 +409,7 @@ next_act()
 
 # ===== 제7막 · 답 =====
 sc(3, ai("phoenician_captains"), label=DRAMA, pauseBefore=0.5, chapter={"num": "제7막", "title": "답"})
-sc(3, m("aegean", "aegean", [dash_b(SALAMIS_HELL, on="헬레스폰토스로"), LOCK("abydos", text="헬레스폰토스 다리", on="다리를")], tilt=12), sfx=PING(1.2))
+sc(3, m("north", "north", [dash_b(SALAMIS_HELL, on="헬레스폰토스로"), LOCK("abydos", text="헬레스폰토스 다리", on="다리를")], tilt=12), sfx=PING(1.2))
 sc(3, doc("두 번째 전갈", ["테미스토클레스가 대왕을 위해", "그리스 함대를 붙잡아 두었다"], "반쯤 거짓", "헤로도토스 8권 110절"))
 sc(2, m("aegean", "aegean", [red_a(XERXES_BACK, 0.2, 1.2), mark("athens", "dark", 0)], tilt=12), callouts=top("크세르크세스 아시아로 철수", "red"))
 sc(2, m("aegean", "aegean", [mark("plataea", "blue", on="플라타이아와"), mark("mycale", "blue", on="미칼레에서")], tilt=12), callouts=top("기원전 479년 · 플라타이아와 미칼레", "blue"))
@@ -444,6 +468,9 @@ AI = {
     "rowers_night": CB + "exhausted Persian rowers, " + PE + ", sitting at their oars inside a dark warship at night, yawning and slumped, lanterns" + END,
     "aristides_arrives": CB + "a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, stepping off a small boat at night and calling out to " + THEM + END,
     "themis_smile": CB + THEM + " smiling slyly in a dark tent lit by an oil lamp, an older grey-bearded Athenian looking at him in surprise" + END,
+    "ostracism_vote": CB + "a crowd of Athenian citizens whose heads are round balls painted white with a small golden owl emblem, dropping broken pottery shards into a large voting enclosure in a marble marketplace" + END,
+    "aristides_writes": CB + "a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, quietly scratching on a broken pottery shard held out by a puzzled peasant farmer whose head is a round ball painted white, in a busy marketplace" + END,
+    "staff_raised": CB + "a stern Spartan admiral whose head is a round ball painted red with a white lambda emblem raising a wooden staff as if to strike " + THEM + ", who stands firm and keeps talking, other commanders watching in a tent" + END,
     "xerxes_throne": CB + XER + " seated on a golden throne on a mountain slope above a narrow strait full of warships at dawn, scribes with tablets beside him" + END,
     "greek_paean": CB + GR + " rowing " + TRI + " out from an island shore at dawn, singing with open mouths, a trumpeter at the bow" + END,
     "jam": CB + "hundreds of Persian warships crammed together in a narrow strait, their oars tangled and snapping, ships colliding, " + PHO + " and " + PE + " in chaos" + END,
@@ -505,7 +532,7 @@ music = [{"id": "drone", "from": "s001", "to": sid(chap[0] - 1), "volume": 0.2},
 # target_sec: 창욱 환산 약 7,000자 = 20:30 → 6,755자 ≈ 19:50 (첫 미리보기 실측으로 갱신)
 board = {"title": "대함대를 꾀었다: 살라미스 해전", "subtitle": "좁은 해협에서 자기 숫자에 무너진 페르시아 함대 · 기원전 480년",
          "lang": "ko", "sub_max": 28, "voice": "ZJCNdZEjYwkOElxugmW2", "tempo": 1.02, "tts_mode": "act", "style": 2, "sfx_policy": "doc", "bgm_rel_db": -24, "sync_limit": 0.5,
-         "target_sec": 1190, "midrolls": MID, "land": LAND, "places": P, "views": V, "music": music, "ai_images": AI, "scenes": S}
+         "target_sec": 1225, "midrolls": MID, "land": LAND, "places": P, "views": V, "music": music, "ai_images": AI, "scenes": S}
 (HERE / "storyboard.json").write_text(json.dumps(board, ensure_ascii=False, indent=1), encoding="utf-8")
 types = collections.Counter(s["visual"]["type"] for s in S)
 print("scenes", len(S), "chars", sum(len(say(l)) for s in S for l in s["lines"]), "mid", MID, "chap", [sid(i) for i in chap],

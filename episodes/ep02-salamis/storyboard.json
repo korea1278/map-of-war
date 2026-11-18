@@ -10,11 +10,11 @@
  "sfx_policy": "doc",
  "bgm_rel_db": -24,
  "sync_limit": 0.5,
- "target_sec": 1190,
+ "target_sec": 1225,
  "midrolls": [
-  "s030",
-  "s066",
-  "s082"
+  "s034",
+  "s080",
+  "s100"
  ],
  "land": {
   "home": [
@@ -50,8 +50,8 @@
    "살라미스 · 그리스 함대 기지"
   ],
   "psyttaleia": [
-   23.588,
-   37.943,
+   23.594,
+   37.937,
    "프시탈레이아"
   ],
   "piraeus": [
@@ -65,8 +65,8 @@
    "팔레론"
   ],
   "aigaleos": [
-   23.592,
-   37.978,
+   23.59,
+   37.963,
    "아이갈레오스산 · 크세르크세스의 자리"
   ],
   "kynosoura": [
@@ -75,8 +75,8 @@
    "키노수라곶"
   ],
   "narrows": [
-   23.556,
-   37.959,
+   23.566,
+   37.952,
    "가장 좁은 곳"
   ],
   "westch": [
@@ -169,6 +169,11 @@
    38.125,
    "마라톤"
   ],
+  "athos": [
+   24.33,
+   40.157,
+   "아토스곶"
+  ],
   "susa": [
    48.25,
    32.19,
@@ -220,6 +225,13 @@
     37.948
    ],
    "span": 0.085
+  },
+  "north": {
+   "center": [
+    25.0,
+    39.4
+   ],
+   "span": 6.5
   }
  },
  "music": [
@@ -232,37 +244,37 @@
   {
    "id": "theme",
    "from": "s011",
-   "to": "s029",
+   "to": "s033",
    "volume": 0.16
   },
   {
    "id": "analysis",
-   "from": "s030",
-   "to": "s048",
+   "from": "s034",
+   "to": "s057",
    "volume": 0.16
   },
   {
    "id": "tension",
-   "from": "s049",
-   "to": "s065",
+   "from": "s058",
+   "to": "s079",
    "volume": 0.17
   },
   {
    "id": "march",
-   "from": "s066",
-   "to": "s081",
+   "from": "s080",
+   "to": "s099",
    "volume": 0.16
   },
   {
    "id": "tension",
-   "from": "s082",
-   "to": "s104",
+   "from": "s100",
+   "to": "s128",
    "volume": 0.17
   },
   {
    "id": "somber",
-   "from": "s105",
-   "to": "s127",
+   "from": "s129",
+   "to": "s151",
    "volume": 0.17
   }
  ],
@@ -287,6 +299,9 @@
   "rowers_night": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: exhausted Persian rowers, ancient Achaemenid Persian sailors and soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful tunics, sitting at their oars inside a dark warship at night, yawning and slumped, lanterns, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
   "aristides_arrives": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, stepping off a small boat at night and calling out to a clever middle-aged Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short dark beard, a bronze helmet pushed up on top and a blue cloak, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
   "themis_smile": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a clever middle-aged Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short dark beard, a bronze helmet pushed up on top and a blue cloak smiling slyly in a dark tent lit by an oil lamp, an older grey-bearded Athenian looking at him in surprise, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "ostracism_vote": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a crowd of Athenian citizens whose heads are round balls painted white with a small golden owl emblem, dropping broken pottery shards into a large voting enclosure in a marble marketplace, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "aristides_writes": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, quietly scratching on a broken pottery shard held out by a puzzled peasant farmer whose head is a round ball painted white, in a busy marketplace, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "staff_raised": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a stern Spartan admiral whose head is a round ball painted red with a white lambda emblem raising a wooden staff as if to strike a clever middle-aged Athenian general whose head is a round ball painted white with a small golden owl emblem, with a short dark beard, a bronze helmet pushed up on top and a blue cloak, who stands firm and keeps talking, other commanders watching in a tent, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
   "xerxes_throne": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an Achaemenid Persian Great King whose head is a round ball painted deep purple with a golden winged-disc emblem, wearing a tall golden crenellated crown, a long square curled black beard and royal purple robes seated on a golden throne on a mountain slope above a narrow strait full of warships at dawn, scribes with tablets beside him, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
   "greek_paean": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Athenian sailors and marines whose heads are round balls painted white with a small golden owl emblem, wearing bronze helmets and simple tunics rowing ancient Greek triremes with three banks of oars, bronze rams at the bow and painted eyes out from an island shore at dawn, singing with open mouths, a trumpeter at the bow, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
   "jam": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: hundreds of Persian warships crammed together in a narrow strait, their oars tangled and snapping, ships colliding, Phoenician sailors whose heads are round balls painted dark red with a small golden palm-tree emblem, wearing conical caps and ancient Achaemenid Persian sailors and soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful tunics in chaos, 480 BC ancient Greece, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
@@ -401,20 +416,20 @@
       "k": "swarm",
       "path": [
        [
-        23.66,
-        37.905
+        23.645,
+        37.946
        ],
        [
-        23.625,
-        37.925
+        23.615,
+        37.948
        ],
        [
-        23.6,
-        37.94
+        23.595,
+        37.95
        ],
        [
         23.578,
-        37.956
+        37.952
        ]
       ],
       "at": 0.1,
@@ -426,35 +441,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0.4,
@@ -686,36 +701,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -728,35 +743,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0,
@@ -938,8 +953,8 @@
    ],
    "visual": {
     "type": "map",
-    "from": "aegean",
-    "to": "aegean",
+    "from": "north",
+    "to": "north",
     "items": [
      {
       "k": "lock",
@@ -1028,6 +1043,56 @@
    "id": "s018",
    "act": 2,
    "lines": [
+    "크세르크세스는 함대를 위해 산을 뚫기도 했습니다.",
+    {
+     "t": "12년 전 페르시아 함대가 폭풍에 부서졌던 아토스곶.",
+     "say": "십이 년 전 페르시아 함대가 폭풍에 부서졌던 아토스곶."
+    },
+    "그 반도 밑동에 배가 지나갈 운하를 판 겁니다.",
+    {
+     "t": "땅을 파는 데만 3년이 걸렸다고 하죠.",
+     "say": "땅을 파는 데만 삼 년이 걸렸다고 하죠."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "north",
+    "to": "north",
+    "items": [
+     {
+      "k": "lock",
+      "p": "athos",
+      "text": "아토스곶 운하",
+      "on": "아토스곶"
+     },
+     {
+      "k": "marker",
+      "p": "abydos",
+      "color": "red",
+      "at": 0
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "크세르크세스 운하 · 헤로도토스 7권 22절",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s019",
+   "act": 2,
+   "lines": [
     "바다에서는 함대가 해안을 따라 나란히 내려왔습니다.",
     {
      "t": "헤로도토스가 센 전함은 1,207척.",
@@ -1112,7 +1177,7 @@
    }
   },
   {
-   "id": "s019",
+   "id": "s020",
    "act": 2,
    "lines": [
     "그리스 도시들은 겁에 질렸습니다.",
@@ -1135,7 +1200,7 @@
    ]
   },
   {
-   "id": "s020",
+   "id": "s021",
    "act": 2,
    "lines": [
     {
@@ -1153,7 +1218,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s022",
    "act": 2,
    "lines": [
     {
@@ -1197,7 +1262,24 @@
    ]
   },
   {
-   "id": "s022",
+   "id": "s023",
+   "act": 2,
+   "lines": [
+    {
+     "t": "그의 곁에는 스파르타 정예 300명과 그리스 동맹군 수천 명이 있었습니다.",
+     "say": "그의 곁에는 스파르타 정예 삼백 명과 그리스 동맹군 수천 명이 있었습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "스파르타 정예 300명",
+    "style": "red",
+    "sub": "그리고 그리스 동맹군 수천 명",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s024",
    "act": 2,
    "lines": [
     "같은 때 바다에서는 그리스 함대가 아르테미시온 앞바다에서 버팁니다.",
@@ -1236,7 +1318,44 @@
    ]
   },
   {
-   "id": "s023",
+   "id": "s025",
+   "act": 2,
+   "lines": [
+    "그사이 에우보이아 앞바다에서는 폭풍이 페르시아 배 수백 척을 삼켰다고 합니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "central",
+    "to": "central",
+    "items": [
+     {
+      "k": "shock",
+      "pts": [
+       "artemision"
+      ],
+      "at": 0.5,
+      "period": 0.8
+     },
+     {
+      "k": "badge",
+      "p": "artemision",
+      "text": "폭풍 · 페르시아 배 수백 척?",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "폭풍이"
+     }
+    ],
+    "tilt": 18
+   },
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s026",
    "act": 2,
    "lines": [
     "하지만 산길로 돌아온 페르시아군에게 레오니다스는 쓰러집니다."
@@ -1244,14 +1363,28 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s023-photo",
+    "q": "s026-photo",
     "tag": "자크 루이 다비드 · 1814",
     "pos": "50% 40%"
    },
    "label": "테르모필레의 레오니다스 · 자크 루이 다비드 (1814) · 루브르 박물관"
   },
   {
-   "id": "s024",
+   "id": "s027",
+   "act": 2,
+   "lines": [
+    "그 산길을 알려 준 것은 에피알테스라는 그리스 사람이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "에피알테스",
+    "style": "dark",
+    "sub": "산길을 알려 준 그리스인 · 헤로도토스",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s028",
    "act": 2,
    "lines": [
     "함대도 남쪽으로 물러날 수밖에 없었습니다.",
@@ -1326,7 +1459,7 @@
    ]
   },
   {
-   "id": "s025",
+   "id": "s029",
    "act": 2,
    "lines": [
     "아테네 사람들은 결정을 내립니다.",
@@ -1340,7 +1473,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s030",
    "act": 2,
    "lines": [
     "여자와 아이들은 트로이젠으로.",
@@ -1447,7 +1580,7 @@
    }
   },
   {
-   "id": "s027",
+   "id": "s031",
    "act": 2,
    "lines": [
     "며칠 뒤 페르시아군이 텅 빈 아테네에 들어옵니다.",
@@ -1469,7 +1602,7 @@
    ]
   },
   {
-   "id": "s028",
+   "id": "s032",
    "act": 2,
    "lines": [
     "신전은 불탔습니다.",
@@ -1489,7 +1622,7 @@
    ]
   },
   {
-   "id": "s029",
+   "id": "s033",
    "act": 2,
    "lines": [
     "그런데 이상한 일이 하나 있습니다.",
@@ -1504,7 +1637,7 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s034",
    "act": 3,
    "lines": [
     "그의 이름은 테미스토클레스.",
@@ -1514,7 +1647,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s030-photo",
+    "q": "s034-photo",
     "tag": "테미스토클레스 흉상 · 로마 시대 복제품",
     "pos": "50% 30%",
     "marks": [
@@ -1535,7 +1668,7 @@
    }
   },
   {
-   "id": "s031",
+   "id": "s035",
    "act": 3,
    "lines": [
     "그런데 그는 누구보다 먼저 바다를 봤습니다."
@@ -1548,7 +1681,7 @@
    "label": "재연 일러스트"
   },
   {
-   "id": "s032",
+   "id": "s036",
    "act": 3,
    "lines": [
     "마라톤에서 이겼을 때 아테네 사람들은 이제 끝났다고 기뻐했습니다.",
@@ -1563,7 +1696,7 @@
    }
   },
   {
-   "id": "s033",
+   "id": "s037",
    "act": 3,
    "lines": [
     "페르시아는 반드시 다시 온다.",
@@ -1583,7 +1716,34 @@
    }
   },
   {
-   "id": "s034",
+   "id": "s038",
+   "act": 3,
+   "lines": [
+    "마라톤 전부터 그는 바위투성이 항구 페이라이에우스를 새 군항으로 다지기 시작했죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "saronic",
+    "to": "saronic",
+    "items": [
+     {
+      "k": "lock",
+      "p": "piraeus",
+      "text": "페이라이에우스 군항",
+      "on": "페이라이에우스"
+     },
+     {
+      "k": "marker",
+      "p": "athens",
+      "color": "blue",
+      "at": 0
+     }
+    ],
+    "tilt": 18
+   }
+  },
+  {
+   "id": "s039",
    "act": 3,
    "lines": [
     "기회는 뜻밖의 곳에서 왔습니다.",
@@ -1629,7 +1789,7 @@
    ]
   },
   {
-   "id": "s035",
+   "id": "s040",
    "act": 3,
    "lines": [
     "아테네 사람들은 이 은을 시민들에게 나눠 갖자고 했죠.",
@@ -1641,7 +1801,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s035-photo",
+    "q": "s040-photo",
     "tag": "라우리온 광산 갱도 · 오늘날",
     "marks": [
      {
@@ -1656,7 +1816,7 @@
    "label": "라우리온의 옛 광산 갱도 (2016)"
   },
   {
-   "id": "s036",
+   "id": "s041",
    "act": 3,
    "lines": [
     "테미스토클레스는 반대합니다.",
@@ -1670,7 +1830,7 @@
    }
   },
   {
-   "id": "s037",
+   "id": "s042",
    "act": 3,
    "lines": [
     "그는 페르시아 이야기를 꺼내지 않았습니다.",
@@ -1707,7 +1867,7 @@
    }
   },
   {
-   "id": "s038",
+   "id": "s043",
    "act": 3,
    "lines": [
     {
@@ -1724,7 +1884,79 @@
    }
   },
   {
-   "id": "s039",
+   "id": "s044",
+   "act": 3,
+   "lines": [
+    "물론 반대한 사람도 있었습니다.",
+    "정의로운 사람이라 불리던 아리스테이데스였죠.",
+    "두 사람의 다툼은 결국 도편추방 투표로 이어집니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "ostracism_vote",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "정의로운 사람 · 아리스테이데스",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s045",
+   "act": 3,
+   "lines": [
+    "이때 글을 모르는 농부 한 사람이 아리스테이데스에게 도자기 조각을 내밀었다고 합니다.",
+    "여기에 아리스테이데스라고 좀 써 주시오.",
+    "아리스테이데스는 그 사람이 당신에게 무슨 잘못을 했느냐고 물었습니다.",
+    "아무것도요 다만 어딜 가나 정의로운 사람이라고 부르는 게 지겨워서요.",
+    "아리스테이데스는 말없이 자기 이름을 써 주었다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "aristides_writes",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "“여기에 아리스테이데스라고 써 주시오” · 플루타르코스",
+     "style": "dark",
+     "at": 1,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s046",
+   "act": 3,
+   "lines": [
+    "그렇게 그는 아테네에서 쫓겨납니다.",
+    "이 사람은 이야기의 결정적인 순간에 다시 돌아옵니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s046-photo",
+    "tag": "도편추방 투표 조각 · 기원전 5세기",
+    "marks": [
+     {
+      "text": "도편추방 투표 조각",
+      "x": 0.5,
+      "y": 0.18,
+      "color": "yellow",
+      "on": "쫓겨납니다"
+     }
+    ]
+   },
+   "label": "도편추방에 쓴 도자기 조각들 · 기원전 5세기 · 아테네 고대 아고라 박물관"
+  },
+  {
+   "id": "s047",
    "act": 3,
    "lines": [
     {
@@ -1743,7 +1975,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s039-photo",
+    "q": "s047-photo",
     "tag": "복원 삼단노선 올림피아스 · 2019",
     "pos": "50% 55%",
     "marks": [
@@ -1766,7 +1998,7 @@
    "label": "복원한 아테네 삼단노선 올림피아스호 (2019)"
   },
   {
-   "id": "s040",
+   "id": "s048",
    "act": 3,
    "lines": [
     "뱃머리 아래에는 청동 충각이 달려 있었습니다.",
@@ -1788,7 +2020,7 @@
    ]
   },
   {
-   "id": "s041",
+   "id": "s049",
    "act": 3,
    "lines": [
     "노를 저은 사람들은 가난한 시민들이었습니다.",
@@ -1797,7 +2029,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s041-photo",
+    "q": "s049-photo",
     "tag": "레노르망 부조 · 기원전 410년 무렵",
     "marks": [
      {
@@ -1812,7 +2044,22 @@
    "label": "노 젓는 아테네 삼단노선 선원들 · 레노르망 부조 (기원전 410년 무렵) · 아크로폴리스 박물관"
   },
   {
-   "id": "s042",
+   "id": "s050",
+   "act": 3,
+   "lines": [
+    "이 배들은 가난한 시민을 아테네의 주인공으로 만듭니다.",
+    "노를 젓는 사람이 곧 도시를 지키는 사람이 됐거든요."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "노 젓는 시민",
+    "style": "blue",
+    "sub": "아테네의 새 주인공",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s051",
    "act": 3,
    "lines": [
     "그리고 페르시아가 다가오자 아테네는 델포이에 신탁을 물었습니다."
@@ -1847,7 +2094,7 @@
    ]
   },
   {
-   "id": "s043",
+   "id": "s052",
    "act": 3,
    "lines": [
     "첫 번째 답은 끔찍했습니다.",
@@ -1865,7 +2112,7 @@
    }
   },
   {
-   "id": "s044",
+   "id": "s053",
    "act": 3,
    "lines": [
     "두 번째 답은 조금 달랐죠.",
@@ -1887,7 +2134,7 @@
    }
   },
   {
-   "id": "s045",
+   "id": "s054",
    "act": 3,
    "lines": [
     "아테네 사람들은 둘로 갈렸습니다.",
@@ -1912,13 +2159,14 @@
    }
   },
   {
-   "id": "s046",
+   "id": "s055",
    "act": 3,
    "lines": [
     "테미스토클레스는 말했습니다.",
     "나무 성벽은 배다.",
     "살라미스가 우리에게 저주받은 곳이라면 신이 신성하다고 불렀겠느냐.",
-    "죽을 쪽은 적이다."
+    "죽을 쪽은 적이다.",
+    "신탁의 뜻을 놓고 벌인 이 논쟁에서 테미스토클레스가 이깁니다."
    ],
    "visual": {
     "type": "ai",
@@ -1936,7 +2184,7 @@
    ]
   },
   {
-   "id": "s047",
+   "id": "s056",
    "act": 3,
    "lines": [
     "그렇게 아테네는 도시를 버리고 배를 택했습니다."
@@ -1955,7 +2203,7 @@
    ]
   },
   {
-   "id": "s048",
+   "id": "s057",
    "act": 3,
    "lines": [
     "하지만 진짜 싸움은 이제부터였습니다.",
@@ -1969,7 +2217,7 @@
    }
   },
   {
-   "id": "s049",
+   "id": "s058",
    "act": 4,
    "lines": [
     "살라미스섬과 육지 사이에 그리스 함대가 모였습니다."
@@ -1983,36 +2231,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0.6,
@@ -2041,7 +2289,7 @@
    ]
   },
   {
-   "id": "s050",
+   "id": "s059",
    "act": 4,
    "lines": [
     {
@@ -2076,7 +2324,7 @@
    }
   },
   {
-   "id": "s051",
+   "id": "s060",
    "act": 4,
    "lines": [
     "그런데 함대의 총사령관은 아테네 사람이 아니었습니다.",
@@ -2099,7 +2347,37 @@
    ]
   },
   {
-   "id": "s052",
+   "id": "s061",
+   "act": 4,
+   "lines": [
+    {
+     "t": "스파르타 배는 고작 16척이었는데도 말이죠.",
+     "say": "스파르타 배는 고작 열여섯 척이었는데도 말이죠."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "살라미스 함대 · 헤로도토스",
+    "items": [
+     {
+      "label": "아테네",
+      "value": 180,
+      "display": "180척",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "label": "스파르타",
+      "value": 16,
+      "display": "16척",
+      "color": "red",
+      "on": "열여섯"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s062",
    "act": 4,
    "lines": [
     "작전 회의가 열립니다.",
@@ -2162,7 +2440,7 @@
    ]
   },
   {
-   "id": "s053",
+   "id": "s063",
    "act": 4,
    "lines": [
     "그때 소식이 들어옵니다.",
@@ -2185,7 +2463,30 @@
    ]
   },
   {
-   "id": "s054",
+   "id": "s064",
+   "act": 4,
+   "lines": [
+    "회의 도중 테미스토클레스가 끈질기게 나서자 에우리비아데스가 지팡이를 들어 올렸다고 합니다.",
+    "테미스토클레스는 물러서지 않았습니다.",
+    "때리시오 그러나 내 말은 들으시오."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "staff_raised",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "“때리시오 그러나 내 말은 들으시오” · 플루타르코스",
+     "style": "dark",
+     "at": 2,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s065",
    "act": 4,
    "lines": [
     "테미스토클레스는 에우리비아데스를 붙잡고 말합니다.",
@@ -2218,7 +2519,7 @@
    ]
   },
   {
-   "id": "s055",
+   "id": "s066",
    "act": 4,
    "lines": [
     "여기 좁은 물길에서 싸워야 한다.",
@@ -2233,36 +2534,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -2289,7 +2590,7 @@
    }
   },
   {
-   "id": "s056",
+   "id": "s067",
    "act": 4,
    "lines": [
     "코린토스의 장군 아데이만토스가 비웃었습니다.",
@@ -2312,7 +2613,7 @@
    ]
   },
   {
-   "id": "s057",
+   "id": "s068",
    "act": 4,
    "lines": [
     "테미스토클레스가 받아칩니다.",
@@ -2331,7 +2632,7 @@
    }
   },
   {
-   "id": "s058",
+   "id": "s069",
    "act": 4,
    "lines": [
     "그리고 마지막 패를 꺼냅니다.",
@@ -2390,7 +2691,7 @@
    }
   },
   {
-   "id": "s059",
+   "id": "s070",
    "act": 4,
    "lines": [
     "아테네 배가 빠지면 그리스 함대는 반 토막이 납니다."
@@ -2417,21 +2718,77 @@
    }
   },
   {
-   "id": "s060",
+   "id": "s071",
    "act": 4,
    "lines": [
-    "에우리비아데스는 살라미스에 남기로 합니다.",
-    "하지만 그 결정은 오래가지 못했습니다."
+    "에우리비아데스는 살라미스에 남기로 합니다."
    ],
    "visual": {
     "type": "black",
-    "text": "남기로 했다",
-    "accent": "하지만",
+    "text": "에우리비아데스는",
+    "accent": "남기로 했다",
     "accentAt": 0.5
    }
   },
   {
-   "id": "s061",
+   "id": "s072",
+   "act": 4,
+   "lines": [
+    "같은 시각 육지에서는 펠로폰네소스 사람들이 지협을 가로지르는 성벽을 쌓고 있었습니다.",
+    "땅에서 막으면 된다고 믿었던 거죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "saronic",
+    "to": "saronic",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        23.0,
+        37.96
+       ],
+       [
+        22.97,
+        37.885
+       ]
+      ],
+      "color": "#ffd400",
+      "glow": true,
+      "on": "성벽을"
+     },
+     {
+      "k": "lock",
+      "p": "isthmus",
+      "text": "지협을 막는 성벽",
+      "on": "성벽을"
+     },
+     {
+      "k": "marker",
+      "p": "salamis",
+      "color": "blue",
+      "at": 0
+     }
+    ],
+    "tilt": 18
+   }
+  },
+  {
+   "id": "s073",
+   "act": 4,
+   "lines": [
+    "하지만 그 결정은 오래가지 못했습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "하지만",
+    "accent": "오래가지 못했다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s074",
    "act": 4,
    "lines": [
     "같은 무렵 바다 건너 페르시아 진영에서도 회의가 열렸습니다.",
@@ -2454,7 +2811,7 @@
    ]
   },
   {
-   "id": "s062",
+   "id": "s075",
    "act": 4,
    "lines": [
     "모두가 싸우자고 답했죠.",
@@ -2464,7 +2821,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s062-photo",
+    "q": "s075-photo",
     "tag": "빌헬름 폰 카울바흐 · 1868",
     "pos": "50% 30%",
     "marks": [
@@ -2480,7 +2837,7 @@
    "label": "살라미스의 아르테미시아 · 빌헬름 폰 카울바흐 (1868) 부분"
   },
   {
-   "id": "s063",
+   "id": "s076",
    "act": 4,
    "lines": [
     "그녀는 이렇게 말했다고 합니다.",
@@ -2500,7 +2857,57 @@
    }
   },
   {
-   "id": "s064",
+   "id": "s077",
+   "act": 4,
+   "lines": [
+    "그녀는 육군이 펠로폰네소스로 진격하면 그리스 함대는 고향을 지키러 흩어질 거라고 내다봤습니다.",
+    "다른 장군들은 그녀가 대왕의 노여움을 사서 죽을 거라고 수군댔죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "saronic",
+    "to": "saronic",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.727,
+        37.972
+       ],
+       [
+        23.35,
+        37.97
+       ],
+       [
+        22.99,
+        37.92
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "진격하면"
+     },
+     {
+      "k": "marker",
+      "p": "isthmus",
+      "color": "blue",
+      "at": 0.3
+     }
+    ],
+    "tilt": 18
+   },
+   "callouts": [
+    {
+     "text": "아르테미시아의 예측",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s078",
    "act": 4,
    "lines": [
     "크세르크세스는 그녀를 칭찬했습니다.",
@@ -2516,7 +2923,7 @@
    }
   },
   {
-   "id": "s065",
+   "id": "s079",
    "act": 4,
    "lines": [
     "그리고 그리스 진영에서는 다시 회의가 시작됐습니다.",
@@ -2539,7 +2946,7 @@
    ]
   },
   {
-   "id": "s066",
+   "id": "s080",
    "act": 5,
    "lines": [
     "그날 밤 작은 배 한 척이 몰래 살라미스를 떠납니다.",
@@ -2565,7 +2972,22 @@
    ]
   },
   {
-   "id": "s067",
+   "id": "s081",
+   "act": 5,
+   "lines": [
+    "훗날 테미스토클레스는 그에게 큰 재산과 테스피아이 시민권을 안겨 줍니다.",
+    "그만큼 목숨을 건 심부름이었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "목숨을 건 심부름",
+    "style": "yellow",
+    "sub": "훗날 큰 재산과 테스피아이 시민권 · 헤로도토스",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s082",
    "act": 5,
    "lines": [
     "그는 페르시아 장군들 앞에서 이렇게 말합니다.",
@@ -2588,7 +3010,7 @@
    ]
   },
   {
-   "id": "s068",
+   "id": "s083",
    "act": 5,
    "lines": [
     "그리스 사람들은 겁에 질려 도망치려 하고 있습니다.",
@@ -2609,7 +3031,7 @@
    }
   },
   {
-   "id": "s069",
+   "id": "s084",
    "act": 5,
    "lines": [
     "배신자의 밀서.",
@@ -2624,7 +3046,7 @@
    }
   },
   {
-   "id": "s070",
+   "id": "s085",
    "act": 5,
    "lines": [
     "첫째 그리스 함대가 다투고 있다는 건 사실이었거든요.",
@@ -2652,7 +3074,22 @@
    }
   },
   {
-   "id": "s071",
+   "id": "s086",
+   "act": 5,
+   "lines": [
+    "포위해서 한 번에 끝낸다.",
+    "대왕이 처음부터 바라던 그림이었거든요."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "포위 · 섬멸",
+    "style": "red",
+    "sub": "대왕이 처음부터 바라던 그림",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s087",
    "act": 5,
    "lines": [
     "그날 밤 페르시아 함대가 움직입니다.",
@@ -2717,7 +3154,7 @@
    ]
   },
   {
-   "id": "s072",
+   "id": "s088",
    "act": 5,
    "lines": [
     "나머지는 해협 입구에 줄을 섰습니다.",
@@ -2737,35 +3174,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0.2,
@@ -2796,7 +3233,7 @@
    ]
   },
   {
-   "id": "s073",
+   "id": "s089",
    "act": 5,
    "lines": [
     "그리고 노 젓는 사람들은 밤새 노를 잡고 기다렸습니다.",
@@ -2818,7 +3255,99 @@
    ]
   },
   {
-   "id": "s074",
+   "id": "s090",
+   "act": 5,
+   "lines": [
+    "그것도 좁은 물길에서 서로 부딪히지 않게 대열을 지키며 말이죠.",
+    "그런데 정작 그리스 진영에서는 아무도 이 사실을 몰랐습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "salamis",
+    "to": "salamis",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        23.604,
+        37.9465
+       ],
+       [
+        23.6005,
+        37.947
+       ],
+       [
+        23.597,
+        37.9475
+       ],
+       [
+        23.5935,
+        37.948
+       ],
+       [
+        23.59,
+        37.9485
+       ],
+       [
+        23.5865,
+        37.949
+       ],
+       [
+        23.583,
+        37.9495
+       ],
+       [
+        23.5795,
+        37.95
+       ]
+      ],
+      "at": 0,
+      "rot": 210,
+      "color": "#8a2a22",
+      "size": 0.8
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.64,
+        37.915
+       ],
+       [
+        23.615,
+        37.928
+       ],
+       [
+        23.6,
+        37.936
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "marker",
+      "p": "ampelakia",
+      "color": "blue",
+      "at": 0.5
+     }
+    ],
+    "demSea": true,
+    "tilt": 24
+   },
+   "callouts": [
+    {
+     "text": "그리스 진영은 아무도 몰랐다",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s091",
    "act": 5,
    "lines": [
     "한편 그리스 장군들은 아직도 회의 중이었습니다.",
@@ -2841,7 +3370,7 @@
    ]
   },
   {
-   "id": "s075",
+   "id": "s092",
    "act": 5,
    "lines": [
     "몇 년 전 테미스토클레스와 다투다 도편추방을 당한 정적이었죠.",
@@ -2850,7 +3379,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s075-photo",
+    "q": "s092-photo",
     "tag": "도편추방 투표 조각 · 기원전 5세기",
     "marks": [
      {
@@ -2865,7 +3394,7 @@
    "label": "도편추방에 쓴 도자기 조각들 · 기원전 5세기 · 아테네 고대 아고라 박물관"
   },
   {
-   "id": "s076",
+   "id": "s093",
    "act": 5,
    "lines": [
     "그는 아이기나에서 밤바다를 건너왔습니다."
@@ -2914,7 +3443,7 @@
    ]
   },
   {
-   "id": "s077",
+   "id": "s094",
    "act": 5,
    "lines": [
     "그리고 이렇게 말합니다.",
@@ -2936,7 +3465,7 @@
    }
   },
   {
-   "id": "s078",
+   "id": "s095",
    "act": 5,
    "lines": [
     "테미스토클레스는 이렇게 답했다고 하죠.",
@@ -2958,7 +3487,23 @@
    ]
   },
   {
-   "id": "s079",
+   "id": "s096",
+   "act": 5,
+   "lines": [
+    "그리고 아리스테이데스에게 부탁합니다.",
+    "당신이 직접 장군들에게 말해 주시오.",
+    "내가 말하면 또 꾀를 부린다고 믿지 않을 테니."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“당신이 직접 말해 주시오”",
+    "style": "dark",
+    "sub": "테미스토클레스가 아리스테이데스에게 · 헤로도토스 8권 80절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s097",
    "act": 5,
    "lines": [
     "장군들은 처음에 믿지 않았습니다.",
@@ -2974,35 +3519,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0,
@@ -3014,36 +3559,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -3085,7 +3630,7 @@
    ]
   },
   {
-   "id": "s080",
+   "id": "s098",
    "act": 5,
    "lines": [
     "이제 남은 길은 하나뿐이었습니다.",
@@ -3099,7 +3644,7 @@
    }
   },
   {
-   "id": "s081",
+   "id": "s099",
    "act": 5,
    "lines": [
     "테미스토클레스는 적에게 퇴로를 막아 달라고 부탁해서 자기 편이 도망칠 길을 지워 버린 겁니다."
@@ -3175,7 +3720,7 @@
    ]
   },
   {
-   "id": "s082",
+   "id": "s100",
    "act": 6,
    "lines": [
     "새벽이 밝습니다.",
@@ -3201,7 +3746,7 @@
    ]
   },
   {
-   "id": "s083",
+   "id": "s101",
    "act": 6,
    "lines": [
     "옆에는 서기들이 서 있었죠.",
@@ -3216,7 +3761,7 @@
    }
   },
   {
-   "id": "s084",
+   "id": "s102",
    "act": 6,
    "lines": [
     "그리스 배들이 해안에서 미끄러져 나옵니다."
@@ -3230,36 +3775,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0.2,
@@ -3286,7 +3831,7 @@
    ]
   },
   {
-   "id": "s085",
+   "id": "s103",
    "act": 6,
    "lines": [
     "그리고 노래가 들립니다.",
@@ -3311,7 +3856,21 @@
    ]
   },
   {
-   "id": "s086",
+   "id": "s104",
+   "act": 6,
+   "lines": [
+    "이 노랫소리에 페르시아 쪽이 오히려 겁을 먹었다고 아이스킬로스는 적었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "겁먹은 페르시아",
+    "style": "red",
+    "sub": "아이스킬로스 『페르시아인들』",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s105",
    "act": 6,
    "lines": [
     "이 노래를 들은 사람 중에는 아이스킬로스라는 병사가 있었다고 전해집니다."
@@ -3319,7 +3878,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s086-photo",
+    "q": "s105-photo",
     "tag": "아이스킬로스 · 로마 시대 복제품",
     "pos": "50% 30%",
     "marks": [
@@ -3335,7 +3894,7 @@
    "label": "아이스킬로스 흉상 · 로마 시대 복제품 · 카피톨리니 박물관"
   },
   {
-   "id": "s087",
+   "id": "s106",
    "act": 6,
    "lines": [
     "그런데 여기서 그리스 함대가 이상한 행동을 합니다.",
@@ -3352,36 +3911,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -3423,7 +3982,7 @@
    }
   },
   {
-   "id": "s088",
+   "id": "s107",
    "act": 6,
    "lines": [
     "페르시아 배들은 더 깊이 들어옵니다.",
@@ -3439,36 +3998,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -3481,35 +4040,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0,
@@ -3524,20 +4083,20 @@
       "k": "swarm",
       "path": [
        [
-        23.66,
-        37.905
+        23.645,
+        37.946
        ],
        [
-        23.625,
-        37.925
+        23.615,
+        37.948
        ],
        [
-        23.6,
-        37.94
+        23.595,
+        37.95
        ],
        [
         23.578,
-        37.956
+        37.952
        ]
       ],
       "at": 0.3,
@@ -3550,7 +4109,7 @@
    }
   },
   {
-   "id": "s089",
+   "id": "s108",
    "act": 6,
    "lines": [
     "해협 입구는 넓습니다.",
@@ -3595,7 +4154,7 @@
    ]
   },
   {
-   "id": "s090",
+   "id": "s109",
    "act": 6,
    "lines": [
     "앞줄은 멈추고 싶어도 멈출 수가 없습니다.",
@@ -3610,7 +4169,7 @@
    "label": "재연 일러스트"
   },
   {
-   "id": "s091",
+   "id": "s110",
    "act": 6,
    "lines": [
     "삼단노선은 빠르게 달려야 무기가 되는 배입니다.",
@@ -3634,7 +4193,42 @@
    }
   },
   {
-   "id": "s092",
+   "id": "s111",
+   "act": 6,
+   "lines": [
+    "아테네 배는 무겁고 낮았습니다.",
+    {
+     "t": "갑판에는 중장보병 14명과 궁수 4명만 태웠죠.",
+     "say": "갑판에는 중장보병 열네 명과 궁수 네 명만 태웠죠."
+    },
+    "반대로 페르시아 배는 높은 갑판에 병사를 가득 싣고 화살과 창으로 싸우려 했습니다.",
+    "좁은 물길에서는 들이받는 쪽이 이깁니다."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "아테네 삼단노선",
+    "items": [
+     {
+      "text": "낮고 무거운 배",
+      "on": "무겁고"
+     },
+     {
+      "text": "중장보병 14명",
+      "on": "열네"
+     },
+     {
+      "text": "궁수 4명",
+      "on": "네 명만"
+     },
+     {
+      "text": "무기는 충각",
+      "on": "들이받는"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s112",
    "act": 6,
    "lines": [
     "그때 아테네 배 한 척이 튀어나옵니다.",
@@ -3651,36 +4245,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -3693,35 +4287,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0,
@@ -3734,15 +4328,15 @@
       "path": [
        [
         23.6,
-        37.94
+        37.949
        ],
        [
-        23.585,
+        23.588,
         37.95
        ],
        [
-        23.572,
-        37.957
+        23.576,
+        37.951
        ]
       ],
       "at": 0,
@@ -3798,7 +4392,7 @@
    ]
   },
   {
-   "id": "s093",
+   "id": "s113",
    "act": 6,
    "lines": [
     "그 신호와 함께 그리스 배들이 일제히 달려듭니다."
@@ -3811,7 +4405,7 @@
    "label": "재연 일러스트"
   },
   {
-   "id": "s094",
+   "id": "s114",
    "act": 6,
    "lines": [
     "아침이 되자 바다에서 바람이 불어옵니다.",
@@ -3827,36 +4421,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -3869,15 +4463,15 @@
       "path": [
        [
         23.6,
-        37.94
+        37.949
        ],
        [
-        23.585,
+        23.588,
         37.95
        ],
        [
-        23.572,
-        37.957
+        23.576,
+        37.951
        ]
       ],
       "at": 0,
@@ -3924,7 +4518,7 @@
    ]
   },
   {
-   "id": "s095",
+   "id": "s115",
    "act": 6,
    "lines": [
     "페르시아 함대는 출신이 제각각이었습니다.",
@@ -3959,7 +4553,7 @@
    }
   },
   {
-   "id": "s096",
+   "id": "s116",
    "act": 6,
    "lines": [
     "게다가 밤새 노를 잡고 있던 사람들이었습니다."
@@ -3980,13 +4574,12 @@
    ]
   },
   {
-   "id": "s097",
+   "id": "s117",
    "act": 6,
    "lines": [
     "앞쪽 배들이 부서져 물러나려 하자 뒤쪽 배들과 부딪힙니다.",
     "뒤쪽 배들은 공을 세우려고 더 앞으로 밀고 들어옵니다.",
-    "대왕이 보고 있었으니까요.",
-    "페르시아의 가장 큰 무기였던 숫자가 이제 서로를 짓누르는 무게가 됩니다."
+    "대왕이 보고 있었으니까요."
    ],
    "visual": {
     "type": "map",
@@ -3997,36 +4590,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -4039,15 +4632,15 @@
       "path": [
        [
         23.6,
-        37.94
+        37.949
        ],
        [
-        23.585,
+        23.588,
         37.95
        ],
        [
-        23.572,
-        37.957
+        23.576,
+        37.951
        ]
       ],
       "at": 0,
@@ -4068,21 +4661,11 @@
       "k": "clash",
       "p": [
        23.592,
-       37.944
+       37.949
       ],
       "period": 0.9,
       "size": 1.0,
       "on": "부딪힙니다"
-     },
-     {
-      "k": "clash",
-      "p": [
-       23.578,
-       37.955
-      ],
-      "period": 0.9,
-      "size": 1.0,
-      "on": "짓누르는"
      },
      {
       "k": "lock",
@@ -4095,14 +4678,6 @@
     "tilt": 34,
     "hud": true
    },
-   "callouts": [
-    {
-     "text": "숫자가 무게가 되다",
-     "style": "red",
-     "at": 0,
-     "pos": "top"
-    }
-   ],
    "sfx": [
     {
      "id": "wind",
@@ -4111,7 +4686,118 @@
    ]
   },
   {
-   "id": "s098",
+   "id": "s118",
+   "act": 6,
+   "lines": [
+    "헤로도토스는 이날 페르시아 병사들이 에우보이아 때보다 훨씬 용감하게 싸웠다고 적었습니다.",
+    "대왕이 지켜본다는 두려움 때문이었죠.",
+    "그 용기가 오히려 혼란을 키웠습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "에우보이아 때보다 용감하게",
+    "style": "red",
+    "sub": "대왕이 지켜본다는 두려움 · 헤로도토스 8권 86절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s119",
+   "act": 6,
+   "lines": [
+    "페르시아의 가장 큰 무기였던 숫자가 이제 서로를 짓누르는 무게가 됩니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "strait",
+    "to": "strait",
+    "items": [
+     {
+      "k": "ships",
+      "pts": [
+       [
+        23.557,
+        37.9565
+       ],
+       [
+        23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
+        37.952
+       ],
+       [
+        23.553,
+        37.9505
+       ],
+       [
+        23.552,
+        37.949
+       ],
+       [
+        23.551,
+        37.9475
+       ],
+       [
+        23.55,
+        37.946
+       ]
+      ],
+      "at": 0,
+      "rot": -15,
+      "color": "#1f5fbf",
+      "size": 0.8
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        23.6,
+        37.949
+       ],
+       [
+        23.588,
+        37.95
+       ],
+       [
+        23.576,
+        37.951
+       ]
+      ],
+      "at": 0,
+      "n": 220,
+      "width": 0.35
+     },
+     {
+      "k": "clash",
+      "p": [
+       23.58,
+       37.952
+      ],
+      "period": 0.9,
+      "size": 1.0,
+      "on": "짓누르는"
+     }
+    ],
+    "demSea": true,
+    "tilt": 34
+   },
+   "callouts": [
+    {
+     "text": "숫자가 무게가 되다",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s120",
    "act": 6,
    "lines": [
     "이 혼란 속에서 아르테미시아의 배가 아테네 배에 쫓깁니다.",
@@ -4135,7 +4821,7 @@
    ]
   },
   {
-   "id": "s099",
+   "id": "s121",
    "act": 6,
    "lines": [
     "언덕 위의 크세르크세스는 그녀가 적의 배를 부순 줄 알았습니다.",
@@ -4145,7 +4831,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s099-photo",
+    "q": "s121-photo",
     "tag": "빌헬름 폰 카울바흐 · 1868",
     "pos": "50% 30%"
    },
@@ -4160,7 +4846,7 @@
    ]
   },
   {
-   "id": "s100",
+   "id": "s122",
    "act": 6,
    "lines": [
     "물에 빠진 페르시아 병사들은 대부분 헤엄을 칠 줄 몰랐습니다.",
@@ -4174,7 +4860,7 @@
    "label": "재연 일러스트"
   },
   {
-   "id": "s101",
+   "id": "s123",
    "act": 6,
    "lines": [
     "크세르크세스의 동생인 해군 사령관 아리아비그네스도 이날 전사합니다."
@@ -4188,7 +4874,22 @@
    }
   },
   {
-   "id": "s102",
+   "id": "s124",
+   "act": 6,
+   "lines": [
+    "플루타르코스는 그가 아메이니아스의 배에 올라타려다 창에 찔려 바다에 떨어졌다고 적었습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s124-photo",
+    "tag": "빌헬름 폰 카울바흐 · 1868",
+    "pos": "50% 50%"
+   },
+   "label": "살라미스 해전 · 빌헬름 폰 카울바흐 (1868)"
+  },
+  {
+   "id": "s125",
    "act": 6,
    "lines": [
     "그때 아리스테이데스가 움직입니다.",
@@ -4238,7 +4939,65 @@
    ]
   },
   {
-   "id": "s103",
+   "id": "s126",
+   "act": 6,
+   "lines": [
+    "달아나던 페르시아 배들은 해협 출구에서 또 한 번 덫에 걸립니다.",
+    "아이기나 배들이 출구에 숨어 있다가 빠져나오는 배를 하나씩 들이받았거든요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "salamis",
+    "to": "salamis",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        23.585,
+        37.95
+       ],
+       [
+        23.6,
+        37.948
+       ],
+       [
+        23.625,
+        37.944
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "clash",
+      "p": [
+       23.615,
+       37.946
+      ],
+      "period": 0.9,
+      "size": 1.0,
+      "on": "들이받았거든요"
+     },
+     {
+      "k": "badge",
+      "p": [
+       23.615,
+       37.946
+      ],
+      "text": "아이기나 배의 매복",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "아이기나"
+     }
+    ],
+    "demSea": true,
+    "tilt": 26
+   }
+  },
+  {
+   "id": "s127",
    "act": 6,
    "lines": [
     "해가 질 무렵 페르시아 함대는 팔레론으로 달아났습니다."
@@ -4289,7 +5048,7 @@
    }
   },
   {
-   "id": "s104",
+   "id": "s128",
    "act": 6,
    "lines": [
     {
@@ -4323,7 +5082,7 @@
    }
   },
   {
-   "id": "s105",
+   "id": "s129",
    "act": 7,
    "lines": [
     "싸움이 끝난 뒤 페니키아 선장들이 크세르크세스 앞에 엎드립니다.",
@@ -4343,7 +5102,7 @@
    }
   },
   {
-   "id": "s106",
+   "id": "s130",
    "act": 7,
    "lines": [
     "하지만 대왕이 정말 두려워한 것은 따로 있었습니다.",
@@ -4352,8 +5111,8 @@
    ],
    "visual": {
     "type": "map",
-    "from": "aegean",
-    "to": "aegean",
+    "from": "north",
+    "to": "north",
     "items": [
      {
       "k": "arrow",
@@ -4396,7 +5155,7 @@
    ]
   },
   {
-   "id": "s107",
+   "id": "s131",
    "act": 7,
    "lines": [
     "그때 시킨노스가 또 나타납니다.",
@@ -4416,7 +5175,7 @@
    }
   },
   {
-   "id": "s108",
+   "id": "s132",
    "act": 7,
    "lines": [
     "크세르크세스는 서둘러 아시아로 돌아갑니다.",
@@ -4474,7 +5233,7 @@
    ]
   },
   {
-   "id": "s109",
+   "id": "s133",
    "act": 7,
    "lines": [
     "이듬해 플라타이아와 미칼레에서 그 군대도 무너집니다.",
@@ -4510,7 +5269,7 @@
    ]
   },
   {
-   "id": "s110",
+   "id": "s134",
    "act": 7,
    "lines": [
     "처음 질문으로 돌아가 볼까요.",
@@ -4525,36 +5284,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -4567,15 +5326,15 @@
       "path": [
        [
         23.6,
-        37.94
+        37.949
        ],
        [
-        23.585,
+        23.588,
         37.95
        ],
        [
-        23.572,
-        37.957
+        23.576,
+        37.951
        ]
       ],
       "at": 0,
@@ -4595,7 +5354,7 @@
    }
   },
   {
-   "id": "s111",
+   "id": "s135",
    "act": 7,
    "lines": [
     "운이 아니었습니다.",
@@ -4610,7 +5369,7 @@
    }
   },
   {
-   "id": "s112",
+   "id": "s136",
    "act": 7,
    "lines": [
     "첫째는 배였습니다.",
@@ -4622,7 +5381,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s112-photo",
+    "q": "s136-photo",
     "tag": "복원 삼단노선 · 팔레오 팔리로",
     "pos": "50% 55%"
    },
@@ -4637,7 +5396,7 @@
    ]
   },
   {
-   "id": "s113",
+   "id": "s137",
    "act": 7,
    "lines": [
     "둘째는 장소였습니다.",
@@ -4675,7 +5434,7 @@
    ]
   },
   {
-   "id": "s114",
+   "id": "s138",
    "act": 7,
    "lines": [
     "셋째는 밀서였습니다.",
@@ -4697,7 +5456,7 @@
    ]
   },
   {
-   "id": "s115",
+   "id": "s139",
    "act": 7,
    "lines": [
     "넷째는 피로였습니다.",
@@ -4719,7 +5478,7 @@
    ]
   },
   {
-   "id": "s116",
+   "id": "s140",
    "act": 7,
    "lines": [
     "다섯째는 물러남이었습니다.",
@@ -4734,36 +5493,36 @@
       "k": "ships",
       "pts": [
        [
-        23.553,
-        37.959
-       ],
-       [
-        23.5545,
-        37.9555
+        23.557,
+        37.9565
        ],
        [
         23.556,
+        37.955
+       ],
+       [
+        23.555,
+        37.9535
+       ],
+       [
+        23.554,
         37.952
        ],
        [
-        23.5575,
-        37.9485
+        23.553,
+        37.9505
        ],
        [
-        23.559,
-        37.945
+        23.552,
+        37.949
        ],
        [
-        23.5605,
-        37.9415
+        23.551,
+        37.9475
        ],
        [
-        23.562,
-        37.938
-       ],
-       [
-        23.5635,
-        37.9345
+        23.55,
+        37.946
        ]
       ],
       "at": 0,
@@ -4796,35 +5555,35 @@
       "pts": [
        [
         23.604,
-        37.934
+        37.9465
        ],
        [
         23.6005,
-        37.9375
+        37.947
        ],
        [
         23.597,
-        37.941
+        37.9475
        ],
        [
         23.5935,
-        37.9445
-       ],
-       [
-        23.59,
         37.948
        ],
        [
+        23.59,
+        37.9485
+       ],
+       [
         23.5865,
-        37.9515
+        37.949
        ],
        [
         23.583,
-        37.955
+        37.9495
        ],
        [
         23.5795,
-        37.9585
+        37.95
        ]
       ],
       "at": 0,
@@ -4849,7 +5608,7 @@
    ]
   },
   {
-   "id": "s117",
+   "id": "s141",
    "act": 7,
    "lines": [
     "그리고 여섯째는 무게였습니다.",
@@ -4871,7 +5630,7 @@
    ]
   },
   {
-   "id": "s118",
+   "id": "s142",
    "act": 7,
    "lines": [
     "대왕이 지켜보고 있었다는 것마저 페르시아에는 독이 됐습니다.",
@@ -4893,7 +5652,7 @@
    ]
   },
   {
-   "id": "s119",
+   "id": "s143",
    "act": 7,
    "lines": [
     "수가 많다는 건 넓은 바다에서만 힘이 됩니다.",
@@ -4935,7 +5694,7 @@
    }
   },
   {
-   "id": "s120",
+   "id": "s144",
    "act": 7,
    "lines": [
     {
@@ -4947,7 +5706,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s120-photo",
+    "q": "s144-photo",
     "tag": "아이스킬로스 · 로마 시대 복제품",
     "pos": "50% 30%"
    },
@@ -4962,7 +5721,7 @@
    ]
   },
   {
-   "id": "s121",
+   "id": "s145",
    "act": 7,
    "lines": [
     "그런데 이 전쟁의 영웅에게는 씁쓸한 끝이 기다리고 있었습니다.",
@@ -4976,7 +5735,7 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s121-photo",
+    "q": "s145-photo",
     "tag": "테미스토클레스 도편 · 기원전 5세기",
     "marks": [
      {
@@ -4991,7 +5750,7 @@
    "label": "테미스토클레스의 이름이 적힌 도편 · 아테네 고대 아고라 박물관"
   },
   {
-   "id": "s122",
+   "id": "s146",
    "act": 7,
    "lines": [
     "떠돌던 그가 마지막에 찾아간 곳은 어디였을까요?",
@@ -5005,7 +5764,7 @@
    }
   },
   {
-   "id": "s123",
+   "id": "s147",
    "act": 7,
    "lines": [
     "크세르크세스의 아들 아르타크세르크세스는 그를 받아 주었습니다.",
@@ -5048,7 +5807,7 @@
    ]
   },
   {
-   "id": "s124",
+   "id": "s148",
    "act": 7,
    "lines": [
     "오늘날 살라미스 해협에는 화물선과 여객선이 바쁘게 오갑니다."
@@ -5056,13 +5815,13 @@
    "visual": {
     "type": "photo",
     "kb": "in",
-    "q": "s124-photo",
+    "q": "s148-photo",
     "tag": "살라미스섬 · 오늘날"
    },
    "label": "오늘날의 살라미스섬"
   },
   {
-   "id": "s125",
+   "id": "s149",
    "act": 7,
    "lines": [
     {
@@ -5079,7 +5838,7 @@
    "label": "재연 일러스트"
   },
   {
-   "id": "s126",
+   "id": "s150",
    "act": 7,
    "lines": [
     "다음 이야기는 적이 직접 골라 평평하게 다진 전장에서 일부러 옆으로 비켜 걸은 젊은 왕입니다."
@@ -5093,7 +5852,7 @@
    }
   },
   {
-   "id": "s127",
+   "id": "s151",
    "act": 7,
    "lines": [
     "궁금하시다면 격전의 세계사를 구독해 주세요.",
@@ -5102,7 +5861,7 @@
    "visual": {
     "type": "endcard",
     "title": "살라미스의 좁은 물길에서 노를 저은 모든 이들을 기억하며",
-    "q": "s127-photo"
+    "q": "s151-photo"
    },
    "tail": 1.0
   }
