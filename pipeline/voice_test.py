@@ -39,6 +39,7 @@ def tts(c):
     return req("POST", f"{API}/text-to-speech/{c['voice']}", params={"output_format": "mp3_44100_128"},
                headers={**H, "Content-Type": "application/json"}, json=body, timeout=120)
 
+FIXED_N = len(cands)
 report = []
 def make(c):
         r = tts(c)
@@ -58,13 +59,19 @@ def make(c):
         print(("성공 " if ok else f"실패 {r.status_code} {r.text[:200]} ") + c["tag"])
         report.append({k: c.get(k) for k in ("tag", "voice", "model", "set", "name", "desc", "added")} | {"ok": ok})
 
-for c in cands:
+for c in ([] if os.environ.get("EXTRA") else cands[:FIXED_N]):  # 목소리 직접 지정 때는 지금 목소리 샘플 생략
     make(c)
 
 FIXED = len(cands)
+# EXTRA="이름:목소리ID,..." 를 주면 공유 라이브러리 검색(응답 지연 잦음) 대신 그 목소리들로 바로 생성
+EXTRA = [x.split(":") for x in (os.environ.get("EXTRA") or "").split(",") if ":" in x]
+for i, (nm, vid) in enumerate(EXTRA):
+    cands.append({"tag": f"{5 + i:02d}_{nm}", "voice": vid, "model": "eleven_multilingual_v2", "set": BASE, "name": nm})
+if EXTRA:
+    N_SHARED = 0
 # 공유 라이브러리: 한국어 남성 — 나레이션·교육용 우선, 많이 쓰인 순
 seen, shared = set(c["voice"] for c in cands), []
-for params in ({"use_cases": "narrative_story"}, {"use_cases": "informative_educational"}, {}):
+for params in ([] if EXTRA else [{"use_cases": "narrative_story"}, {"use_cases": "informative_educational"}, {}]):
     try:
         r = req("GET", f"{API}/shared-voices", headers=H, tries=2, timeout=40,
                          params={"language": "ko", "gender": "male", "page_size": 40, "sort": "usage_character_count_1y", **params})
@@ -80,7 +87,7 @@ print(f"공유 라이브러리 후보 {len(shared)}개")
 for v in shared[:20]:
     print(" -", v["name"], v["voice_id"], v.get("age"), v.get("use_case"), (v.get("description") or "")[:80].replace("\n", " "))
 
-n = 5
+n = 5 + len(EXTRA)
 for v in shared:
     if n >= 5 + N_SHARED: break
     name = re.sub(r"[^0-9A-Za-z가-힣]+", "", v["name"])[:20] or "voice"
@@ -88,7 +95,7 @@ for v in shared:
                   "owner": v.get("public_owner_id"), "desc": (v.get("description") or "")[:200], "name": v["name"]})
     n += 1
 
-for c in cands[FIXED:]:
+for c in cands[FIXED_N:]:
     make(c)
 
 (OUT / "list.json").write_text(json.dumps({"text": TEXT, "samples": report}, ensure_ascii=False, indent=1))

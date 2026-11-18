@@ -9,6 +9,10 @@ on:
         description: "공유 라이브러리에서 고를 한국어 남성 목소리 수"
         default: "5"
         required: false
+      extra:
+        description: "직접 지정할 목소리 이름:ID,이름:ID (주면 라이브러리 검색 생략)"
+        default: ""
+        required: false
       text:
         description: "샘플 문장 (비우면 기본 다큐 문장)"
         default: ""
@@ -24,6 +28,7 @@ jobs:
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       N_SHARED: ${{ github.event.inputs.n_shared }}
+      EXTRA: ${{ github.event.inputs.extra }}
       TEXT: ${{ github.event.inputs.text }}
     steps:
       - uses: actions/checkout@v4
