@@ -536,7 +536,7 @@ AI = {
     "eretria_gates": "Night scene, two cloaked figures secretly opening the heavy wooden gate of an ancient Greek walled city, Persian soldiers waiting in the shadows outside, torches, " + LAND_S,
     "eretria_chains": CB + "captive Greek townspeople being led in chains to the shore by " + PE + ", an ancient walled Greek city smoking behind them" + END,
     "hippias_ship": CB + HIPP + " standing at the bow of a Persian trireme, staring toward a distant coastline, the Persian fleet sailing behind him" + END,
-    "assembly_debate": CB + "a crowded ancient Athenian assembly on a rocky hillside, citizens whose heads are round balls painted white with a small golden owl emblem, arguing and raising hands" + END,
+    "assembly_debate": CB + "a crowded ancient Athenian assembly on a rocky hillside, citizens whose heads are round balls painted white with a small golden owl emblem, arguing and raising hands" + END.replace(" no letters.", " no letters, no carved inscriptions or dates on any stone."),
     "danube_bridge": CB + "a long bridge of boats across a wide river, " + MILT + " pointing at it and urging other Greek commanders to cut it" + END,
     "miltiades_assembly": CB + MILT + " standing on a stone speaker's platform addressing the Athenian assembly, pointing north, citizens listening" + END,
     "hoplites_neighbors": CB + GR + " of different ages, a farmer, a potter and an olive grower, strapping on their own armor in a village courtyard, families watching" + END,
@@ -600,7 +600,7 @@ music = [{"id": "drone", "from": "s001", "to": sid(chap[0] - 1), "volume": 0.2},
 (HERE / "photo_pins.json").write_text(json.dumps(PINS, ensure_ascii=False, indent=1), encoding="utf-8")
 board = {"title": "달려서 덮쳤다: 마라톤 전투", "subtitle": "기병도 궁수도 없이 제국을 바다로 몰아낸 농민들 · 기원전 490년",
          "lang": "ko", "sub_max": 28, "voice": "Srd5jY77m6kKijR9vy6R", "tempo": 1.02, "tts_mode": "act", "style": 2, "sfx_policy": "doc", "bgm_rel_db": -24, "sync_limit": 0.5,
-         "target_sec": 1230, "midrolls": MID, "land": LAND, "places": P, "views": V, "music": music, "ai_images": AI, "scenes": S}
+         "target_sec": 1697,  # 2026-11-18 사용자 결정: 28분 그대로 본 렌더 "midrolls": MID, "land": LAND, "places": P, "views": V, "music": music, "ai_images": AI, "scenes": S}
 (HERE / "storyboard.json").write_text(json.dumps(board, ensure_ascii=False, indent=1), encoding="utf-8")
 say = lambda l: l if isinstance(l, str) else l["say"]
 types = collections.Counter(s["visual"]["type"] for s in S)
