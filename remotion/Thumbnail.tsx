@@ -1498,7 +1498,7 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     top: "“페르시아 시점”에서 본 아테네군의 돌격",
     line1: "기병도 궁수도 없던 아테네가",
     line2: "제국을 바다로 쫓아낸 이유",
-    note: { text: "아테네 중장보병", x: 1560, y: 215, to: [1420, 440] },
+    note: { text: "아테네 중장보병", x: 1200, y: 290, to: [1010, 395] },
     alt: { line1: "달려서 덮쳤다", line2: "제국이 도망쳤다" }, // ALTS:ep01-marathon
   },
 };
