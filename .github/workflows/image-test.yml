@@ -1,7 +1,7 @@
 name: 그림 엔진 시험 (Cloudflare 1장)
 
 # 2026-11-18 추가: Cloudflare Workers AI 키(CF_ACCOUNT_ID·CF_API_TOKEN)가 제대로 들어갔는지 그림 1장으로 확인.
-# 저장소에 아무것도 커밋하지 않는다 — 결과 그림은 Artifacts(image-test)로만 올림. 비용: 무료 한도 약 58뉴런
+# main에는 아무것도 커밋하지 않는다 — 결과 그림은 별도 브랜치 image-test(매번 덮어씀)와 Artifacts로 올림 (세션에서 git으로 받아 육안 확인용). 비용: 무료 한도 약 58뉴런
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +11,7 @@ on:
         required: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -53,3 +53,9 @@ jobs:
         with:
           name: image-test
           path: cf_test.jpg
+      - name: 별도 브랜치 image-test에 그림 올리기 (main은 건드리지 않음)
+        run: |
+          mkdir /tmp/it && cp cf_test.jpg /tmp/it/ && cd /tmp/it
+          git init -q -b image-test && git add cf_test.jpg
+          git -c user.name=github-actions -c user.email=actions@github.com commit -q -m "그림 엔진 시험 결과"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" image-test
