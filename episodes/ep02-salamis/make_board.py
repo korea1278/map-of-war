@@ -296,11 +296,11 @@ sc(2, ph("lavrio", marks=[mk("1인당 10드라크마?", 0.5, 0.2, "열")]), labe
 sc(2, black("그 돈으로", "배를 만들자"))
 sc(3, m("saronic", "saronic", [mark("athens", "blue", 0), mark("aegina", "red", on="아이기나와의"), badge("aegina", "명분: 숙적 아이기나", "#c9242c", on="숙적", dy=-80)], tilt=16))
 sc(1, text("삼단노선 200척", "blue", "아테네 함대"))
-sc(3, ai("ostracism_vote"), label=DRAMA, callouts=top("정의로운 사람 · 아리스테이데스"))
-sc(5, ai("aristides_writes"), label=DRAMA, callouts=low("“여기에 아리스테이데스라고 써 주시오” · 플루타르코스", "dark", 1))
+sc(3, text("아리스테이데스", "dark", "‘정의로운 사람’ · 테미스토클레스의 정적"))  # 2026-11-19 무료 그림 한도 소진으로 빈 그림 → 카드로 교체
+sc(5, doc("도편 위의 이름", ["“여기에 아리스테이데스라고 써 주시오”", "“어딜 가나 정의로운 사람이라 부르는 게 지겨워서”"], "추방", "플루타르코스 『아리스테이데스 전』"))
 sc(2, ph("ostraka", marks=[mk("도편추방 투표 조각", 0.5, 0.18, "쫓겨납니다")]), label=plabel("ostraka"))
 sc(3, ph("olympias", pos="50% 55%", marks=[mk("노 3층", 0.5, 0.25, "세 층"), mk("길이 약 37m", 0.5, 0.75, "삼십칠", "red")]), label=plabel("olympias"))
-sc(2, ai("ram_closeup"), label=DRAMA, callouts=low("청동 충각"))
+sc(2, ph("olympias2", pos="50% 60%", marks=[mk("청동 충각", 0.5, 0.72, "충각", "red")]), label=plabel("olympias2"))  # 그림이 숫양 뿔로 나와 사진으로 교체
 sc(2, ph("lenormant", marks=[mk("노 젓는 시민", 0.5, 0.18, "가난한")]), label=plabel("lenormant"))
 sc(2, text("노 젓는 시민", "blue", "아테네의 새 주인공"))
 sc(1, m("central", "central", [LOCK("delphi", 0.4), mark("athens", "blue", 0)], tilt=16), callouts=top("델포이 신탁"))
@@ -321,7 +321,7 @@ sc(1, bars("살라미스 함대 · 헤로도토스", [{"label": "아테네", "va
 sc(5, m("saronic", "saronic", [mark("salamis", "blue", 0), dash_b(TO_ISTHMUS, on="지협으로"), LOCK("isthmus", text="코린토스 지협", on="지협으로")], tilt=18),
    callouts=top("펠로폰네소스파: 지협으로 가자", "red"))
 sc(3, ai("council_panic"), label=DRAMA, callouts=low("“아테네가 불타고 있다”", "red", 1))
-sc(3, ai("staff_raised"), label=DRAMA, callouts=low("“때리시오 그러나 내 말은 들으시오” · 플루타르코스", "dark", 2))
+sc(3, text("“때리시오 그러나 내 말은 들으시오”", "yellow", "테미스토클레스가 에우리비아데스에게 · 플루타르코스"))
 sc(3, cmp("지협 앞바다", "넓다", "살라미스 해협", "좁다", "red", "blue"), callouts=top("수가 많은 쪽이 이기는 곳은?"))
 sc(2, m("salamis", "strait", [GS(0), badge("narrows", "좁은 물길", "#1f5fbf", on="좁은", dy=-60)], flight=["salamis", "strait"], flightDur=2.2, tilt=30))
 sc(3, ai("adeimantus_mock"), label=DRAMA, callouts=low("“나라도 없는 자가”", "red", 1))
@@ -455,7 +455,6 @@ AI = {
     "persians_acropolis": CB + PE + " storming the burning temples on top of the Athenian Acropolis rock, flames and black smoke rising" + END,
     "smoke_from_salamis": "Refugees in ancient Greek clothes standing on a rocky island shore at dusk, looking across the water at a distant city on a hill with a huge column of black smoke rising, " + LAND_S,
     "themis_sea": CB + THEM + " standing alone on a rocky headland at sunset, looking out over the sea toward the east" + END,
-    "ram_closeup": "Close-up of the bronze ram at the waterline of an ancient Greek trireme cutting through waves, oars in motion above, spray, " + LAND_S,
     "themis_assembly": CB + THEM + " pointing toward the sea while addressing a crowd of Athenian citizens whose heads are round balls painted white with a small golden owl emblem, on a rocky hillside" + END,
     "evacuation_ships": CB + "Athenian families, " + GR + ", boarding " + TRI + " at a crowded harbor, carrying baskets and children, the city on a hill behind" + END,
     "eurybiades": CB + "a stern Spartan admiral whose head is a round ball painted red with a white lambda emblem, wearing a red cloak and a crested bronze helmet, standing on the deck of a trireme" + END,
@@ -468,9 +467,6 @@ AI = {
     "rowers_night": CB + "exhausted Persian rowers, " + PE + ", sitting at their oars inside a dark warship at night, yawning and slumped, lanterns" + END,
     "aristides_arrives": CB + "a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, stepping off a small boat at night and calling out to " + THEM + END,
     "themis_smile": CB + THEM + " smiling slyly in a dark tent lit by an oil lamp, an older grey-bearded Athenian looking at him in surprise" + END,
-    "ostracism_vote": CB + "a crowd of Athenian citizens whose heads are round balls painted white with a small golden owl emblem, dropping broken pottery shards into a large voting enclosure in a marble marketplace" + END,
-    "aristides_writes": CB + "a calm grey-bearded Athenian statesman whose head is a round ball painted white with a small golden owl emblem, quietly scratching on a broken pottery shard held out by a puzzled peasant farmer whose head is a round ball painted white, in a busy marketplace" + END,
-    "staff_raised": CB + "a stern Spartan admiral whose head is a round ball painted red with a white lambda emblem raising a wooden staff as if to strike " + THEM + ", who stands firm and keeps talking, other commanders watching in a tent" + END,
     "xerxes_throne": CB + XER + " seated on a golden throne on a mountain slope above a narrow strait full of warships at dawn, scribes with tablets beside him" + END,
     "greek_paean": CB + GR + " rowing " + TRI + " out from an island shore at dawn, singing with open mouths, a trumpeter at the bow" + END,
     "jam": CB + "hundreds of Persian warships crammed together in a narrow strait, their oars tangled and snapping, ships colliding, " + PHO + " and " + PE + " in chaos" + END,
