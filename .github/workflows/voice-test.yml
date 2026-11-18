@@ -20,7 +20,7 @@ permissions:
 jobs:
   voices:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       N_SHARED: ${{ github.event.inputs.n_shared }}
@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -q requests
-      - run: python pipeline/voice_test.py 2>&1 | tee voice_samples_log.txt
+      - run: python -u pipeline/voice_test.py 2>&1 | tee voice_samples_log.txt
       - name: 별도 브랜치 voice-test에 올리기
         if: always()
         run: |

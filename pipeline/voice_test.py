@@ -26,15 +26,6 @@ TEXT = os.environ.get("TEXT") or (
     "세계 최대 제국의 군대와 마주 섰습니다. 그들에게는 기병도 궁수도 없었거든요.")
 BASE = {"stability": 0.55, "similarity_boost": 0.78, "style": 0.0, "use_speaker_boost": True}
 
-try:
-    sub = req("GET", f"{API}/user/subscription", headers=H).json()
-    print(f"남은 글자 크레딧: {sub.get('character_limit', 0) - sub.get('character_count', 0)} / 목소리 칸 {sub.get('voice_slots_used')}/{sub.get('voice_limit')}")
-except Exception as e:
-    print("구독 정보 확인 실패:", e)
-
-rv = req("GET", f"{API}/voices", headers=H)
-mine = {v["voice_id"]: v for v in (rv.json().get("voices", []) if rv is not None and rv.ok else [])}
-print("내 목소리:", ", ".join(f"{v['name']}({k})" for k, v in mine.items()))
 
 cands = [
     {"tag": "01_지금목소리_기본", "voice": "Srd5jY77m6kKijR9vy6R", "model": "eleven_multilingual_v2", "set": BASE},
@@ -43,13 +34,42 @@ cands = [
     {"tag": "04_민호_격전의지도", "voice": "U1cJYS4EdbaHmfR7YzHd", "model": "eleven_multilingual_v2", "set": BASE},
 ]
 
+def tts(c):
+    body = {"text": TEXT, "model_id": c["model"], "voice_settings": c["set"]}
+    return req("POST", f"{API}/text-to-speech/{c['voice']}", params={"output_format": "mp3_44100_128"},
+               headers={**H, "Content-Type": "application/json"}, json=body, timeout=120)
+
+report = []
+def make(c):
+        r = tts(c)
+        if r is None:
+            print("실패(응답 없음)", c["tag"]); report.append({"tag": c["tag"], "ok": False}); return
+        if r.status_code != 200 and c.get("owner"):
+            # 공유 목소리는 내 목소리 목록에 추가해야 쓸 수 있는 경우가 있음 (목소리 칸 1개 사용)
+            a = req("POST", f"{API}/voices/add/{c['owner']}/{c['voice']}", headers={**H, "Content-Type": "application/json"},
+                    json={"new_name": c.get("name", c["tag"])})
+            print("  추가 시도", c["tag"], a.status_code if a is not None else "응답 없음", a.text[:150] if a is not None else "")
+            if a is not None and a.status_code == 200:
+                c["voice"] = a.json().get("voice_id", c["voice"]); c["added"] = True
+                r = tts(c) or r
+        ok = r.status_code == 200 and r.headers.get("content-type", "").startswith("audio")
+        if ok:
+            (OUT / f"{c['tag']}.mp3").write_bytes(r.content)
+        print(("성공 " if ok else f"실패 {r.status_code} {r.text[:200]} ") + c["tag"])
+        report.append({k: c.get(k) for k in ("tag", "voice", "model", "set", "name", "desc", "added")} | {"ok": ok})
+
+for c in cands:
+    make(c)
+
+FIXED = len(cands)
 # 공유 라이브러리: 한국어 남성 — 나레이션·교육용 우선, 많이 쓰인 순
 seen, shared = set(c["voice"] for c in cands), []
 for params in ({"use_cases": "narrative_story"}, {"use_cases": "informative_educational"}, {}):
     try:
-        r = req("GET", f"{API}/shared-voices", headers=H,
+        r = req("GET", f"{API}/shared-voices", headers=H, tries=2, timeout=40,
                          params={"language": "ko", "gender": "male", "page_size": 40, "sort": "usage_character_count_1y", **params})
-        vs = r.json().get("voices", [])
+        vs = r.json().get("voices", []) if r is not None and r.ok else []
+        print("공유 검색", params, r.status_code if r is not None else "응답 없음", len(vs))
     except Exception as e:
         print("공유 목소리 검색 실패:", e); vs = []
     for v in vs:
@@ -60,11 +80,6 @@ print(f"공유 라이브러리 후보 {len(shared)}개")
 for v in shared[:20]:
     print(" -", v["name"], v["voice_id"], v.get("age"), v.get("use_case"), (v.get("description") or "")[:80].replace("\n", " "))
 
-def tts(c):
-    body = {"text": TEXT, "model_id": c["model"], "voice_settings": c["set"]}
-    return req("POST", f"{API}/text-to-speech/{c['voice']}", params={"output_format": "mp3_44100_128"},
-               headers={**H, "Content-Type": "application/json"}, json=body, timeout=120)
-
 n = 5
 for v in shared:
     if n >= 5 + N_SHARED: break
@@ -73,24 +88,8 @@ for v in shared:
                   "owner": v.get("public_owner_id"), "desc": (v.get("description") or "")[:200], "name": v["name"]})
     n += 1
 
-report = []
-for c in cands:
-    r = tts(c)
-    if r is None:
-        print("실패(응답 없음)", c["tag"]); report.append({"tag": c["tag"], "ok": False}); continue
-    if r.status_code != 200 and c.get("owner"):
-        # 공유 목소리는 내 목소리 목록에 추가해야 쓸 수 있는 경우가 있음 (목소리 칸 1개 사용)
-        a = req("POST", f"{API}/voices/add/{c['owner']}/{c['voice']}", headers={**H, "Content-Type": "application/json"},
-                json={"new_name": c.get("name", c["tag"])})
-        print("  추가 시도", c["tag"], a.status_code if a is not None else "응답 없음", a.text[:150] if a is not None else "")
-        if a is not None and a.status_code == 200:
-            c["voice"] = a.json().get("voice_id", c["voice"]); c["added"] = True
-            r = tts(c) or r
-    ok = r.status_code == 200 and r.headers.get("content-type", "").startswith("audio")
-    if ok:
-        (OUT / f"{c['tag']}.mp3").write_bytes(r.content)
-    print(("성공 " if ok else f"실패 {r.status_code} {r.text[:200]} ") + c["tag"])
-    report.append({k: c.get(k) for k in ("tag", "voice", "model", "set", "name", "desc", "added")} | {"ok": ok})
+for c in cands[FIXED:]:
+    make(c)
 
 (OUT / "list.json").write_text(json.dumps({"text": TEXT, "samples": report}, ensure_ascii=False, indent=1))
 if not any(x["ok"] for x in report): sys.exit("샘플을 하나도 못 만듦")
