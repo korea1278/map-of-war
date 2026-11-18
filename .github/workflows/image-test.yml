@@ -1,0 +1,52 @@
+name: 그림 엔진 시험 (Cloudflare 1장)
+
+# 2026-11-18 추가: Cloudflare Workers AI 키(CF_ACCOUNT_ID·CF_API_TOKEN)가 제대로 들어갔는지 그림 1장으로 확인.
+# 저장소에 아무것도 커밋하지 않는다 — 결과 그림은 Artifacts(image-test)로만 올림. 비용: 무료 한도 약 58뉴런
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "시험용 프롬프트 (비우면 기본)"
+        default: ""
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      PROMPT: ${{ github.event.inputs.prompt }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pipeline
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests pillow
+      - name: Cloudflare 그림 1장
+        run: |
+          cd pipeline && python - <<'PY'
+          import os, sys, time
+          from ai_images import gen_cloudflare, fit
+          from common import session
+          if not (os.environ.get("CF_ACCOUNT_ID") and os.environ.get("CF_API_TOKEN")):
+              sys.exit("CF_ACCOUNT_ID 또는 CF_API_TOKEN 비밀값이 비어 있음")
+          p = os.environ.get("PROMPT") or ("Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: "
+              "ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets "
+              "with red horsehair crests, running across a plain at dawn toward a line of Persian soldiers, dust, golden light, no text, no letters.")
+          t = time.time()
+          img = gen_cloudflare(session(), p, 12345)
+          print("원본 크기:", img.size, f"{time.time() - t:.1f}초")
+          fit(img).save("../cf_test.jpg", quality=92)
+          print("성공: cf_test.jpg")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: image-test
+          path: cf_test.jpg

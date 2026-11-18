@@ -3,10 +3,12 @@
 python pipeline/ai_images.py yongmunsan [--thumb]
 
 이미지 엔진 (환경변수 IMAGE_PROVIDER, 기본 auto):
-  auto        → GEMINI_API_KEY 있으면 gemini, 아니면 Cloudflare 키가 있으면 cloudflare, 없으면 pollinations
+  auto        → (2026-11-18 사용자 결정: Gemini 충전 중단) Cloudflare 키가 있으면 cloudflare, 없으면 pollinations.
+                Gemini는 IMAGE_PROVIDER=gemini 로 직접 지정할 때만 쓴다
   gemini      → Google Gemini 2.5 Flash Image (Nano Banana). Google AI Pro 구독의 월 $10 Cloud 크레딧으로 결제
                 GEMINI_API_KEY (Cloud Billing 연결된 프로젝트의 키), GEMINI_IMAGE_MODEL(기본 gemini-2.5-flash-image)
-  cloudflare  → Cloudflare Workers AI FLUX.1 schnell (무료 하루 1만 뉴런 ≈ 그림 150장 이상)
+  cloudflare  → Cloudflare Workers AI FLUX.1 schnell (무료 하루 1만 뉴런, UTC 0시=한국 오전 9시 초기화)
+                1024x1024 4단계 = 4조각x4.8 + 4단계x9.6 ≈ 58뉴런/장 → 하루 약 170장 (war-docu·map-of-war 공용 계정)
                 CF_ACCOUNT_ID, CF_API_TOKEN 필요
   pollinations→ Pollinations.ai FLUX (가입·키 없이 무료, 15초에 1장). POLLINATIONS_TOKEN 있으면 사용
   openai      → OpenAI gpt-image-1 (유료). OPENAI_API_KEY, OPENAI_IMAGE_MODEL, OPENAI_IMAGE_QUALITY
@@ -76,12 +78,12 @@ def gen_gemini(s, prompt):
     raise RuntimeError(f"그림 없음: {r.text[:300]}")
 
 
-def gen_cloudflare(s, prompt):
+def gen_cloudflare(s, prompt, seed=0):
     acc, tok = env("CF_ACCOUNT_ID", required=True), env("CF_API_TOKEN", required=True)
     r = s.post(
         f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {tok}"},
-        json={"prompt": prompt[:2000], "steps": 8},
+        json={"prompt": prompt[:2000], "steps": int(env("CF_STEPS") or 4), "seed": seed},
         timeout=180,
     )
     if r.status_code >= 400:
@@ -105,7 +107,8 @@ def gen_pollinations(s, prompt, seed):
 def no_credit(e) -> bool:
     """크레딧·한도 소진 (다시 시도해도 안 되는 오류) — 2026-11-18 EP01 본 렌더가 Gemini 402로 통째로 실패한 뒤 추가"""
     t = str(e)
-    return any(k in t for k in ("402", "RESOURCE_EXHAUSTED", "insufficient_quota", "credits are depleted", "billing", "quota", "401", "403"))
+    return any(k in t for k in ("402", "429", "RESOURCE_EXHAUSTED", "insufficient_quota", "credits are depleted", "billing", "quota", "401", "403",
+                                "allocation", "4006", "neurons"))  # Cloudflare 하루 무료 한도 소진 포함
 
 
 def placeholder():
@@ -124,8 +127,7 @@ def placeholder():
 def main(ep, thumb=False):
     prov = (env("IMAGE_PROVIDER") or "auto").lower()
     if prov == "auto":
-        prov = ("gemini" if env("GEMINI_API_KEY") else
-                "cloudflare" if env("CF_ACCOUNT_ID") and env("CF_API_TOKEN") else "pollinations")
+        prov = "cloudflare" if env("CF_ACCOUNT_ID") and env("CF_API_TOKEN") else "pollinations"
     board = load_board(ep)
     if board.get("assets_ep"):
         print(f"AI 이미지: {board['assets_ep']} 에피소드 것을 재사용")
@@ -142,6 +144,7 @@ def main(ep, thumb=False):
     s = session()
     print(f"이미지 엔진: {prov}")
     DEAD = {"credit": False}
+    NEW = {"n": 0}
     for name in sorted(used):
         prompt = board["ai_images"][name]
         # 서명은 예전 공식 그대로 (엔진을 바꿔도 이미 만든 그림을 다시 그리지 않도록)
@@ -158,7 +161,7 @@ def main(ep, thumb=False):
         elif prov == "gemini":
             call = lambda: gen_gemini(s, prompt)  # noqa: E731
         elif prov == "cloudflare":
-            call = lambda: gen_cloudflare(s, prompt)  # noqa: E731
+            call = lambda: gen_cloudflare(s, prompt, seed)  # noqa: E731
         else:
             call = lambda: gen_pollinations(s, prompt, seed)  # noqa: E731
         # 크레딧 소진이면 같은 엔진을 4번 다시 부르지 않고 곧바로 대체 경로로 (렌더 전체가 멈추지 않게)
@@ -195,6 +198,7 @@ def main(ep, thumb=False):
             continue  # 대체 그림은 서명을 남기지 않음 → 원래 엔진이 살아나면 다시 그림
         fit(img).save(p, quality=92)
         man[name] = sig
+        NEW["n"] += 1
         write_json(out / "ai.json", man)
     # 실존 인물(EP11 맥아더 등)은 AI로 그리지 않고 공개 사진(위키미디어, 미 정부 저작물)을 받아 누끼 — 스토리보드 "thumb_photo"
     tp = board.get("thumb_photo")
@@ -208,6 +212,11 @@ def main(ep, thumb=False):
         cutout(d / "thumb_subject.jpg", d / "thumb_subject.png")
     elif "thumb_subject" in used and (thumb or not (d / "thumb_subject.png").exists()):
         cutout(d / "thumb_subject.jpg", d / "thumb_subject.png")
+    if NEW["n"]:
+        msg = f"{ep}: 새 그림 {NEW['n']}장 ({prov})"
+        if prov == "cloudflare":
+            msg += f" · 약 {NEW['n'] * 58}뉴런 사용 (하루 무료 1만, 두 저장소 공용)"
+        log_error(msg)
     print("AI 이미지 완료")
 
 
