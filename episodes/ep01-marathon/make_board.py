@@ -221,7 +221,7 @@ P = {
 V = {
     "empire": {"center": [46.5, 30.0], "span": 50}, "aegean": {"center": [25.4, 38.6], "span": 8.5}, "ionia": {"center": [26.6, 38.2], "span": 4.6},
     "greece": {"center": [23.3, 37.85], "span": 3.4}, "attica": {"center": [23.8, 38.08], "span": 1.5},
-    "marathon": {"center": [23.99, 38.125], "span": 0.16}, "plain": {"center": [23.985, 38.124], "span": 0.085}, "beach": {"center": [24.015, 38.13], "span": 0.075},
+    "marathon": {"center": [23.982, 38.118], "span": 0.18}, "plain": {"center": [23.985, 38.124], "span": 0.085}, "beach": {"center": [24.015, 38.13], "span": 0.075},
 }
 ZOOM = {"marathon", "plain", "beach"}
 LAND = {"home": ["300"], "foreign": ["792", "100", "8", "807", "196", "380", "364", "368", "760", "818", "400", "422", "376", "275", "682", "434",
@@ -284,7 +284,7 @@ sc(2, m("attica", "marathon", [LOCK("soros", 0.9, "마라톤")], flight=["aegean
 sc(1, ranks([6] * 12, title="청동의 한 줄"), hook={"hud": [HUD("1만 명", "아테네·플라타이아 중장보병", "추정", on="만 명")]})
 sc(1, ai("persian_host"), label=DRAMA, hook={"hud": [HUD("2만~2만 5,000명", "페르시아 상륙군", "현대 추정 · 고대 기록은 훨씬 많음", color="#FF3B30", on="제국")]}, sfx=WIND(0.1))
 sc(1, m("plain", "plain", [PPH(0), GPH(0, run=60, runOn="달리기"), badge("soros", "달려서 돌격", "#c9242c", on="달리기", dy=-90)], tilt=30))
-sc(2, ph("archers", pos="50% 40%", marks=[mk("궁수", 0.5, 0.18, "궁수", "red"), mk("그리스 기병 0", 0.5, 0.82, "둘 다", "yellow")]), label=plabel("archers"),
+sc(2, ph("archers", pos="50% 40%", marks=[mk("궁수", 0.5, 0.18, "궁수", "red"), mk("그리스 기병 0", 0.5, 0.68, "둘 다", "yellow")]), label=plabel("archers"),
    hook={"hud": [HUD("0", "그리스군의 기병 · 궁수", "마라톤 전장", color="#FF3B30", on="둘 다", count=False)]})
 sc(2, cmp("병력", "1 : 2", "해 질 녘 전사자", "33 : 1", "blue", "red"))
 sc(2, ranks(G_THIN, P_DEEP, title="걷지 않았다", runOn="뛰어들었"), hook={"hud": [HUD("8스타디온", "약 1.5km의 빈 땅", "달려서 건넜다", on="뛰어들었", count=False)]})
