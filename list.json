@@ -1,0 +1,110 @@
+{
+ "text": "기원전 사백구십 년 구월. 아테네 북쪽 마라톤 평원에서 청동 갑옷을 입은 농민 만 명이 세계 최대 제국의 군대와 마주 섰습니다. 그들에게는 기병도 궁수도 없었거든요.",
+ "samples": [
+  {
+   "tag": "05_창욱",
+   "voice": "ZJCNdZEjYwkOElxugmW2",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "창욱",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "06_수현",
+   "voice": "WqVy7827vjE2r3jWvbnP",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "수현",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "07_장호",
+   "voice": "UmYoqGlufKxhJ6NCx5Mv",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "장호",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "08_빈",
+   "voice": "jB1Cifc2UQbq1gR3wnb0",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "빈",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "09_진건송",
+   "voice": "BbsagRO6ohd8MKPS2Ob0",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "진건송",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "10_요한구",
+   "voice": "4JJwo477JUAx3HV0T7n7",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "요한구",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "11_해리",
+   "voice": "1KNqBv4TutQtzSIACsMC",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "해리",
+   "desc": null,
+   "added": null,
+   "ok": true
+  }
+ ]
+}
