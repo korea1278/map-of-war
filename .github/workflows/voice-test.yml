@@ -1,0 +1,43 @@
+name: 목소리 비교 샘플 (일레븐랩스)
+
+# 2026-11-19 추가: 같은 다큐 문장을 여러 목소리로 몇 초씩 만들어 비교 (pipeline/voice_test.py). 샘플당 약 90자.
+# main에는 커밋하지 않고 별도 브랜치 voice-test(매번 덮어씀)에 올림 — 세션에서 git으로 받아 사용자에게 전달
+on:
+  workflow_dispatch:
+    inputs:
+      n_shared:
+        description: "공유 라이브러리에서 고를 한국어 남성 목소리 수"
+        default: "5"
+        required: false
+      text:
+        description: "샘플 문장 (비우면 기본 다큐 문장)"
+        default: ""
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  voices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      N_SHARED: ${{ github.event.inputs.n_shared }}
+      TEXT: ${{ github.event.inputs.text }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pipeline
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - run: python pipeline/voice_test.py 2>&1 | tee voice_samples_log.txt
+      - name: 별도 브랜치 voice-test에 올리기
+        if: always()
+        run: |
+          mkdir -p voice_samples && cp voice_samples_log.txt voice_samples/ || true
+          cd voice_samples && git init -q -b voice-test && git add -A
+          git -c user.name=github-actions -c user.email=actions@github.com commit -q -m "목소리 비교 샘플"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" voice-test
