@@ -1501,6 +1501,17 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     note: { text: "아테네 중장보병", x: 1200, y: 290, to: [1010, 395] },
     alt: { line1: "달려서 덮쳤다", line2: "제국이 도망쳤다" }, // ALTS:ep01-marathon
   },
+  // EP02 살라미스 (기원전 480): 고대라 사료 사진 대신 재연 그림(thumb_bg) 흑백. 헤로도토스 378척 vs 현대 추정 600~1,000척, 손실 약 40 대 200(디오도로스)
+  "ep02-salamis": {
+    bg: "ep/ep02-salamis/ai/thumb_bg.jpg",
+    bgPos: "50% 45%",
+    bgFilter: "grayscale(1) contrast(1.22) brightness(1.3)",
+    top: "“페르시아 시점”에서 본 그리스 함대의 덫",
+    line1: "아테네를 불태운 대함대가",
+    line2: "좁은 해협에서 무너진 이유",
+    note: { text: "뒤엉킨 페르시아 함대", x: 1340, y: 250, to: [1180, 400] },
+    alt: { line1: "좁은 해협으로", line2: "대함대를 꾀었다" }, // ALTS:ep02-salamis
+  },
 };
 
 const V2_EN_FONT = "'Montserrat', 'Anton', sans-serif"; // 영문판 글꼴 (참고용)
