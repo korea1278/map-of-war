@@ -35,8 +35,11 @@ jobs:
           import os, sys, time
           from ai_images import gen_cloudflare, fit
           from common import session
+          for k in ("CF_ACCOUNT_ID", "CF_API_TOKEN"):
+              v = os.environ.get(k) or ""
+              print(f"{k}: {'있음' if v else '비어 있음'} (길이 {len(v)})")  # 값 자체는 출력하지 않음
           if not (os.environ.get("CF_ACCOUNT_ID") and os.environ.get("CF_API_TOKEN")):
-              sys.exit("CF_ACCOUNT_ID 또는 CF_API_TOKEN 비밀값이 비어 있음")
+              sys.exit("CF_ACCOUNT_ID 또는 CF_API_TOKEN 비밀값이 비어 있음 — 저장소 Settings → Secrets and variables → Actions → 'Repository secrets'에 이 이름 그대로 넣어야 함")
           p = os.environ.get("PROMPT") or ("Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: "
               "ancient Athenian hoplites whose heads are round balls painted white with a small golden owl emblem, wearing bronze Corinthian helmets "
               "with red horsehair crests, running across a plain at dawn toward a line of Persian soldiers, dust, golden light, no text, no letters.")
