@@ -101,7 +101,7 @@ def gen_cloudflare(s, prompt, seed=0):
     r = s.post(
         f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {tok}"},
-        json={"prompt": prompt[:2000], "steps": int(env("CF_STEPS") or 4), "seed": seed},
+        json={"prompt": prompt[:2000], "steps": int(env("CF_STEPS") or 4)},  # seed는 Cloudflare가 받지 않음(400)
         timeout=180,
     )
     if r.status_code >= 400:
