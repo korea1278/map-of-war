@@ -4,7 +4,7 @@
 > - 영상 에셋(대본·나레이션·자막·화면 문구·질문 카드·썸네일 카피·제목·설명·태그)은 **100% 한국어**. 사용자와의 대화도 한국어
 > - 대본 문체는 격전의 지도(war-docu) 한국어 편과 같게: 낭독용 순수 텍스트, 숫자는 한글 발음(자막은 `SUBS`로 숫자), 괄호 지문·한자·영문·쉼표 없음, "~습니다/~죠/~거든요" 다큐 톤. 보드 `"lang": "ko"`, `"sub_max": 28`
 > - 목소리는 **ElevenLabs 창욱 `ZJCNdZEjYwkOElxugmW2`** (2026-11-19 교체 · eleven_multilingual_v2 · stability 0.55 · similarity 0.78 · style 0.0). 예전 `Srd5jY77m6kKijR9vy6R`은 아주 낮은 저음(평균 85Hz)이라 헤드셋에서 목소리마다 '지지직' 갈라짐이 들려 폐기 — 설정(안정성 0.75·turbo 모델)을 바꿔도 그대로였음. EP01 마라톤만 Srd5로 완성됨. 목소리 비교는 Actions '목소리 비교 샘플'(`voice-test.yml`, 브랜치 `voice-test`)
-> - 썸네일 카피도 한국어 (`PAROHO_V2` → thumb 모드 `thumbnails/<ep>_ko_A.png`·`_ko_A2.png`, `thumbnails/<ep>/thumb_a.png`·`thumb_b.png`)
+> - **썸네일 배경은 컬러** (2026-11-19 사용자 지시 · 흑백 금지 · EP01·EP02도 컬러로 다시 렌더). 썸네일 카피도 한국어 (`PAROHO_V2` → thumb 모드 `thumbnails/<ep>_ko_A.png`·`_ko_A2.png`, `thumbnails/<ep>/thumb_a.png`·`thumb_b.png`)
 > - 아래 본문에 남아 있는 '영문·영어' 표현은 참고용 `ep08-chosin`(영문, 건드리지 않음) 시절 기록이다. 새 편은 위 한국어 규칙이 우선
 > - 한국 전쟁(6·25) 위주의 '격전의 지도'는 계속 `korea1278/war-docu`에서 만든다. 이 저장소는 로드맵 `docs/EPISODE_ROADMAP_50.md`의 세계 전쟁사 50편
 
@@ -76,7 +76,7 @@
 ## ★★ 썸네일 표준 v3 = 레퍼런스 '베트콩 시점' 공식 (2026-11-18 사용자 지시 · war-docu·map-of-war 공통 · 이후 모든 신규 롱폼 한국어 A안 — 아래 v2·v5보다 우선)
 - 구현: `remotion/Thumbnail.tsx` `PAROHO_V2` 표(이름 그대로) → `ParohoV2Thumb`가 새 디자인으로 렌더. 기준 결과물: war-docu `thumbnails/ep29-daejeon_ko_A.png`, map-of-war `thumbnails/ep01-marathon_ko_A.png`
 - 화면 구성 (1920×1080)
-  1. **배경 = 그 편 대본의 핵심 장면 사진, 전체 화면 흑백** (`gray` 기본 true). 사료 사진이 있으면 장면 사진을 그대로 지정 `bg: "ep/<ep>/photos/sNNN_photo_0.jpg"`(스카우트 핀으로 받은 사진 — 추가 비용 0), 없으면(고대 등) 재연 그림 `ep/<ep>/ai/thumb_bg.jpg`. 어두우면 `bgFilter`로 밝기 보정
+  1. **배경 = 그 편 대본의 핵심 장면 사진, 전체 화면 컬러** — ⚠️ **2026-11-19 사용자 지시: map-of-war(격전의 세계사)는 흑백 말고 컬러** (`gray` 기본 false, war-docu는 흑백 그대로). 사료 사진이 있으면 장면 사진을 그대로 지정 `bg: "ep/<ep>/photos/sNNN_photo_0.jpg"`(스카우트 핀으로 받은 사진 — 추가 비용 0), 없으면(고대 등) 재연 그림 `ep/<ep>/ai/thumb_bg.jpg`. 어두우면 `bgFilter`로 밝기 보정
   2. **최상단 가운데 검은 라운드 박스 한 줄 `top`** — “ ” 안은 노랑 `#FFD83A`, 나머지 흰색 (44~66px 자동)
   3. **사진 설명 흰 라벨 + 휘어진 흰 화살표 `note`** `{text, x, y(라벨 중심), to:[x,y](가리킬 곳)}` — **라벨과 화살표는 사람(얼굴·몸) 위를 지나가지 않게**: 라벨은 하늘·안개·빈 땅 같은 빈 공간에 두고, 화살표는 짧게(200~350px) 빈 공간을 지나 대상의 가장자리를 가리킨다 (2026-11-18 사용자 수정)
   4. **하단 솔리드 블랙 바닥판**(사진이 위로 260px 페이드) 위 2줄 — Line 1 흰색(얇은 검정 외곽선) / Line 2 빨강 `#FF2B2B`

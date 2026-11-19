@@ -1462,7 +1462,7 @@ export const ParohoThumb: React.FC<{ d: ThumbnailProps }> = ({ d }) => {
 /* =====================================================================================
  * ★★★★★ 썸네일 표준 v3 = 레퍼런스 '베트콩 시점' 공식 (2026-11-18 사용자 지시 · war-docu·map-of-war 공통 · 이후 모든 신규 롱폼 한국어 A안)
  *   (PAROHO_V2 표 이름·필드는 그대로 두고 디자인만 교체 — 기존 등록분도 이 디자인으로 렌더)
- *   ① 배경: 에피소드 대본 핵심 장면의 사료 사진(또는 재연 그림) Full-Bleed **흑백**(gray 기본 true) — 장면 사진 `ep/<ep>/photos/sNNN_photo_0.jpg` 그대로 지정 가능
+ *   ① 배경: 에피소드 대본 핵심 장면의 사료 사진(또는 재연 그림) Full-Bleed **컬러**(map-of-war는 2026-11-19 사용자 지시로 흑백 → 컬러, gray 기본 false · war-docu는 흑백 유지) — 장면 사진 `ep/<ep>/photos/sNNN_photo_0.jpg` 그대로 지정 가능
  *   ② 최상단 가운데: 검은 라운드 박스 한 줄 `top` — “ ” 안 문구는 노랑 강조 (예: “베트콩 시점”에서 보는 한국군의 전투력)
  *   ③ 사진 위 흰 라벨 + 휘어진 흰 화살표 `note` {text, x, y(라벨 중심), to:[x,y](가리킬 곳)} (예: 당시 파병된 한국군)
  *   ④ 하단: 사진이 솔리드 블랙 바닥판으로 녹아들고 그 위 2줄 카피 — Line 1 흰색 / Line 2 빨강 #FF2B2B (조금 더 크게)
@@ -1475,7 +1475,7 @@ export interface ThumbV2Props {
   bg: string; // public 기준 배경 경로 (Full-Bleed) — 사료 사진 권장
   bgPos?: string; // object-position (기본 "50% 40%")
   bgFilter?: string; // 직접 지정하면 gray보다 우선
-  gray?: boolean; // 기본 true (흑백 다큐 사진 톤)
+  gray?: boolean; // map-of-war 기본 false (컬러 · 2026-11-19 사용자 지시). true면 흑백
   line1: string; // 위 줄 (흰색)
   line2: string; // 아래 줄 (빨강)
   color2?: string; // 기본 #FF2B2B
@@ -1490,22 +1490,22 @@ export type ThumbNote = { text: string; x: number; y: number; to: [number, numbe
 export const PAROHO_V2: Record<string, ThumbV2Props> = {
   // 새 에피소드마다 대본 핵심 장면 사진(사료 사진이 있으면 `ep/<ep>/photos/sNNN_photo_0.jpg`, 없으면 재연 그림 thumb_bg)과
   // 카피(top·line1·line2·note)를 이 표에 한 줄 추가 → Actions mode=thumb가 thumbnails/<ep>_ko_A.png·_ko_A2.png 렌더
-  // EP01 마라톤 (기원전 490): 고대라 사료 사진이 없어 재연 그림(thumb_bg)을 흑백으로. 헤로도토스: 아테네군에 기병·궁수 없음
+  // EP01 마라톤 (기원전 490): 고대라 사료 사진이 없어 재연 그림(thumb_bg)을 컬러로. 헤로도토스: 아테네군에 기병·궁수 없음
   "ep01-marathon": {
     bg: "ep/ep01-marathon/ai/thumb_bg.jpg",
     bgPos: "50% 45%",
-    bgFilter: "grayscale(1) contrast(1.22) brightness(1.3)", // 재연 그림이 어두워 흑백 전환 때 밝기 보정
+    bgFilter: "contrast(1.12) saturate(1.1) brightness(1.15)", // 컬러 (2026-11-19 흑백 → 컬러) · 재연 그림이 어두워 밝기 보정
     top: "“페르시아 시점”에서 본 아테네군의 돌격",
     line1: "기병도 궁수도 없던 아테네가",
     line2: "제국을 바다로 쫓아낸 이유",
     note: { text: "아테네 중장보병", x: 1200, y: 290, to: [1010, 395] },
     alt: { line1: "달려서 덮쳤다", line2: "제국이 도망쳤다" }, // ALTS:ep01-marathon
   },
-  // EP02 살라미스 (기원전 480): 고대라 사료 사진 대신 재연 그림(thumb_bg) 흑백. 헤로도토스 378척 vs 현대 추정 600~1,000척, 손실 약 40 대 200(디오도로스)
+  // EP02 살라미스 (기원전 480): 고대라 사료 사진 대신 재연 그림(thumb_bg) 컬러. 헤로도토스 378척 vs 현대 추정 600~1,000척, 손실 약 40 대 200(디오도로스)
   "ep02-salamis": {
     bg: "ep/ep02-salamis/ai/thumb_bg.jpg",
     bgPos: "50% 45%",
-    bgFilter: "grayscale(1) contrast(1.22) brightness(1.3)",
+    bgFilter: "contrast(1.12) saturate(1.1) brightness(1.15)", // 컬러
     top: "“페르시아 시점”에서 본 그리스 함대의 덫",
     line1: "아테네를 불태운 대함대가",
     line2: "좁은 해협에서 무너진 이유",
@@ -1572,7 +1572,7 @@ export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, 
   const textTop = 1080 - V3.bottom - blockH;
   const solidTop = textTop + s1 * 0.5;
   const fadeTop = textTop - 260;
-  const filter = d.bgFilter || (d.gray === false ? "contrast(1.12) saturate(1.05)" : "grayscale(1) contrast(1.18) brightness(0.96)");
+  const filter = d.bgFilter || (d.gray === true ? "grayscale(1) contrast(1.18) brightness(0.96)" : "contrast(1.12) saturate(1.05)"); // map-of-war 기본 컬러 (2026-11-19)
   const line = (t: string, size: number, color: string, stroke: boolean): React.ReactNode => (
     <div
       style={{
