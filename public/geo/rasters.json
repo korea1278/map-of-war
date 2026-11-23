@@ -1,5 +1,15 @@
 [
  {
+  "name": "neareast_sea",
+  "file": "geo/neareast_sea.webp",
+  "west": 16.875,
+  "east": 67.5,
+  "north": 45.08903556483102,
+  "south": 21.943045533438177,
+  "w": 2304,
+  "h": 1280
+ },
+ {
   "name": "korea",
   "file": "geo/korea.webp",
   "west": 122.34375,
@@ -578,5 +588,35 @@
   "south": 37.85750715625204,
   "w": 2048,
   "h": 1536
+ },
+ {
+  "name": "mesopotamia",
+  "file": "geo/mesopotamia.webp",
+  "west": 35.15625,
+  "east": 49.21875,
+  "north": 38.82259097617712,
+  "south": 30.751277776257805,
+  "w": 2560,
+  "h": 1792
+ },
+ {
+  "name": "nineveh",
+  "file": "geo/nineveh.webp",
+  "west": 42.5390625,
+  "east": 44.6484375,
+  "north": 36.87962060502677,
+  "south": 35.88905007936092,
+  "w": 3072,
+  "h": 1792
+ },
+ {
+  "name": "gaugamela_zoom",
+  "file": "geo/gaugamela_zoom.webp",
+  "west": 43.35205078125,
+  "east": 43.59375,
+  "north": 36.61552763134925,
+  "south": 36.42128244364948,
+  "w": 2816,
+  "h": 2816
  }
 ]

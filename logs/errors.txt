@@ -16,3 +16,7 @@
 2026-11-18 18:31:54 ep02-salamis: 그림 ostracism_vote → cloudflare 실패로 무료 pollinations 그림으로 대체 (확인 필요)
 2026-11-18 18:33:17 ep02-salamis: 그림 staff_raised → cloudflare 실패로 무료 pollinations 그림으로 대체 (확인 필요)
 2026-11-18 18:50:22 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Timeout for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-23 07:01:38 하천 데이터(pyongyang) 실패(기존 유지): 504 Server Error: Gateway Time-out for url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+2026-11-23 07:03:56 ep03-gaugamela: 새 그림 20장 (cloudflare) · 약 1160뉴런 사용 (하루 무료 1만, 두 저장소 공용)
+2026-11-23 07:06:49 ep03-gaugamela: 러닝타임 19분 59초 — 목표 20분 30초와 10초 이상 차이 (대본 분량 조정 필요)
+2026-11-23 07:07:02 ep03-gaugamela: 러닝타임 19분 59초 — 목표 20분 30초와 10초 이상 차이 (대본 분량 조정 필요)
