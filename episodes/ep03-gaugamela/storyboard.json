@@ -1,0 +1,7034 @@
+{
+ "title": "단 한 번의 돌격: 가우가멜라 전투",
+ "subtitle": "대왕이 고른 땅에서 싸우지 않은 알렉산드로스 · 기원전 331년",
+ "lang": "ko",
+ "sub_max": 28,
+ "voice": "ZJCNdZEjYwkOElxugmW2",
+ "tempo": 1.02,
+ "tts_mode": "act",
+ "style": 2,
+ "sfx_policy": "doc",
+ "bgm_rel_db": -24,
+ "sync_limit": 0.5,
+ "target_sec": 1230,
+ "midrolls": [
+  "s040",
+  "s085",
+  "s108"
+ ],
+ "land": {
+  "home": [
+   "368"
+  ],
+  "foreign": [
+   "300",
+   "792",
+   "760",
+   "364",
+   "422",
+   "376",
+   "400",
+   "818",
+   "414",
+   "682",
+   "196",
+   "100",
+   "807",
+   "8",
+   "51",
+   "31",
+   "268",
+   "275",
+   "4",
+   "795"
+  ]
+ },
+ "places": {
+  "pella": [
+   22.52,
+   40.76,
+   "펠라"
+  ],
+  "hellespont": [
+   26.41,
+   40.2,
+   "헬레스폰토스"
+  ],
+  "granicus": [
+   27.3,
+   40.25,
+   "그라니코스강"
+  ],
+  "issus": [
+   36.2,
+   36.85,
+   "이소스"
+  ],
+  "tyre": [
+   35.2,
+   33.27,
+   "티로스"
+  ],
+  "gaza": [
+   34.45,
+   31.5,
+   "가자"
+  ],
+  "memphis": [
+   31.25,
+   29.85,
+   "멤피스"
+  ],
+  "alexandria": [
+   29.92,
+   31.2,
+   "알렉산드리아"
+  ],
+  "siwa": [
+   25.52,
+   29.2,
+   "시와 오아시스"
+  ],
+  "thapsacus": [
+   38.45,
+   35.95,
+   "탑사코스 (추정)"
+  ],
+  "babylon": [
+   44.42,
+   32.54,
+   "바빌론"
+  ],
+  "susa": [
+   48.25,
+   32.19,
+   "수사"
+  ],
+  "persepolis": [
+   52.89,
+   29.935,
+   "페르세폴리스"
+  ],
+  "ecbatana": [
+   48.51,
+   34.8,
+   "엑바타나"
+  ],
+  "darius_death": [
+   54.3,
+   36.17,
+   "다리우스가 숨진 곳 (추정)"
+  ],
+  "nineveh": [
+   43.15,
+   36.36,
+   "니네베 · 오늘날 모술"
+  ],
+  "arbela": [
+   44.01,
+   36.19,
+   "아르벨라 · 오늘날 에르빌"
+  ],
+  "gaugamela": [
+   43.494,
+   36.573,
+   "가우가멜라 (텔 고멜 설)"
+  ],
+  "crossing": [
+   42.98,
+   36.66,
+   "티그리스 도하 (추정)"
+  ],
+  "darius": [
+   43.493,
+   36.525,
+   "다리우스 · 근위대"
+  ],
+  "gap": [
+   43.489,
+   36.503,
+   "틈"
+  ],
+  "bessus": [
+   43.49,
+   36.472,
+   "베소스 · 박트리아 기병"
+  ],
+  "mazaeus": [
+   43.49,
+   36.578,
+   "마자이오스"
+  ],
+  "parm": [
+   43.44,
+   36.552,
+   "파르메니온 · 테살리아 기병"
+  ],
+  "alex": [
+   43.44,
+   36.498,
+   "알렉산드로스 · 친위 기병대"
+  ],
+  "mcamp": [
+   43.41,
+   36.525,
+   "마케도니아 진영"
+  ],
+  "pcamp": [
+   43.51,
+   36.53,
+   "페르시아 진영"
+  ],
+  "edge": [
+   43.468,
+   36.488,
+   "다져 놓은 땅 끝"
+  ]
+ },
+ "views": {
+  "empire": {
+   "center": [
+    38.5,
+    34.2
+   ],
+   "span": 34.0
+  },
+  "levant": {
+   "center": [
+    32.8,
+    33.0
+   ],
+   "span": 14.0
+  },
+  "meso": {
+   "center": [
+    41.6,
+    35.0
+   ],
+   "span": 9.5
+  },
+  "nineveh": {
+   "center": [
+    43.55,
+    36.4
+   ],
+   "span": 1.5
+  },
+  "field": {
+   "center": [
+    43.466,
+    36.517
+   ],
+   "span": 0.16
+  },
+  "iran": {
+   "center": [
+    48.0,
+    33.2
+   ],
+   "span": 16.0
+  }
+ },
+ "music": [
+  {
+   "id": "drone",
+   "from": "s001",
+   "to": "s010",
+   "volume": 0.2
+  },
+  {
+   "id": "theme",
+   "from": "s011",
+   "to": "s039",
+   "volume": 0.16
+  },
+  {
+   "id": "analysis",
+   "from": "s040",
+   "to": "s060",
+   "volume": 0.16
+  },
+  {
+   "id": "tension",
+   "from": "s061",
+   "to": "s084",
+   "volume": 0.17
+  },
+  {
+   "id": "march",
+   "from": "s085",
+   "to": "s107",
+   "volume": 0.16
+  },
+  {
+   "id": "tension",
+   "from": "s108",
+   "to": "s132",
+   "volume": 0.17
+  },
+  {
+   "id": "somber",
+   "from": "s133",
+   "to": "s152",
+   "volume": 0.17
+  }
+ ],
+ "ai_images": {
+  "plain_dawn": "A vast flat dusty plain in northern Mesopotamia at dawn, low hills on the horizon, an enormous ancient army in long lines stretching to the horizon, dust rising in golden light, painterly realistic digital illustration, cinematic, desaturated warm palette, film grain, no people's faces in close-up, no text, no letters.",
+  "darius_flees": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an Achaemenid Persian Great King whose head is a round ball painted deep purple with a golden winged-disc emblem, wearing a tall golden crenellated crown, a long square curled black beard and royal purple robes turning his golden chariot around and fleeing in panic through clouds of dust, his guards ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful long-sleeved tunics scattering, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "chariot_lanes": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Macedonian soldiers whose heads are round balls painted royal blue with a small golden sixteen-ray sun emblem, wearing bronze helmets, linen armor and red cloaks in a dense phalanx with long pikes stepping aside to open a lane, Persian scythed war chariots with long curved blades sticking out from the wheel hubs, pulled by four horses rushing harmlessly through the empty lane, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "issus_flight": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak charging on a black horse along a narrow coastal plain between mountains and the sea toward an Achaemenid Persian Great King whose head is a round ball painted deep purple with a golden winged-disc emblem, wearing a tall golden crenellated crown, a long square curled black beard and royal purple robes who turns his chariot to flee, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "sisygambis_bow": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an old Persian queen mother whose head is a round ball painted deep purple, in black veils, bowing low before a tall Macedonian officer, while a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak smiles kindly beside them in a royal tent, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "tyre_causeway": "Ancient soldiers building a long stone causeway across the sea toward a walled island city, siege towers, ships, waves, painterly realistic digital illustration, cinematic, desaturated warm palette, film grain, no people's faces in close-up, no text, no letters.",
+  "darius_letter": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a Persian envoy whose head is a round ball painted deep purple, kneeling and offering a sealed scroll to a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak, while an old grey-bearded Macedonian general whose head is a round ball painted royal blue with a small golden sun emblem, wearing a bronze helmet and a dark cloak leans in to listen, in a military tent, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "scythe_chariot": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Persian scythed war chariots with long curved blades sticking out from the wheel hubs, pulled by four horses racing across a flat plain, driven by ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful long-sleeved tunics, dust trailing behind, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "leveling": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful long-sleeved tunics working with hoes and axes cutting bushes and flattening bumps on a huge dusty plain, overseers on horses, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "tigris_crossing": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Macedonian soldiers whose heads are round balls painted royal blue with a small golden sixteen-ray sun emblem, wearing bronze helmets, linen armor and red cloaks wading neck-deep across a fast-flowing river holding their weapons above their heads, horses swimming beside them, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "eclipse": "A blood-red total lunar eclipse in the night sky above an ancient army camp with tents and campfires on a plain, frightened soldiers looking up, painterly realistic digital illustration, cinematic, desaturated warm palette, film grain, no people's faces in close-up, no text, no letters.",
+  "alex_ridge": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak on a horse on top of a low ridge with a few riders, looking down at a huge Persian army camp stretching across the plain to the horizon, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "night_council": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an old grey-bearded Macedonian general whose head is a round ball painted royal blue with a small golden sun emblem, wearing a bronze helmet and a dark cloak pointing at a map on a table and urging a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak, who shakes his head firmly, inside a lamp-lit tent at night, other officers watching, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "persians_awake": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Achaemenid Persian soldiers whose heads are round balls painted deep purple with a small golden winged-disc emblem, wearing soft felt caps and colorful long-sleeved tunics standing exhausted in full armor beside their horses all night long, holding spears, torches in the dark, yawning, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "alex_sleeps": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak sleeping peacefully on a camp bed at dawn, while an old grey-bearded Macedonian general whose head is a round ball painted royal blue with a small golden sun emblem, wearing a bronze helmet and a dark cloak stands over him shaking his shoulder to wake him, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "javelin_chariot": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Macedonian light javelin throwers and archers whose heads are round balls painted royal blue, throwing javelins at Persian scythed war chariots with long curved blades sticking out from the wheel hubs, pulled by four horses, grabbing the reins and pulling the drivers down, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "wedge_charge": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a young Macedonian king whose head is a round ball painted royal blue with a golden sixteen-ray sun emblem, with wavy golden-brown hair, wearing a plumed bronze helmet, a white and gold cuirass and a purple cloak leading a wedge-shaped formation of Macedonian companion cavalry with long lances, charging into a gap in the Persian battle line, dust everywhere, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "camp_raid": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: Persian riders whose heads are round balls painted deep purple bursting into a Macedonian baggage camp, while an old veiled Persian queen mother refuses to go with them, sitting calmly, 331 BC ancient Near East, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "plain_today": "The wide empty plain near Mosul in northern Iraq today at sunset, dry grass, a distant low hill and a small village, calm and quiet, painterly realistic digital illustration, cinematic, desaturated warm palette, film grain, no people's faces in close-up, no text, no letters.",
+  "thumb_bg": "Cinematic photorealistic war painting, 16:9 wide shot on a dusty flat plain: a young Macedonian king in a plumed bronze helmet charging on a black horse at the tip of a wedge of cavalry toward a Persian Great King standing in a golden chariot who is turning to flee, scythed chariots and huge armies in the dust behind, dramatic golden backlight, full color, high contrast, the lower third of the frame darker, no text, no letters, no logos."
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "act": 1,
+   "lines": [
+    {
+     "t": "기원전 331년 10월 1일 아침.",
+     "say": "기원전 삼백삼십일년 시월 일일 아침."
+    },
+    "지금의 이라크 북부 넓은 평원입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "empire",
+    "to": "field",
+    "items": [
+     {
+      "k": "lock",
+      "p": "gaugamela",
+      "text": "가우가멜라 평원",
+      "at": 1.0
+     }
+    ],
+    "flight": [
+     "empire",
+     "meso",
+     "nineveh",
+     "field"
+    ],
+    "flightDur": 4.6,
+    "hud": true,
+    "tilt": 26
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "기원전 331년 10월 1일",
+      "sub": "가우가멜라 평원",
+      "sub2": "지금의 이라크 북부",
+      "at": 0.0,
+      "count": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s002",
+   "act": 1,
+   "lines": [
+    {
+     "t": "한쪽 끝에 페르시아 대왕 다리우스 3세가 서 있습니다.",
+     "say": "한쪽 끝에 페르시아 대왕 다리우스 삼세가 서 있습니다."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s002-photo",
+    "tag": "알렉산드로스 모자이크 부분 · 로마 시대",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "페르시아 대왕 다리우스 3세",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "다리우스"
+     }
+    ]
+   },
+   "label": "다리우스 3세 · 알렉산드로스 모자이크 부분 · 나폴리 국립고고학박물관"
+  },
+  {
+   "id": "s003",
+   "act": 1,
+   "lines": [
+    "그 앞의 땅은 며칠 동안 사람 손으로 평평하게 다져져 있었죠.",
+    {
+     "t": "낫을 단 전차 200대가 마음껏 달리라고 만든 길이었습니다.",
+     "say": "낫을 단 전차 이백 대가 마음껏 달리라고 만든 길이었습니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": "#d8b46a",
+      "text": "다져 놓은 평지",
+      "on": "평평하게"
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "at": 0,
+      "n": 90,
+      "width": 0.5
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "200대",
+      "sub": "낫을 단 전차",
+      "sub2": "아리아노스",
+      "on": "이백",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s004",
+   "act": 1,
+   "lines": [
+    {
+     "t": "알렉산드로스의 군대는 약 4만 7천 명.",
+     "say": "알렉산드로스의 군대는 약 사만칠천 명."
+    },
+    "대왕의 군대는 그보다 훨씬 많았다고 전해집니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ]
+    },
+    "title": "약 4만 7천 대 수만~수십만"
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "약 4만 7천",
+      "sub": "알렉산드로스의 군대",
+      "sub2": "보병 4만 · 기병 7천 · 아리아노스",
+      "on": "사만칠천",
+      "count": false
+     },
+     {
+      "big": "5만~10만+",
+      "sub": "다리우스의 군대",
+      "sub2": "현대 추정",
+      "on": "훨씬",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s005",
+   "act": 1,
+   "lines": [
+    "그런데 해가 지기 전에 먼저 등을 보인 쪽은 대왕이었습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "darius_flees",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "hook": {
+    "hud": [
+     {
+      "big": "먼저 도망친 쪽",
+      "sub": "대왕 다리우스",
+      "sub2": "해가 지기 전",
+      "on": "등을",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s006",
+   "act": 1,
+   "lines": [
+    "전장을 고른 사람도 땅을 다진 사람도 다리우스였습니다.",
+    "그런데 알렉산드로스는 그 땅으로 곧장 걸어 들어가지 않았죠.",
+    "그는 군대를 이끌고 오른쪽으로 비스듬히 비켜 걷기 시작했습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": "#d8b46a",
+      "text": "다리우스가 고른 땅",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.44,
+        36.5
+       ],
+       [
+        43.445,
+        36.485
+       ],
+       [
+        43.449,
+        36.47
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "on": "오른쪽으로"
+     }
+    ],
+    "tilt": 30
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "id": "s007",
+   "act": 1,
+   "lines": [
+    {
+     "t": "대왕은 가장 무서운 무기 200대를 풀었습니다.",
+     "say": "대왕은 가장 무서운 무기 이백 대를 풀었습니다."
+    },
+    "그런데 그 전차들은 마케도니아 대열을 거의 부수지 못했습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "chariot_lanes",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "hook": {
+    "hud": [
+     {
+      "big": "거의 0",
+      "sub": "낫 전차가 부순 대열",
+      "sub2": "아리아노스",
+      "on": "거의",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s008",
+   "act": 1,
+   "lines": [
+    {
+     "t": "25살 젊은 왕의 무모한 돌격이 운 좋게 통했다고들 하죠.",
+     "say": "스물다섯 살 젊은 왕의 무모한 돌격이 운 좋게 통했다고들 하죠."
+    },
+    "그런데 정말 그랬을까요?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "무모한 돌격?",
+    "accent": "운이었을까",
+    "accentAt": 0.5
+   },
+   "hook": {
+    "neg": {
+     "text": "운 좋은 돌격",
+     "on": "무모한",
+     "xOn": "그랬을까요"
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "act": 1,
+   "lines": [
+    "적이 직접 골라 다진 전장에서 알렉산드로스는 왜 일부러 오른쪽으로 비켜 걸었을까요?"
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": "#d8b46a",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     }
+    ],
+    "tilt": 30
+   },
+   "hook": {
+    "question": {
+     "text": "적이 직접 골라 다진 전장에서\n알렉산드로스는 왜\n오른쪽으로 비켜 걸었을까",
+     "at": 0.02
+    }
+   }
+  },
+  {
+   "id": "s010",
+   "act": 1,
+   "lines": [
+    "이야기는 두 왕이 처음 마주친 바닷가의 좁은 들판에서 시작합니다."
+   ],
+   "visual": {
+    "type": "titlecard",
+    "title": "단 한 번의 돌격",
+    "sub": "가우가멜라 전투 · 기원전 331년",
+    "at": 0,
+    "q": "s010-photo"
+   },
+   "flash": true
+  },
+  {
+   "id": "s011",
+   "act": 2,
+   "lines": [
+    {
+     "t": "기원전 333년 11월.",
+     "say": "기원전 삼백삼십삼년 십일월."
+    },
+    "지금의 튀르키예 남쪽 바닷가 이소스."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "empire",
+    "to": "levant",
+    "items": [
+     {
+      "k": "lock",
+      "p": "issus",
+      "text": "이소스",
+      "on": "이소스"
+     }
+    ],
+    "flight": [
+     "empire",
+     "levant"
+    ],
+    "flightDur": 2.6,
+    "tilt": 16
+   },
+   "chapter": {
+    "num": "제2막",
+    "title": "달아난 대왕"
+   },
+   "callouts": [
+    {
+     "text": "기원전 333년 11월 · 이소스",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s012",
+   "act": 2,
+   "lines": [
+    "산과 바다 사이 좁은 들판에서 두 왕이 처음 마주칩니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s012-photo",
+    "tag": "얀 브뤼헐 · 17세기 초",
+    "pos": "50% 45%",
+    "marks": [
+     {
+      "text": "산과 바다 사이 좁은 들판",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "좁은"
+     }
+    ]
+   },
+   "label": "이소스 전투 · 얀 브뤼헐 · 루브르 박물관 (예전에는 가우가멜라 전투로 알려짐)"
+  },
+  {
+   "id": "s013",
+   "act": 2,
+   "lines": [
+    "두 왕은 같은 해에 왕이 됐습니다.",
+    {
+     "t": "기원전 336년.",
+     "say": "기원전 삼백삼십육년."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "같은 해 왕이 된 두 사람",
+    "style": "yellow",
+    "sub": "기원전 336년",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s014",
+   "act": 2,
+   "lines": [
+    {
+     "t": "마케도니아에서는 필리포스 2세가 암살당하고 20살 아들 알렉산드로스가 왕위에 올랐죠.",
+     "say": "마케도니아에서는 필리포스 이세가 암살당하고 스무 살 아들 알렉산드로스가 왕위에 올랐죠."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s014-photo",
+    "tag": "알렉산드로스 흉상 · 로마 시대 복제품",
+    "pos": "50% 25%",
+    "marks": [
+     {
+      "text": "알렉산드로스 · 20살",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "스무"
+     }
+    ]
+   },
+   "label": "알렉산드로스 흉상 '아자라 헤르마' · 리시포스 원작의 로마 시대 복제품 · 루브르 박물관"
+  },
+  {
+   "id": "s015",
+   "act": 2,
+   "lines": [
+    {
+     "t": "같은 해 페르시아에서는 다리우스 3세가 왕좌에 앉았습니다.",
+     "say": "같은 해 페르시아에서는 다리우스 삼세가 왕좌에 앉았습니다."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s015-photo",
+    "tag": "알렉산드로스 모자이크 부분 · 로마 시대",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "다리우스 3세",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "다리우스"
+     }
+    ]
+   },
+   "label": "전차 위의 다리우스 3세 · 알렉산드로스 모자이크 부분 · 나폴리 국립고고학박물관"
+  },
+  {
+   "id": "s016",
+   "act": 2,
+   "lines": [
+    {
+     "t": "2년 뒤 알렉산드로스는 헬레스폰토스 해협을 건너 아시아로 들어옵니다.",
+     "say": "이 년 뒤 알렉산드로스는 헬레스폰토스 해협을 건너 아시아로 들어옵니다."
+    },
+    "그리고 그라니코스강에서 페르시아 총독들의 군대를 무찌르고 소아시아를 휩쓸었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "empire",
+    "to": "empire",
+    "items": [
+     {
+      "k": "marker",
+      "p": "pella",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        24.5,
+        40.9
+       ],
+       [
+        26.41,
+        40.2
+       ],
+       [
+        27.3,
+        40.25
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "on": "헬레스폰토스"
+     },
+     {
+      "k": "lock",
+      "p": "granicus",
+      "text": "그라니코스강",
+      "on": "그라니코스강"
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "기원전 334년 · 아시아로",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s017",
+   "act": 2,
+   "lines": [
+    "이제 대왕이 직접 나설 차례였죠."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "이제",
+    "accent": "대왕이 직접",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s018",
+   "act": 2,
+   "lines": [
+    "다리우스는 큰 군대를 이끌고 왔습니다.",
+    "하지만 그 좁은 땅에서는 숫자를 다 쓸 수가 없었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "levant",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        27.3,
+        40.25
+       ],
+       [
+        30.5,
+        38.5
+       ],
+       [
+        33.5,
+        37.0
+       ],
+       [
+        36.2,
+        36.85
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "issus",
+      "text": "이소스",
+      "at": 0.6
+     },
+     {
+      "k": "badge",
+      "p": "issus",
+      "text": "좁은 들판",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "좁은"
+     }
+    ],
+    "tilt": 16
+   }
+  },
+  {
+   "id": "s019",
+   "act": 2,
+   "lines": [
+    "알렉산드로스는 기병을 이끌고 곧장 대왕이 있는 곳으로 달려듭니다.",
+    "그러자 다리우스는 전차를 돌려 달아났습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "issus_flight",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s020",
+   "act": 2,
+   "lines": [
+    "대왕이 버리고 간 진영에는 그의 어머니와 아내 그리고 딸들이 남아 있었죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s020-photo",
+    "tag": "파올로 베로네세 · 1565년 무렵",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "대왕의 가족",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "어머니와"
+     }
+    ]
+   },
+   "label": "알렉산드로스 앞의 다리우스 가족 · 파올로 베로네세 · 런던 내셔널 갤러리"
+  },
+  {
+   "id": "s021",
+   "act": 2,
+   "lines": [
+    "알렉산드로스는 붙잡힌 대왕의 가족을 왕족으로 대접했습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "왕족의 대접",
+    "style": "blue",
+    "sub": "붙잡힌 대왕의 어머니·아내·딸들",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s022",
+   "act": 2,
+   "lines": [
+    "대왕의 어머니 시시감비스가 키 큰 헤파이스티온을 왕으로 알고 그 앞에 엎드렸다는 이야기가 있습니다.",
+    "실수를 깨닫고 당황하는 그녀에게 알렉산드로스가 말했다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "sisygambis_bow",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "대왕의 어머니 시시감비스",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s023",
+   "act": 2,
+   "lines": [
+    "괜찮습니다.",
+    "그도 알렉산드로스입니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“그도 알렉산드로스입니다”",
+    "style": "yellow",
+    "sub": "쿠르티우스·아리아노스가 전하는 이야기",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s024",
+   "act": 2,
+   "lines": [
+    "이탈리아 폼페이의 한 저택 바닥에서 이 두 왕을 그린 모자이크가 발견됐습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s024-photo",
+    "tag": "알렉산드로스 모자이크 · 로마 시대",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "폼페이 · 파우누스의 집",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "폼페이의"
+     }
+    ]
+   },
+   "label": "알렉산드로스 모자이크 · 폼페이 파우누스의 집 · 나폴리 국립고고학박물관 (이소스 또는 가우가멜라를 그린 것으로 봄)"
+  },
+  {
+   "id": "s025",
+   "act": 2,
+   "lines": [
+    "말을 타고 돌격해 오는 젊은 왕."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s025-photo",
+    "tag": "알렉산드로스 모자이크 · 로마 시대",
+    "pos": "18% 45%",
+    "marks": [
+     {
+      "text": "알렉산드로스",
+      "x": 0.3,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "젊은 왕"
+     }
+    ]
+   },
+   "label": "알렉산드로스 모자이크 · 폼페이 파우누스의 집 · 나폴리 국립고고학박물관 (이소스 또는 가우가멜라를 그린 것으로 봄)"
+  },
+  {
+   "id": "s026",
+   "act": 2,
+   "lines": [
+    "그리고 전차 위에서 손을 뻗은 채 뒤돌아보는 대왕.",
+    "다리우스에게는 평생 지워지지 않을 장면이었을 겁니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s026-photo",
+    "tag": "알렉산드로스 모자이크 부분 · 로마 시대",
+    "pos": "50% 40%",
+    "marks": [
+     {
+      "text": "손을 뻗은 대왕",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "손을"
+     }
+    ]
+   },
+   "label": "다리우스 3세 · 알렉산드로스 모자이크 부분 · 나폴리 국립고고학박물관"
+  },
+  {
+   "id": "s027",
+   "act": 2,
+   "lines": [
+    "그런데 알렉산드로스는 달아난 대왕을 쫓지 않았습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "levant",
+    "items": [
+     {
+      "k": "marker",
+      "p": "issus",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        36.2,
+        36.85
+       ],
+       [
+        38.5,
+        36.4
+       ],
+       [
+        41.0,
+        34.5
+       ],
+       [
+        44.42,
+        32.54
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "babylon",
+      "text": "대왕은 동쪽으로",
+      "at": 0.9
+     }
+    ],
+    "tilt": 14
+   }
+  },
+  {
+   "id": "s028",
+   "act": 2,
+   "lines": [
+    "그는 오히려 남쪽 바닷가로 내려갑니다.",
+    "페르시아 함대가 쉴 항구를 하나씩 빼앗으려는 계획이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "levant",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        36.2,
+        36.85
+       ],
+       [
+        35.9,
+        35.5
+       ],
+       [
+        35.6,
+        34.4
+       ],
+       [
+        35.2,
+        33.27
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "badge",
+      "p": "tyre",
+      "text": "항구 빼앗기",
+      "color": "#1f5fbf",
+      "dy": -80,
+      "on": "항구를"
+     }
+    ],
+    "tilt": 16
+   },
+   "callouts": [
+    {
+     "text": "페르시아 함대의 항구를 하나씩",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s029",
+   "act": 2,
+   "lines": [
+    {
+     "t": "섬 도시 티로스는 7달을 버텼습니다.",
+     "say": "섬 도시 티로스는 일곱 달을 버텼습니다."
+    },
+    "알렉산드로스는 바다를 메워 둑길을 쌓고 끝내 성벽을 무너뜨립니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "tyre_causeway",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "섬 도시 티로스 · 7달",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s030",
+   "act": 2,
+   "lines": [
+    "그사이 다리우스의 편지가 도착합니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "darius_letter",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s031",
+   "act": 2,
+   "lines": [
+    "유프라테스강 서쪽 땅을 모두 주겠다.",
+    {
+     "t": "은 1만 탈란톤을 주겠다.",
+     "say": "은 만 탈란톤을 주겠다."
+    },
+    "내 딸을 아내로 주겠다."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "아리아노스 2권 25절",
+    "head": "다리우스의 제안",
+    "rows": [
+     "유프라테스강 서쪽 땅 전부",
+     "은 1만 탈란톤",
+     "대왕의 딸과 혼인"
+    ],
+    "stamp": "제안",
+    "note": "요지"
+   }
+  },
+  {
+   "id": "s032",
+   "act": 2,
+   "lines": [
+    "늙은 장군 파르메니온이 말했다고 하죠.",
+    "제가 알렉산드로스라면 받아들이겠습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“제가 알렉산드로스라면”",
+    "style": "dark",
+    "sub": "늙은 장군 파르메니온",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s033",
+   "act": 2,
+   "lines": [
+    "알렉산드로스가 답했습니다.",
+    "나도 파르메니온이라면 그렇게 하겠소.",
+    "그는 제국의 절반이 아니라 전부를 원했습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“나도 파르메니온이라면”",
+    "style": "yellow",
+    "sub": "알렉산드로스의 대답 · 아리아노스 2권 25절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s034",
+   "act": 2,
+   "lines": [
+    {
+     "t": "그다음 가자도 2달을 버티다 무너졌습니다.",
+     "say": "그다음 가자도 두 달을 버티다 무너졌습니다."
+    },
+    "가자를 지나 이집트에 들어가자 이집트는 싸우지 않고 문을 열었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "levant",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        35.2,
+        33.27
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        32.3,
+        30.9
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "gaza",
+      "text": "가자",
+      "on": "가자도"
+     },
+     {
+      "k": "marker",
+      "p": "memphis",
+      "color": "blue",
+      "on": "이집트에"
+     }
+    ],
+    "tilt": 16
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "id": "s035",
+   "act": 2,
+   "lines": [
+    "그는 사막 한가운데 시와 오아시스의 신전까지 찾아갑니다.",
+    "그곳에서 신의 아들이라는 말을 들었다고 하죠."
+   ],
+   "visual": {
+    "type": "flatmap",
+    "center": [
+     29.0,
+     30.4
+    ],
+    "span": 9.5,
+    "fill": {
+     "818": "#f1e4c6"
+    },
+    "pins": [
+     {
+      "ll": [
+       31.25,
+       29.85
+      ],
+      "text": "멤피스",
+      "side": "right",
+      "at": 0
+     },
+     {
+      "ll": [
+       25.52,
+       29.2
+      ],
+      "text": "시와 오아시스",
+      "side": "below",
+      "on": "시와"
+     }
+    ],
+    "routes": [
+     {
+      "from": [
+       31.25,
+       29.85
+      ],
+      "to": [
+       25.52,
+       29.2
+      ],
+      "bend": -0.2,
+      "dur": 1.4,
+      "label": "사막을 건너",
+      "on": "사막"
+     }
+    ],
+    "labels": [],
+    "zoomTo": 0.94
+   }
+  },
+  {
+   "id": "s036",
+   "act": 2,
+   "lines": [
+    "그는 나일강 하구 바닷가에 새 도시를 세웁니다.",
+    "훗날 지중해 최대의 도시가 되는 알렉산드리아입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "levant",
+    "items": [
+     {
+      "k": "lock",
+      "p": "alexandria",
+      "text": "알렉산드리아",
+      "on": "새 도시를"
+     }
+    ],
+    "tilt": 16
+   },
+   "callouts": [
+    {
+     "text": "기원전 331년 · 알렉산드리아",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s037",
+   "act": 2,
+   "lines": [
+    "이제 지중해에 페르시아 함대가 쉴 항구는 남아 있지 않았습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "지중해의 항구",
+    "style": "blue",
+    "sub": "모두 마케도니아의 손에",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s038",
+   "act": 2,
+   "lines": [
+    {
+     "t": "기원전 331년 봄 알렉산드로스는 다시 북쪽으로 군대를 돌립니다.",
+     "say": "기원전 삼백삼십일년 봄 알렉산드로스는 다시 북쪽으로 군대를 돌립니다."
+    },
+    "목표는 제국의 심장 바빌론이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "levant",
+    "to": "meso",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        29.92,
+        31.2
+       ],
+       [
+        34.3,
+        31.6
+       ],
+       [
+        35.2,
+        33.27
+       ],
+       [
+        36.4,
+        35.3
+       ],
+       [
+        38.45,
+        35.95
+       ]
+      ],
+      "color": "blue",
+      "width": 1.1,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "babylon",
+      "text": "목표 · 바빌론",
+      "on": "바빌론이었습니다"
+     }
+    ],
+    "flight": [
+     "levant",
+     "meso"
+    ],
+    "flightDur": 2.4,
+    "tilt": 14
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s039",
+   "act": 2,
+   "lines": [
+    "그리고 다리우스도 이번에는 도망칠 생각이 없었습니다.",
+    "그는 이소스에서 무엇이 잘못됐는지 정확히 알고 있었거든요."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "이번에는",
+    "accent": "도망치지 않는다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s040",
+   "act": 3,
+   "lines": [
+    "다리우스는 제국 곳곳에서 군대를 불러 모읍니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "meso",
+    "to": "meso",
+    "items": [
+     {
+      "k": "lock",
+      "p": "babylon",
+      "text": "바빌론",
+      "at": 0.4
+     }
+    ],
+    "tilt": 14
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제3막",
+    "title": "대왕이 고른 땅"
+   }
+  },
+  {
+   "id": "s041",
+   "act": 3,
+   "lines": [
+    "동쪽 끝 박트리아의 기병.",
+    "초원에서 온 기마 궁수.",
+    {
+     "t": "인도에서 온 코끼리 15마리.",
+     "say": "인도에서 온 코끼리 열다섯 마리."
+    }
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "대왕이 불러 모은 군대",
+    "items": [
+     {
+      "text": "박트리아 기병",
+      "on": "박트리아의"
+     },
+     {
+      "text": "초원의 기마 궁수",
+      "on": "기마 궁수"
+     },
+     {
+      "text": "인도 코끼리 15마리",
+      "on": "코끼리"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s042",
+   "act": 3,
+   "lines": [
+    {
+     "t": "그리고 바퀴 옆에 날카로운 낫을 단 전차 200대.",
+     "say": "그리고 바퀴 옆에 날카로운 낫을 단 전차 이백 대."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "scythe_chariot",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "낫 전차 200대",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s043",
+   "act": 3,
+   "lines": [
+    {
+     "t": "옛 역사가 아리아노스는 이 군대가 보병 100만 명에 기병 4만 명이었다고 적었습니다.",
+     "say": "옛 역사가 아리아노스는 이 군대가 보병 백만 명에 기병 사만 명이었다고 적었습니다."
+    },
+    "물론 지금 학자들은 이 숫자를 그대로 믿지 않습니다.",
+    {
+     "t": "그래도 5만에서 10만 명 이상은 됐을 거라고 보죠.",
+     "say": "그래도 오만에서 십만 명 이상은 됐을 거라고 보죠."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "다리우스의 군대",
+    "items": [
+     {
+      "label": "아리아노스",
+      "value": 1040000,
+      "display": "보병 100만 + 기병 4만",
+      "color": "red",
+      "on": "백만"
+     },
+     {
+      "label": "현대 추정",
+      "value": 100000,
+      "display": "5만~10만 이상",
+      "color": "dark",
+      "on": "오만에서"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s044",
+   "act": 3,
+   "lines": [
+    "다리우스는 무기도 바꿨습니다.",
+    "기병에게는 더 긴 창과 칼을 쥐여 줬다고 합니다.",
+    "이소스에서 마케도니아의 긴 창에 밀렸던 기억 때문이었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "더 긴 창과 칼",
+    "style": "red",
+    "sub": "디오도로스 17권 53절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s045",
+   "act": 3,
+   "lines": [
+    "그런데 다리우스가 걱정한 건 숫자가 아니었습니다.",
+    "이소스에서 그를 무너뜨린 건 좁은 땅이었거든요.",
+    "그래서 그는 이번에는 땅부터 골랐습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "이소스",
+     "big": "좁은 땅",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "이번에는",
+     "big": "넓은 평원",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s046",
+   "act": 3,
+   "lines": [
+    "티그리스강 동쪽 가우가멜라 마을 근처의 넓은 평원.",
+    "다리우스는 바빌론에서 군대를 모은 뒤 북쪽으로 올라와 자리를 잡았습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "meso",
+    "to": "nineveh",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        42.2,
+        37.3
+       ],
+       [
+        42.7,
+        36.95
+       ],
+       [
+        43.13,
+        36.36
+       ],
+       [
+        43.3,
+        35.7
+       ],
+       [
+        43.8,
+        34.9
+       ],
+       [
+        44.4,
+        33.3
+       ],
+       [
+        45.5,
+        32.5
+       ],
+       [
+        47.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "gaugamela",
+      "text": "가우가멜라 (텔 고멜 설)",
+      "on": "가우가멜라"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        44.42,
+        32.54
+       ],
+       [
+        44.2,
+        34.0
+       ],
+       [
+        43.9,
+        35.5
+       ],
+       [
+        43.494,
+        36.55
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "바빌론에서"
+     }
+    ],
+    "flight": [
+     "meso",
+     "nineveh"
+    ],
+    "flightDur": 2.4,
+    "tilt": 20
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s047",
+   "act": 3,
+   "lines": [
+    "가우가멜라는 낙타의 집이라는 뜻이라고 합니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "낙타의 집",
+    "style": "yellow",
+    "sub": "가우가멜라라는 이름의 뜻",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s048",
+   "act": 3,
+   "lines": [
+    "다리우스는 병사들을 시켜 이 평원을 더 평평하게 고릅니다.",
+    "덤불을 베고 울퉁불퉁한 곳을 깎아 냈죠.",
+    "전차가 넘어지지 않고 끝까지 달릴 수 있게 말입니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "leveling",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "평원을 더 평평하게",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s049",
+   "act": 3,
+   "lines": [
+    "낫 전차는 무서운 무기였습니다.",
+    "대열을 갖춘 보병 한가운데로 뛰어들어 사람과 대열을 함께 베어 버리는 무기였죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "낫 전차",
+    "style": "red",
+    "sub": "대열째 베어 버리는 무기",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s050",
+   "act": 3,
+   "lines": [
+    "하지만 조건이 하나 있었습니다.",
+    "땅이 평평해야 했습니다.",
+    "돌 하나 도랑 하나에도 바퀴가 튀면 전차는 그대로 뒤집혔거든요."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "낫 전차의 조건",
+    "items": [
+     {
+      "text": "평평한 땅",
+      "on": "평평해야"
+     },
+     {
+      "text": "돌 하나도 안 된다",
+      "on": "돌 하나"
+     },
+     {
+      "text": "도랑 하나도 안 된다",
+      "on": "도랑"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s051",
+   "act": 3,
+   "lines": [
+    "다리우스는 그 조건을 직접 만들어 놓고 기다렸습니다.",
+    "여기서 싸우면 이긴다.",
+    "여기서만 싸우면 된다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0.2,
+      "text": "다져 놓은 평지",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "at": 0.4,
+      "n": 90,
+      "width": 0.5
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "callouts": [
+    {
+     "text": "“여기서만 싸우면 된다”",
+     "style": "red",
+     "at": 1.5,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s052",
+   "act": 3,
+   "lines": [
+    "한편 알렉산드로스는 한여름에 탑사코스에서 유프라테스강을 건넙니다.",
+    "그런데 그는 곧장 바빌론으로 내려가지 않았습니다.",
+    "더 북쪽으로 돌아 티그리스강으로 향했죠.",
+    "남쪽 길은 너무 덥고 말에게 먹일 풀도 부족했기 때문입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "meso",
+    "to": "meso",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        42.2,
+        37.3
+       ],
+       [
+        42.7,
+        36.95
+       ],
+       [
+        43.13,
+        36.36
+       ],
+       [
+        43.3,
+        35.7
+       ],
+       [
+        43.8,
+        34.9
+       ],
+       [
+        44.4,
+        33.3
+       ],
+       [
+        45.5,
+        32.5
+       ],
+       [
+        47.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        38.0,
+        36.9
+       ],
+       [
+        38.3,
+        36.3
+       ],
+       [
+        39.0,
+        35.95
+       ],
+       [
+        40.1,
+        35.3
+       ],
+       [
+        40.9,
+        34.5
+       ],
+       [
+        41.9,
+        34.3
+       ],
+       [
+        43.0,
+        33.4
+       ],
+       [
+        44.3,
+        32.5
+       ],
+       [
+        46.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "thapsacus",
+      "text": "탑사코스 (추정)",
+      "on": "탑사코스에서"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        38.45,
+        35.95
+       ],
+       [
+        40.5,
+        34.8
+       ],
+       [
+        42.6,
+        33.6
+       ],
+       [
+        44.42,
+        32.54
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "on": "곧장"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        38.45,
+        35.95
+       ],
+       [
+        39.6,
+        36.6
+       ],
+       [
+        41.3,
+        37.0
+       ],
+       [
+        42.98,
+        36.66
+       ]
+      ],
+      "color": "blue",
+      "width": 1.1,
+      "on": "북쪽으로"
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "남쪽 길: 더위 · 말 먹이 부족",
+     "style": "red",
+     "at": 3.0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s053",
+   "act": 3,
+   "lines": [
+    "그사이 대왕의 장군 마자이오스는 기병을 이끌고 앞서 나가 마을과 곡식을 불태웠습니다.",
+    "알렉산드로스의 군대가 먹을 것을 찾지 못하게 하려는 것이었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "마자이오스",
+    "style": "red",
+    "sub": "앞서 나가 마을과 곡식을 불태우다",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s054",
+   "act": 3,
+   "lines": [
+    "티그리스는 물살이 거셌습니다.",
+    "병사들은 목까지 차오르는 강물 속에서 무기를 머리 위로 들고 건넜다고 합니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "tigris_crossing",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "티그리스강 도하",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s055",
+   "act": 3,
+   "lines": [
+    "놀랍게도 강가에는 막는 적이 없었습니다.",
+    "다리우스는 알렉산드로스가 자신이 고른 평원으로 걸어오기를 기다리고 있었으니까요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "nineveh",
+    "to": "nineveh",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        42.2,
+        37.3
+       ],
+       [
+        42.7,
+        36.95
+       ],
+       [
+        43.13,
+        36.36
+       ],
+       [
+        43.3,
+        35.7
+       ],
+       [
+        43.8,
+        34.9
+       ],
+       [
+        44.4,
+        33.3
+       ],
+       [
+        45.5,
+        32.5
+       ],
+       [
+        47.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        42.85,
+        36.7
+       ],
+       [
+        43.05,
+        36.63
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "lock",
+      "p": "crossing",
+      "text": "티그리스 도하 (추정)",
+      "at": 0.4
+     },
+     {
+      "k": "marker",
+      "p": "gaugamela",
+      "color": "red",
+      "on": "평원으로"
+     }
+    ],
+    "tilt": 20
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "s056",
+   "act": 3,
+   "lines": [
+    {
+     "t": "기원전 331년 9월 20일 밤.",
+     "say": "기원전 삼백삼십일년 구월 이십일 밤."
+    },
+    "하늘에서 달이 사라집니다.",
+    "개기월식이었습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "eclipse",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "기원전 331년 9월 20일 밤",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s057",
+   "act": 3,
+   "lines": [
+    "바빌론의 천문 관측관들은 점토판에 이날 밤을 적었습니다.",
+    "월식이 일어났고 서쪽 바람이 불었다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s057-photo",
+    "tag": "바빌론 천문 일지 · 기원전 331년",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "월식 · 서쪽 바람",
+      "x": 0.5,
+      "y": 0.15,
+      "color": "yellow",
+      "on": "월식이"
+     }
+    ]
+   },
+   "label": "가우가멜라 전투를 적은 바빌론 천문 일지 · 기원전 331~330년 · 대영박물관"
+  },
+  {
+   "id": "s058",
+   "act": 3,
+   "lines": [
+    "마케도니아 병사들은 겁에 질렸습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "달이 사라졌다",
+    "accent": "병사들의 공포",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s059",
+   "act": 3,
+   "lines": [
+    "그러자 알렉산드로스는 달과 해와 땅에 제물을 바칩니다.",
+    "예언자들은 이 월식이 페르시아에 내린 나쁜 징조라고 풀이했죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "달 · 해 · 땅에 제물",
+    "style": "yellow",
+    "sub": "알렉산드로스 · 아리아노스 3권 7절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s060",
+   "act": 3,
+   "lines": [
+    {
+     "t": "그리고 11일 뒤 두 군대는 가우가멜라 평원에서 마주 섭니다.",
+     "say": "그리고 열하루 뒤 두 군대는 가우가멜라 평원에서 마주 섭니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "nineveh",
+    "to": "nineveh",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        42.2,
+        37.3
+       ],
+       [
+        42.7,
+        36.95
+       ],
+       [
+        43.13,
+        36.36
+       ],
+       [
+        43.3,
+        35.7
+       ],
+       [
+        43.8,
+        34.9
+       ],
+       [
+        44.4,
+        33.3
+       ],
+       [
+        45.5,
+        32.5
+       ],
+       [
+        47.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.05,
+        36.63
+       ],
+       [
+        43.25,
+        36.56
+       ],
+       [
+        43.42,
+        36.52
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.1
+     },
+     {
+      "k": "marker",
+      "p": "gaugamela",
+      "color": "red",
+      "at": 0.5
+     }
+    ],
+    "tilt": 20
+   },
+   "callouts": [
+    {
+     "text": "열하루 뒤",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s061",
+   "act": 4,
+   "lines": [
+    {
+     "t": "알렉산드로스는 진영을 세우고 병사들을 4일 동안 쉬게 합니다.",
+     "say": "알렉산드로스는 진영을 세우고 병사들을 나흘 동안 쉬게 합니다."
+    },
+    "그리고 직접 언덕에 올라 평원을 내려다봤죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "nineveh",
+    "to": "field",
+    "items": [
+     {
+      "k": "unit",
+      "p": "mcamp",
+      "text": "마케도니아 진영",
+      "color": "blue",
+      "at": 0.6,
+      "pulse": true
+     }
+    ],
+    "flight": [
+     "nineveh",
+     "field"
+    ],
+    "flightDur": 2.4,
+    "tilt": 26
+   },
+   "chapter": {
+    "num": "제4막",
+    "title": "훔치지 않는 승리"
+   },
+   "callouts": [
+    {
+     "text": "나흘 휴식",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s062",
+   "act": 4,
+   "lines": [
+    "지평선 끝까지 페르시아군이 펼쳐져 있었습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "alex_ridge",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s063",
+   "act": 4,
+   "lines": [
+    "그 무렵 다리우스에게 슬픈 소식이 전해집니다.",
+    "붙잡혀 있던 아내 스타테이라가 세상을 떠났다는 소식이었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "왕비 스타테이라의 죽음",
+    "style": "dark",
+    "sub": "포로로 지내던 중 · 플루타르코스",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s064",
+   "act": 4,
+   "lines": [
+    "알렉산드로스는 그녀를 왕비의 예로 장례 치러 주었다고 합니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s064-photo",
+    "tag": "파올로 베로네세 · 1565년 무렵",
+    "pos": "30% 50%"
+   },
+   "label": "알렉산드로스 앞의 다리우스 가족 · 파올로 베로네세 · 런던 내셔널 갤러리"
+  },
+  {
+   "id": "s065",
+   "act": 4,
+   "lines": [
+    "플루타르코스는 그 소식을 들은 다리우스가 이렇게 기도했다고 적었습니다.",
+    "페르시아의 운이 다했다면 제 왕좌에는 알렉산드로스 말고 누구도 앉지 않게 해 주소서."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "플루타르코스 『알렉산드로스 전』 30장",
+    "head": "다리우스의 기도",
+    "rows": [
+     "페르시아의 운이 다했다면",
+     "내 왕좌에는 알렉산드로스만"
+    ],
+    "stamp": "기도",
+    "note": "요지"
+   }
+  },
+  {
+   "id": "s066",
+   "act": 4,
+   "lines": [
+    "그날 밤 장군들이 모였습니다.",
+    "파르메니온이 말했습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "night_council",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "밤의 작전 회의",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s067",
+   "act": 4,
+   "lines": [
+    "지금 밤에 치시지요.",
+    "어둠 속이라면 적은 우리 숫자를 모르고 저 많은 군대가 오히려 서로 엉킬 겁니다."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "아리아노스 3권 10절",
+    "head": "파르메니온의 조언",
+    "rows": [
+     "지금 밤에 치자",
+     "적은 우리 숫자를 모른다",
+     "대군은 어둠 속에서 엉킨다"
+    ],
+    "stamp": "야습",
+    "note": "요지"
+   }
+  },
+  {
+   "id": "s068",
+   "act": 4,
+   "lines": [
+    "그럴듯한 말이었습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그럴듯한",
+    "accent": "제안",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s069",
+   "act": 4,
+   "lines": [
+    "알렉산드로스의 대답은 짧았습니다.",
+    "나는 승리를 훔치지 않겠다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“나는 승리를 훔치지 않겠다”",
+    "style": "yellow",
+    "sub": "알렉산드로스 · 아리아노스·플루타르코스",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s070",
+   "act": 4,
+   "lines": [
+    "허세처럼 들리죠.",
+    "하지만 그 말에는 계산이 있었습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "허세?",
+    "accent": "아니면 계산",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s071",
+   "act": 4,
+   "lines": [
+    "밤에 이기면 다리우스는 또 말할 겁니다.",
+    "어둠과 속임수에 졌을 뿐이라고.",
+    "그러면 그는 다시 동쪽에서 군대를 모아 올 테니까요.",
+    "게다가 밤에는 아군도 길을 잃고 서로 부딪히기 쉽습니다."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "밤에 싸우지 않은 이유",
+    "items": [
+     {
+      "text": "다리우스에게 남을 핑계",
+      "on": "어둠과"
+     },
+     {
+      "text": "다시 모여들 군대",
+      "on": "다시 동쪽에서"
+     },
+     {
+      "text": "아군끼리의 혼란",
+      "on": "아군도"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s072",
+   "act": 4,
+   "lines": [
+    "알렉산드로스가 원한 건 핑계를 남기지 않는 승리였습니다.",
+    "대왕이 직접 고른 땅에서 대낮에 정면으로."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "핑계 없는 승리",
+    "style": "blue",
+    "sub": "대왕이 고른 땅 · 대낮 · 정면",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s073",
+   "act": 4,
+   "lines": [
+    "그 밤 페르시아군은 잠들지 못했습니다.",
+    "다리우스는 기습을 걱정해 군대에게 밤새 무장한 채 대열을 지키라고 명령했거든요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": "#d8b46a",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "darius",
+      "text": "밤새 무장",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "밤새"
+     }
+    ],
+    "tilt": 30,
+    "hud": true
+   }
+  },
+  {
+   "id": "s074",
+   "act": 4,
+   "lines": [
+    "수만 명이 서서 밤을 새웠습니다.",
+    "갑옷을 입은 채 말 곁에 서서 맞은 새벽은 길고 추웠을 겁니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "persians_awake",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s075",
+   "act": 4,
+   "lines": [
+    "반대로 알렉산드로스는 깊이 잠들었습니다.",
+    "날이 밝아도 일어나지 않아 파르메니온이 직접 깨워야 했다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "alex_sleeps",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s076",
+   "act": 4,
+   "lines": [
+    "어떻게 이렇게 태평하게 잘 수 있느냐는 물음에 그가 답했습니다.",
+    "우리는 이미 이겼다.",
+    "도망만 다니던 다리우스가 드디어 싸우겠다고 기다리고 있지 않은가."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“우리는 이미 이겼다”",
+    "style": "yellow",
+    "sub": "플루타르코스 『알렉산드로스 전』 32장",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s077",
+   "act": 4,
+   "lines": [
+    "아침이 되자 알렉산드로스는 대열을 짭니다.",
+    "그 대열에는 다른 전투에서 보기 힘든 것이 하나 있었습니다.",
+    "바로 두 번째 줄이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.43,
+        36.553
+       ],
+       [
+        43.43,
+        36.5
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0,
+      "on": "두 번째 줄"
+     }
+    ],
+    "tilt": 32
+   },
+   "callouts": [
+    {
+     "text": "두 겹의 대열",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s078",
+   "act": 4,
+   "lines": [
+    "맨 앞 줄 뒤에 또 한 줄의 보병을 세운 겁니다.",
+    "그리고 양쪽 끝은 뒤로 비스듬히 꺾어 놓았습니다.",
+    "적이 옆으로 돌아 뒤를 치면 두 번째 줄이 뒤돌아서 막으라는 뜻이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.43,
+        36.553
+       ],
+       [
+        43.43,
+        36.5
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.43,
+        36.566
+       ]
+      ],
+      "color": "#6fb3ff",
+      "glow": true,
+      "on": "비스듬히"
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        43.44,
+        36.497
+       ],
+       [
+        43.43,
+        36.487
+       ]
+      ],
+      "color": "#6fb3ff",
+      "glow": true,
+      "on": "비스듬히"
+     }
+    ],
+    "tilt": 32
+   },
+   "callouts": [
+    {
+     "text": "뒤로 꺾은 양쪽 끝",
+     "style": "dark",
+     "at": 1.0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s079",
+   "act": 4,
+   "lines": [
+    "페르시아군의 전열은 마케도니아군보다 훨씬 길었거든요."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "마케도니아 전열",
+     "big": "짧다",
+     "icon": "none",
+     "color": "blue"
+    },
+    "right": {
+     "title": "페르시아 전열",
+     "big": "훨씬 길다",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s080",
+   "act": 4,
+   "lines": [
+    "어디로 돌아와도 막을 수 있는 네모난 상자.",
+    "그것이 알렉산드로스의 대답이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "네모난 상자",
+    "style": "blue",
+    "sub": "어디로 돌아와도 막는다",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s081",
+   "act": 4,
+   "lines": [
+    "가운데에는 긴 창 사리사를 든 밀집 보병.",
+    "왼쪽 날개는 파르메니온과 테살리아 기병.",
+    "오른쪽 날개 끝에는 알렉산드로스와 친위 기병대가 섰습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.43,
+        36.553
+       ],
+       [
+        43.43,
+        36.5
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "parm",
+      "text": "파르메니온 · 테살리아 기병",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "파르메니온과"
+     },
+     {
+      "k": "badge",
+      "p": "alex",
+      "text": "알렉산드로스 · 친위 기병대",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "친위"
+     }
+    ],
+    "tilt": 30
+   },
+   "callouts": [
+    {
+     "text": "가운데 · 사리사 밀집 보병",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s082",
+   "act": 4,
+   "lines": [
+    "그 맞은편 한가운데에는 대왕의 전차와 근위대가 있었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "darius",
+      "text": "다리우스 · 근위대",
+      "on": "대왕의"
+     }
+    ],
+    "tilt": 30
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "s083",
+   "act": 4,
+   "lines": [
+    "페르시아 쪽 왼쪽 날개는 박트리아 총독 베소스.",
+    "오른쪽 날개는 마자이오스.",
+    "한가운데 대왕 곁에는 근위대와 그리스인 용병이 섰습니다.",
+    "그리고 맨 앞줄에는 낫 전차와 코끼리가 늘어서 있었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "bessus",
+      "text": "베소스 · 박트리아",
+      "color": "#c9242c",
+      "dy": 70,
+      "on": "베소스"
+     },
+     {
+      "k": "badge",
+      "p": "mazaeus",
+      "text": "마자이오스",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "마자이오스"
+     },
+     {
+      "k": "badge",
+      "p": "darius",
+      "text": "근위대 · 그리스인 용병",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "근위대와"
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "at": 0,
+      "n": 80,
+      "width": 0.5
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s084",
+   "act": 4,
+   "lines": [
+    "알렉산드로스는 늙은 애마 부케팔로스를 아껴 싸움이 시작되기 직전에야 올라탔다고 합니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s084-photo",
+    "tag": "알렉산드로스 모자이크 · 로마 시대",
+    "pos": "18% 45%",
+    "marks": [
+     {
+      "text": "부케팔로스",
+      "x": 0.3,
+      "y": 0.75,
+      "color": "yellow",
+      "on": "부케팔로스를"
+     }
+    ]
+   },
+   "label": "알렉산드로스 모자이크 · 폼페이 파우누스의 집 · 나폴리 국립고고학박물관 (이소스 또는 가우가멜라를 그린 것으로 봄)"
+  },
+  {
+   "id": "s085",
+   "act": 5,
+   "lines": [
+    {
+     "t": "기원전 331년 10월 1일 아침.",
+     "say": "기원전 삼백삼십일년 시월 일일 아침."
+    },
+    "두 군대가 천천히 가까워집니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "at": 0
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제5막",
+    "title": "오른쪽으로"
+   },
+   "callouts": [
+    {
+     "text": "기원전 331년 10월 1일 아침",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s086",
+   "act": 5,
+   "lines": [
+    "해가 떠오르자 평원 위로 먼지가 피어올랐습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "plain_dawn",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s087",
+   "act": 5,
+   "lines": [
+    "마케도니아 병사들 눈앞에는 끝이 보이지 않는 페르시아 전열이 서 있었죠.",
+    "그 전열은 알렉산드로스가 선 오른쪽 끝보다도 훨씬 더 오른쪽까지 뻗어 있었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "bessus",
+      "text": "더 오른쪽까지",
+      "color": "#c9242c",
+      "dy": 70,
+      "on": "뻗어"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s088",
+   "act": 5,
+   "lines": [
+    "그런데 마케도니아군이 이상하게 움직이기 시작합니다.",
+    "앞으로가 아니라 오른쪽으로.",
+    "대열 전체가 비스듬히 미끄러지듯 오른쪽으로 걸어갔습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0,
+      "on": "미끄러지듯"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.44,
+        36.5
+       ],
+       [
+        43.445,
+        36.487
+       ],
+       [
+        43.449,
+        36.474
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "on": "오른쪽으로"
+     }
+    ],
+    "tilt": 30
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s089",
+   "act": 5,
+   "lines": [
+    "페르시아 장군들은 당황했습니다.",
+    "저대로 계속 가면 어떻게 될까."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“저대로 가면?”",
+    "style": "red",
+    "sub": "당황한 페르시아 장군들",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s090",
+   "act": 5,
+   "lines": [
+    "알렉산드로스는 곧 평평하게 다져 놓은 땅 바깥으로 나가 버립니다.",
+    "울퉁불퉁한 땅에서는 낫 전차가 쓸모가 없죠.",
+    "며칠 동안 공들여 만든 무기가 한순간에 쓸모없어지는 겁니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "text": "다져 놓은 평지",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "edge",
+      "text": "땅 끝",
+      "color": "#111",
+      "dy": 60,
+      "on": "바깥으로"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s091",
+   "act": 5,
+   "lines": [
+    "다리우스는 따라 움직일 수밖에 없었습니다.",
+    "페르시아 전열도 왼쪽으로 늘어지기 시작합니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0,
+      "on": "늘어지기"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.49,
+        36.48
+       ],
+       [
+        43.488,
+        36.465
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "늘어지기"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s092",
+   "act": 5,
+   "lines": [
+    "다리우스가 보기에 이건 시간 문제였습니다.",
+    "조금만 더 가면 전차가 달릴 땅이 끝나 버리니까요."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "시간 문제",
+    "accent": "전차의 땅이 끝난다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s093",
+   "act": 5,
+   "lines": [
+    "그리고 그는 왼쪽 날개의 기병에게 명령합니다.",
+    "돌아 나가서 저들의 앞을 막아라."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“돌아 나가서 앞을 막아라”",
+    "style": "red",
+    "sub": "다리우스의 명령",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s094",
+   "act": 5,
+   "lines": [
+    "박트리아 기병과 기마 궁수들이 마케도니아 오른쪽 끝을 감싸러 달려 나갑니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.488,
+        36.468
+       ],
+       [
+        43.472,
+        36.452
+       ],
+       [
+        43.452,
+        36.458
+       ]
+      ],
+      "at": 0.1,
+      "n": 140,
+      "width": 0.5
+     }
+    ],
+    "tilt": 30
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s095",
+   "act": 5,
+   "lines": [
+    "다리우스가 노린 건 포위였습니다.",
+    "오른쪽 끝을 감싸 뒤로 돌아 들어가면 마케도니아군은 앞뒤로 갇히게 되죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.488,
+        36.468
+       ],
+       [
+        43.46,
+        36.447
+       ],
+       [
+        43.43,
+        36.46
+       ],
+       [
+        43.418,
+        36.49
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "on": "뒤로"
+     },
+     {
+      "k": "badge",
+      "p": "mcamp",
+      "text": "포위?",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "갇히게"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s096",
+   "act": 5,
+   "lines": [
+    "바로 그때 뒤로 꺾어 둔 날개가 움직입니다.",
+    "돌아 들어오는 적 기병을 비스듬한 대열이 정면으로 받아 냈습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        43.449,
+        36.476
+       ],
+       [
+        43.437,
+        36.468
+       ]
+      ],
+      "color": "#6fb3ff",
+      "glow": true,
+      "on": "꺾어"
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.488,
+        36.468
+       ],
+       [
+        43.472,
+        36.452
+       ],
+       [
+        43.452,
+        36.458
+       ]
+      ],
+      "at": 0,
+      "n": 140,
+      "width": 0.5
+     },
+     {
+      "k": "clash",
+      "p": [
+       43.44,
+       36.464
+      ],
+      "period": 0.9,
+      "size": 1.0,
+      "on": "받아"
+     }
+    ],
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s097",
+   "act": 5,
+   "lines": [
+    "알렉산드로스는 이 순간을 기다렸습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s097-photo",
+    "tag": "알렉산드로스 흉상 · 기원전 2세기",
+    "pos": "50% 25%"
+   },
+   "label": "알렉산드로스 흉상 · 기원전 2세기 · 이스탄불 고고학박물관"
+  },
+  {
+   "id": "s098",
+   "act": 5,
+   "lines": [
+    "그는 자기 기병을 한꺼번에 내보내지 않았습니다.",
+    "먼저 용병 기병 한 무리.",
+    "밀리면 또 한 무리.",
+    "조금씩 아껴 가며 내보내 적 기병을 그 자리에 붙잡아 둡니다."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "조금씩 아껴 내보낸 기병",
+    "items": [
+     {
+      "text": "용병 기병 한 무리",
+      "on": "먼저"
+     },
+     {
+      "text": "밀리면 또 한 무리",
+      "on": "또 한"
+     },
+     {
+      "text": "적 기병을 붙잡아 두다",
+      "on": "붙잡아"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s099",
+   "act": 5,
+   "lines": [
+    "싸움이 커질수록 페르시아 왼쪽에서는 점점 더 많은 기병이 빠져나와 그쪽으로 몰려갔죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.488,
+        36.468
+       ],
+       [
+        43.472,
+        36.452
+       ],
+       [
+        43.452,
+        36.458
+       ]
+      ],
+      "at": 0,
+      "n": 200,
+      "width": 0.6
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.49,
+        36.5
+       ],
+       [
+        43.482,
+        36.475
+       ],
+       [
+        43.466,
+        36.458
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "몰려갔죠"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s100",
+   "act": 5,
+   "lines": [
+    "다리우스는 다급해졌습니다.",
+    "그는 마침내 비장의 무기를 풉니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "비장의 무기",
+    "accent": "낫 전차",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s101",
+   "act": 5,
+   "lines": [
+    "낫 전차 돌격.",
+    "전차들이 땅을 울리며 마케도니아 대열로 달려듭니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "at": 0,
+      "n": 110,
+      "width": 0.55
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "color": "red",
+      "width": 1.2,
+      "on": "달려듭니다"
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "200대",
+      "sub": "낫 전차 돌격",
+      "sub2": "아리아노스 3권 13절",
+      "on": "낫 전차",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s102",
+   "act": 5,
+   "lines": [
+    "하지만 그 앞에는 투창병과 궁수들이 기다리고 있었습니다.",
+    "그들은 달려오는 말과 마부를 먼저 노렸습니다.",
+    "고삐를 잡아채고 마부를 끌어내렸죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "javelin_chariot",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "투창병 · 궁수",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s103",
+   "act": 5,
+   "lines": [
+    "그래도 뚫고 들어온 전차가 있었습니다.",
+    "그러자 보병들이 미리 약속한 대로 좌우로 갈라섭니다.",
+    "대열 한가운데에 길이 열린 겁니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "chariot_lanes",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "좌우로 갈라선 대열",
+     "style": "dark",
+     "at": 1.5,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s104",
+   "act": 5,
+   "lines": [
+    "전차는 그 빈 길을 그대로 지나쳐 대열 뒤로 빠져나갔습니다.",
+    "그리고 뒤에서 기다리던 병사들에게 하나씩 붙잡혔습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.449,
+        36.512
+       ],
+       [
+        43.43,
+        36.511
+       ],
+       [
+        43.415,
+        36.51
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.2
+     },
+     {
+      "k": "badge",
+      "p": [
+       43.449,
+       36.512
+      ],
+      "text": "열린 길",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "at": 0.4
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s105",
+   "act": 5,
+   "lines": [
+    "대왕의 가장 무서운 무기는 거의 아무도 베지 못했습니다."
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "낫 전차 200대",
+    "items": [
+     {
+      "label": "돌격한 전차",
+      "value": 200,
+      "display": "200대",
+      "color": "red",
+      "at": 0
+     },
+     {
+      "label": "대열을 부순 전차",
+      "value": 4,
+      "display": "거의 없음",
+      "color": "blue",
+      "on": "거의"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s106",
+   "act": 5,
+   "lines": [
+    {
+     "t": "코끼리 15마리는 이날 싸움에 나섰다는 기록조차 없습니다.",
+     "say": "코끼리 열다섯 마리는 이날 싸움에 나섰다는 기록조차 없습니다."
+    },
+    "다리우스가 준비한 것들이 하나씩 빗나가고 있었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "코끼리 15마리",
+    "style": "dark",
+    "sub": "싸움에 나섰다는 기록조차 없다",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s107",
+   "act": 5,
+   "lines": [
+    "그런데 진짜 일은 그다음에 벌어집니다.",
+    "페르시아 왼쪽 기병이 오른쪽 끝으로 몰려나가는 사이.",
+    "대왕의 전열 한가운데 근처에 틈이 하나 벌어졌거든요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.49,
+        36.5
+       ],
+       [
+        43.482,
+        36.475
+       ],
+       [
+        43.466,
+        36.458
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "gap",
+      "text": "틈",
+      "on": "틈이"
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "s108",
+   "act": 6,
+   "lines": [
+    "알렉산드로스는 그 틈을 봤습니다.",
+    "그는 오른쪽 끝에서 싸우던 기병을 이끌고 말머리를 돌립니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "gap",
+      "text": "틈",
+      "at": 0.3
+     }
+    ],
+    "tilt": 32
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제6막",
+    "title": "틈"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s109",
+   "act": 6,
+   "lines": [
+    "친위 기병대가 그의 뒤로 모여듭니다.",
+    "뾰족한 쐐기 모양이었죠.",
+    "쐐기 대형은 앞이 좁고 뒤로 갈수록 넓어집니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "wedge_charge",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "친위 기병대의 쐐기",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s110",
+   "act": 6,
+   "lines": [
+    "좁은 틈을 비집고 들어가 점점 벌려 나가기에 딱 맞는 모양이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "쐐기",
+    "style": "blue",
+    "sub": "앞은 좁게 · 뒤로 갈수록 넓게",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s111",
+   "act": 6,
+   "lines": [
+    "그 뒤를 가까이 있던 보병들이 따라붙었습니다.",
+    "쐐기는 틈을 향해 곧장 달려 들어갑니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.449,
+        36.478
+       ],
+       [
+        43.466,
+        36.49
+       ],
+       [
+        43.482,
+        36.5
+       ],
+       [
+        43.494,
+        36.521
+       ]
+      ],
+      "color": "blue",
+      "width": 1.4,
+      "on": "곧장"
+     }
+    ],
+    "tilt": 34,
+    "hud": true
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s112",
+   "act": 6,
+   "lines": [
+    "틈 너머에는 단 한 사람이 있었습니다.",
+    "전차 위의 다리우스."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s112-photo",
+    "tag": "알렉산드로스 모자이크 부분 · 로마 시대",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "전차 위의 다리우스",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "전차 위의"
+     }
+    ]
+   },
+   "label": "전차 위의 다리우스 3세 · 알렉산드로스 모자이크 부분 · 나폴리 국립고고학박물관"
+  },
+  {
+   "id": "s113",
+   "act": 6,
+   "lines": [
+    "알렉산드로스는 이소스에서처럼 대왕 한 사람만 겨냥했습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.449,
+        36.478
+       ],
+       [
+        43.466,
+        36.49
+       ],
+       [
+        43.482,
+        36.5
+       ],
+       [
+        43.494,
+        36.521
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "darius",
+      "text": "다리우스 · 근위대",
+      "on": "대왕"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "id": "s114",
+   "act": 6,
+   "lines": [
+    "페르시아 근위대가 버텼지만 쐐기는 점점 깊이 파고들었습니다.",
+    "사방에서 먼지가 일어 앞이 잘 보이지 않았다고 합니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s114-photo",
+    "tag": "샤를 르 브룅 · 1669",
+    "pos": "50% 40%"
+   },
+   "label": "아르벨라 전투의 알렉산드로스 · 샤를 르 브룅 부분 · 루브르 박물관",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s115",
+   "act": 6,
+   "lines": [
+    "그리고 이소스에서와 같은 일이 다시 일어납니다.",
+    "다리우스가 전차를 돌린 겁니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "darius_flees",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s116",
+   "act": 6,
+   "lines": [
+    "폼페이 모자이크 속 그 장면이 다시 한 번 되풀이된 셈이었죠.",
+    "아리아노스는 다리우스가 가장 먼저 달아났다고 적었습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s116-photo",
+    "tag": "가우가멜라 전투 부조 · 18세기",
+    "pos": "50% 45%",
+    "marks": [
+     {
+      "text": "가장 먼저 달아난 대왕 · 아리아노스",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "가장 먼저"
+     }
+    ]
+   },
+   "label": "달아나는 다리우스 · 가우가멜라 전투 부조 부분 · 스페인 국립고고학박물관 (르 브룅 그림을 본뜸)"
+  },
+  {
+   "id": "s117",
+   "act": 6,
+   "lines": [
+    "대왕이 등을 보이자 근처의 병사들도 무너지기 시작했습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.495,
+        36.525
+       ],
+       [
+        43.525,
+        36.51
+       ],
+       [
+        43.56,
+        36.49
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "clash",
+      "p": "darius",
+      "period": 0.9,
+      "size": 1.0,
+      "at": 0.3
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s118",
+   "act": 6,
+   "lines": [
+    "그런데 바로 그때 알렉산드로스에게 급한 전갈이 날아듭니다.",
+    "왼쪽 날개의 파르메니온이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "급한 전갈",
+    "style": "red",
+    "sub": "왼쪽 날개 · 파르메니온",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s119",
+   "act": 6,
+   "lines": [
+    "마자이오스가 이끄는 페르시아 오른쪽 기병이 그를 거세게 밀어붙이고 있었죠.",
+    "테살리아 기병이 버티고 있었지만 왼쪽은 무너지기 직전이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.49,
+        36.58
+       ],
+       [
+        43.466,
+        36.572
+       ],
+       [
+        43.446,
+        36.562
+       ]
+      ],
+      "color": "red",
+      "width": 1.2,
+      "on": "마자이오스가"
+     },
+     {
+      "k": "clash",
+      "p": "parm",
+      "period": 0.9,
+      "size": 1.0,
+      "on": "밀어붙이고"
+     },
+     {
+      "k": "badge",
+      "p": "parm",
+      "text": "테살리아 기병",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "테살리아"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s120",
+   "act": 6,
+   "lines": [
+    "게다가 밀집 보병 대열 사이에도 틈이 벌어졌습니다.",
+    "그 틈으로 페르시아와 인도 기병이 뚫고 들어가 마케도니아 진영을 덮칩니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.488,
+        36.54
+       ],
+       [
+        43.445,
+        36.53
+       ],
+       [
+        43.413,
+        36.526
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "뚫고"
+     },
+     {
+      "k": "badge",
+      "p": [
+       43.447,
+       36.53
+      ],
+      "text": "보병 대열의 틈",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "틈이"
+     },
+     {
+      "k": "unit",
+      "p": "mcamp",
+      "text": "진영",
+      "color": "blue",
+      "at": 0.2
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s121",
+   "act": 6,
+   "lines": [
+    "진영에는 이소스에서 붙잡힌 다리우스의 어머니 시시감비스가 있었습니다.",
+    "기병들이 그녀를 구하러 왔지만 그녀는 따라가지 않았다고 전해집니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "camp_raid",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "다리우스의 어머니 시시감비스",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s122",
+   "act": 6,
+   "lines": [
+    "뒷줄 보병들이 돌아서서 이들을 몰아냈습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.43,
+        36.553
+       ],
+       [
+        43.43,
+        36.5
+       ]
+      ],
+      "depth": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.43,
+        36.53
+       ],
+       [
+        43.42,
+        36.528
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "on": "돌아서서"
+     },
+     {
+      "k": "clash",
+      "p": "mcamp",
+      "period": 0.9,
+      "size": 1.0,
+      "on": "몰아냈습니다"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s123",
+   "act": 6,
+   "lines": [
+    "알렉산드로스 앞에는 두 갈래 길이 있었습니다.",
+    "달아나는 대왕을 끝까지 쫓을 것인가.",
+    "무너지는 왼쪽을 구하러 갈 것인가."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "쫓을 것인가",
+     "big": "달아나는 대왕",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "구할 것인가",
+     "big": "무너지는 왼쪽",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s124",
+   "act": 6,
+   "lines": [
+    "그는 말을 돌렸습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그는",
+    "accent": "말을 돌렸다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s125",
+   "act": 6,
+   "lines": [
+    "훗날 어떤 이들은 이 전갈 때문에 대왕을 놓쳤다며 파르메니온을 탓했습니다.",
+    "하지만 왼쪽이 무너졌다면 다 이긴 싸움도 뒤집힐 수 있었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "파르메니온 탓?",
+    "style": "dark",
+    "sub": "훗날의 논란 · 플루타르코스",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s126",
+   "act": 6,
+   "lines": [
+    "돌아가는 길에 그는 빠져나가던 페르시아 기병과 정면으로 부딪힙니다.",
+    "이날 가장 격렬한 기병전이었다고 하죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.494,
+        36.522
+       ],
+       [
+        43.475,
+        36.545
+       ],
+       [
+        43.452,
+        36.558
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "at": 0.1
+     },
+     {
+      "k": "clash",
+      "p": [
+       43.475,
+       36.545
+      ],
+      "period": 0.9,
+      "size": 1.3,
+      "on": "부딪힙니다"
+     }
+    ],
+    "tilt": 32,
+    "hud": true
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s127",
+   "act": 6,
+   "lines": [
+    {
+     "t": "친위 기병 약 60명이 쓰러졌고 가장 가까운 친구 헤파이스티온도 다쳤습니다.",
+     "say": "친위 기병 약 육십 명이 쓰러졌고 가장 가까운 친구 헤파이스티온도 다쳤습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "친위 기병 약 60명 전사",
+    "style": "red",
+    "sub": "헤파이스티온 부상 · 아리아노스 3권 15절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s128",
+   "act": 6,
+   "lines": [
+    "하지만 그가 도착했을 때 왼쪽 싸움은 이미 끝나 가고 있었습니다.",
+    "대왕이 달아났다는 소식이 퍼지자 마자이오스의 기병도 물러났거든요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.452,
+        36.565
+       ],
+       [
+        43.48,
+        36.578
+       ],
+       [
+        43.51,
+        36.59
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "on": "물러났거든요"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s129",
+   "act": 6,
+   "lines": [
+    "알렉산드로스는 다시 말을 몰아 해가 질 때까지 다리우스를 쫓았습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s129-photo",
+    "tag": "자크 쿠르투아 · 17세기",
+    "pos": "50% 50%"
+   },
+   "label": "가우가멜라에서 다리우스를 이긴 알렉산드로스 · 자크 쿠르투아"
+  },
+  {
+   "id": "s130",
+   "act": 6,
+   "lines": [
+    {
+     "t": "다음 날 그는 100km 가까이 떨어진 아르벨라에 닿습니다.",
+     "say": "다음 날 그는 백 킬로미터 가까이 떨어진 아르벨라에 닿습니다."
+    },
+    "그곳에는 대왕의 전차와 활 그리고 보물이 남아 있었습니다.",
+    "하지만 대왕은 이미 산을 넘어 사라진 뒤였죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "nineveh",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.5,
+        36.52
+       ],
+       [
+        43.7,
+        36.38
+       ],
+       [
+        44.01,
+        36.19
+       ]
+      ],
+      "color": "blue",
+      "width": 1.1,
+      "at": 0.3
+     },
+     {
+      "k": "lock",
+      "p": "arbela",
+      "text": "아르벨라 · 오늘날 에르빌",
+      "on": "아르벨라에"
+     },
+     {
+      "k": "badge",
+      "p": "arbela",
+      "text": "대왕의 전차 · 활 · 보물",
+      "color": "#111",
+      "dy": 80,
+      "on": "보물이"
+     }
+    ],
+    "flight": [
+     "field",
+     "nineveh"
+    ],
+    "flightDur": 2.4,
+    "tilt": 20
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s131",
+   "act": 6,
+   "lines": [
+    "페르시아군이 얼마나 죽었는지는 아무도 정확히 모릅니다.",
+    {
+     "t": "옛 기록마다 4만 명에서 수십만 명까지 제각각이거든요.",
+     "say": "옛 기록마다 사만 명에서 수십만 명까지 제각각이거든요."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "페르시아군 전사자 · 옛 기록",
+    "items": [
+     {
+      "label": "아리아노스",
+      "value": 300000,
+      "display": "30만",
+      "color": "red",
+      "at": 0.2
+     },
+     {
+      "label": "디오도로스",
+      "value": 90000,
+      "display": "9만",
+      "color": "red",
+      "at": 0.5
+     },
+     {
+      "label": "쿠르티우스",
+      "value": 40000,
+      "display": "4만",
+      "color": "red",
+      "on": "사만"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s132",
+   "act": 6,
+   "lines": [
+    {
+     "t": "마케도니아 쪽 전사자는 기록에 따라 100명에서 500명 정도였습니다.",
+     "say": "마케도니아 쪽 전사자는 기록에 따라 백 명에서 오백 명 정도였습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "마케도니아 전사자",
+    "style": "blue",
+    "sub": "기록에 따라 100~500명",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s133",
+   "act": 7,
+   "lines": [
+    "가우가멜라 전투 뒤 바빌론은 싸우지 않고 성문을 열었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "nineveh",
+    "to": "meso",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        42.2,
+        37.3
+       ],
+       [
+        42.7,
+        36.95
+       ],
+       [
+        43.13,
+        36.36
+       ],
+       [
+        43.3,
+        35.7
+       ],
+       [
+        43.8,
+        34.9
+       ],
+       [
+        44.4,
+        33.3
+       ],
+       [
+        45.5,
+        32.5
+       ],
+       [
+        47.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        38.0,
+        36.9
+       ],
+       [
+        38.3,
+        36.3
+       ],
+       [
+        39.0,
+        35.95
+       ],
+       [
+        40.1,
+        35.3
+       ],
+       [
+        40.9,
+        34.5
+       ],
+       [
+        41.9,
+        34.3
+       ],
+       [
+        43.0,
+        33.4
+       ],
+       [
+        44.3,
+        32.5
+       ],
+       [
+        46.0,
+        31.0
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "babylon",
+      "text": "바빌론 · 성문을 열다",
+      "at": 0.8
+     }
+    ],
+    "flight": [
+     "nineveh",
+     "meso"
+    ],
+    "flightDur": 2.4,
+    "tilt": 14
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제7막",
+    "title": "답"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s134",
+   "act": 7,
+   "lines": [
+    "바빌론의 점토판에는 이렇게 적혀 있죠.",
+    "왕은 군대에게 버림받았다.",
+    "군사들은 동쪽으로 달아났다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s134-photo",
+    "tag": "바빌론 점토판 · 기원전 331년",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "“왕은 군대에게 버림받았다”",
+      "x": 0.5,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "버림받았다"
+     }
+    ]
+   },
+   "label": "다리우스 3세의 패배와 알렉산드로스의 바빌론 입성을 적은 점토판 뒷면 · 대영박물관"
+  },
+  {
+   "id": "s135",
+   "act": 7,
+   "lines": [
+    "알렉산드로스는 바빌론에 이어 수사를 지나 페르세폴리스에 들어갑니다.",
+    "대왕들이 세운 궁전은 이듬해 불길에 휩싸였죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s135-photo",
+    "tag": "페르세폴리스 · 오늘날",
+    "pos": "50% 55%"
+   },
+   "label": "오늘날의 페르세폴리스 유적 · 이란"
+  },
+  {
+   "id": "s136",
+   "act": 7,
+   "lines": [
+    "다리우스는 동쪽 엑바타나로 달아났습니다.",
+    "다시 군대를 모으려 했지만 이제 아무도 그를 믿지 않았습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "iran",
+    "to": "iran",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        44.01,
+        36.19
+       ],
+       [
+        46.0,
+        35.3
+       ],
+       [
+        48.51,
+        34.8
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "on": "엑바타나로"
+     },
+     {
+      "k": "lock",
+      "p": "ecbatana",
+      "text": "엑바타나",
+      "on": "엑바타나로"
+     }
+    ],
+    "tilt": 12
+   }
+  },
+  {
+   "id": "s137",
+   "act": 7,
+   "lines": [
+    {
+     "t": "기원전 330년 여름.",
+     "say": "기원전 삼백삼십년 여름."
+    },
+    "알렉산드로스가 뒤쫓아 오자 박트리아 총독 베소스가 대왕을 붙잡습니다.",
+    "그리고 그를 찔러 죽이고 달아났죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "iran",
+    "to": "iran",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        44.42,
+        32.54
+       ],
+       [
+        48.25,
+        32.19
+       ],
+       [
+        52.89,
+        29.935
+       ],
+       [
+        50.5,
+        33.5
+       ],
+       [
+        48.51,
+        34.8
+       ],
+       [
+        51.5,
+        35.7
+       ],
+       [
+        54.3,
+        36.17
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        51.0,
+        35.6
+       ],
+       [
+        54.3,
+        36.17
+       ]
+      ],
+      "color": "red",
+      "width": 1.0,
+      "at": 0.3
+     },
+     {
+      "k": "lock",
+      "p": "darius_death",
+      "text": "다리우스가 숨진 곳 (추정)",
+      "on": "붙잡습니다"
+     },
+     {
+      "k": "badge",
+      "p": "darius_death",
+      "text": "베소스",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "베소스가"
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "기원전 330년 여름",
+     "style": "red",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s138",
+   "act": 7,
+   "lines": [
+    "알렉산드로스가 도착했을 때 대왕은 이미 숨을 거둔 뒤였습니다.",
+    "그는 자기 망토를 벗어 대왕의 시신을 덮어 주었다고 전해집니다.",
+    "그리고 시신을 페르세폴리스로 보내 왕의 예를 갖춰 묻게 했습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s138-photo",
+    "tag": "조반니 안토니오 펠레그리니 · 18세기",
+    "pos": "50% 50%"
+   },
+   "label": "다리우스의 시신 앞의 알렉산드로스 · 조반니 안토니오 펠레그리니"
+  },
+  {
+   "id": "s139",
+   "act": 7,
+   "lines": [
+    {
+     "t": "200년 넘게 이어진 페르시아 제국은 이렇게 무너졌습니다.",
+     "say": "이백 년 넘게 이어진 페르시아 제국은 이렇게 무너졌습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "200년 넘은 제국의 끝",
+    "style": "dark",
+    "sub": "아케메네스 페르시아 · 기원전 550~330년",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s140",
+   "act": 7,
+   "lines": [
+    "알렉산드로스는 이제 아시아의 왕이라 불리게 됩니다.",
+    {
+     "t": "그는 그 뒤 인도까지 나아갔다가 바빌론에서 32살의 나이로 세상을 떠납니다.",
+     "say": "그는 그 뒤 인도까지 나아갔다가 바빌론에서 서른두 살의 나이로 세상을 떠납니다."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s140-photo",
+    "tag": "알렉산드로스 흉상 · 로마 시대 복제품",
+    "pos": "50% 25%",
+    "marks": [
+     {
+      "text": "서른두 살에 세상을 떠나다",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "서른두"
+     }
+    ]
+   },
+   "label": "알렉산드로스 흉상 '아자라 헤르마' · 리시포스 원작의 로마 시대 복제품 · 루브르 박물관"
+  },
+  {
+   "id": "s141",
+   "act": 7,
+   "lines": [
+    "이제 처음의 질문으로 돌아가 볼까요.",
+    "적이 직접 골라 다진 전장에서 알렉산드로스는 왜 일부러 오른쪽으로 비켜 걸었을까요?"
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.44,
+        36.556
+       ],
+       [
+        43.44,
+        36.497
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     }
+    ],
+    "tilt": 30
+   },
+   "hook": {
+    "question": {
+     "text": "적이 직접 골라 다진 전장에서\n알렉산드로스는 왜\n오른쪽으로 비켜 걸었을까",
+     "on": "왜",
+     "kicker": "■ 답 ■"
+    }
+   }
+  },
+  {
+   "id": "s142",
+   "act": 7,
+   "lines": [
+    "다리우스의 진짜 무기는 군대가 아니라 땅이었습니다.",
+    {
+     "t": "전차 200대는 다져 놓은 평지 위에서만 무기였거든요.",
+     "say": "전차 이백 대는 다져 놓은 평지 위에서만 무기였거든요."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "text": "다리우스의 진짜 무기 · 땅",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        43.484,
+        36.522
+       ],
+       [
+        43.465,
+        36.517
+       ],
+       [
+        43.447,
+        36.513
+       ]
+      ],
+      "at": 0.3,
+      "n": 90,
+      "width": 0.5
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s143",
+   "act": 7,
+   "lines": [
+    "알렉산드로스가 오른쪽으로 걸은 건 그 땅 밖으로 싸움을 끌어내기 위해서였습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "zone",
+      "path": [
+       [
+        43.452,
+        36.567
+       ],
+       [
+        43.484,
+        36.567
+       ],
+       [
+        43.484,
+        36.49
+       ],
+       [
+        43.452,
+        36.49
+       ]
+      ],
+      "color": 0,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.49,
+        36.47
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       9,
+       8,
+       7,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0.3
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        43.44,
+        36.5
+       ],
+       [
+        43.445,
+        36.487
+       ],
+       [
+        43.449,
+        36.474
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "at": 0.2
+     },
+     {
+      "k": "badge",
+      "p": "edge",
+      "text": "땅 밖으로",
+      "color": "#1f5fbf",
+      "dy": 60,
+      "at": 0.8
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s144",
+   "act": 7,
+   "lines": [
+    "따라오지 않으면 전차를 버려야 했습니다.",
+    "따라오면 전열이 늘어나야 했죠."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "따라오지 않으면",
+     "big": "전차를 버린다",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "따라오면",
+     "big": "전열이 늘어난다",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s145",
+   "act": 7,
+   "lines": [
+    "다리우스는 따라오는 쪽을 골랐습니다.",
+    "그리고 길게 늘어난 전열은 결국 찢어졌습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.447,
+        36.537
+       ],
+       [
+        43.449,
+        36.476
+       ]
+      ],
+      "depth": [
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "face": -1,
+      "px": 3.0,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        43.49,
+        36.588
+       ],
+       [
+        43.486,
+        36.452
+       ]
+      ],
+      "depth": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       2,
+       0.4,
+       2,
+       6,
+       5
+      ],
+      "face": 1,
+      "px": 3.0,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "gap",
+      "text": "틈",
+      "on": "찢어졌습니다"
+     }
+    ],
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s146",
+   "act": 7,
+   "lines": [
+    "그 틈은 알렉산드로스가 뚫은 것이 아니었습니다.",
+    "적이 스스로 벌린 것이었죠."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그 틈은",
+    "accent": "적이 스스로 벌렸다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s147",
+   "act": 7,
+   "lines": [
+    {
+     "t": "그날 알렉산드로스가 한 일은 3가지였습니다.",
+     "say": "그날 알렉산드로스가 한 일은 세 가지였습니다."
+    },
+    "적이 고른 땅에서 싸우지 않았습니다.",
+    "적을 움직이게 했습니다.",
+    "그리고 틈이 열린 순간 단 한 사람만 노렸습니다."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "그날 알렉산드로스가 한 일",
+    "items": [
+     {
+      "text": "적이 고른 땅에서 싸우지 않았다",
+      "on": "적이 고른"
+     },
+     {
+      "text": "적을 움직이게 했다",
+      "on": "움직이게"
+     },
+     {
+      "text": "틈이 열린 순간 한 사람만",
+      "on": "한 사람만"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s148",
+   "act": 7,
+   "lines": [
+    "숫자는 다리우스의 편이었습니다.",
+    "땅도 다리우스의 편이었습니다.",
+    "하지만 누가 움직일지를 정한 건 알렉산드로스였습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "숫자 · 땅",
+     "big": "다리우스",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "움직임",
+     "big": "알렉산드로스",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s149",
+   "act": 7,
+   "lines": [
+    "무모한 돌격처럼 보였던 그 한 번의 돌격은 사실 아침부터 준비된 것이었습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "wedge_charge",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "아침부터 준비된 단 한 번의 돌격",
+     "style": "dark",
+     "at": 0.5,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s150",
+   "act": 7,
+   "lines": [
+    "가우가멜라 평원은 지금도 이라크 북부에 그대로 펼쳐져 있습니다.",
+    "정확히 어디에서 싸웠는지는 아직도 학자들이 찾고 있죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "plain_today",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s151",
+   "act": 7,
+   "lines": [
+    {
+     "t": "다음 이야기는 기원전 216년 이탈리아 남부입니다.",
+     "say": "다음 이야기는 기원전 이백십육년 이탈리아 남부입니다."
+    },
+    "일부러 가운데를 밀리게 한 장군 한니발.",
+    "칸나이 전투로 찾아오겠습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "다음 이야기",
+    "style": "yellow",
+    "sub": "칸나이 전투 · 기원전 216년",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s152",
+   "act": 7,
+   "lines": [
+    "영상이 도움이 되셨다면 구독과 좋아요 그리고 공유 부탁드립니다."
+   ],
+   "visual": {
+    "type": "endcard",
+    "title": "가우가멜라 평원에서 싸운 모든 이들을 기억하며",
+    "q": "s152-photo"
+   },
+   "tail": 1.0
+  }
+ ]
+}
