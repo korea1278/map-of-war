@@ -204,8 +204,8 @@ P = {
     "mcamp": [43.41, 36.525, "마케도니아 진영"], "pcamp": [43.51, 36.53, "페르시아 진영"], "edge": [43.468, 36.488, "다져 놓은 땅 끝"],
 }
 V = {
-    "empire": {"center": [38.5, 34.2], "span": 34.0}, "levant": {"center": [32.8, 33.0], "span": 14.0}, "meso": {"center": [41.6, 35.0], "span": 9.5},
-    "nineveh": {"center": [43.55, 36.4], "span": 1.5}, "field": {"center": [43.466, 36.517], "span": 0.16}, "iran": {"center": [48.0, 33.2], "span": 16.0},
+    "empire": {"center": [38.5, 36.3], "span": 34.0}, "levant": {"center": [33.0, 33.3], "span": 16.0}, "meso": {"center": [41.6, 34.6], "span": 12.0},
+    "nineveh": {"center": [43.55, 36.4], "span": 1.5}, "field": {"center": [43.462, 36.516], "span": 0.2}, "iran": {"center": [48.0, 33.2], "span": 16.0},
 }
 LAND = {"home": ["368"], "foreign": ["300", "792", "760", "364", "422", "376", "400", "818", "414", "682", "196", "100", "807", "8", "51", "31", "268", "275", "4", "795"]}
 
@@ -253,6 +253,14 @@ BACK_LINE = [[43.43, 36.53], [43.42, 36.528]]
 RETURN = [[43.494, 36.522], [43.475, 36.545], [43.452, 36.558]]
 MAZ_BACK = [[43.452, 36.565], [43.48, 36.578], [43.51, 36.59]]
 
+# 2026-11-23 미리보기 뒤 수정: 전장이 남북으로 너무 길어 화면(기울인 지도) 밖으로 잘림 → 위도를 중심(36.517) 기준 0.45배로 눌러 한 화면에
+_SQ = lambda q: [q[0], round(36.517 + (q[1] - 36.517) * 0.45, 5)]
+for _n in ("G_LINE", "G_LINE2", "G_SHIFT", "P_LINE", "P_STRETCH", "LEVEL", "CHARIOTS", "BESSUS_RIDE", "ENCIRCLE", "FLANK", "WEDGE", "D_FLEE", "MAZAEUS", "RAID", "BACK_LINE", "RETURN", "MAZ_BACK"):
+    globals()[_n] = [_SQ(q) for q in globals()[_n]]
+for _k in ("darius", "gap", "bessus", "mazaeus", "parm", "alex", "mcamp", "pcamp", "edge"):
+    P[_k] = _SQ(P[_k][:2]) + [P[_k][2]]
+FP = lambda *pts: [_SQ(list(q)) for q in pts]   # 장면 안에 직접 적은 전장 좌표용
+
 LOCK = lambda p, at=0.3, text=None, on=None: dict({"k": "lock", "p": p, "text": text or P[p][2]}, **({"on": on} if on else {"at": at}))
 badge = lambda p, t, c="#111", at=0.3, dy=-70, on=None: dict({"k": "badge", "p": p, "text": t, "color": c, "dy": dy}, **({"on": on} if on else {"at": at}))
 red_a = lambda path, at=0.3, w=1.0, on=None: dict({"k": "arrow", "path": path, "color": "red", "width": w}, **({"on": on} if on else {"at": at}))
@@ -264,11 +272,11 @@ unit = lambda p, t, color="red", at=0.1, pulse=False: dict({"k": "unit", "p": p,
 clash = lambda p, at=0.3, size=1.0, on=None: dict({"k": "clash", "p": p, "period": 0.9, "size": size}, **({"on": on} if on else {"at": at}))
 swarm = lambda path, at=0.1, n=120, width=None, color=None: dict({"k": "swarm", "path": path, "at": at, "n": n}, **({"width": width} if width else {}), **({"color": color} if color else {}))
 line = lambda path, at=0.1, color="#ffd400", on=None: dict({"k": "line", "path": path, "color": color, "glow": True}, **({"on": on} if on else {"at": at}))
-zone = lambda path=LEVEL, text=None, color="#d8b46a", at=0, on=None: dict({"k": "zone", "path": path, "color": color}, **({"text": text} if text else {}), **({"on": on} if on else {"at": at}))
-GPH = lambda at=0, path=G_LINE, depth=G_EVEN, **kw: dict({"k": "phalanx", "path": path, "depth": depth, "face": -1, "px": 3.0, "color": "blue", "at": at}, **kw)
+zone = lambda path=None, text=None, at=0, on=None, color="#d8b46a": dict({"k": "zone", "path": path or LEVEL, "color": color}, **({"text": text} if text else {}), **({"on": on} if on else {"at": at}))
+GPH = lambda at=0, path=G_LINE, depth=G_EVEN, **kw: dict({"k": "phalanx", "path": path, "depth": depth, "face": -1, "px": 5.5, "color": "blue", "at": at}, **kw)
 GPH2 = lambda at=0, **kw: GPH(at, G_LINE2, G_THIN, **kw)
 GPHS = lambda at=0, **kw: GPH(at, G_SHIFT, G_EVEN, **kw)
-PPH = lambda at=0, path=P_LINE, depth=P_DEEP, **kw: dict({"k": "phalanx", "path": path, "depth": depth, "face": 1, "px": 3.0, "color": "red", "at": at}, **kw)
+PPH = lambda at=0, path=P_LINE, depth=P_DEEP, **kw: dict({"k": "phalanx", "path": path, "depth": depth, "face": 1, "px": 5.5, "color": "red", "at": at}, **kw)
 PPHS = lambda at=0, depth=P_DEEP, **kw: PPH(at, P_STRETCH, depth, **kw)
 top = lambda t, s="yellow", at=0: [{"text": t, "style": s, "at": at, "pos": "top"}]
 low = lambda t, s="dark", at=0: [{"text": t, "style": s, "at": at, "pos": "lower"}]
@@ -287,11 +295,11 @@ sc(2, m("empire", "field", [LOCK("gaugamela", 1.0, "가우가멜라 평원")], f
 sc(1, ph("darius_close", pos="50% 35%", marks=[mk("페르시아 대왕 다리우스 3세", 0.5, 0.15, "다리우스")]), label=plabel("darius_close"))
 sc(2, m("field", "field", [zone(LEVEL, "다져 놓은 평지", on="평평하게"), PPH(0), swarm(CHARIOTS, 0, 90, 0.5)], tilt=32, hud=True),
    hook={"hud": [HUD("200대", "낫을 단 전차", "아리아노스", on="이백", count=False)]})
-sc(2, ranks([5] * 10, [8] * 16, title="약 4만 7천 대 수만~수십만"),
+sc(2, ranks([5] * 10, [8] * 16),
    hook={"hud": [HUD("약 4만 7천", "알렉산드로스의 군대", "보병 4만 · 기병 7천 · 아리아노스", on="사만칠천", count=False),
                  HUD("5만~10만+", "다리우스의 군대", "현대 추정", color="#FF3B30", on="훨씬", count=False)]})
 sc(1, ai("darius_flees"), label=DRAMA, hook={"hud": [HUD("먼저 도망친 쪽", "대왕 다리우스", "해가 지기 전", count=False, on="등을")]})
-sc(3, m("field", "field", [zone(LEVEL, "다리우스가 고른 땅"), PPH(0), GPH(0), blue_a([[43.44, 36.5], [43.445, 36.485], [43.449, 36.47]], on="오른쪽으로", w=1.2)], tilt=30),
+sc(3, m("field", "field", [zone(LEVEL, "다리우스가 고른 땅"), PPH(0), GPH(0), blue_a([[43.44, 36.50935], [43.445, 36.5026], [43.449, 36.49585]], on="오른쪽으로", w=1.2)], tilt=30),
    sfx=PING(2.2))
 sc(2, ai("chariot_lanes"), label=DRAMA, hook={"hud": [HUD("거의 0", "낫 전차가 부순 대열", "아리아노스", color="#FF3B30", on="거의", count=False)]})
 sc(2, black("무모한 돌격?", "운이었을까"), hook={"neg": {"text": "운 좋은 돌격", "on": "무모한", "xOn": "그랬을까요"}})
@@ -380,7 +388,7 @@ sc(2, ai("persians_awake"), label=DRAMA, sfx=WIND(0))
 sc(2, ai("alex_sleeps"), label=DRAMA)
 sc(3, text("“우리는 이미 이겼다”", "yellow", "플루타르코스 『알렉산드로스 전』 32장"))
 sc(3, m("field", "field", [GPH(0), GPH2(on="두 번째 줄")], tilt=32), callouts=top("두 겹의 대열", "blue"))
-sc(3, m("field", "field", [GPH(0), GPH2(0), line([[43.44, 36.556], [43.43, 36.566]], on="비스듬히", color="#6fb3ff"), line([[43.44, 36.497], [43.43, 36.487]], on="비스듬히", color="#6fb3ff")], tilt=32),
+sc(3, m("field", "field", [GPH(0), GPH2(0), line([[43.44, 36.53455], [43.43, 36.53905]], on="비스듬히", color="#6fb3ff"), line([[43.44, 36.508], [43.43, 36.5035]], on="비스듬히", color="#6fb3ff")], tilt=32),
    callouts=low("뒤로 꺾은 양쪽 끝", "dark", 1.0))
 sc(1, cmp("마케도니아 전열", "짧다", "페르시아 전열", "훨씬 길다", "blue", "red"))
 sc(2, text("네모난 상자", "blue", "어디로 돌아와도 막는다"))
@@ -398,29 +406,29 @@ sc(2, m("field", "field", [GPH(0), PPH(0), zone(LEVEL, None, 0)], tilt=32, hud=T
    callouts=top("기원전 331년 10월 1일 아침"), sfx=SW(0))
 sc(1, ai("plain_dawn"), label=DRAMA, sfx=WIND(0))
 sc(2, m("field", "field", [GPH(0), PPH(0), badge("bessus", "더 오른쪽까지", "#c9242c", on="뻗어", dy=70)], tilt=30))
-sc(3, m("field", "field", [zone(LEVEL, None, 0), PPH(0), GPHS(on="미끄러지듯"), blue_a([[43.44, 36.5], [43.445, 36.487], [43.449, 36.474]], on="오른쪽으로", w=1.2)], tilt=30),
+sc(3, m("field", "field", [zone(LEVEL, None, 0), PPH(0), GPHS(on="미끄러지듯"), blue_a([[43.44, 36.50935], [43.445, 36.5035], [43.449, 36.49765]], on="오른쪽으로", w=1.2)], tilt=30),
    sfx=PING(1.2))
 sc(2, text("“저대로 가면?”", "red", "당황한 페르시아 장군들"))
 sc(3, m("field", "field", [zone(LEVEL, "다져 놓은 평지", 0), PPH(0), GPHS(0), badge("edge", "땅 끝", "#111", on="바깥으로", dy=60)], tilt=32))
-sc(2, m("field", "field", [zone(LEVEL, None, 0), GPHS(0), PPHS(on="늘어지기"), red_a([[43.49, 36.48], [43.488, 36.465], [43.486, 36.452]], on="늘어지기")], tilt=30))
+sc(2, m("field", "field", [zone(LEVEL, None, 0), GPHS(0), PPHS(on="늘어지기"), red_a([[43.49, 36.50035], [43.488, 36.4936], [43.486, 36.48775]], on="늘어지기")], tilt=30))
 sc(2, black("시간 문제", "전차의 땅이 끝난다"))
 sc(2, text("“돌아 나가서 앞을 막아라”", "red", "다리우스의 명령"))
 sc(1, m("field", "field", [GPHS(0), PPHS(0), swarm(BESSUS_RIDE, 0.1, 140, 0.5)], tilt=30), sfx=FAR(0))
 sc(2, m("field", "field", [GPHS(0), PPHS(0), dash_r(ENCIRCLE, on="뒤로"), badge("mcamp", "포위?", "#c9242c", on="갇히게", dy=-70)], tilt=30))
-sc(2, m("field", "field", [GPHS(0), line(FLANK, on="꺾어", color="#6fb3ff"), swarm(BESSUS_RIDE, 0, 140, 0.5), clash([43.44, 36.464], on="받아")], tilt=32), sfx=PING(1.6))
+sc(2, m("field", "field", [GPHS(0), line(FLANK, on="꺾어", color="#6fb3ff"), swarm(BESSUS_RIDE, 0, 140, 0.5), clash([43.44, 36.49315], on="받아")], tilt=32), sfx=PING(1.6))
 sc(1, ph("bust_ist", pos="50% 25%"), label=plabel("bust_ist"))
 sc(4, checklist("조금씩 아껴 내보낸 기병", [{"text": "용병 기병 한 무리", "on": "먼저"}, {"text": "밀리면 또 한 무리", "on": "또 한"}, {"text": "적 기병을 붙잡아 두다", "on": "붙잡아"}]))
-sc(1, m("field", "field", [GPHS(0), PPHS(0), swarm(BESSUS_RIDE, 0, 200, 0.6), red_a([[43.49, 36.5], [43.482, 36.475], [43.466, 36.458]], on="몰려갔죠")], tilt=30))
+sc(1, m("field", "field", [GPHS(0), PPHS(0), swarm(BESSUS_RIDE, 0, 200, 0.6), red_a([[43.49, 36.50935], [43.482, 36.4981], [43.466, 36.49045]], on="몰려갔죠")], tilt=30))
 sc(2, black("비장의 무기", "낫 전차"))
 sc(2, m("field", "field", [GPHS(0), PPHS(0), swarm(CHARIOTS, 0, 110, 0.55), red_a(CHARIOTS, on="달려듭니다", w=1.2)], tilt=32, hud=True),
    hook={"hud": [HUD("200대", "낫 전차 돌격", "아리아노스 3권 13절", on="낫 전차", count=False)]})
 sc(3, ai("javelin_chariot"), label=DRAMA, callouts=top("투창병 · 궁수"))
 sc(3, ai("chariot_lanes"), label=DRAMA, callouts=low("좌우로 갈라선 대열", "dark", 1.5))
-sc(2, m("field", "field", [GPHS(0), dash_r([[43.449, 36.512], [43.43, 36.511], [43.415, 36.51]], 0.2), badge([43.449, 36.512], "열린 길", "#1f5fbf", 0.4, -70)], tilt=32))
+sc(2, m("field", "field", [GPHS(0), dash_r([[43.449, 36.51475], [43.43, 36.5143], [43.415, 36.51385]], 0.2), badge([43.449, 36.51475], "열린 길", "#1f5fbf", 0.4, -70)], tilt=32))
 sc(1, bars("낫 전차 200대", [{"label": "돌격한 전차", "value": 200, "display": "200대", "color": "red", "at": 0},
                           {"label": "대열을 부순 전차", "value": 4, "display": "거의 없음", "color": "blue", "on": "거의"}]))
 sc(2, text("코끼리 15마리", "dark", "싸움에 나섰다는 기록조차 없다"))
-sc(3, m("field", "field", [GPHS(0), PPHS(0, depth=P_GAP), red_a([[43.49, 36.5], [43.482, 36.475], [43.466, 36.458]], 0.2), LOCK("gap", on="틈이")], tilt=32, hud=True), sfx=PING(2.4))
+sc(3, m("field", "field", [GPHS(0), PPHS(0, depth=P_GAP), red_a([[43.49, 36.50935], [43.482, 36.4981], [43.466, 36.49045]], 0.2), LOCK("gap", on="틈이")], tilt=32, hud=True), sfx=PING(2.4))
 next_act()
 
 # ===== 제6막 · 틈 =====
@@ -437,13 +445,13 @@ sc(2, ph("man_flight", pos="50% 45%", marks=[mk("가장 먼저 달아난 대왕 
 sc(1, m("field", "field", [PPHS(0, depth=P_GAP), dash_r(D_FLEE, 0.1), clash("darius", 0.3)], tilt=32))
 sc(2, text("급한 전갈", "red", "왼쪽 날개 · 파르메니온"))
 sc(2, m("field", "field", [GPHS(0), red_a(MAZAEUS, on="마자이오스가", w=1.2), clash("parm", on="밀어붙이고"), badge("parm", "테살리아 기병", "#1f5fbf", on="테살리아", dy=-70)], tilt=30))
-sc(2, m("field", "field", [GPHS(0), red_a(RAID, on="뚫고"), badge([43.447, 36.53], "보병 대열의 틈", "#c9242c", on="틈이", dy=-70), unit("mcamp", "진영", "blue", 0.2)], tilt=30))
+sc(2, m("field", "field", [GPHS(0), red_a(RAID, on="뚫고"), badge([43.447, 36.52285], "보병 대열의 틈", "#c9242c", on="틈이", dy=-70), unit("mcamp", "진영", "blue", 0.2)], tilt=30))
 sc(2, ai("camp_raid"), label=DRAMA, callouts=top("다리우스의 어머니 시시감비스"))
 sc(1, m("field", "field", [GPH2(0), blue_a(BACK_LINE, on="돌아서서"), clash("mcamp", on="몰아냈습니다")], tilt=30))
 sc(3, cmp("쫓을 것인가", "달아나는 대왕", "구할 것인가", "무너지는 왼쪽", "red", "blue"))
 sc(1, black("그는", "말을 돌렸다"))
 sc(2, text("파르메니온 탓?", "dark", "훗날의 논란 · 플루타르코스"))
-sc(2, m("field", "field", [blue_a(RETURN, 0.1, 1.2), clash([43.475, 36.545], on="부딪힙니다", size=1.3)], tilt=32, hud=True), sfx=FAR(0))
+sc(2, m("field", "field", [blue_a(RETURN, 0.1, 1.2), clash([43.475, 36.5296], on="부딪힙니다", size=1.3)], tilt=32, hud=True), sfx=FAR(0))
 sc(1, text("친위 기병 약 60명 전사", "red", "헤파이스티온 부상 · 아리아노스 3권 15절"))
 sc(2, m("field", "field", [GPHS(0), dash_r(MAZ_BACK, on="물러났거든요")], tilt=30))
 sc(1, ph("courtois", pos="50% 50%"), label=plabel("courtois"))
@@ -468,7 +476,7 @@ sc(1, text("200년 넘은 제국의 끝", "dark", "아케메네스 페르시아 
 sc(2, ph("azara", pos="50% 25%", marks=[mk("서른두 살에 세상을 떠나다", 0.5, 0.12, "서른두")]), label=plabel("azara"))
 sc(2, m("field", "field", [zone(LEVEL, None, 0), PPH(0), GPH(0)], tilt=30), hook={"question": {"text": QUESTION, "on": "왜", "kicker": "■ 답 ■"}})
 sc(2, m("field", "field", [zone(LEVEL, "다리우스의 진짜 무기 · 땅", 0), PPH(0), swarm(CHARIOTS, 0.3, 90, 0.5)], tilt=32))
-sc(1, m("field", "field", [zone(LEVEL, None, 0), PPH(0), GPHS(0.3), blue_a([[43.44, 36.5], [43.445, 36.487], [43.449, 36.474]], 0.2, 1.2), badge("edge", "땅 밖으로", "#1f5fbf", 0.8, 60)], tilt=30))
+sc(1, m("field", "field", [zone(LEVEL, None, 0), PPH(0), GPHS(0.3), blue_a([[43.44, 36.50935], [43.445, 36.5035], [43.449, 36.49765]], 0.2, 1.2), badge("edge", "땅 밖으로", "#1f5fbf", 0.8, 60)], tilt=30))
 sc(2, cmp("따라오지 않으면", "전차를 버린다", "따라오면", "전열이 늘어난다", "red", "red"))
 sc(2, m("field", "field", [GPHS(0), PPHS(0, depth=P_GAP), LOCK("gap", on="찢어졌습니다")], tilt=32), sfx=PING(1.6))
 sc(2, black("그 틈은", "적이 스스로 벌렸다"))
@@ -478,7 +486,7 @@ sc(3, cmp("숫자 · 땅", "다리우스", "움직임", "알렉산드로스", "r
 sc(1, ai("wedge_charge"), label=DRAMA, callouts=low("아침부터 준비된 단 한 번의 돌격", "dark", 0.5))
 sc(2, ai("plain_today"), label=DRAMA)
 sc(3, text("다음 이야기", "yellow", "칸나이 전투 · 기원전 216년"))
-sc(1, {"type": "endcard", "title": "가우가멜라 평원에서 싸운 모든 이들을 기억하며", "q": pin("mosaic")}, tail=1.0)
+sc(1, {"type": "endcard", "title": "가우가멜라에서 싸운 모든 이들을 기억하며", "q": pin("mosaic")}, tail=1.0)
 assert CUR["i"] == len(ACTS[6]), (CUR, len(ACTS[6]))
 SOMBER_FROM = [s["id"] for s in S if s.get("chapter", {}).get("num") == "제7막"][0]
 
