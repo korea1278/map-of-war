@@ -1,0 +1,324 @@
+{
+ "text": "천구백오십 년 팔월 칠일 새벽, 마산 서쪽 서북산. 안개 속에서 첫 총성이 울렸습니다. 이 산의 주인은 그 뒤로 열아홉 번이나 바뀌었는데요. 부산까지 남은 거리는 직선으로 사십 킬로미터 남짓이었습니다. 그렇다면 이 작은 바위산은, 어떻게 마지막 문이 될 수 있었을까요?",
+ "samples": [
+  {
+   "tag": "01_민호_v3",
+   "voice": "U1cJYS4EdbaHmfR7YzHd",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "민호",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "02_민호_v2",
+   "voice": "U1cJYS4EdbaHmfR7YzHd",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "민호",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "03_창욱_v3",
+   "voice": "ZJCNdZEjYwkOElxugmW2",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "창욱",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "04_창욱_v2",
+   "voice": "ZJCNdZEjYwkOElxugmW2",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "창욱",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "05_수현_v3",
+   "voice": "WqVy7827vjE2r3jWvbnP",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "수현",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "06_수현_v2",
+   "voice": "WqVy7827vjE2r3jWvbnP",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "수현",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "07_테오_v3",
+   "voice": "CxErO97xpQgQXYmapDKX",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "테오",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "08_테오_v2",
+   "voice": "CxErO97xpQgQXYmapDKX",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "테오",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "09_훈민_v3",
+   "voice": "MpbDJfQJUYUnp0i1QvOZ",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "훈민",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "10_훈민_v2",
+   "voice": "MpbDJfQJUYUnp0i1QvOZ",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "훈민",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "11_최_v3",
+   "voice": "ZNSVYmudV9pOqphY0x8C",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "최",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "12_최_v2",
+   "voice": "ZNSVYmudV9pOqphY0x8C",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "최",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "13_승현_v3",
+   "voice": "0mlAtfsvMzFpppUuNWkV",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "승현",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "14_승현_v2",
+   "voice": "0mlAtfsvMzFpppUuNWkV",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "승현",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "15_김_v3",
+   "voice": "8yL2rVx40vjDeu5pTbg6",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "김",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "16_김_v2",
+   "voice": "8yL2rVx40vjDeu5pTbg6",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "김",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "17_정_v3",
+   "voice": "aurnUodFzOtofecLd3T1",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "정",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "18_정_v2",
+   "voice": "aurnUodFzOtofecLd3T1",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "정",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "19_정기_v3",
+   "voice": "HCANy6ACvOWyndVWS0gV",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "정기",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "20_정기_v2",
+   "voice": "HCANy6ACvOWyndVWS0gV",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "정기",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "21_남천_v3",
+   "voice": "5ON5Fnz24cnOozEQfGAm",
+   "model": "eleven_v3",
+   "set": {
+    "stability": 0.5,
+    "similarity_boost": 0.78,
+    "use_speaker_boost": true
+   },
+   "name": "남천",
+   "desc": null,
+   "added": null,
+   "ok": true
+  },
+  {
+   "tag": "22_남천_v2",
+   "voice": "5ON5Fnz24cnOozEQfGAm",
+   "model": "eleven_multilingual_v2",
+   "set": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+   },
+   "name": "남천",
+   "desc": null,
+   "added": null,
+   "ok": true
+  }
+ ]
+}
