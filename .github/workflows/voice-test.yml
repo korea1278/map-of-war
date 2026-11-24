@@ -17,6 +17,10 @@ on:
         description: "샘플 문장 (비우면 기본 다큐 문장)"
         default: ""
         required: false
+      models:
+        description: "비교할 모델 (쉼표) — eleven_v3,eleven_multilingual_v2"
+        default: "eleven_multilingual_v2"
+        required: false
 
 permissions:
   contents: write
@@ -30,6 +34,7 @@ jobs:
       N_SHARED: ${{ github.event.inputs.n_shared }}
       EXTRA: ${{ github.event.inputs.extra }}
       TEXT: ${{ github.event.inputs.text }}
+      MODELS: ${{ github.event.inputs.models }}
     steps:
       - uses: actions/checkout@v4
         with:

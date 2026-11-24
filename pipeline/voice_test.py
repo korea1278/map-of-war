@@ -65,10 +65,27 @@ for c in ([] if os.environ.get("EXTRA") else cands[:FIXED_N]):  # 목소리 직�
 FIXED = len(cands)
 # EXTRA="이름:목소리ID,..." 를 주면 공유 라이브러리 검색(응답 지연 잦음) 대신 그 목소리들로 바로 생성
 EXTRA = [x.split(":") for x in (os.environ.get("EXTRA") or "").split(",") if ":" in x]
-for i, (nm, vid) in enumerate(EXTRA):
-    cands.append({"tag": f"{5 + i:02d}_{nm}", "voice": vid, "model": "eleven_multilingual_v2", "set": BASE, "name": nm})
+# 2026-11-24: MODELS="eleven_v3,eleven_multilingual_v2" — 같은 목소리를 모델별로 비교 (v3는 stability 0.0/0.5/1.0만 받음)
+MODELS = [m.strip() for m in (os.environ.get("MODELS") or "eleven_multilingual_v2").split(",") if m.strip()]
+V3SET = {"stability": 0.5, "similarity_boost": 0.78, "use_speaker_boost": True}
+k = 0
+for nm, vid in EXTRA:
+    for m in MODELS:
+        k += 1
+        short = "v3" if m.startswith("eleven_v3") else "v2"
+        cands.append({"tag": f"{k:02d}_{nm}_{short}", "voice": vid, "model": m, "set": V3SET if short == "v3" else BASE, "name": nm})
 if EXTRA:
     N_SHARED = 0
+    # 공유 라이브러리 목소리는 owner id가 있어야 내 목록에 추가할 수 있음 → 이름으로 검색해서 채움
+    for c in cands[FIXED_N:]:
+        try:
+            r = req("GET", f"{API}/shared-voices", headers=H, tries=2, timeout=40, params={"search": c["name"], "language": "ko", "page_size": 30})
+            for v in (r.json().get("voices", []) if r is not None and r.ok else []):
+                if v["voice_id"] == c["voice"]:
+                    c["owner"] = v.get("public_owner_id"); c["desc"] = (v.get("description") or "")[:200]
+                    break
+        except Exception as e:
+            print("  owner 검색 실패", c["name"], e)
 # 공유 라이브러리: 한국어 남성 — 나레이션·교육용 우선, 많이 쓰인 순
 seen, shared = set(c["voice"] for c in cands), []
 for params in ([] if EXTRA else [{"use_cases": "narrative_story"}, {"use_cases": "informative_educational"}, {}]):
@@ -95,8 +112,21 @@ for v in shared:
                   "owner": v.get("public_owner_id"), "desc": (v.get("description") or "")[:200], "name": v["name"]})
     n += 1
 
+added = {}
 for c in cands[FIXED_N:]:
+    # 같은 목소리를 두 모델로 만들 때 두 번째부터는 이미 추가된 ID 사용
+    if c["voice"] in added:
+        c["voice"] = added[c["voice"]]
+    orig = c["voice"]
     make(c)
+    if c.get("added"):
+        added[orig] = c["voice"]
+
+# 비교용으로 내 목소리 목록에 추가한 공유 목소리는 칸을 차지하므로 다시 지움 (KEEP_ADDED=1이면 남김)
+if os.environ.get("KEEP_ADDED") != "1":
+    for vid in set(added.values()):
+        d = req("DELETE", f"{API}/voices/{vid}", headers=H, tries=2, timeout=40)
+        print("  비교용 목소리 정리", vid, d.status_code if d is not None else "응답 없음")
 
 (OUT / "list.json").write_text(json.dumps({"text": TEXT, "samples": report}, ensure_ascii=False, indent=1))
 if not any(x["ok"] for x in report): sys.exit("샘플을 하나도 못 만듦")
