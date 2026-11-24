@@ -1,0 +1,9022 @@
+{
+ "title": "일부러 밀렸다: 칸나이 전투",
+ "subtitle": "가운데를 내주고 로마군 전체를 가둔 한니발 · 기원전 216년",
+ "lang": "ko",
+ "sub_max": 28,
+ "voice": "ZJCNdZEjYwkOElxugmW2",
+ "tempo": 1.02,
+ "tts_mode": "act",
+ "style": 2,
+ "sfx_policy": "doc",
+ "bgm_rel_db": -24,
+ "sync_limit": 0.5,
+ "target_sec": 1240,
+ "midrolls": [
+  "s042",
+  "s090",
+  "s114"
+ ],
+ "land": {
+  "home": [
+   "380"
+  ],
+  "foreign": [
+   "724",
+   "250",
+   "788",
+   "12",
+   "504",
+   "620",
+   "756",
+   "40",
+   "705",
+   "191",
+   "434",
+   "8",
+   "70",
+   "499",
+   "300",
+   "276",
+   "470"
+  ]
+ },
+ "places": {
+  "carthage": [
+   10.32,
+   36.85,
+   "카르타고"
+  ],
+  "newcarthage": [
+   -0.98,
+   37.6,
+   "카르타고 노바"
+  ],
+  "saguntum": [
+   -0.27,
+   39.68,
+   "사군툼"
+  ],
+  "sicily": [
+   14.2,
+   37.5,
+   "시칠리아"
+  ],
+  "rhone": [
+   4.65,
+   43.95,
+   "론강"
+  ],
+  "alps": [
+   6.9,
+   45.25,
+   "알프스"
+  ],
+  "pyrenees": [
+   1.5,
+   42.6,
+   "피레네산맥"
+  ],
+  "trebia": [
+   9.6,
+   45.0,
+   "트레비아강"
+  ],
+  "trasimene": [
+   12.1,
+   43.17,
+   "트라시메노 호수"
+  ],
+  "rome": [
+   12.48,
+   41.9,
+   "로마"
+  ],
+  "gaul": [
+   10.5,
+   45.3,
+   "북부 이탈리아 · 갈리아 부족"
+  ],
+  "falernus": [
+   14.1,
+   41.15,
+   "산으로 둘러싸인 분지"
+  ],
+  "cannae": [
+   16.15,
+   41.296,
+   "칸나이"
+  ],
+  "venusia": [
+   15.81,
+   40.96,
+   "베누시아"
+  ],
+  "zama": [
+   9.45,
+   36.3,
+   "자마"
+  ],
+  "sea_mid": [
+   8.0,
+   39.5,
+   "바다는 로마의 것"
+  ],
+  "plain": [
+   16.14,
+   41.278,
+   "아우피두스강 옆 평평한 들판"
+  ],
+  "paullus": [
+   16.115,
+   41.2845,
+   "파울루스 · 로마 기병"
+  ],
+  "varro": [
+   16.169,
+   41.2835,
+   "바로 · 동맹군 기병"
+  ],
+  "servilius": [
+   16.142,
+   41.287,
+   "세르빌리우스 · 로마 보병"
+  ],
+  "hasdrubal": [
+   16.106,
+   41.2715,
+   "하스드루발 · 무거운 기병"
+  ],
+  "numid": [
+   16.175,
+   41.2705,
+   "누미디아 기병"
+  ],
+  "hannibal": [
+   16.142,
+   41.2735,
+   "한니발 · 마고"
+  ],
+  "afr_l": [
+   16.12,
+   41.268,
+   "아프리카 보병"
+  ],
+  "afr_r": [
+   16.164,
+   41.268,
+   "아프리카 보병"
+  ],
+  "center": [
+   16.142,
+   41.277,
+   "가운데"
+  ],
+  "rcamp": [
+   16.128,
+   41.297,
+   "로마 진영"
+  ],
+  "ccamp": [
+   16.142,
+   41.258,
+   "카르타고 진영"
+  ],
+  "cannae_hill": [
+   16.15,
+   41.296,
+   "칸나이 언덕"
+  ],
+  "river_pt": [
+   16.104,
+   41.279,
+   "아우피두스강"
+  ]
+ },
+ "views": {
+  "westmed": {
+   "center": [
+    4.5,
+    40.5
+   ],
+   "span": 26.0
+  },
+  "italy": {
+   "center": [
+    12.8,
+    42.0
+   ],
+   "span": 10.0
+  },
+  "apulia": {
+   "center": [
+    15.9,
+    41.25
+   ],
+   "span": 1.6
+  },
+  "field": {
+   "center": [
+    16.14,
+    41.277
+   ],
+   "span": 0.09
+  }
+ },
+ "music": [
+  {
+   "id": "drone",
+   "from": "s001",
+   "to": "s010",
+   "volume": 0.2
+  },
+  {
+   "id": "theme",
+   "from": "s011",
+   "to": "s041",
+   "volume": 0.16
+  },
+  {
+   "id": "analysis",
+   "from": "s042",
+   "to": "s066",
+   "volume": 0.16
+  },
+  {
+   "id": "tension",
+   "from": "s067",
+   "to": "s089",
+   "volume": 0.17
+  },
+  {
+   "id": "march",
+   "from": "s090",
+   "to": "s113",
+   "volume": 0.16
+  },
+  {
+   "id": "somber",
+   "from": "s114",
+   "to": "s138",
+   "volume": 0.17
+  },
+  {
+   "id": "analysis",
+   "from": "s139",
+   "to": "s167",
+   "volume": 0.16
+  }
+ ],
+ "ai_images": {
+  "crushed": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Roman legionaries whose heads are round balls painted crimson red with a small golden eagle emblem, wearing bronze helmets with tall plumes, mail shirts and large curved oval shields packed shoulder to shoulder in a dense mass, trapped and unable to move, surrounded on all sides by ancient Carthaginian soldiers whose heads are round balls painted deep navy blue with a small golden crescent-and-disc emblem, wearing bronze helmets and linen armor, thick dust clouds at sunset, no blood, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "center_pushed": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Roman legionaries whose heads are round balls painted crimson red with a small golden eagle emblem, wearing bronze helmets with tall plumes, mail shirts and large curved oval shields in a deep formation pushing forward with shields, while half-naked Gallic warriors whose heads are round balls painted forest green, with long swords and wooden shields step slowly backward in a curved line, dust in the air, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "oath": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a small boy whose head is a round ball painted deep navy blue, placing his hand on a stone altar with a sacrificial fire, while his stern bearded father whose head is a round ball painted deep navy blue with a golden crescent emblem stands behind him in a dim Carthaginian temple, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "elephant_raft": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: war elephants standing on huge wooden rafts covered with earth being towed across a wide fast river by boats, ancient Carthaginian soldiers whose heads are round balls painted deep navy blue with a small golden crescent-and-disc emblem, wearing bronze helmets and linen armor rowing, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "trebia_ambush": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Carthaginian soldiers whose heads are round balls painted deep navy blue with a small golden crescent-and-disc emblem, wearing bronze helmets and linen armor leaping out from tall reeds and bushes along a frozen winter riverbank to attack ancient Roman legionaries whose heads are round balls painted crimson red with a small golden eagle emblem, wearing bronze helmets with tall plumes, mail shirts and large curved oval shields from behind, snow and sleet, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "trasimene_fog": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: ancient Roman legionaries whose heads are round balls painted crimson red with a small golden eagle emblem, wearing bronze helmets with tall plumes, mail shirts and large curved oval shields marching in a long column along a narrow lakeshore path in thick morning fog, while ancient Carthaginian soldiers whose heads are round balls painted deep navy blue with a small golden crescent-and-disc emblem, wearing bronze helmets and linen armor wait hidden on the hills above, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "oxen_torches": "A herd of oxen with burning bundles of branches tied to their horns running up a dark mountain slope at night, a line of flickering fires, ancient soldiers watching from a pass, painterly realistic digital illustration, cinematic, warm palette, film grain, no people's faces in close-up, no text, no letters.",
+  "gisgo_laugh": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a Carthaginian general whose head is a round ball painted deep navy blue with a golden crescent-and-disc emblem, with a short dark curly beard, wearing a crested bronze helmet, a bronze muscle cuirass and a dark red cloak laughing heartily on a low hill with his officers ancient Carthaginian soldiers whose heads are round balls painted deep navy blue with a small golden crescent-and-disc emblem, wearing bronze helmets and linen armor, looking at a vast Roman army in the distance across a flat plain, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "cavalry_river": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: heavy cavalry fighting in a chaotic tangled melee on a narrow strip of land beside a river, some riders dismounted fighting on foot, Iberian and Gallic horsemen against ancient Roman legionaries whose heads are round balls painted crimson red with a small golden eagle emblem, wearing bronze helmets with tall plumes, mail shirts and large curved oval shields on horses, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "africans_turn": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: African infantry whose heads are round balls painted deep navy blue, wearing captured Roman bronze helmets and mail and carrying Roman oval shields, turning sideways together to attack the exposed flank of a dense Roman formation, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "hasdrubal_ride": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a large mass of Carthaginian heavy cavalry whose heads are round balls painted deep navy blue galloping behind the back of a huge Roman infantry formation across a dusty plain, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "paullus_refuses": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: an old grey-haired Roman consul whose head is a round ball painted crimson red with a golden eagle emblem, wearing a bronze cuirass and a white toga-like cloak with a red border wounded and sitting on a rock on the battlefield, refusing with a raised hand as a young Roman officer whose head is a round ball painted crimson red offers him a horse, dust and chaos behind, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "maharbal": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a Numidian cavalry commander whose head is a round ball painted dark navy blue, pointing urgently toward the horizon at night while a Carthaginian general whose head is a round ball painted deep navy blue with a golden crescent-and-disc emblem, with a short dark curly beard, wearing a crested bronze helmet, a bronze muscle cuirass and a dark red cloak sits calmly in a tent lit by an oil lamp, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "varro_returns": "Semi-realistic dramatic digital illustration in the style of polished history-YouTube countryball cartoons: a tired Roman consul whose head is a round ball painted crimson red arriving at a city gate, greeted respectfully by a crowd of Roman senators in white togas whose heads are round balls painted crimson red, 216 BC ancient Mediterranean, leaving calm uncluttered dark background area in the upper right, absolutely no speech bubbles, no balloons, no text boxes, no captions, no text, no letters.",
+  "thumb_bg": "Cinematic photorealistic war painting, 16:9 wide shot from behind a huge Roman legion formation with red cloaks and oval shields, pushing into a curved enemy line on a dusty sunlit plain, the enemy line bending backward like a crescent while enemy infantry and cavalry close in from both sides and behind, a river on the left, dramatic golden backlight, full color, high contrast, the lower third of the frame darker, no text, no letters, no logos."
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "act": 1,
+   "lines": [
+    {
+     "t": "기원전 216년 8월 2일 아침.",
+     "say": "기원전 이백십육년 팔월 이일 아침."
+    },
+    "이탈리아 남부 칸나이 마을 앞 강가의 들판입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "plain",
+      "text": "칸나이 들판",
+      "at": 1.2
+     }
+    ],
+    "flight": [
+     "italy",
+     "apulia",
+     "field"
+    ],
+    "flightDur": 4.6,
+    "hud": true,
+    "tilt": 26
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "기원전 216년 8월 2일",
+      "sub": "칸나이 들판",
+      "sub2": "이탈리아 남부 아풀리아",
+      "at": 0.0,
+      "count": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s002",
+   "act": 1,
+   "lines": [
+    "로마는 역사상 가장 큰 군대를 이 들판에 세웠습니다.",
+    {
+     "t": "약 8만 6천 명이었죠.",
+     "say": "약 팔만 육천 명이었죠."
+    }
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ]
+    },
+    "title": "칸나이 · 기원전 216년"
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "약 8만 6천",
+      "sub": "로마군",
+      "sub2": "로마 역사상 가장 큰 군대 · 폴리비오스",
+      "on": "팔만",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s003",
+   "act": 1,
+   "lines": [
+    {
+     "t": "맞은편 카르타고의 한니발은 약 5만 명이었습니다.",
+     "say": "맞은편 카르타고의 한니발은 약 오만 명이었습니다."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s003-photo",
+    "tag": "한니발 흉상 · 로마 시대",
+    "pos": "50% 30%"
+   },
+   "label": "한니발 흉상 · 카푸아 출토 · 나폴리 국립고고학박물관 소장 (한니발인지는 확실하지 않음)",
+   "hook": {
+    "hud": [
+     {
+      "big": "약 5만",
+      "sub": "한니발의 군대",
+      "sub2": "보병 4만 · 기병 1만",
+      "on": "오만",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s004",
+   "act": 1,
+   "lines": [
+    "해가 질 무렵 들판에 남은 로마군은 거의 없었습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "crushed",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "hook": {
+    "hud": [
+     {
+      "big": "거의 0",
+      "sub": "들판에 남은 로마군",
+      "sub2": "해가 질 무렵",
+      "on": "거의",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s005",
+   "act": 1,
+   "lines": [
+    "한니발은 맨 앞 가운데 줄을 일부러 얇게 세웠습니다.",
+    "그런데 그 얇은 줄이 바로 한니발이 서 있던 곳이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "일부러 얇게",
+      "color": "#1f5fbf",
+      "dy": 60,
+      "on": "얇게"
+     },
+     {
+      "k": "lock",
+      "p": "hannibal",
+      "text": "한니발 · 마고",
+      "on": "한니발이 서"
+     }
+    ],
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "s006",
+   "act": 1,
+   "lines": [
+    "로마군은 그 가운데를 밀고 또 밀었습니다.",
+    "그런데 밀면 밀수록 더 깊이 갇혀 들어갔습니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ]
+    },
+    "labels": [
+     {
+      "text": "밀수록 더 깊이",
+      "x": 0.5,
+      "y": 0.5,
+      "color": "red",
+      "on": "깊이"
+     }
+    ],
+    "bendOn": "밀면"
+   }
+  },
+  {
+   "id": "s007",
+   "act": 1,
+   "lines": [
+    {
+     "t": "그날 하루 로마군 5만에서 7만 명이 쓰러졌다고 전해집니다.",
+     "say": "그날 하루 로마군 오만에서 칠만 명이 쓰러졌다고 전해집니다."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "center_pushed",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "hook": {
+    "hud": [
+     {
+      "big": "5만~7만",
+      "sub": "쓰러진 로마군",
+      "sub2": "리비우스 · 폴리비오스",
+      "on": "오만에서",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s008",
+   "act": 1,
+   "lines": [
+    "숫자가 많은 쪽이 방심했다가 진 싸움이라고들 하죠.",
+    "그런데 정말 그랬을까요?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "숫자의 방심?",
+    "accent": "운이었을까",
+    "accentAt": 0.5
+   },
+   "hook": {
+    "neg": {
+     "text": "방심한 대군",
+     "on": "방심했다가",
+     "xOn": "그랬을까요"
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "act": 1,
+   "lines": [
+    {
+     "t": "일부러 중앙을 밀리게 한 한니발은 어떻게 2배 가까운 로마군을 통째로 가뒀을까요?",
+     "say": "일부러 중앙을 밀리게 한 한니발은 어떻게 두 배 가까운 로마군을 통째로 가뒀을까요?"
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     }
+    ],
+    "tilt": 30
+   },
+   "hook": {
+    "question": {
+     "text": "일부러 중앙을 밀리게 한 한니발은\n어떻게 2배 가까운 로마군을\n통째로 가뒀을까",
+     "at": 0.02
+    }
+   }
+  },
+  {
+   "id": "s010",
+   "act": 1,
+   "lines": [
+    {
+     "t": "이야기는 9살 소년이 제단 앞에서 했던 맹세에서 시작합니다.",
+     "say": "이야기는 아홉 살 소년이 제단 앞에서 했던 맹세에서 시작합니다."
+    }
+   ],
+   "visual": {
+    "type": "titlecard",
+    "title": "일부러 밀렸다",
+    "sub": "칸나이 전투 · 기원전 216년",
+    "at": 0,
+    "q": "s010-photo"
+   },
+   "flash": true
+  },
+  {
+   "id": "s011",
+   "act": 2,
+   "lines": [
+    {
+     "t": "기원전 237년 무렵.",
+     "say": "기원전 이백삼십칠년 무렵."
+    },
+    "지금의 튀니지 바닷가 도시 카르타고입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "lock",
+      "p": "carthage",
+      "text": "카르타고",
+      "at": 0.6
+     }
+    ],
+    "tilt": 14
+   },
+   "chapter": {
+    "num": "제2막",
+    "title": "알프스를 넘은 맹세"
+   },
+   "callouts": [
+    {
+     "text": "기원전 237년 무렵 · 카르타고",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    },
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s012",
+   "act": 2,
+   "lines": [
+    "카르타고는 몇 해 전 로마와의 첫 전쟁에서 졌습니다.",
+    "시칠리아를 빼앗기고 큰 배상금까지 물어야 했죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "marker",
+      "p": "carthage",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "sicily",
+      "text": "로마에 빼앗긴 시칠리아",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "시칠리아를"
+     }
+    ],
+    "tilt": 14
+   }
+  },
+  {
+   "id": "s013",
+   "act": 2,
+   "lines": [
+    "장군 하밀카르는 패배를 받아들이지 않았습니다.",
+    "그는 바다 건너 에스파냐로 떠나기 전 신전에 제물을 바쳤습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "하밀카르",
+    "style": "blue",
+    "sub": "한니발의 아버지 · 카르타고의 장군",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s014",
+   "act": 2,
+   "lines": [
+    {
+     "t": "그리고 9살 아들을 제단 앞으로 데려왔다고 하죠.",
+     "say": "그리고 아홉 살 아들을 제단 앞으로 데려왔다고 하죠."
+    },
+    "평생 로마의 친구가 되지 않겠다고 맹세하거라."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "oath",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "아홉 살 소년의 맹세",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s015",
+   "act": 2,
+   "lines": [
+    "소년은 맹세했습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "소년은",
+    "accent": "맹세했다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s016",
+   "act": 2,
+   "lines": [
+    "그 소년의 이름이 한니발입니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s016-photo",
+    "tag": "한니발 흉상 · 1900년 무렵 사진",
+    "pos": "50% 30%",
+    "marks": [
+     {
+      "text": "한니발",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "한니발입니다"
+     }
+    ]
+   },
+   "label": "한니발로 전해지는 흉상 · 카푸아 출토 · 1900년 무렵 사진"
+  },
+  {
+   "id": "s017",
+   "act": 2,
+   "lines": [
+    "한니발은 에스파냐의 군대 막사에서 자랐습니다.",
+    {
+     "t": "아버지가 죽고 매형도 죽자 26살에 군대를 물려받았죠.",
+     "say": "아버지가 죽고 매형도 죽자 스물여섯 살에 군대를 물려받았죠."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "lock",
+      "p": "newcarthage",
+      "text": "카르타고 노바",
+      "on": "에스파냐의"
+     },
+     {
+      "k": "badge",
+      "p": "newcarthage",
+      "text": "26살 · 군대를 물려받다",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "스물여섯"
+     }
+    ],
+    "tilt": 14
+   }
+  },
+  {
+   "id": "s018",
+   "act": 2,
+   "lines": [
+    {
+     "t": "기원전 219년 그는 로마와 가까운 도시 사군툼을 포위했습니다.",
+     "say": "기원전 이백십구년 그는 로마와 가까운 도시 사군툼을 포위했습니다."
+    },
+    {
+     "t": "사군툼은 8달을 버티다 무너졌죠.",
+     "say": "사군툼은 여덟 달을 버티다 무너졌죠."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "marker",
+      "p": "newcarthage",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "saguntum",
+      "text": "사군툼",
+      "on": "사군툼을"
+     },
+     {
+      "k": "badge",
+      "p": "saguntum",
+      "text": "8달 포위",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "여덟"
+     }
+    ],
+    "tilt": 16
+   }
+  },
+  {
+   "id": "s019",
+   "act": 2,
+   "lines": [
+    "로마는 전쟁을 선포했습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "로마의 선전 포고",
+    "style": "red",
+    "sub": "두 번째 전쟁의 시작",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s020",
+   "act": 2,
+   "lines": [
+    "로마는 바다를 쥐고 있었습니다.",
+    "카르타고가 배를 타고 이탈리아로 오는 길은 막혀 있었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        10.32,
+        36.85
+       ],
+       [
+        11.5,
+        38.8
+       ],
+       [
+        12.3,
+        41.6
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.2
+     },
+     {
+      "k": "badge",
+      "p": "sea_mid",
+      "text": "바다는 로마의 것",
+      "color": "#c9242c",
+      "dy": -60,
+      "on": "바다를"
+     }
+    ],
+    "tilt": 12
+   }
+  },
+  {
+   "id": "s021",
+   "act": 2,
+   "lines": [
+    "그래서 한니발은 아무도 생각하지 못한 길을 골랐습니다.",
+    "걸어서 가기로 한 겁니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "아무도 생각 못 한 길",
+    "accent": "걸어서",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s022",
+   "act": 2,
+   "lines": [
+    "에스파냐에서 피레네산맥을 넘고 론강을 건너 알프스를 넘는 길이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        -0.98,
+        37.6
+       ],
+       [
+        0.6,
+        40.8
+       ],
+       [
+        2.5,
+        42.4
+       ],
+       [
+        4.65,
+        43.95
+       ],
+       [
+        6.9,
+        45.25
+       ],
+       [
+        7.7,
+        45.07
+       ],
+       [
+        9.6,
+        45.0
+       ]
+      ],
+      "color": "blue",
+      "width": 1.1,
+      "on": "피레네산맥을"
+     },
+     {
+      "k": "lock",
+      "p": "alps",
+      "text": "알프스",
+      "on": "알프스를"
+     }
+    ],
+    "tilt": 14
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "id": "s023",
+   "act": 2,
+   "lines": [
+    "군대는 한 나라 사람들이 아니었습니다.",
+    "아프리카의 보병과 에스파냐의 전사들.",
+    "말 위에서 창을 던지는 누미디아 기병.",
+    "돌팔매 하나로 사람을 쓰러뜨린다는 발레아레스 섬의 투석병까지."
+   ],
+   "visual": {
+    "type": "reasons",
+    "title": "한니발의 군대",
+    "items": [
+     {
+      "text": "아프리카 보병",
+      "on": "아프리카의"
+     },
+     {
+      "text": "에스파냐 전사",
+      "on": "전사들"
+     },
+     {
+      "text": "누미디아 기병",
+      "on": "누미디아"
+     },
+     {
+      "text": "발레아레스 투석병",
+      "on": "발레아레스"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s024",
+   "act": 2,
+   "lines": [
+    "말도 풍습도 다른 이들을 묶은 건 한니발 한 사람이었죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "하나로 묶은 사람",
+    "style": "yellow",
+    "sub": "말도 풍습도 다른 군대",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s025",
+   "act": 2,
+   "lines": [
+    {
+     "t": "코끼리 37마리도 함께였습니다.",
+     "say": "코끼리 서른일곱 마리도 함께였습니다."
+    },
+    {
+     "t": "그때 한니발의 나이 29살이었습니다.",
+     "say": "그때 한니발의 나이 스물아홉 살이었습니다."
+    }
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s025-photo",
+    "tag": "앙리 폴 모트 · 1878",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "코끼리 37마리",
+      "x": 0.5,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "코끼리"
+     }
+    ]
+   },
+   "label": "론강을 건너는 한니발의 군대 · 앙리 폴 모트"
+  },
+  {
+   "id": "s026",
+   "act": 2,
+   "lines": [
+    "론강에서는 뗏목에 흙을 덮어 땅처럼 보이게 해서 코끼리를 건넸다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "elephant_raft",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "론강 · 흙을 덮은 뗏목",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s027",
+   "act": 2,
+   "lines": [
+    "알프스는 가을의 눈과 낭떠러지였습니다.",
+    "산속 부족들은 바위를 굴려 행렬을 덮쳤습니다.",
+    "병사와 말이 비탈길에서 미끄러져 계곡으로 떨어졌죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s027-photo",
+    "tag": "윌리엄 터너 · 1812",
+    "pos": "50% 45%",
+    "marks": [
+     {
+      "text": "가을의 알프스",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "알프스는"
+     }
+    ]
+   },
+   "label": "눈보라 속 알프스를 넘는 한니발 · 윌리엄 터너 · 테이트 브리튼",
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s028",
+   "act": 2,
+   "lines": [
+    {
+     "t": "보름 만에 산을 내려왔을 때 남은 병력은 보병 2만 명과 기병 6천 명.",
+     "say": "보름 만에 산을 내려왔을 때 남은 병력은 보병 이만 명과 기병 육천 명."
+    },
+    "떠날 때의 절반도 되지 않았다고 폴리비오스는 적었습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "떠날 때",
+     "big": "훨씬 많았다",
+     "icon": "none",
+     "color": "dark"
+    },
+    "right": {
+     "title": "알프스를 넘은 뒤",
+     "big": "보병 2만 · 기병 6천",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s029",
+   "act": 2,
+   "lines": [
+    "로마 사람들은 처음에 믿지 않았습니다.",
+    "적이 북쪽 산에서 걸어 내려왔다는 소식이었으니까요."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“적이 산에서 내려왔다”",
+    "style": "dark",
+    "sub": "믿지 못한 로마",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s030",
+   "act": 2,
+   "lines": [
+    "북부 이탈리아의 갈리아 부족들은 로마를 미워했습니다.",
+    "그들이 하나둘 한니발의 군대에 들어왔죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "italy",
+    "items": [
+     {
+      "k": "lock",
+      "p": "gaul",
+      "text": "북부 이탈리아 · 갈리아 부족",
+      "on": "갈리아"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        7.7,
+        45.07
+       ],
+       [
+        9.0,
+        45.1
+       ],
+       [
+        10.5,
+        45.3
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "on": "하나둘"
+     }
+    ],
+    "flight": [
+     "westmed",
+     "italy"
+    ],
+    "flightDur": 2.4,
+    "tilt": 16
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s031",
+   "act": 2,
+   "lines": [
+    "그해 겨울 트레비아강에서 첫 큰 싸움이 벌어집니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "italy",
+    "items": [
+     {
+      "k": "lock",
+      "p": "trebia",
+      "text": "트레비아강",
+      "on": "트레비아강에서"
+     }
+    ],
+    "tilt": 16
+   },
+   "callouts": [
+    {
+     "text": "기원전 218년 겨울",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s032",
+   "act": 2,
+   "lines": [
+    {
+     "t": "한니발은 강가 덤불 속에 동생 마고의 병사 2천 명을 숨겨 두었습니다.",
+     "say": "한니발은 강가 덤불 속에 동생 마고의 병사 이천 명을 숨겨 두었습니다."
+    }
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "trebia_ambush",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s033",
+   "act": 2,
+   "lines": [
+    "로마군은 새벽에 아침도 먹지 못한 채 가슴까지 차는 얼음 강물을 건너 공격해 왔죠.",
+    "한니발의 병사들은 모닥불 옆에서 배를 채우고 몸에 기름을 바른 채 기다리고 있었습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "로마군",
+     "big": "굶은 채 얼음 강",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "한니발군",
+     "big": "배를 채우고 불 옆에서",
+     "icon": "none",
+     "color": "blue",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "act": 2,
+   "lines": [
+    "그리고 싸움이 한창일 때 숨어 있던 병사들이 등 뒤에서 튀어나왔습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "등 뒤의 기습",
+    "style": "blue",
+    "sub": "숨어 있던 2천 명",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s035",
+   "act": 2,
+   "lines": [
+    "이듬해 봄에는 트라시메노 호숫가였습니다.",
+    "짙은 안개 속에서 호수와 언덕 사이 좁은 길을 지나던 로마군이 통째로 기습당합니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "italy",
+    "items": [
+     {
+      "k": "marker",
+      "p": "trebia",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        9.6,
+        45.0
+       ],
+       [
+        10.6,
+        43.8
+       ],
+       [
+        12.1,
+        43.17
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "trasimene",
+      "text": "트라시메노 호수",
+      "on": "트라시메노"
+     }
+    ],
+    "tilt": 16
+   },
+   "callouts": [
+    {
+     "text": "기원전 217년 봄",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s036",
+   "act": 2,
+   "lines": [
+    "집정관 플라미니우스가 전사했습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "trasimene_fog",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s037",
+   "act": 2,
+   "lines": [
+    {
+     "t": "로마군 1만 5천 명이 쓰러졌고 많은 병사가 호수로 뛰어들었다가 빠져 죽었습니다.",
+     "say": "로마군 만오천 명이 쓰러졌고 많은 병사가 호수로 뛰어들었다가 빠져 죽었습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "로마군 1만 5천 명",
+    "style": "red",
+    "sub": "집정관 플라미니우스 전사",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s038",
+   "act": 2,
+   "lines": [
+    "로마 광장에 모인 시민들에게 법무관이 한 말은 짧았다고 하죠.",
+    "우리는 큰 싸움에서 졌다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“우리는 큰 싸움에서 졌다”",
+    "style": "yellow",
+    "sub": "로마 광장 · 리비우스 22권 7절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s039",
+   "act": 2,
+   "lines": [
+    "두 번의 싸움 모두 한니발이 땅을 먼저 고르고 숨어서 기다린 싸움이었죠."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "한니발의 싸움",
+    "items": [
+     {
+      "text": "땅을 먼저 고른다",
+      "on": "땅을"
+     },
+     {
+      "text": "숨어서 기다린다",
+      "on": "숨어서"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s040",
+   "act": 2,
+   "lines": [
+    "하지만 코끼리는 추위와 병으로 거의 다 죽었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "코끼리는 거의 다 죽다",
+    "style": "dark",
+    "sub": "추위와 병",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s041",
+   "act": 2,
+   "lines": [
+    "한니발 자신도 늪지를 건너다 병이 나서 한쪽 눈을 잃었다고 전해집니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s041-photo",
+    "tag": "한니발 흉상 · 로마 시대",
+    "pos": "50% 30%",
+    "marks": [
+     {
+      "text": "한쪽 눈을 잃다",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "한쪽"
+     }
+    ]
+   },
+   "label": "한니발 흉상 · 카푸아 출토 · 나폴리 국립고고학박물관 소장 (한니발인지는 확실하지 않음)"
+  },
+  {
+   "id": "s042",
+   "act": 3,
+   "lines": [
+    "로마는 비상 시기에만 뽑는 독재관을 세웠습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "italy",
+    "items": [
+     {
+      "k": "lock",
+      "p": "rome",
+      "text": "로마",
+      "at": 0.4
+     }
+    ],
+    "tilt": 14
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제3막",
+    "title": "기다린 남자와 서두른 남자"
+   }
+  },
+  {
+   "id": "s043",
+   "act": 3,
+   "lines": [
+    "늙은 귀족 파비우스 막시무스였습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s043-photo",
+    "tag": "파비우스 조각상 · 18세기",
+    "pos": "50% 25%",
+    "marks": [
+     {
+      "text": "파비우스 막시무스",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "파비우스"
+     }
+    ]
+   },
+   "label": "꾸물거리는 사람 파비우스 조각상 · 빈 쇤브룬 궁전 정원"
+  },
+  {
+   "id": "s044",
+   "act": 3,
+   "lines": [
+    "파비우스는 이상한 명령을 내렸습니다.",
+    "한니발과 정면으로 싸우지 마라.",
+    "산 위에 머물며 뒤를 따라다니기만 해라."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "폴리비오스 3권 89절",
+    "head": "독재관 파비우스의 명령",
+    "rows": [
+     "정면으로 싸우지 마라",
+     "산 위에 머물러라",
+     "뒤를 따라다녀라"
+    ],
+    "stamp": "지연 전술",
+    "note": "요지"
+   }
+  },
+  {
+   "id": "s045",
+   "act": 3,
+   "lines": [
+    "한니발의 군대는 이탈리아 땅에서 먹고 자야 했습니다.",
+    "보급도 없고 증원군도 쉽게 오지 않았죠.",
+    "시간은 로마 편이었습니다."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "한니발의 약점",
+    "items": [
+     {
+      "text": "남의 땅에서 먹고 자야 한다",
+      "on": "먹고"
+     },
+     {
+      "text": "보급도 증원군도 없다",
+      "on": "보급도"
+     },
+     {
+      "text": "시간은 로마 편",
+      "on": "시간은"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s046",
+   "act": 3,
+   "lines": [
+    "그런데 로마 사람들은 참지 못했습니다.",
+    "눈앞에서 적이 들판을 불태우는데 군대는 언덕 위에서 구경만 했으니까요."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "참지 못한 로마",
+    "style": "red",
+    "sub": "불타는 들판 · 언덕 위의 군대",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s047",
+   "act": 3,
+   "lines": [
+    "한 번은 파비우스가 한니발을 거의 잡을 뻔했습니다.",
+    "한니발의 군대가 산으로 둘러싸인 분지에 들어갔고 빠져나갈 고개를 로마군이 막고 있었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "italy",
+    "items": [
+     {
+      "k": "lock",
+      "p": "falernus",
+      "text": "산으로 둘러싸인 분지",
+      "on": "분지에"
+     },
+     {
+      "k": "badge",
+      "p": "falernus",
+      "text": "고개를 막은 로마군",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "고개를"
+     }
+    ],
+    "tilt": 16
+   }
+  },
+  {
+   "id": "s048",
+   "act": 3,
+   "lines": [
+    {
+     "t": "그날 밤 한니발은 소 2천 마리의 뿔에 마른 나뭇가지를 묶고 불을 붙였습니다.",
+     "say": "그날 밤 한니발은 소 이천 마리의 뿔에 마른 나뭇가지를 묶고 불을 붙였습니다."
+    },
+    "불붙은 소 떼가 어둠 속 산비탈로 달려 올라갔습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "oxen_torches",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "소 2천 마리 · 불붙은 나뭇가지",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s049",
+   "act": 3,
+   "lines": [
+    "고개를 지키던 로마 병사들은 적이 산을 넘어 달아나는 줄 알고 자리를 떴죠.",
+    "그사이 한니발의 군대는 텅 빈 고개를 유유히 빠져나갔습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "텅 빈 고개",
+    "style": "blue",
+    "sub": "횃불에 속은 로마 병사들 · 리비우스 22권 17절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s050",
+   "act": 3,
+   "lines": [
+    "사람들은 파비우스에게 별명을 붙였습니다.",
+    "꾸물거리는 사람."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“꾸물거리는 사람”",
+    "style": "yellow",
+    "sub": "파비우스에게 붙은 별명",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s051",
+   "act": 3,
+   "lines": [
+    {
+     "t": "6달 임기가 끝나자 로마는 다른 길을 택했습니다.",
+     "say": "여섯 달 임기가 끝나자 로마는 다른 길을 택했습니다."
+    }
+   ],
+   "visual": {
+    "type": "black",
+    "text": "로마는",
+    "accent": "다른 길을",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s052",
+   "act": 3,
+   "lines": [
+    {
+     "t": "기원전 216년 새 집정관 두 사람이 뽑힙니다.",
+     "say": "기원전 이백십육년 새 집정관 두 사람이 뽑힙니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "기원전 216년",
+    "style": "yellow",
+    "sub": "새 집정관 두 사람",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s053",
+   "act": 3,
+   "lines": [
+    "신중한 귀족 아이밀리우스 파울루스.",
+    "그리고 싸워서 끝내겠다고 외친 테렌티우스 바로였습니다.",
+    "리비우스는 바로가 푸줏간 집 아들이었다고 깎아내렸지만 정말인지는 알 수 없습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "아이밀리우스 파울루스",
+     "big": "신중한 귀족",
+     "icon": "none",
+     "color": "dark"
+    },
+    "right": {
+     "title": "테렌티우스 바로",
+     "big": "싸워서 끝낸다",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s054",
+   "act": 3,
+   "lines": [
+    {
+     "t": "로마는 이번에 군단을 8개나 모았습니다.",
+     "say": "로마는 이번에 군단을 여덟 개나 모았습니다."
+    },
+    {
+     "t": "동맹군까지 합치면 약 8만 6천 명.",
+     "say": "동맹군까지 합치면 약 팔만 육천 명."
+    },
+    "로마가 한 번에 내보낸 군대 가운데 가장 컸습니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "pe",
+    "profile": [
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9
+    ],
+    "title": "8개 군단 · 로마 역사상 가장 큰 군대"
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "약 8만 6천",
+      "sub": "로마와 동맹군",
+      "sub2": "보병 8만 · 기병 6천 · 폴리비오스",
+      "on": "팔만",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s055",
+   "act": 3,
+   "lines": [
+    "그런데 문제가 하나 있었죠.",
+    "로마의 관습대로 두 집정관이 하루씩 번갈아 지휘하기로 한 겁니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "하루씩 번갈아 지휘",
+    "style": "red",
+    "sub": "두 집정관 · 로마의 관습",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s056",
+   "act": 3,
+   "lines": [
+    "오늘은 파울루스.",
+    "내일은 바로.",
+    "같은 군대의 지휘관이 매일 바뀌는 셈이었습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "오늘",
+     "big": "파울루스",
+     "icon": "none",
+     "color": "dark"
+    },
+    "right": {
+     "title": "내일",
+     "big": "바로",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s057",
+   "act": 3,
+   "lines": [
+    "그해 여름 한니발은 남쪽 아풀리아로 내려가 칸나이 마을의 언덕을 빼앗았습니다.",
+    "로마군의 곡식 창고가 있던 곳이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "apulia",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "cannae",
+      "text": "칸나이",
+      "on": "칸나이"
+     },
+     {
+      "k": "badge",
+      "p": "cannae",
+      "text": "로마군의 곡식 창고",
+      "color": "#111",
+      "dy": -80,
+      "on": "곡식"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        15.3,
+        41.2
+       ],
+       [
+        16.15,
+        41.296
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     }
+    ],
+    "flight": [
+     "italy",
+     "apulia"
+    ],
+    "flightDur": 2.4,
+    "tilt": 18
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s058",
+   "act": 3,
+   "lines": [
+    "로마는 더 이상 기다릴 수 없게 됐습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "더 이상",
+    "accent": "기다릴 수 없다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s059",
+   "act": 3,
+   "lines": [
+    "칸나이 앞에는 아우피두스강이 흐르고 그 옆으로 나무 하나 없는 평평한 들판이 펼쳐져 있었습니다.",
+    "기병이 많은 쪽에 좋은 땅이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "apulia",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        16.112,
+        41.29
+       ],
+       [
+        16.172,
+        41.29
+       ],
+       [
+        16.172,
+        41.262
+       ],
+       [
+        16.112,
+        41.262
+       ]
+      ],
+      "color": "#d8b46a",
+      "text": "평평한 들판",
+      "on": "평평한"
+     },
+     {
+      "k": "lock",
+      "p": "river_pt",
+      "text": "아우피두스강",
+      "on": "아우피두스강이"
+     }
+    ],
+    "flight": [
+     "apulia",
+     "field"
+    ],
+    "flightDur": 2.4,
+    "tilt": 28
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 2.0
+    }
+   ]
+  },
+  {
+   "id": "s060",
+   "act": 3,
+   "lines": [
+    {
+     "t": "한니발의 기병은 약 1만 명.",
+     "say": "한니발의 기병은 약 만 명."
+    },
+    {
+     "t": "로마의 기병은 약 6천 명이었습니다.",
+     "say": "로마의 기병은 약 육천 명이었습니다."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "기병",
+    "items": [
+     {
+      "label": "한니발",
+      "value": 10000,
+      "display": "약 1만",
+      "color": "blue",
+      "on": "만 명"
+     },
+     {
+      "label": "로마",
+      "value": 6000,
+      "display": "약 6천",
+      "color": "red",
+      "on": "육천"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s061",
+   "act": 3,
+   "lines": [
+    "파울루스는 이 들판에서 싸우기 싫어했습니다.",
+    "바로는 오히려 이곳에서 끝을 보고 싶어 했죠."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "파울루스",
+     "big": "여기서는 싫다",
+     "icon": "none",
+     "color": "dark"
+    },
+    "right": {
+     "title": "바로",
+     "big": "여기서 끝낸다",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s062",
+   "act": 3,
+   "lines": [
+    {
+     "t": "8월 1일 파울루스가 지휘하는 날 한니발이 군대를 들판에 내보였습니다.",
+     "say": "팔월 일일 파울루스가 지휘하는 날 한니발이 군대를 들판에 내보였습니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0.2,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "badge",
+      "p": "ccamp",
+      "text": "8월 1일 · 싸움을 걸다",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "팔월"
+     }
+    ],
+    "tilt": 28
+   }
+  },
+  {
+   "id": "s063",
+   "act": 3,
+   "lines": [
+    "파울루스는 나가지 않았습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "파울루스는 나가지 않았다",
+    "style": "dark",
+    "sub": "로마 진영",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s064",
+   "act": 3,
+   "lines": [
+    "한니발의 누미디아 기병들은 로마군이 물을 길으러 강가에 나오는 병사들까지 쫓아다녔죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "unit",
+      "p": "rcamp",
+      "text": "로마 진영",
+      "color": "red",
+      "at": 0.1
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        16.135,
+        41.276
+       ],
+       [
+        16.12,
+        41.288
+       ],
+       [
+        16.11,
+        41.295
+       ]
+      ],
+      "at": 0.2,
+      "n": 60,
+      "width": 0.4
+     },
+     {
+      "k": "badge",
+      "p": "river_pt",
+      "text": "물 긷는 병사",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "물을"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s065",
+   "act": 3,
+   "lines": [
+    "로마 진영에는 분노가 끓어올랐습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "분노",
+    "accent": "끓어오르는 로마 진영",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s066",
+   "act": 3,
+   "lines": [
+    "다음 날은 바로가 지휘하는 날이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "8월 2일",
+    "style": "red",
+    "sub": "바로가 지휘하는 날",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s067",
+   "act": 4,
+   "lines": [
+    {
+     "t": "8월 2일 해가 뜨자 바로의 막사 앞에 붉은 겉옷이 내걸렸습니다.",
+     "say": "팔월 이일 해가 뜨자 바로의 막사 앞에 붉은 겉옷이 내걸렸습니다."
+    },
+    "싸움을 시작한다는 신호였죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "unit",
+      "p": "rcamp",
+      "text": "로마 진영",
+      "color": "red",
+      "at": 0.1,
+      "pulse": true
+     },
+     {
+      "k": "badge",
+      "p": "rcamp",
+      "text": "붉은 겉옷 · 싸움의 신호",
+      "color": "#c9242c",
+      "dy": -80,
+      "on": "붉은"
+     }
+    ],
+    "tilt": 28
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제4막",
+    "title": "초승달"
+   },
+   "callouts": [
+    {
+     "text": "기원전 216년 8월 2일 아침",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s068",
+   "act": 4,
+   "lines": [
+    "로마군은 강을 건너 들판에 줄을 섰습니다.",
+    {
+     "t": "진영을 지킬 약 1만 명을 남기고도 보병은 7만 명 가까이 됐다고 전해집니다.",
+     "say": "진영을 지킬 약 만 명을 남기고도 보병은 칠만 명 가까이 됐다고 전해집니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "on": "줄을"
+     },
+     {
+      "k": "unit",
+      "p": "rcamp",
+      "text": "진영 경비 약 1만",
+      "color": "red",
+      "at": 0.4
+     }
+    ],
+    "tilt": 30
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "약 7만",
+      "sub": "들판에 선 로마 보병",
+      "sub2": "폴리비오스",
+      "on": "칠만",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s069",
+   "act": 4,
+   "lines": [
+    {
+     "t": "로마 군단은 원래 3겹으로 섭니다.",
+     "say": "로마 군단은 원래 세 겹으로 섭니다."
+    },
+    "앞에는 젊은 병사.",
+    "그 뒤에는 한창때의 병사.",
+    "맨 뒤에는 노련한 고참병이 서죠."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "로마 군단의 3겹",
+    "items": [
+     {
+      "text": "앞 · 젊은 병사",
+      "on": "젊은"
+     },
+     {
+      "text": "가운데 · 한창때의 병사",
+      "on": "한창때의"
+     },
+     {
+      "text": "뒤 · 노련한 고참병",
+      "on": "고참병이"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s070",
+   "act": 4,
+   "lines": [
+    "가운데 보병은 지난해 집정관이었던 세르빌리우스가 맡았습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "servilius",
+      "text": "세르빌리우스 · 가운데 보병",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "세르빌리우스가"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s071",
+   "act": 4,
+   "lines": [
+    "로마는 이번에 특별한 대열을 짰습니다.",
+    "보병 부대들의 간격을 좁히고 대열을 평소보다 훨씬 깊게 쌓았습니다.",
+    "옆으로 넓게 서는 대신 앞뒤로 두껍게 선 거죠."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "pe",
+    "profile": [
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9
+    ],
+    "title": "앞뒤로 두껍게"
+   },
+   "callouts": [
+    {
+     "text": "평소보다 훨씬 깊은 대열",
+     "style": "dark",
+     "at": 1.0,
+     "pos": "lower"
+    }
+   ]
+  },
+  {
+   "id": "s072",
+   "act": 4,
+   "lines": [
+    "거대한 망치처럼 한가운데를 내리쳐 부수겠다는 계획이었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "거대한 망치",
+    "style": "red",
+    "sub": "한가운데를 내리쳐 부순다",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s073",
+   "act": 4,
+   "lines": [
+    "강 쪽 오른쪽 끝에는 파울루스가 로마 기병을 이끌었습니다.",
+    "반대쪽 왼쪽 끝에는 바로가 동맹군 기병을 맡았죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "paullus",
+      "text": "파울루스 · 로마 기병",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "파울루스가"
+     },
+     {
+      "k": "badge",
+      "p": "varro",
+      "text": "바로 · 동맹군 기병",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "바로가"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s074",
+   "act": 4,
+   "lines": [
+    "강은 로마군의 오른쪽을 막아 주는 벽이었습니다.",
+    "한니발의 기병이 그쪽으로 돌아 들어오지 못하게 하려는 거였죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "line",
+      "path": [
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ]
+      ],
+      "color": "#6fd0ff",
+      "glow": true,
+      "on": "강은"
+     },
+     {
+      "k": "badge",
+      "p": "river_pt",
+      "text": "강 = 오른쪽의 벽",
+      "color": "#111",
+      "dy": -60,
+      "on": "벽이었습니다"
+     }
+    ],
+    "tilt": 30
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "s075",
+   "act": 4,
+   "lines": [
+    "맞은편 한니발의 군대도 강을 건너왔습니다.",
+    "카르타고 병사들이 로마군의 엄청난 숫자를 바라보고 있을 때였습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "on": "맞은편"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s076",
+   "act": 4,
+   "lines": [
+    "장교 기스고가 걱정스럽게 말했다고 하죠.",
+    "적이 정말 많습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "gisgo_laugh",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "“적이 정말 많습니다”",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s077",
+   "act": 4,
+   "lines": [
+    "한니발이 웃으며 답했습니다.",
+    "그보다 더 놀라운 게 있다.",
+    "저 많은 사람 가운데 기스고라는 이름은 하나도 없다는 것이다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“기스고라는 이름은 하나도 없다”",
+    "style": "yellow",
+    "sub": "플루타르코스 『파비우스 전』 15장",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s078",
+   "act": 4,
+   "lines": [
+    "주변의 장교들이 웃음을 터뜨렸습니다.",
+    "대장이 웃는 것을 본 병사들도 따라 웃었다고 플루타르코스는 적었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "웃음이 번지다",
+    "style": "blue",
+    "sub": "대장의 여유",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s079",
+   "act": 4,
+   "lines": [
+    "그런데 한니발이 세운 대열은 이상했습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그런데",
+    "accent": "이상한 대열",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s080",
+   "act": 4,
+   "lines": [
+    "가운데에는 갈리아 병사와 에스파냐 병사들이 섰습니다.",
+    "갈리아 병사들은 웃통을 벗었고 에스파냐 병사들은 자줏빛 테두리의 흰 옷을 입었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "갈리아 · 에스파냐 보병",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "갈리아"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s081",
+   "act": 4,
+   "lines": [
+    "이 가운데 줄은 일직선이 아니었습니다.",
+    "로마군 쪽으로 활처럼 불룩하게 튀어나와 있었습니다.",
+    "하늘에 뜬 초승달처럼요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendOn": "불룩하게"
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "초승달",
+      "color": "#1f5fbf",
+      "dy": 80,
+      "on": "초승달처럼요"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s082",
+   "act": 4,
+   "lines": [
+    "그리고 이 줄은 얇았습니다.",
+    "로마군의 망치를 정면으로 받아 낼 두께가 아니었죠."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ]
+    },
+    "title": "얇은 가운데",
+    "labels": [
+     {
+      "text": "얇다",
+      "x": 0.5,
+      "y": 0.5,
+      "color": "blue",
+      "on": "얇았습니다"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s083",
+   "act": 4,
+   "lines": [
+    "대신 그 초승달의 양쪽 끝 뒤에 아프리카 보병이 기다리고 있었습니다.",
+    "이들은 트라시메노에서 빼앗은 로마군의 갑옷과 무기를 쓰고 있었습니다.",
+    "멀리서 보면 로마군과 구별하기도 어려웠죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "badge",
+      "p": "afr_l",
+      "text": "아프리카 보병",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "아프리카"
+     },
+     {
+      "k": "badge",
+      "p": "afr_r",
+      "text": "로마군의 갑옷",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "갑옷과"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s084",
+   "act": 4,
+   "lines": [
+    "강 쪽 왼쪽 끝에는 하스드루발이 갈리아와 에스파냐의 무거운 기병을 이끌었습니다.",
+    "반대쪽 오른쪽 끝에는 날랜 누미디아 기병이 섰죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "unit",
+      "p": "hasdrubal",
+      "text": "하스드루발 · 무거운 기병",
+      "color": "blue",
+      "at": 0.1
+     },
+     {
+      "k": "badge",
+      "p": "numid",
+      "text": "누미디아 기병",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "누미디아"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s085",
+   "act": 4,
+   "lines": [
+    "한니발은 어디에 섰을까요?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "한니발은",
+    "accent": "어디에?",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s086",
+   "act": 4,
+   "lines": [
+    "그는 동생 마고와 함께 가장 얇은 줄 한가운데에 섰습니다.",
+    "무너지기로 되어 있는 바로 그 자리였습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "lock",
+      "p": "hannibal",
+      "text": "한니발 · 마고",
+      "on": "한가운데에"
+     },
+     {
+      "k": "badge",
+      "p": "hannibal",
+      "text": "무너지기로 된 자리",
+      "color": "#111",
+      "dy": 80,
+      "on": "무너지기로"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s087",
+   "act": 4,
+   "lines": [
+    "리비우스는 하나를 더 적었습니다.",
+    "이 지방에서 불어오는 볼투르누스라는 바람이 로마군의 얼굴 쪽으로 흙먼지를 몰고 갔다는 겁니다.",
+    "폴리비오스에는 없는 이야기라 정말 그랬는지는 알 수 없습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "볼투르누스 바람",
+    "style": "dark",
+    "sub": "로마군 얼굴로 흙먼지 · 리비우스에만 있는 기록",
+    "subAt": 0.4
+   },
+   "sfx": [
+    {
+     "id": "wind",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s088",
+   "act": 4,
+   "lines": [
+    {
+     "t": "한니발의 보병은 약 4만 명.",
+     "say": "한니발의 보병은 약 사만 명."
+    },
+    {
+     "t": "기병은 약 1만 명이었습니다.",
+     "say": "기병은 약 만 명이었습니다."
+    },
+    {
+     "t": "보병만 놓고 보면 로마가 거의 2배였죠.",
+     "say": "보병만 놓고 보면 로마가 거의 두 배였죠."
+    },
+    "숫자로 보면 로마가 질 이유가 없는 싸움이었습니다."
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "칸나이의 병력",
+    "items": [
+     {
+      "label": "로마 보병",
+      "value": 70000,
+      "display": "약 7만",
+      "color": "red",
+      "at": 0.2
+     },
+     {
+      "label": "한니발 보병",
+      "value": 40000,
+      "display": "약 4만",
+      "color": "blue",
+      "on": "사만"
+     },
+     {
+      "label": "한니발 기병",
+      "value": 10000,
+      "display": "약 1만",
+      "color": "blue",
+      "on": "기병은"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s089",
+   "act": 4,
+   "lines": [
+    "드디어 양쪽의 투석병과 투창병들이 먼저 앞으로 나갑니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.135,
+        41.276
+       ],
+       [
+        16.135,
+        41.28
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "on": "투석병과"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.15,
+        41.282
+       ],
+       [
+        16.15,
+        41.277
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "on": "투창병들이"
+     }
+    ],
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s090",
+   "act": 5,
+   "lines": [
+    "첫 충돌은 강가에서 벌어졌습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     }
+    ],
+    "tilt": 32
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제5막",
+    "title": "뒤집힌 초승달"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s091",
+   "act": 5,
+   "lines": [
+    "하스드루발의 무거운 기병과 로마 기병이 정면으로 부딪쳤죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        16.106,
+        41.2715
+       ],
+       [
+        16.11,
+        41.2775
+       ],
+       [
+        16.114,
+        41.2835
+       ]
+      ],
+      "at": 0,
+      "n": 90,
+      "width": 0.5,
+      "color": "#1f5fbf"
+     },
+     {
+      "k": "clash",
+      "p": [
+       16.112,
+       41.2785
+      ],
+      "period": 0.9,
+      "size": 1.0,
+      "on": "부딪쳤죠"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s092",
+   "act": 5,
+   "lines": [
+    "강과 보병 대열 사이의 좁은 땅이라 돌아 나갈 곳이 없었습니다.",
+    "말들이 엉켜 움직이지 못하자 기병들은 말에서 내려 걸어서 싸웠다고 합니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "cavalry_river",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "말에서 내려 싸운 기병들",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s093",
+   "act": 5,
+   "lines": [
+    "로마 기병은 버티지 못했습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "로마 기병 붕괴",
+    "style": "red",
+    "sub": "강가의 좁은 땅",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s094",
+   "act": 5,
+   "lines": [
+    "파울루스도 이 싸움에서 투석병의 돌에 맞아 다쳤다고 전해지죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "paullus",
+      "text": "파울루스 부상",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "다쳤다고"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s095",
+   "act": 5,
+   "lines": [
+    "로마 기병은 강을 따라 무너졌고 하스드루발은 그들을 거의 다 베어 냈습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.114,
+        41.286
+       ],
+       [
+        16.12,
+        41.294
+       ],
+       [
+        16.128,
+        41.302
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        16.114,
+        41.286
+       ],
+       [
+        16.12,
+        41.294
+       ],
+       [
+        16.128,
+        41.302
+       ]
+      ],
+      "at": 0.3,
+      "n": 80,
+      "width": 0.4,
+      "color": "#1f5fbf"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s096",
+   "act": 5,
+   "lines": [
+    "그사이 들판 한가운데에서는 보병들이 맞붙었습니다.",
+    "로마 보병의 깊은 대열이 초승달을 향해 밀고 들어갑니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 22,
+      "runOn": "밀고"
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.142,
+        41.2875
+       ],
+       [
+        16.142,
+        41.28
+       ],
+       [
+        16.142,
+        41.2735
+       ]
+      ],
+      "color": "red",
+      "width": 1.3,
+      "on": "밀고"
+     }
+    ],
+    "tilt": 32
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "id": "s097",
+   "act": 5,
+   "lines": [
+    "먼저 부딪친 곳은 불룩 튀어나온 초승달의 가운데였죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 22,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     },
+     {
+      "k": "clash",
+      "p": "center",
+      "period": 0.9,
+      "size": 1.2,
+      "on": "가운데였죠"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s098",
+   "act": 5,
+   "lines": [
+    "갈리아와 에스파냐 병사들은 버텼습니다.",
+    "하지만 조금씩 뒤로 밀렸습니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "center_pushed",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s099",
+   "act": 5,
+   "lines": [
+    {
+     "t": "8월 한여름의 들판이었습니다.",
+     "say": "팔월 한여름의 들판이었습니다."
+    },
+    "수만 명이 밟은 흙먼지가 하늘을 덮어 앞이 잘 보이지 않았죠.",
+    "로마 병사들은 앞사람의 등만 보고 밀었습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s099-photo",
+    "tag": "리비우스 필사본 · 1400년 무렵",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "8월 한여름의 들판",
+      "x": 0.5,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "한여름의"
+     }
+    ]
+   },
+   "label": "칸나이 전투 · 리비우스 『로마사』 프랑스어 필사본 삽화 · 1400년 무렵"
+  },
+  {
+   "id": "s100",
+   "act": 5,
+   "lines": [
+    "로마 병사들의 눈에는 승리가 보였습니다.",
+    "적의 가운데가 무너지고 있었으니까요.",
+    "뒤쪽의 로마 병사들까지 앞으로 몰려들었습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“이기고 있다”",
+    "style": "red",
+    "sub": "앞으로 몰려드는 로마 병사들",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s101",
+   "act": 5,
+   "lines": [
+    "밀린 초승달은 점점 평평해졌습니다.",
+    "그리고 더 밀리자 이번에는 반대로 오목하게 휘어 들어갔죠.",
+    "불룩하던 초승달이 뒤집힌 겁니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendOn": "평평해졌습니다"
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "뒤집힌 초승달",
+      "color": "#1f5fbf",
+      "dy": 80,
+      "on": "뒤집힌"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "s102",
+   "act": 5,
+   "lines": [
+    "로마군은 그 오목한 주머니 속으로 깊숙이 빨려 들어갔습니다.",
+    "가운데로 몰린 병사들은 서로 어깨가 닿을 만큼 빽빽해졌습니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ]
+    },
+    "labels": [
+     {
+      "text": "오목한 주머니",
+      "x": 0.5,
+      "y": 0.45,
+      "color": "red",
+      "on": "주머니"
+     }
+    ],
+    "bendOn": "빨려"
+   }
+  },
+  {
+   "id": "s103",
+   "act": 5,
+   "lines": [
+    "그런데 가운데 줄은 끊어지지 않았습니다.",
+    "한니발이 그 줄 한가운데에서 병사들을 붙잡고 있었으니까요."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0
+     },
+     {
+      "k": "lock",
+      "p": "hannibal",
+      "text": "한니발 · 마고",
+      "on": "한니발이"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s104",
+   "act": 5,
+   "lines": [
+    "그사이 발레아레스의 투석병들은 쉬지 않고 로마군 머리 위로 돌을 날렸습니다.",
+    "빽빽하게 몰린 대열에서는 돌 하나도 빗나가기 어려웠죠."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "발레아레스 투석병",
+    "style": "blue",
+    "sub": "빽빽한 대열 · 빗나가기 어려운 돌",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s105",
+   "act": 5,
+   "lines": [
+    "밀리되 무너지지는 않는 것.",
+    "그것이 한니발이 가운데 병사들에게 맡긴 일이었습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "밀리되",
+    "accent": "무너지지 않는다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s106",
+   "act": 5,
+   "lines": [
+    "이제 로마군의 양 옆에 누가 서 있었을까요?"
+   ],
+   "visual": {
+    "type": "text",
+    "big": "양 옆에는?",
+    "style": "yellow",
+    "sub": "로마군의 옆구리",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s107",
+   "act": 5,
+   "lines": [
+    "초승달 양쪽 끝 뒤에서 기다리던 아프리카 보병이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0
+     },
+     {
+      "k": "lock",
+      "p": "afr_l",
+      "text": "아프리카 보병",
+      "on": "아프리카"
+     },
+     {
+      "k": "lock",
+      "p": "afr_r",
+      "text": "아프리카 보병",
+      "on": "아프리카"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s108",
+   "act": 5,
+   "lines": [
+    "그들은 그 자리에서 몸을 돌려 로마군의 옆구리를 향했습니다.",
+    "앞을 보고 서 있던 대열이 왼쪽과 오른쪽으로 방향만 바꾸면 됐습니다.",
+    "처음부터 그 자리에 세워 둔 이유가 바로 이것이었죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "africans_turn",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "몸을 돌린 아프리카 보병",
+     "style": "blue",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s109",
+   "act": 5,
+   "lines": [
+    "그리고 양쪽에서 동시에 파고들었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapOn": "파고들었죠"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.117,
+        41.268
+       ],
+       [
+        16.121,
+        41.275
+       ],
+       [
+        16.128,
+        41.2795
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "on": "양쪽에서"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.167,
+        41.268
+       ],
+       [
+        16.163,
+        41.275
+       ],
+       [
+        16.156,
+        41.2795
+       ]
+      ],
+      "color": "blue",
+      "width": 1.2,
+      "on": "양쪽에서"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s110",
+   "act": 5,
+   "lines": [
+    "로마 병사들은 앞의 적과 싸우느라 옆을 볼 수 없었습니다.",
+    "게다가 그 적들은 로마군과 똑같은 갑옷을 입고 있었습니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "gr",
+    "profile": [
+     8,
+     8,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     8,
+     8
+    ],
+    "vs": {
+     "side": "pe",
+     "profile": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ]
+    },
+    "labels": [
+     {
+      "text": "똑같은 갑옷",
+      "x": 0.5,
+      "y": 0.42,
+      "color": "red",
+      "on": "똑같은"
+     }
+    ],
+    "bendAt": 0,
+    "wrapOn": "옆을"
+   }
+  },
+  {
+   "id": "s111",
+   "act": 5,
+   "lines": [
+    "한쪽 끝에서는 또 다른 싸움이 이어지고 있었습니다.",
+    "바로의 동맹군 기병과 누미디아 기병이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "badge",
+      "p": "varro",
+      "text": "동맹군 기병",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "동맹군"
+     },
+     {
+      "k": "badge",
+      "p": "numid",
+      "text": "누미디아 기병",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "누미디아"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s112",
+   "act": 5,
+   "lines": [
+    "누미디아 기병은 정면으로 부딪치지 않았습니다.",
+    "달려들었다가 빠지고 다시 달려들며 동맹군 기병을 붙잡아 두었습니다.",
+    "이기지 않아도 됐습니다.",
+    "그 자리에 붙잡아 두기만 하면 됐죠."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "누미디아 기병의 일",
+    "items": [
+     {
+      "text": "정면으로 부딪치지 않는다",
+      "on": "정면으로"
+     },
+     {
+      "text": "달려들었다 빠진다",
+      "on": "달려들었다가"
+     },
+     {
+      "text": "이기지 않아도 된다",
+      "on": "이기지"
+     },
+     {
+      "text": "붙잡아 두기만",
+      "on": "붙잡아"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s113",
+   "act": 5,
+   "lines": [
+    "왜냐하면 강가에서 일을 끝낸 하스드루발이 이쪽으로 오고 있었기 때문입니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        16.116,
+        41.289
+       ],
+       [
+        16.13,
+        41.2925
+       ]
+      ],
+      "at": 0.2,
+      "n": 90,
+      "width": 0.5,
+      "color": "#1f5fbf"
+     },
+     {
+      "k": "badge",
+      "p": "paullus",
+      "text": "하스드루발이 온다",
+      "color": "#1f5fbf",
+      "dy": -70,
+      "on": "하스드루발이"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s114",
+   "act": 6,
+   "lines": [
+    "하스드루발은 강가의 로마 기병을 쓸어버린 뒤 멈추지 않았습니다.",
+    "그는 기병을 다시 모아 로마 보병의 등 뒤를 가로질러 달렸습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.116,
+        41.289
+       ],
+       [
+        16.13,
+        41.2925
+       ],
+       [
+        16.15,
+        41.2925
+       ],
+       [
+        16.169,
+        41.289
+       ]
+      ],
+      "color": "blue",
+      "width": 1.3,
+      "on": "가로질러"
+     }
+    ],
+    "tilt": 34
+   },
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제6막",
+    "title": "닫힌 뒷문"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s115",
+   "act": 6,
+   "lines": [
+    "들판 반대편 끝으로요."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "hasdrubal_ride",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s116",
+   "act": 6,
+   "lines": [
+    "동맹군 기병은 다가오는 하스드루발의 기병을 보자마자 등을 돌려 달아났습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.17,
+        41.2845
+       ],
+       [
+        16.18,
+        41.291
+       ],
+       [
+        16.19,
+        41.298
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "swarm",
+      "path": [
+       [
+        16.15,
+        41.2925
+       ],
+       [
+        16.169,
+        41.289
+       ]
+      ],
+      "at": 0.1,
+      "n": 100,
+      "width": 0.5,
+      "color": "#1f5fbf"
+     },
+     {
+      "k": "badge",
+      "p": "varro",
+      "text": "달아나는 동맹군 기병",
+      "color": "#c9242c",
+      "dy": -70,
+      "on": "달아났습니다"
+     }
+    ],
+    "tilt": 32
+   }
+  },
+  {
+   "id": "s117",
+   "act": 6,
+   "lines": [
+    "하스드루발은 달아나는 적을 쫓는 일을 누미디아 기병에게 맡겼습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.18,
+        41.274
+       ],
+       [
+        16.172,
+        41.281
+       ],
+       [
+        16.19,
+        41.298
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "at": 0.1
+     },
+     {
+      "k": "badge",
+      "p": "numid",
+      "text": "추격은 누미디아에게",
+      "color": "#1f5fbf",
+      "dy": 70,
+      "on": "맡겼습니다"
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s118",
+   "act": 6,
+   "lines": [
+    "그리고 자신은 다시 말머리를 돌렸습니다.",
+    "이번에 향한 곳은 로마 보병의 등이었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.166,
+        41.2925
+       ],
+       [
+        16.153,
+        41.29
+       ],
+       [
+        16.142,
+        41.2875
+       ]
+      ],
+      "color": "blue",
+      "width": 1.4,
+      "on": "말머리를"
+     }
+    ],
+    "tilt": 34
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s119",
+   "act": 6,
+   "lines": [
+    "앞에는 갈리아와 에스파냐 병사들.",
+    "양쪽에는 아프리카 보병.",
+    "그리고 뒤에는 하스드루발의 기병."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "사방이 막혔다",
+    "items": [
+     {
+      "text": "앞 · 갈리아와 에스파냐",
+      "on": "앞에는"
+     },
+     {
+      "text": "양옆 · 아프리카 보병",
+      "on": "양쪽에는"
+     },
+     {
+      "text": "뒤 · 하스드루발의 기병",
+      "on": "뒤에는"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s120",
+   "act": 6,
+   "lines": [
+    "마지막 문이 닫혔습니다.",
+    {
+     "t": "7만 명 가까운 로마 보병이 5만 명의 군대에게 둘러싸인 겁니다.",
+     "say": "칠만 명 가까운 로마 보병이 오만 명의 군대에게 둘러싸인 겁니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        16.12,
+        41.289
+       ],
+       [
+        16.164,
+        41.289
+       ],
+       [
+        16.166,
+        41.276
+       ],
+       [
+        16.142,
+        41.268
+       ],
+       [
+        16.118,
+        41.276
+       ]
+      ],
+      "color": "#c9242c",
+      "text": "포위망",
+      "on": "닫혔습니다"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.166,
+        41.2925
+       ],
+       [
+        16.153,
+        41.29
+       ],
+       [
+        16.142,
+        41.2875
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0
+     }
+    ],
+    "tilt": 36
+   },
+   "hook": {
+    "hud": [
+     {
+      "big": "7만 vs 5만",
+      "sub": "둘러싸인 쪽이 더 많았다",
+      "sub2": "로마 보병 · 한니발 전군",
+      "on": "칠만",
+      "color": "#FF3B30",
+      "count": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s121",
+   "act": 6,
+   "lines": [
+    "그런데 둘러싸인 쪽의 숫자가 더 많았는데 왜 뚫고 나가지 못했을까요?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "더 많은 쪽이",
+    "accent": "왜 못 뚫었나",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s122",
+   "act": 6,
+   "lines": [
+    "가운데로 몰린 로마 병사들은 칼을 휘두를 공간조차 없었습니다.",
+    "실제로 적과 맞닿아 싸울 수 있는 건 가장 바깥 줄의 병사들뿐이었죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "crushed",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s123",
+   "act": 6,
+   "lines": [
+    "안쪽의 수만 명은 동료의 등에 막혀 아무것도 할 수 없었습니다.",
+    "도망치려는 병사도 앞으로 나가려는 병사도 모두 같은 자리에 갇혔습니다."
+   ],
+   "visual": {
+    "type": "troops",
+    "side": "pe",
+    "profile": [
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9
+    ],
+    "title": "싸울 수 있는 건 바깥 줄뿐",
+    "labels": [
+     {
+      "text": "안쪽 수만 명",
+      "x": 0.5,
+      "y": 0.45,
+      "color": "red",
+      "on": "수만"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s124",
+   "act": 6,
+   "lines": [
+    "들판에 숨 막히는 사람의 벽이 생긴 겁니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "사람의 벽",
+    "style": "red",
+    "sub": "도망칠 수도 나아갈 수도 없다",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s125",
+   "act": 6,
+   "lines": [
+    "바깥 줄이 쓰러지면 그 안쪽 줄이 바깥이 됐습니다.",
+    "포위된 로마군은 바깥부터 조금씩 깎여 나갔습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        16.12,
+        41.289
+       ],
+       [
+        16.164,
+        41.289
+       ],
+       [
+        16.166,
+        41.276
+       ],
+       [
+        16.142,
+        41.268
+       ],
+       [
+        16.118,
+        41.276
+       ]
+      ],
+      "color": "#c9242c",
+      "text": "포위망",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "clash",
+      "p": "servilius",
+      "period": 0.9,
+      "size": 1.3,
+      "on": "쓰러지면"
+     }
+    ],
+    "tilt": 36
+   },
+   "sfx": [
+    {
+     "id": "artillery_far",
+     "at": 0,
+     "db": -32
+    }
+   ]
+  },
+  {
+   "id": "s126",
+   "act": 6,
+   "lines": [
+    "싸움은 해가 질 때까지 이어졌습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "해가 질 때까지",
+    "style": "dark",
+    "sub": "8월 2일 저녁",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s127",
+   "act": 6,
+   "lines": [
+    "파울루스는 끝까지 들판에 남아 있었습니다.",
+    "피투성이가 된 그에게 한 장교가 자기 말을 내주며 피하라고 했다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "paullus_refuses",
+    "kb": "in"
+   },
+   "label": "재연 일러스트"
+  },
+  {
+   "id": "s128",
+   "act": 6,
+   "lines": [
+    "파울루스는 거절했습니다.",
+    "로마로 가서 성벽을 굳게 지키라고 전하라."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“성벽을 굳게 지키라고 전하라”",
+    "style": "yellow",
+    "sub": "파울루스 · 리비우스 22권 49절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s129",
+   "act": 6,
+   "lines": [
+    "그리고 그는 그 자리에서 쓰러졌습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s129-photo",
+    "tag": "존 트럼불 · 1773",
+    "pos": "50% 50%"
+   },
+   "label": "칸나이 전투에서 숨지는 파울루스 · 존 트럼불 · 예일대학교 미술관"
+  },
+  {
+   "id": "s130",
+   "act": 6,
+   "lines": [
+    {
+     "t": "미국 화가 존 트럼불은 2천 년 뒤 이 장면을 그림으로 남겼습니다.",
+     "say": "미국 화가 존 트럼불은 이천 년 뒤 이 장면을 그림으로 남겼습니다."
+    },
+    "말을 내미는 젊은 장교와 그 손을 뿌리치는 늙은 집정관입니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s130-photo",
+    "tag": "존 트럼불 · 1773",
+    "pos": "62% 45%",
+    "marks": [
+     {
+      "text": "말을 내미는 젊은 장교",
+      "x": 0.36,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "말을"
+     },
+     {
+      "text": "집정관 파울루스",
+      "x": 0.66,
+      "y": 0.14,
+      "color": "yellow",
+      "on": "늙은"
+     }
+    ]
+   },
+   "label": "칸나이 전투에서 숨지는 파울루스 · 존 트럼불 · 예일대학교 미술관"
+  },
+  {
+   "id": "s131",
+   "act": 6,
+   "lines": [
+    {
+     "t": "바로는 기병 70여 명과 함께 들판을 빠져나가 베누시아로 달아났습니다.",
+     "say": "바로는 기병 칠십여 명과 함께 들판을 빠져나가 베누시아로 달아났습니다."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "apulia",
+    "to": "apulia",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.15,
+        41.296
+       ],
+       [
+        16.0,
+        41.12
+       ],
+       [
+        15.81,
+        40.96
+       ]
+      ],
+      "color": "red",
+      "dash": true,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "venusia",
+      "text": "베누시아",
+      "on": "베누시아로"
+     }
+    ],
+    "tilt": 18
+   }
+  },
+  {
+   "id": "s132",
+   "act": 6,
+   "lines": [
+    "그날 로마군의 피해는 얼마나 됐을까요?"
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그날",
+    "accent": "로마군의 피해",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s133",
+   "act": 6,
+   "lines": [
+    {
+     "t": "폴리비오스는 7만 명이 죽었다고 적었습니다.",
+     "say": "폴리비오스는 칠만 명이 죽었다고 적었습니다."
+    },
+    {
+     "t": "리비우스는 4만 8천여 명이 죽고 2만 명 가까이 포로가 됐다고 적었죠.",
+     "say": "리비우스는 사만 팔천여 명이 죽고 이만 명 가까이 포로가 됐다고 적었죠."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "로마군 전사자 · 옛 기록",
+    "items": [
+     {
+      "label": "폴리비오스",
+      "value": 70000,
+      "display": "7만",
+      "color": "red",
+      "on": "칠만"
+     },
+     {
+      "label": "리비우스",
+      "value": 48200,
+      "display": "4만 8천여 · 포로 2만 가까이",
+      "color": "red",
+      "on": "사만"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s134",
+   "act": 6,
+   "lines": [
+    "어느 쪽이든 한나절 사이에 일어난 일이었습니다.",
+    {
+     "t": "진영을 지키던 로마군 약 1만 명도 그날 한니발의 진영을 치러 나갔다가 이튿날 대부분 포로가 됐죠.",
+     "say": "진영을 지키던 로마군 약 만 명도 그날 한니발의 진영을 치러 나갔다가 이튿날 대부분 포로가 됐죠."
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "unit",
+      "p": "rcamp",
+      "text": "진영 경비 약 1만 · 포로",
+      "color": "red",
+      "at": 0.2
+     },
+     {
+      "k": "marker",
+      "p": "ccamp",
+      "color": "blue",
+      "at": 0.4
+     }
+    ],
+    "tilt": 30
+   }
+  },
+  {
+   "id": "s135",
+   "act": 6,
+   "lines": [
+    "다음 날 아침 들판을 둘러본 카르타고 병사들은 믿기 어려운 광경을 봤다고 리비우스는 적었습니다.",
+    "살아 있던 로마 병사들 가운데에는 더는 싸울 수 없어 스스로 땅에 얼굴을 묻은 이들도 있었다고 하죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s135-photo",
+    "tag": "칸나이 유적 · 오늘날",
+    "pos": "50% 50%"
+   },
+   "label": "오늘날의 칸나이 유적 · 이탈리아 바를레타"
+  },
+  {
+   "id": "s136",
+   "act": 6,
+   "lines": [
+    {
+     "t": "죽은 이들 가운데에는 집정관 한 명과 원로원 의원 80여 명도 있었습니다.",
+     "say": "죽은 이들 가운데에는 집정관 한 명과 원로원 의원 팔십여 명도 있었습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "집정관 1명 · 원로원 의원 80여 명",
+    "style": "red",
+    "sub": "리비우스 22권 49절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s137",
+   "act": 6,
+   "lines": [
+    {
+     "t": "한니발 쪽의 피해는 약 5,700명이었습니다.",
+     "say": "한니발 쪽의 피해는 약 오천칠백 명이었습니다."
+    },
+    {
+     "t": "그 가운데 4천 명이 갈리아 병사였죠.",
+     "say": "그 가운데 사천 명이 갈리아 병사였죠."
+    }
+   ],
+   "visual": {
+    "type": "bars",
+    "note": "한니발 쪽 전사자 · 폴리비오스",
+    "items": [
+     {
+      "label": "갈리아 병사",
+      "value": 4000,
+      "display": "4천",
+      "color": "blue",
+      "on": "사천"
+     },
+     {
+      "label": "그 밖의 병사",
+      "value": 1700,
+      "display": "약 1,700",
+      "color": "blue",
+      "at": 0.3
+     }
+    ]
+   }
+  },
+  {
+   "id": "s138",
+   "act": 6,
+   "lines": [
+    "밀리면서 버티라는 명령을 받은 바로 그 가운데 줄이었습니다.",
+    "이 승리의 값을 가장 크게 치른 건 가운데에 섰던 병사들이었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "가장 큰 값을 치른 가운데 줄",
+      "color": "#1f5fbf",
+      "dy": 80,
+      "on": "가운데 줄이었습니다"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s139",
+   "act": 7,
+   "lines": [
+    "싸움이 끝난 밤 기병 대장 마하르발이 한니발에게 말했다고 합니다."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "maharbal",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "pauseBefore": 0.5,
+   "chapter": {
+    "num": "제7막",
+    "title": "답"
+   },
+   "sfx": [
+    {
+     "id": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s140",
+   "act": 7,
+   "lines": [
+    "제게 기병을 주십시오.",
+    {
+     "t": "5일 뒤에는 로마의 언덕에서 저녁을 드시게 해 드리겠습니다.",
+     "say": "닷새 뒤에는 로마의 언덕에서 저녁을 드시게 해 드리겠습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“닷새 뒤에는 로마에서 저녁을”",
+    "style": "yellow",
+    "sub": "기병 대장 마하르발",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s141",
+   "act": 7,
+   "lines": [
+    "한니발은 서두르지 않았습니다.",
+    "로마는 성벽이 높은 도시였고 한니발에게는 성을 부술 무기가 없었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "apulia",
+    "to": "italy",
+    "items": [
+     {
+      "k": "marker",
+      "p": "cannae",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.15,
+        41.296
+       ],
+       [
+        15.5,
+        41.45
+       ],
+       [
+        14.2,
+        41.7
+       ],
+       [
+        12.48,
+        41.9
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "at": 0.3
+     },
+     {
+      "k": "lock",
+      "p": "rome",
+      "text": "로마",
+      "on": "성벽이"
+     }
+    ],
+    "flight": [
+     "apulia",
+     "italy"
+    ],
+    "flightDur": 2.2,
+    "tilt": 14
+   }
+  },
+  {
+   "id": "s142",
+   "act": 7,
+   "lines": [
+    "마하르발이 탄식했습니다.",
+    "한니발 장군은 이기는 법은 아시지만 승리를 쓰는 법은 모르십니다.",
+    "리비우스가 전하는 이 말은 지금까지도 논쟁거리입니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“승리를 쓰는 법은 모르신다”",
+    "style": "red",
+    "sub": "마하르발의 탄식 · 리비우스 22권 51절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s143",
+   "act": 7,
+   "lines": [
+    "한니발은 동생 마고를 카르타고로 보냈습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "italy",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.15,
+        41.296
+       ],
+       [
+        16.6,
+        40.0
+       ],
+       [
+        15.5,
+        38.2
+       ],
+       [
+        12.5,
+        37.3
+       ],
+       [
+        10.32,
+        36.85
+       ]
+      ],
+      "color": "blue",
+      "dash": true,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "carthage",
+      "text": "카르타고",
+      "on": "카르타고로"
+     }
+    ],
+    "flight": [
+     "italy",
+     "westmed"
+    ],
+    "flightDur": 2.2,
+    "tilt": 12
+   }
+  },
+  {
+   "id": "s144",
+   "act": 7,
+   "lines": [
+    "마고는 원로원 앞에서 로마 기사들의 손에서 빼낸 금반지를 바닥에 쏟아 놓았다고 전해지죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s144-photo",
+    "tag": "세바스티앙 슬로츠 · 1704",
+    "pos": "50% 30%",
+    "marks": [
+     {
+      "text": "로마 기사들의 금반지",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "금반지를"
+     }
+    ]
+   },
+   "label": "칸나이에서 쓰러진 로마 기사들의 반지를 세는 한니발 · 세바스티앙 슬로츠 · 루브르 박물관"
+  },
+  {
+   "id": "s145",
+   "act": 7,
+   "lines": [
+    "그런데 로마는 무너지지 않았습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "그런데 로마는",
+    "accent": "무너지지 않았다",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s146",
+   "act": 7,
+   "lines": [
+    "로마는 평화를 청하지 않았습니다.",
+    "포로의 몸값도 내지 않았죠.",
+    "노예 수천 명에게 자유를 약속하고 무기를 쥐여 주었습니다."
+   ],
+   "visual": {
+    "type": "checklist",
+    "title": "로마의 대답",
+    "items": [
+     {
+      "text": "평화를 청하지 않는다",
+      "on": "평화를"
+     },
+     {
+      "text": "포로의 몸값도 내지 않는다",
+      "on": "몸값도"
+     },
+     {
+      "text": "노예에게 무기를",
+      "on": "노예"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s147",
+   "act": 7,
+   "lines": [
+    "패배의 책임자 바로가 로마로 돌아왔을 때였습니다.",
+    "원로원 의원들과 시민들이 성문 밖까지 나가 그를 맞이했다고 하죠."
+   ],
+   "visual": {
+    "type": "ai",
+    "img": "varro_returns",
+    "kb": "in"
+   },
+   "label": "재연 일러스트",
+   "callouts": [
+    {
+     "text": "돌아온 집정관 바로",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s148",
+   "act": 7,
+   "lines": [
+    "벌을 주려는 게 아니었습니다.",
+    "나라를 포기하지 않고 돌아와 준 것에 고맙다는 인사였습니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "“나라를 포기하지 않아 고맙다”",
+    "style": "yellow",
+    "sub": "리비우스 22권 61절",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s149",
+   "act": 7,
+   "lines": [
+    "그리고 로마는 파비우스의 방식으로 돌아갔습니다.",
+    "다시는 한니발이 고른 들판에서 싸우지 않았습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s149-photo",
+    "tag": "파비우스 조각상 · 18세기",
+    "pos": "50% 25%",
+    "marks": [
+     {
+      "text": "다시 파비우스의 방식으로",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "파비우스의"
+     }
+    ]
+   },
+   "label": "꾸물거리는 사람 파비우스 조각상 · 빈 쇤브룬 궁전 정원"
+  },
+  {
+   "id": "s150",
+   "act": 7,
+   "lines": [
+    "칸나이에서 살아남은 젊은 장교 가운데 스키피오라는 청년이 있었습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s150-photo",
+    "tag": "스키피오로 전해지는 흉상 · 로마 시대",
+    "pos": "50% 35%",
+    "marks": [
+     {
+      "text": "칸나이의 생존자 스키피오",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "스키피오라는"
+     }
+    ]
+   },
+   "label": "스키피오로 전해지는 흉상 · 나폴리 국립고고학박물관"
+  },
+  {
+   "id": "s151",
+   "act": 7,
+   "lines": [
+    {
+     "t": "14년 뒤인 기원전 202년.",
+     "say": "십사 년 뒤인 기원전 이백이년."
+    },
+    "스키피오는 아프리카의 자마에서 한니발을 꺾고 전쟁을 끝냅니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "arrow",
+      "path": [
+       [
+        14.2,
+        37.5
+       ],
+       [
+        12.0,
+        37.3
+       ],
+       [
+        10.6,
+        36.9
+       ],
+       [
+        9.45,
+        36.3
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "lock",
+      "p": "zama",
+      "text": "자마",
+      "on": "자마에서"
+     }
+    ],
+    "tilt": 14
+   },
+   "callouts": [
+    {
+     "text": "기원전 202년 · 자마",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s152",
+   "act": 7,
+   "lines": [
+    "그의 군대에는 칸나이에서 살아 돌아왔다는 이유로 멀리 시칠리아로 쫓겨났던 병사들이 있었죠."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s152-photo",
+    "tag": "앙리 폴 모트 · 1890년 무렵",
+    "pos": "50% 50%",
+    "marks": [
+     {
+      "text": "시칠리아로 쫓겨났던 칸나이 생존자들",
+      "x": 0.5,
+      "y": 0.12,
+      "color": "yellow",
+      "on": "시칠리아로"
+     }
+    ]
+   },
+   "label": "자마 전투 · 앙리 폴 모트"
+  },
+  {
+   "id": "s153",
+   "act": 7,
+   "lines": [
+    "이제 처음의 질문으로 돌아가 보겠습니다.",
+    {
+     "t": "일부러 중앙을 밀리게 한 한니발은 어떻게 2배 가까운 로마군을 통째로 가뒀을까요?",
+     "say": "일부러 중앙을 밀리게 한 한니발은 어떻게 두 배 가까운 로마군을 통째로 가뒀을까요?"
+    }
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": -30,
+      "bendAt": 0
+     }
+    ],
+    "tilt": 30
+   },
+   "hook": {
+    "question": {
+     "text": "일부러 중앙을 밀리게 한 한니발은\n어떻게 2배 가까운 로마군을\n통째로 가뒀을까",
+     "on": "어떻게",
+     "kicker": "■ 답 ■"
+    }
+   }
+  },
+  {
+   "id": "s154",
+   "act": 7,
+   "lines": [
+    "로마의 힘은 숫자와 두꺼운 대열이었습니다.",
+    "한니발은 그 힘을 막지 않았습니다.",
+    "오히려 그 힘이 들어올 길을 열어 주었죠."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runOn": "열어"
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendOn": "열어"
+     },
+     {
+      "k": "badge",
+      "p": "center",
+      "text": "열어 준 길",
+      "color": "#1f5fbf",
+      "dy": 80,
+      "on": "길을"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s155",
+   "act": 7,
+   "lines": [
+    "가운데가 밀리자 로마군은 이기고 있다고 믿고 더 깊이 들어왔습니다.",
+    "깊이 들어올수록 양쪽 날개는 더 쉽게 닫혔습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapOn": "닫혔습니다"
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.117,
+        41.268
+       ],
+       [
+        16.121,
+        41.275
+       ],
+       [
+        16.128,
+        41.2795
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.167,
+        41.268
+       ],
+       [
+        16.163,
+        41.275
+       ],
+       [
+        16.156,
+        41.2795
+       ]
+      ],
+      "color": "blue",
+      "width": 1.0,
+      "at": 0.2
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s156",
+   "act": 7,
+   "lines": [
+    "그리고 뒤에서 기병이 마지막 문을 닫았습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.122,
+        41.283
+       ],
+       [
+        16.162,
+        41.283
+       ]
+      ],
+      "depth": [
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9,
+       9
+      ],
+      "face": 1,
+      "px": 3.4,
+      "color": "red",
+      "at": 0,
+      "run": 30,
+      "runAt": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0,
+      "wrap": 55,
+      "wrapAt": 0
+     },
+     {
+      "k": "arrow",
+      "path": [
+       [
+        16.166,
+        41.2925
+       ],
+       [
+        16.153,
+        41.29
+       ],
+       [
+        16.142,
+        41.2875
+       ]
+      ],
+      "color": "blue",
+      "width": 1.4,
+      "on": "마지막"
+     },
+     {
+      "k": "zone",
+      "path": [
+       [
+        16.12,
+        41.289
+       ],
+       [
+        16.164,
+        41.289
+       ],
+       [
+        16.166,
+        41.276
+       ],
+       [
+        16.142,
+        41.268
+       ],
+       [
+        16.118,
+        41.276
+       ]
+      ],
+      "color": "#c9242c",
+      "on": "닫았습니다"
+     }
+    ],
+    "tilt": 36
+   },
+   "sfx": [
+    {
+     "id": "ping",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s157",
+   "act": 7,
+   "lines": [
+    "포위되자 로마군의 숫자는 무기가 아니라 벽이 됐습니다."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "로마의 숫자",
+     "big": "무기",
+     "icon": "none",
+     "color": "red"
+    },
+    "right": {
+     "title": "포위된 뒤",
+     "big": "벽",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s158",
+   "act": 7,
+   "lines": [
+    "그 무너지는 척하는 가운데에 한니발 자신이 서 있었습니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "field",
+    "to": "field",
+    "items": [
+     {
+      "k": "line",
+      "path": [
+       [
+        15.55,
+        40.95
+       ],
+       [
+        15.8,
+        41.05
+       ],
+       [
+        16.0,
+        41.2
+       ],
+       [
+        16.05,
+        41.236
+       ],
+       [
+        16.085,
+        41.262
+       ],
+       [
+        16.11,
+        41.283
+       ],
+       [
+        16.135,
+        41.303
+       ],
+       [
+        16.16,
+        41.318
+       ],
+       [
+        16.2,
+        41.355
+       ]
+      ],
+      "color": "#5aa0d8",
+      "glow": false,
+      "at": 0
+     },
+     {
+      "k": "phalanx",
+      "path": [
+       [
+        16.116,
+        41.2705
+       ],
+       [
+        16.168,
+        41.2705
+       ]
+      ],
+      "depth": [
+       8,
+       8,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       8,
+       8
+      ],
+      "face": -1,
+      "px": 3.4,
+      "color": "blue",
+      "at": 0,
+      "bend": 40,
+      "bendAt": 0
+     },
+     {
+      "k": "lock",
+      "p": "hannibal",
+      "text": "한니발 · 마고",
+      "on": "한니발 자신이"
+     }
+    ],
+    "tilt": 34
+   }
+  },
+  {
+   "id": "s159",
+   "act": 7,
+   "lines": [
+    "한니발은 적의 가장 큰 힘을 적을 가두는 덫으로 바꿨습니다."
+   ],
+   "visual": {
+    "type": "black",
+    "text": "가장 큰 힘을",
+    "accent": "덫으로",
+    "accentAt": 0.5
+   }
+  },
+  {
+   "id": "s160",
+   "act": 7,
+   "lines": [
+    "하지만 칸나이는 또 하나를 남겼습니다.",
+    "전투에서 이기는 것과 전쟁에서 이기는 것은 다르다는 사실이죠."
+   ],
+   "visual": {
+    "type": "compare",
+    "left": {
+     "title": "전투",
+     "big": "한니발의 승리",
+     "icon": "none",
+     "color": "blue"
+    },
+    "right": {
+     "title": "전쟁",
+     "big": "로마의 승리",
+     "icon": "none",
+     "color": "red",
+     "at": 0.6
+    }
+   }
+  },
+  {
+   "id": "s161",
+   "act": 7,
+   "lines": [
+    "그 교훈을 가장 먼저 배운 건 칸나이에서 살아남은 로마였습니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s161-photo",
+    "tag": "칸나이 전투 기념비 · 오늘날",
+    "pos": "50% 50%"
+   },
+   "label": "칸나이 전투 기념비 · 칸나이 유적"
+  },
+  {
+   "id": "s162",
+   "act": 7,
+   "lines": [
+    {
+     "t": "한니발은 그 뒤로도 15년 동안 이탈리아에 머물렀지만 끝내 로마를 무너뜨리지 못했죠.",
+     "say": "한니발은 그 뒤로도 십오 년 동안 이탈리아에 머물렀지만 끝내 로마를 무너뜨리지 못했죠."
+    },
+    "말년에는 로마를 피해 여러 나라를 떠돌다 스스로 독을 마시고 삶을 마쳤다고 전해집니다."
+   ],
+   "visual": {
+    "type": "map",
+    "from": "westmed",
+    "to": "westmed",
+    "items": [
+     {
+      "k": "marker",
+      "p": "cannae",
+      "color": "blue",
+      "at": 0
+     },
+     {
+      "k": "lock",
+      "p": "rome",
+      "text": "로마 · 끝내 무너지지 않다",
+      "at": 0.4
+     }
+    ],
+    "tilt": 12
+   },
+   "callouts": [
+    {
+     "text": "이탈리아의 15년",
+     "style": "yellow",
+     "at": 0,
+     "pos": "top"
+    }
+   ]
+  },
+  {
+   "id": "s163",
+   "act": 7,
+   "lines": [
+    {
+     "t": "그런데도 칸나이의 포위는 2천 년이 넘도록 군인들의 교과서로 남았습니다.",
+     "say": "그런데도 칸나이의 포위는 이천 년이 넘도록 군인들의 교과서로 남았습니다."
+    }
+   ],
+   "visual": {
+    "type": "text",
+    "big": "이천 년의 교과서",
+    "style": "yellow",
+    "sub": "칸나이의 포위",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s164",
+   "act": 7,
+   "lines": [
+    {
+     "t": "100여 년 전 독일의 참모총장 슐리펜은 칸나이를 연구한 책까지 썼습니다.",
+     "say": "백여 년 전 독일의 참모총장 슐리펜은 칸나이를 연구한 책까지 썼습니다."
+    },
+    "적은 숫자로 많은 적을 완전히 둘러싸 없앤다."
+   ],
+   "visual": {
+    "type": "document",
+    "org": "20세기 초",
+    "head": "칸나이 연구",
+    "rows": [
+     "독일 참모총장 슐리펜",
+     "적은 숫자로 많은 적을",
+     "완전히 둘러싸 없앤다"
+    ],
+    "stamp": "포위",
+    "note": "요지"
+   }
+  },
+  {
+   "id": "s165",
+   "act": 7,
+   "lines": [
+    "장군들이 꿈꾸는 단 하나의 그림이 바로 이 들판에서 처음 그려진 겁니다."
+   ],
+   "visual": {
+    "type": "photo",
+    "kb": "in",
+    "q": "s165-photo",
+    "tag": "오판토강 · 오늘날",
+    "pos": "50% 55%"
+   },
+   "label": "오늘날의 오판토강 · 옛 아우피두스강 · 카노사 다리에서"
+  },
+  {
+   "id": "s166",
+   "act": 7,
+   "lines": [
+    {
+     "t": "다음 이야기는 기원전 52년 갈리아의 언덕 알레시아입니다.",
+     "say": "다음 이야기는 기원전 오십이년 갈리아의 언덕 알레시아입니다."
+    },
+    "적을 포위한 카이사르가 거꾸로 적에게 포위당했던 싸움입니다."
+   ],
+   "visual": {
+    "type": "text",
+    "big": "다음 이야기",
+    "style": "yellow",
+    "sub": "알레시아 공방전 · 기원전 52년",
+    "subAt": 0.4
+   }
+  },
+  {
+   "id": "s167",
+   "act": 7,
+   "lines": [
+    "구독과 좋아요 그리고 공유는 다음 이야기를 만드는 큰 힘이 됩니다."
+   ],
+   "visual": {
+    "type": "endcard",
+    "title": "칸나이에서 쓰러진 모든 이들을 기억하며",
+    "q": "s167-photo"
+   },
+   "tail": 1.0
+  }
+ ]
+}

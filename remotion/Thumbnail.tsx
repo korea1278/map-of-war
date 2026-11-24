@@ -1524,6 +1524,17 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     note: { text: "다리우스의 황금 전차", x: 1460, y: 190, to: [1500, 380] },
     alt: { line1: "단 한 번의 돌격", line2: "대왕이 도망쳤다" }, // ALTS:ep03-gaugamela
   },
+  // EP04 칸나이 (기원전 216): 재연 그림(thumb_bg) 컬러 — 로마군 등 뒤에서 본, 초승달처럼 휘어 들어가는 카르타고 전열과 양옆·뒤로 닫히는 포위
+  "ep04-cannae": {
+    bg: "ep/ep04-cannae/ai/thumb_bg.jpg",
+    bgPos: "50% 40%",
+    bgFilter: "contrast(1.1) saturate(1.1) brightness(1.08)", // 컬러
+    top: "“로마 시점”에서 본 한니발의 덫",
+    line1: "2배나 많던 로마군이",
+    line2: "통째로 갇혀 버린 이유",
+    note: { text: "일부러 밀려난 가운데", x: 1420, y: 230, to: [1300, 400] },
+    alt: { line1: "일부러 밀렸다", line2: "그리고 포위했다" }, // ALTS:ep04-cannae
+  },
 };
 
 const V2_EN_FONT = "'Montserrat', 'Anton', sans-serif"; // 영문판 글꼴 (참고용)
