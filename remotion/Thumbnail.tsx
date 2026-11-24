@@ -6,6 +6,7 @@ import "@fontsource/bebas-neue/400.css";
 import { C, F, setLang } from "./theme";
 import { MAPT, MapThumb } from "./MapThumb";
 import { FRONT, FrontThumb, NAKTONG_FRONT } from "./FrontThumb";
+import { HitThumb, HitBubble, HitTagStyle } from "./HitThumb";
 
 /* =====================================================================================
  * ★ 썸네일 표준 v4 — '스토리텔링 꼴라주 + 3D 몬스터 타이포' (2026-11-02 사용자 지시서, EP15 낙동강·EP16 도솔산부터)
@@ -1485,7 +1486,14 @@ export interface ThumbV2Props {
   badge?: string; // (이전 v2) 좌상단 붉은 배지 — 새 공식에서는 쓰지 않음
   targets?: ThumbTarget[];
   arrows?: ThumbArrow[];
-  alt?: { line1: string; line2: string; color2?: string; top?: string; note?: ThumbNote }; // A2 카피 시안
+  // ★ v4 '조회수 레퍼런스' 공식 (2026-11-24~ · remotion/HitThumb.tsx) — tag가 있으면 v4 디자인으로 렌더 (top·badge는 무시)
+  tag?: string; // 왼쪽 위 태그 박스 (대본에 맞게 창작, "장소 | 연월" 등)
+  tagStyle?: HitTagStyle; // red · cream · black · yellow · white
+  box2?: boolean | string; // 2줄째를 빨간(또는 지정색) 박스 위 흰 글자로
+  align?: "left" | "center" | "right";
+  size?: number; // 글자 크기 직접 지정
+  bubble?: HitBubble; // 말풍선
+  alt?: { line1: string; line2: string; color2?: string; top?: string; note?: ThumbNote; tag?: string; tagStyle?: HitTagStyle; box2?: boolean | string; align?: "left" | "center" | "right"; bubble?: HitBubble; size?: number }; // A2 카피 시안
 }
 export type ThumbNote = { text: string; x: number; y: number; to: [number, number]; size?: number };
 export const PAROHO_V2: Record<string, ThumbV2Props> = {
@@ -1529,11 +1537,13 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     bg: "ep/ep04-cannae/ai/thumb_bg.jpg",
     bgPos: "50% 40%",
     bgFilter: "contrast(1.1) saturate(1.1) brightness(1.08)", // 컬러
-    top: "“로마 시점”에서 본 한니발의 덫",
-    line1: "2배나 많던 로마군이",
-    line2: "통째로 갇혀 버린 이유",
-    note: { text: "일부러 밀려난 가운데", x: 1420, y: 230, to: [1300, 400] },
-    alt: { line1: "일부러 밀렸다", line2: "그리고 포위했다" }, // ALTS:ep04-cannae
+    // v4 '조회수 레퍼런스' 공식 (2026-11-24) — 태그·강조색은 대본에서 (약 8만 6천 vs 약 5만, 하루, 일부러 얇게 세운 가운데)
+    tag: "칸나이 | 기원전 216",
+    tagStyle: "cream",
+    line1: "[2배 가까운] 로마군이",
+    line2: "하루 만에 {갇힌} 이유",
+    note: { text: "일부러 밀려난 가운데", x: 1420, y: 250, to: [1300, 400] },
+    alt: { tag: "한니발의 덫", tagStyle: "black", line1: "일부러 {밀려} 주고", line2: "통째로 포위했다", box2: true }, // ALTS:ep04-cannae
   },
 };
 
@@ -1591,6 +1601,8 @@ const v2Bg = (d: ThumbV2Props): string => {
   }
 };
 export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, en }) => {
+  // v4 '조회수 레퍼런스' 공식: tag가 있으면 새 디자인 (d는 컴포지션마다 고정이라 훅 순서 문제 없음)
+  if (d.tag) return <HitThumb d={{ bg: v2Bg(d), bgPos: d.bgPos, filter: d.bgFilter || (d.gray === true ? "grayscale(1) contrast(1.18) brightness(0.96)" : "contrast(1.12) saturate(1.05)"), line1: d.line1, line2: d.line2, tag: d.tag, tagStyle: d.tagStyle, box2: d.box2, align: d.align, size: d.size, bubble: d.bubble, note: d.note, en }} />;
   const font = en ? V2_EN_FONT : P5.font;
   const measure = useP5Measure([d.line1, d.line2, d.top || "", d.note?.text || "", d.alt?.line1 || ""], en ? { load: "Montserrat", font: V2_EN_FONT } : undefined);
   const W = CW - V3.side * 2;
