@@ -1516,7 +1516,7 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
   // EP03 가우가멜라 (기원전 331): 재연 그림(thumb_bg) 컬러 — 왼쪽 알렉산드로스 기병, 오른쪽 안개 속 다리우스의 황금 전차
   "ep03-gaugamela": {
     bg: "ep/ep03-gaugamela/ai/thumb_bg.jpg",
-    bgPos: "50% 45%",
+    bgPos: "50% 4%", // 알렉산드로스 얼굴이 위 검은 박스에 가리지 않게 위쪽까지 보이게
     bgFilter: "contrast(1.1) saturate(1.1) brightness(1.05)", // 컬러
     top: "“페르시아 시점”에서 본 알렉산드로스의 돌격",
     line1: "직접 고른 전장에서",
