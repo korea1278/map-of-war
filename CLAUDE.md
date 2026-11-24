@@ -24,11 +24,13 @@
 ## ★★★★ '지도사' 방식 화면·목소리 표준 (2026-11-24 사용자 지시 · war-docu·map-of-war 공통 · 다음 신규 편부터 · 필수 참조 `docs/REFERENCE_JIDOSA_121.md`)
 > 사용자가 레퍼런스 영상(지도사 「김신조 일행은 왜 못 잡았을까? 지도로 보는 1·21 사태」)을 주며 "무엇이 다른지 분석해서 고쳐 달라", "일레븐랩스 목소리가 너무 부자연스럽다"고 함. 실측 비교: 레퍼런스 지도 약 65~70%·글자 카드 약 5% / 우리 EP33 지도 32%·글자 카드 37%
 - 보드 최상단 기본값: `"look": "archive"`, `"sub_style": "dark"`, `"map_tone": "day"`, `"tts_model"`(비교 샘플로 고른 모델), `"tempo": 1.0`, `"max_pause": 0.65`, `"card_max": 0.25`
-- 장면: `date`·`clock`(왼쪽 위 날짜·빨간 시각 칩, 다음 장면으로 이어짐) · `legend`·`scale`(오른쪽 위 종이 범례, 지도만) · `visual.tone: "night"` · `visual.lower`(사진·그림 하단 제목) · `clip`(지도 위 사료 인용 카드, `[[형광펜]]`, `orig` 원문)
+- 장면: `date`·`clock`(왼쪽 위 작전 시계 판, 다음 장면으로 이어짐) · `legend`·`scale`(오른쪽 위 범례, 지도만) · `visual.tone: "night"` · `visual.lower`(사진·그림 하단 제목) · `clip`(지도 위 사료 인용 카드, `[[형광펜]]`, `orig` 원문)
 - **지도 60% 이상 · 글자 카드 25% 이하** (timeline.py가 비율 출력·초과 경고), 숫자·이유·인용은 지도 위에 얹고 같은 지도를 이어 쓴다. 장 제목은 시간·숫자로
 - 재연 그림은 실사풍 시네마틱 재연이 기본(볼 캐릭터는 stage에만) — 프롬프트 예시는 docs 4-5항
 - 목소리: 배속 끔 + 쉼 0.65초, 모델은 **비교 샘플에서 귀로 고른 쪽**(`tts_model`). ⚠️ v3가 늘 낫지는 않다 — 2026-11-24 샘플 22개 실측에서 민호는 v3가 오히려 높낮이 폭이 12→4반음으로 평평해졌고, 창욱·수현·승현·훈민은 v3에서 쉼이 자연스러워짐. 샘플 기록: map-of-war 브랜치 `voice-test`. 목소리를 바꿀 때는 map-of-war Actions '목소리 비교 샘플'(`voice-test.yml`, 입력 `extra`=이름:ID 목록, `models`=eleven_v3,eleven_multilingual_v2)로 귀로 고른 뒤 보드 `voice`만 바꾼다 (비교용으로 추가한 공유 목소리는 끝나면 자동 삭제)
 - 켜지 않은 예전 편은 렌더 결과가 바뀌지 않는다 (TTS 서명도 그대로라 재생성 없음)
+- ★ **채널 목소리 확정 (2026-11-24 사용자 선택: "승현으로 가자")** — ElevenLabs **승현 `0mlAtfsvMzFpppUuNWkV`**(공유 라이브러리, 따뜻한 전문가 톤 중년 남성) · `"tts_model": "eleven_v3"`(stability 0.5 · similarity 0.78) · `"tempo": 1.0` · `"max_pause": 0.65`. war-docu·map-of-war **다음 신규 편부터** 보드 `"voice"`에 이 ID. 이미 만든 편(민호·창욱)은 다시 만들지 않는다. 새 목소리라 첫 편 미리보기에서 말 속도를 실측해 분량 환산을 갱신할 것 (그 전 추정: 샘플 기준 공백 포함 약 6.3자/초 → 20분 30초 ≈ 7,800자). API가 공유 목소리를 거부하면(404 등) 일레븐랩스 웹에서 승현을 내 목소리에 추가
+- ★ **레퍼런스 화면을 그대로 베끼지 말 것 (2026-11-24 사용자 지시: "비슷하게는 찬성, 똑같이 하면 표절")** — 아이디어(늘 보이는 날짜·시각, 범례, 낮/밤 지도, 지도 위 인용)만 쓰고 모양은 채널 고유: 날짜는 왼쪽 위 짙은 반투명 '작전 시계' 판 한 줄(노란 세로 막대 · 흰 고딕 날짜 · 노란 시각), 범례는 짙은 유리판 + 노란 윗줄, 사진 하단 제목은 노란 세로 막대 + 고딕 제목, 강조 카드는 왼쪽 노란 막대. 레퍼런스의 큰 명조 날짜·빨간 시각 칩·미색 종이 범례·노란 날짜 칩 하단 제목은 쓰지 않는다
 
 ## ★ 무료 오픈소스 화질·입체 업그레이드 (2026-11-24 사용자 지시 · war-docu·map-of-war 공통 · 추가 비용 0원)
 > 모두 자동이라 새 편에서 따로 켤 필요 없음. 어느 단계가 실패해도 렌더는 예전 방식으로 계속된다
@@ -154,7 +156,7 @@
    - 문장은 `.`/`?`에서 나뉜다 — `Oliver P. Smith`처럼 약자 마침표는 쓰지 말 것 (문장이 쪼개짐)
    - 사실은 웹 검색으로 확인, 확정 못 한 것(발언 원문·좌표·수치)은 목록으로 남겨 전달 때 알린다
 2. **스토리보드** — `episodes/<ep>/make_board.py`로 script.md 문장을 순서대로 장면에 배정해 `storyboard.json` 생성 (형식은 `episodes/ep08-chosin/`)
-   - 보드 상단: `"lang": "en"`, `"voice": "ZJCNdZEjYwkOElxugmW2"`(채널 기본 내레이터 창욱, 2026-11-19~), `"tempo": 1.02`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep01~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
+   - 보드 상단: `"lang": "en"`, `"voice": "0mlAtfsvMzFpppUuNWkV"`(승현, 2026-11-24~), `"tts_model": "eleven_v3"`, `"tempo": 1.0`, `"max_pause": 0.65`, **`"tts_mode": "act"`**, `"midrolls"`, `target_sec`, `"style": 2`, `"sfx_policy": "doc"`, `"bgm_rel_db": -24`, **`"sync_limit": 0.5`**(ep01~). 콜드 오프닝 장면에는 `"hook"` (docs/HOOK_STANDARD.md)
    - 장면마다 `"act": n` — **막 단위 TTS**: 막마다 일레븐랩스 1회 호출 → `public/ep/<ep>/tts/acts/act<n>.mp3` (지시서의 act1~act7 통 MP3) → `tts.py`가 글자 타임스탬프로 장면별 mp3·json으로 잘라 자막 싱크를 맞춘다. 문장 단위 생성 금지
    - 막 하나의 문장을 바꾸면 **그 막 전체가 다시 생성**된다(크레딧 약 2,500자). 수정은 막 단위로 모아서
    - 지도: `flight`(카메라 비행), `hud: true`(전술 HUD) + **`temp: "-40°F"`(HUD 온도 표시, EP08 추가)**, `tilt`, 아이템 `swarm`·`obj`·`clash`·`lock`·`shock`·`radar`·`badge`·`line`·`unit`·`arrow`
@@ -182,7 +184,7 @@
 |---|---|
 | 해상도 / 인코딩 | 1920×1080, 30fps, H.264 8Mbps, AAC 192k (20분 약 1.2GB) |
 | 음량 | 렌더 후 `loudnorm` -15 LUFS |
-| 나레이션 | ElevenLabs 창욱 `ZJCNdZEjYwkOElxugmW2` (2026-11-19~ 기본 · 이전 Srd5는 EP01만 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — 참고용 `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(API 재호출 금지) |
+| 나레이션 | **2026-11-24~ 신규 편 승현 `0mlAtfsvMzFpppUuNWkV` · eleven_v3 · 배속 없음** / (EP02~04) 창욱 `ZJCNdZEjYwkOElxugmW2` (2026-11-19~ 기본 · 이전 Srd5는 EP01만 · `eleven_multilingual_v2` · stability 0.55 · similarity_boost 0.78 · style 0.0), 1.02배속, `tts_mode: act` — 참고용 `ep08-chosin`만 예전 Adam `pNInz6obpgDQGcFmaJgB` 유지(API 재호출 금지) |
 | 하단 자막 | Roboto Condensed 64px · 한 줄 44자 · 루트 글로벌 오버레이(z 9999)에서만 |
 | 제목 글꼴 | Oswald |
 | BGM | `public/bgm/` 공용 6곡 고정 (drone·theme·tension·march·analysis·somber), Music API 호출 금지 |
