@@ -1512,6 +1512,17 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     note: { text: "뒤엉킨 페르시아 함대", x: 1340, y: 250, to: [1180, 400] },
     alt: { line1: "좁은 해협으로", line2: "대함대를 꾀었다" }, // ALTS:ep02-salamis
   },
+  // EP03 가우가멜라 (기원전 331): 재연 그림(thumb_bg) 컬러 — 왼쪽 알렉산드로스 기병, 오른쪽 안개 속 다리우스의 황금 전차
+  "ep03-gaugamela": {
+    bg: "ep/ep03-gaugamela/ai/thumb_bg.jpg",
+    bgPos: "50% 45%",
+    bgFilter: "contrast(1.1) saturate(1.1) brightness(1.05)", // 컬러
+    top: "“페르시아 시점”에서 본 알렉산드로스의 돌격",
+    line1: "직접 고른 전장에서",
+    line2: "대왕이 먼저 도망친 이유",
+    note: { text: "다리우스의 황금 전차", x: 1460, y: 190, to: [1500, 380] },
+    alt: { line1: "단 한 번의 돌격", line2: "대왕이 도망쳤다" }, // ALTS:ep03-gaugamela
+  },
 };
 
 const V2_EN_FONT = "'Montserrat', 'Anton', sans-serif"; // 영문판 글꼴 (참고용)
