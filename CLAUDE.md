@@ -21,6 +21,20 @@
 > 6. **4~6초 단위 시각 레이어 교차** — 첫 60초는 4~6초마다 다른 종류의 화면(지도 비행·HUD·병력 대열·사료 강조·X·질문 카드), 같은 종류 연속 금지
 > 7. **GitHub Actions 비대기 실행** — dispatch 후 `gh run watch`·폴링으로 기다리지 않는다. dispatch 확인 즉시 "컴퓨터를 꺼도 된다" 안내를 첫 줄에 내고 완료 확인은 `send_later` 예약. 엔진·문서만 바꾸는 작업은 렌더를 돌리지 않고 push 후 종료
 
+## ★ 무료 오픈소스 화질·입체 업그레이드 (2026-11-24 사용자 지시 · war-docu·map-of-war 공통 · 추가 비용 0원)
+> 모두 자동이라 새 편에서 따로 켤 필요 없음. 어느 단계가 실패해도 렌더는 예전 방식으로 계속된다
+1. **사진 화질 개선 — Real-ESRGAN `realesr-general-x4v3`(BSD-3)**: `pipeline/enhance.py`가 긴 변 1600px 미만 사료 사진(`photos/`)만 4배로 키워 `public/fx/<ep>/photos_<이름>.hd.jpg`로 저장(원본은 그대로, 흑백 사진은 흑백 유지). torch 없이 onnxruntime — 공식 .pth를 스크립트가 직접 ONNX로 바꿈
+2. **2.5D 입체 사진 — Depth Anything V2 Small(Apache-2.0)**: 사진·재연 그림마다 깊이 지도 `public/fx/<ep>/<폴더>_<이름>.depth.png`를 만들고, `remotion/ui.tsx` `KenBurns`(→ `DepthCanvas`)가 캔버스에서 픽셀마다 깊이만큼 다르게 밀어 가까운 사람·물체가 배경보다 더 움직이게 함(켄번즈 in/out = 깊이 돌리, left/right/up = 깊이 패럴랙스). 잘라 붙이는 레이어 방식은 배경에 번진 자국이 생겨 폐기 — 와핑 방식이라 구멍 없음
+   - ⚠️ **Base/Large/Giant 모델은 CC-BY-NC(비상업)라 절대 쓰지 말 것** — Small만
+   - 렌더 비용: 깊이 장면 1프레임당 약 0.2초 추가(20분 편 전체 약 5~10분)
+   - 끄기: 보드 `"fx": false`(전부) · `"parallax": false`(입체만) · `"upscale": false`(화질만) · 장면 `visual.parallax: false`(그 장면만 — 글자 많은 문서 사진 등 휘면 어색한 장면)
+3. **핸드헬드 미세 흔들림 — `@remotion/noise`(MIT)**: 모든 사진·그림 켄번즈에 최대 ±0.35%의 아주 느린 손떨림(frame 기반 결정론)
+4. **한국어 자막 줄바꿈 — kiwipiepy(형태소 분석)**: `timeline.py` `split_phrase`가 글자 규칙 위에 형태소로 확실한 경우만 보정 — 꾸미는 말(지친·모인·그·두) 뒤·'A와 B' 나열·명사+명사(부대·지명) 사이는 끊지 않고, 이음말(~고·~며·~는데·~아서) 뒤에서 끊음. 설치 실패 시 예전 규칙 그대로
+5. **썸네일 배경 컬러 복원 — DDColor-tiny(Apache-2.0, map-of-war 전용)**: thumb 모드에서 `pipeline/colorize.py`가 `PAROHO_V2` 배경이 흑백 사료 사진이면 색을 입혀 `public/ep/<ep>/thumbcolor/<폴더>_<이름>.jpg`로 저장 → `ParohoV2Thumb`가 있으면 자동 사용. 끄기: 항목에 `colorize: false` 또는 `gray: true`. ⚠️ AI가 추측한 색이라 군복·깃발 색이 틀릴 수 있음 → 썸네일 PNG를 직접 열어 확인. 모델은 Hugging Face(edgetools/ddcolor)에서 받음 — 세션에선 접속 불가라 Actions에서만 동작(첫 실행 때 로그 "[colorize]" 확인)
+6. **썸네일 누끼 — BiRefNet(`birefnet-general-lite`, MIT)** 우선 → 실패하면 isnet → u2net → 흰 배경 알파 (`ai_images.py cutout`, 별도 프로세스라 메모리 부족으로 죽어도 다음 모델로). ⚠️ BRIA RMBG는 비상업 라이선스라 쓰지 말 것. 캐릭터(`chars.py`)는 예전대로 rembg 금지
+- 결과 `public/fx/`·모델 `.cache/models/`는 `.gitignore`(저장소 용량 보호) → Actions 캐시(`fx-v1-`)로 재사용, 캐시가 없으면 다시 계산(무료). Actions 단계 "사진 화질 개선 + 2.5D 깊이 지도"는 사진·그림 단계 바로 뒤, 나레이션 앞
+- 세션에서 확인: `cd pipeline && python3 enhance.py <ep> && python3 timeline.py <ep>` → 번들 → `remotion still`(Hugging Face·pytorch 서버는 세션에서 막혀 있고 모델은 GitHub 릴리스에서 받음)
+
 ## 제작 이력
 
 > ⚠️ **이 채널의 정식 에피소드는 아직 0편이다 (2026-11-18 사용자 확인).** 첫 편은 `ep01`부터 시작하고, 기획은 [`docs/EPISODE_ROADMAP_50.md`](docs/EPISODE_ROADMAP_50.md)의 EP01~EP50 순서를 따른다. 아래 `ep08-chosin`은 war-docu에서 분리할 때 함께 가져온 **참고용** 편(번호 체계에 포함하지 않음, 업로드된 정식 편 아님)이다.

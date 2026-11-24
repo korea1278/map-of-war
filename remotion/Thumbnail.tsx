@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "@fontsource/montserrat/900.css";
-import { AbsoluteFill, continueRender, delayRender, Img, staticFile } from "remotion";
+import { AbsoluteFill, continueRender, delayRender, getStaticFiles, Img, staticFile } from "remotion";
 import "@fontsource/black-han-sans/400.css";
 import "@fontsource/bebas-neue/400.css";
 import { C, F, setLang } from "./theme";
@@ -1475,6 +1475,7 @@ export interface ThumbV2Props {
   bg: string; // public 기준 배경 경로 (Full-Bleed) — 사료 사진 권장
   bgPos?: string; // object-position (기본 "50% 40%")
   bgFilter?: string; // 직접 지정하면 gray보다 우선
+  colorize?: boolean; // 2026-11-24: false면 흑백 배경 사진의 DDColor 컬러 복원을 하지 않음 (pipeline/colorize.py)
   gray?: boolean; // map-of-war 기본 false (컬러 · 2026-11-19 사용자 지시). true면 흑백
   line1: string; // 위 줄 (흰색)
   line2: string; // 아래 줄 (빨강)
@@ -1567,6 +1568,17 @@ const V3Note: React.FC<{ n: ThumbNote; font: string; w: number }> = ({ n, font, 
     </>
   );
 };
+/** 2026-11-24: 흑백 배경 사진의 DDColor 컬러 복원본(pipeline/colorize.py → ep/<ep>/thumbcolor/…)이 있으면 그것을 씀 (gray: true면 원본) */
+const v2Bg = (d: ThumbV2Props): string => {
+  if (d.gray === true) return d.bg;
+  const parts = d.bg.split("/");
+  const cp = [...parts.slice(0, 2), "thumbcolor", parts.slice(2).join("_").replace(/\.[^.]+$/, "") + ".jpg"].join("/");
+  try {
+    return getStaticFiles().some((f) => f.name === cp) ? cp : d.bg;
+  } catch {
+    return d.bg;
+  }
+};
 export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, en }) => {
   const font = en ? V2_EN_FONT : P5.font;
   const measure = useP5Measure([d.line1, d.line2, d.top || "", d.note?.text || "", d.alt?.line1 || ""], en ? { load: "Montserrat", font: V2_EN_FONT } : undefined);
@@ -1598,7 +1610,7 @@ export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, 
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <style>{`@font-face{font-family:'Pretendard';font-weight:900;font-style:normal;src:url(${staticFile("fonts/Pretendard-Black.woff2")}) format('woff2');}`}</style>
-      <Img src={staticFile(d.bg)} style={{ position: "absolute", left: 0, top: 0, width: "100%", height: solidTop + 40, objectFit: "cover", objectPosition: d.bgPos || "50% 40%", filter }} />
+      <Img src={staticFile(v2Bg(d))} style={{ position: "absolute", left: 0, top: 0, width: "100%", height: solidTop + 40, objectFit: "cover", objectPosition: d.bgPos || "50% 40%", filter }} />
       {/* 가장자리 비네트 (상단 박스 가독성) */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.45) 100%)" }} />
       <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,.35) 0px, rgba(0,0,0,0) 170px)" }} />
