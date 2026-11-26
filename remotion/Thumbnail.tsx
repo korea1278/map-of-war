@@ -1552,6 +1552,26 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     note: { text: "일부러 밀려난 가운데", x: 1420, y: 250, to: [1300, 400] },
     alt: { tag: "한니발의 덫", tagStyle: "black", line1: "일부러 {밀려} 주고", line2: "통째로 포위했다", box2: true }, // ALTS:ep04-cannae
   },
+  // EP05 알레시아 (기원전 52): 재연 그림(thumb_bg) 컬러 — 언덕 위 도시를 두른 두 겹 로마 벽과 바깥 언덕에서 몰려오는 구원군
+  // v5 'TV 우선' (2026-11-26) — 글자는 위쪽 46% 안, 주인공(두 겹 벽)은 가운데~아래. 숫자는 카이사르 기록(성 안 8만 · 구원군 보병 약 25만)
+  "ep05-alesia": {
+    bg: "ep/ep05-alesia/ai/thumb_bg.jpg",
+    bgPos: "50% 62%",
+    bgFilter: "contrast(1.1) saturate(1.1) brightness(1.06)", // 컬러
+    tv: true,
+    tag: "알레시아 | 기원전 52",
+    tagStyle: "red",
+    line1: "안에 [8만] 밖에 [25만]",
+    line2: "그래도 {이긴} 이유",
+    focus: { x: 960, y: 760, rx: 760, ry: 280 },
+    label: { text: "두 겹의 로마 벽", x: 1340, y: 640, style: "yellow" },
+    why: { q: "안팎으로 둘러싸인 쪽이 어떻게 이겼나?", e: "의아함 · 긴장" },
+    alts: [
+      { tag: "카이사르의 벽", tagStyle: "black", line1: "포위하다가", line2: "{포위당했다}", box2: true }, // 단정 반전형
+      { tag: "16km + 21km", tagStyle: "cream", line1: "[두 겹] 벽 사이에", line2: "스스로 갇힌 로마군" }, // 미스터리형
+      { tag: "기원전 52 | 갈리아", tagStyle: "yellow", line1: "[5배]의 적에게", line2: "둘러싸인 카이사르" }, // 숫자 대비형 (카이사르의 숫자 기준)
+    ],
+  }, // ALTS:ep05-alesia n=3
 };
 
 const V2_EN_FONT = "'Montserrat', 'Anton', sans-serif"; // 영문판 글꼴 (참고용)
