@@ -6,7 +6,7 @@ import "@fontsource/bebas-neue/400.css";
 import { C, F, setLang } from "./theme";
 import { MAPT, MapThumb } from "./MapThumb";
 import { FRONT, FrontThumb, NAKTONG_FRONT } from "./FrontThumb";
-import { HitThumb, HitBubble, HitTagStyle } from "./HitThumb";
+import { HitThumb, HitBubble, HitFocus, HitLabel, HitTagStyle } from "./HitThumb";
 
 /* =====================================================================================
  * ★ 썸네일 표준 v4 — '스토리텔링 꼴라주 + 3D 몬스터 타이포' (2026-11-02 사용자 지시서, EP15 낙동강·EP16 도솔산부터)
@@ -1493,6 +1493,13 @@ export interface ThumbV2Props {
   align?: "left" | "center" | "right";
   size?: number; // 글자 크기 직접 지정
   bubble?: HitBubble; // 말풍선
+  // ★ v5 'TV 우선' (2026-11-26 · docs/THUMB_STANDARD_V5.md) — tv: true면 글자를 위쪽 절반에
+  tv?: boolean;
+  focus?: HitFocus; // 주인공 스포트라이트 {x,y,rx,ry,dim}
+  cut?: string; // 주인공 누끼 PNG (pipeline/thumb_cut.py가 배경과 같은 크기로 만듦) — "ep/<ep>/thumbcut/<이름>.png"
+  label?: HitLabel; // 주인공 이름표 {text,x,y,style}
+  why?: { q: string; e: string }; // (렌더 안 함) 이 썸네일이 시청자에게 던지는 질문(q)과 감정(e) — 기획 기록
+  alts?: Partial<ThumbV2Props>[]; // v5: 문구 시안 여러 개 → A2, A3, … (줄 끝 // ALTS:<ep> n=<개수>)
   alt?: { line1: string; line2: string; color2?: string; top?: string; note?: ThumbNote; tag?: string; tagStyle?: HitTagStyle; box2?: boolean | string; align?: "left" | "center" | "right"; bubble?: HitBubble; size?: number }; // A2 카피 시안
 }
 export type ThumbNote = { text: string; x: number; y: number; to: [number, number]; size?: number };
@@ -1602,7 +1609,7 @@ const v2Bg = (d: ThumbV2Props): string => {
 };
 export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, en }) => {
   // v4 '조회수 레퍼런스' 공식: tag가 있으면 새 디자인 (d는 컴포지션마다 고정이라 훅 순서 문제 없음)
-  if (d.tag) return <HitThumb d={{ bg: v2Bg(d), bgPos: d.bgPos, filter: d.bgFilter || (d.gray === true ? "grayscale(1) contrast(1.18) brightness(0.96)" : "contrast(1.12) saturate(1.05)"), line1: d.line1, line2: d.line2, tag: d.tag, tagStyle: d.tagStyle, box2: d.box2, align: d.align, size: d.size, bubble: d.bubble, note: d.note, en }} />;
+  if (d.tag) return <HitThumb d={{ bg: v2Bg(d), bgPos: d.bgPos, filter: d.bgFilter || (d.gray === true ? "grayscale(1) contrast(1.18) brightness(0.96)" : "contrast(1.12) saturate(1.05)"), line1: d.line1, line2: d.line2, tag: d.tag, tagStyle: d.tagStyle, box2: d.box2, align: d.align, size: d.size, bubble: d.bubble, note: d.note, en, tv: d.tv, focus: d.focus, cut: d.cut, label: d.label }} />;
   const font = en ? V2_EN_FONT : P5.font;
   const measure = useP5Measure([d.line1, d.line2, d.top || "", d.note?.text || "", d.alt?.line1 || ""], en ? { load: "Montserrat", font: V2_EN_FONT } : undefined);
   const W = CW - V3.side * 2;
@@ -1657,13 +1664,16 @@ export const ParohoV2Thumb: React.FC<{ d: ThumbV2Props; en?: boolean }> = ({ d, 
   );
 };
 
-export const Thumbnail: React.FC<{ ep: string; variant: "A" | "A2" | "A3" | "B"; lang?: string }> = ({ ep, variant, lang }) => {
+export const Thumbnail: React.FC<{ ep: string; variant: string; lang?: string }> = ({ ep, variant, lang }) => {
   setLang(lang);
   const refKey = ep.replace(/_en$/, "");
   const refD = (lang === "en" ? REF_EN : REF)[refKey];
   // ★★★★ 썸네일 표준 v2 (2026-11-18~, 고정 인물 폐기·Full-Bleed·대형 2줄): PAROHO_V2 표에 있는 에피소드
   //    map-of-war는 영문 전용 → 언어 제한 없이 적용, en이면 Montserrat Black
   if (variant === "A" && PAROHO_V2[refKey]) return <ParohoV2Thumb d={PAROHO_V2[refKey]} en={lang === "en"} />;
+  // v5: alts 배열 → A2, A3, … (예전 alt 하나짜리는 A2)
+  const v2n = /^A(\d+)$/.exec(variant);
+  if (v2n && PAROHO_V2[refKey]?.alts?.[Number(v2n[1]) - 2]) return <ParohoV2Thumb d={{ ...PAROHO_V2[refKey], ...PAROHO_V2[refKey].alts![Number(v2n[1]) - 2] } as ThumbV2Props} en={lang === "en"} />;
   if (variant === "A2" && PAROHO_V2[refKey]?.alt) return <ParohoV2Thumb d={{ ...PAROHO_V2[refKey], ...PAROHO_V2[refKey].alt! }} en={lang === "en"} />;
   // ★★★ 썸네일 표준 v5 (파로호 공식, 2026-11-08~): PAROHO_STD 표에 있는 에피소드는 한국어 A안을 이 디자인으로
   if (variant === "A" && lang !== "en" && PAROHO_STD[refKey]) return <ParohoThumb d={PAROHO_STD[refKey]} />;
