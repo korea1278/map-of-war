@@ -190,6 +190,7 @@
    - REST로 실행: `gh api -X POST repos/korea1278/map-of-war/actions/workflows/make-video.yml/dispatches -f ref=main -f 'inputs[episode]=<ep>' -f 'inputs[mode]=preview' -f 'inputs[english]=false'`
    - 끝나면 `git pull` 후 `previews/<ep>/sheet_*.jpg` 전부 육안 확인 (지도 자막·라벨 겹침·사진 라벨·어두운 사진), `logs/midroll_<ep>.txt`(러닝타임·목차·광고 위치), `logs/errors.txt`
 4. **본 렌더** — 같은 명령에 `mode=full`
+   - ★ 2026-11-27부터 `mode=auto` 사용 가능: 한 번 실행으로 미리보기 → (성공하면) 바로 본 렌더. 중간 예약 없이 끝 확인 예약 1번만. 미리보기 시트에서 문제를 찾으면 고쳐서 `mode=full`로 다시 렌더 (재료는 재사용돼 추가 비용 거의 없음)
    - dispatch 직후 사용자 답변 **맨 첫 줄**에:
      ```
      ## 🛑 [안내] GitHub Actions 렌더링이 서버에 안착했습니다. 이제 피시방 컴퓨터를 끄셔도 됩니다!
