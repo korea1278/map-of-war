@@ -363,7 +363,7 @@ export const MapView: React.FC<{ tl: Timeline }> = ({ tl }) => {
         </g>
       );
       const right = x < 1500;
-      html.push(<Pill key={"h" + i} x={x + (right ? 26 : -26)} y={y} text={it.text || name} bg="#111" s={s} anchor={right ? "left" : "right"} />);
+      if (it.text || name) html.push(<Pill key={"h" + i} x={x + (right ? 26 : -26)} y={y} text={it.text || name} bg="#111" s={s} anchor={right ? "left" : "right"} />); // 이름 없는 점(보루 등)은 빈 라벨 없이
     } else if (it.k === "unit") {
       const [x, y] = P(resolveP(tl, it.p));
       const s = popIn(since / 0.35);

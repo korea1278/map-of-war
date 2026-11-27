@@ -24,7 +24,7 @@ def voice_end(mp3):
     starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", out)]
     ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", out)]
     # 마지막 무음이 파일 끝까지 이어지면(끝 무음) 그 시작점이 목소리 끝
-    if starts and (len(ends) < len(starts) or ends[-1] >= dur - 0.05):
+    if starts and (len(ends) < len(starts) or ends[-1] >= dur - 0.1):
         return starts[-1], dur
     return dur, dur
 
