@@ -1556,7 +1556,7 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
   // v5 'TV 우선' (2026-11-26) — 글자는 위쪽 46% 안, 주인공(두 겹 벽)은 가운데~아래. 숫자는 카이사르 기록(성 안 8만 · 구원군 보병 약 25만)
   "ep05-alesia": {
     // 2026-11-28 사용자 지시: 배경을 밝은 낮·선명한 색으로 (예전 어두운 주황 그림은 무슨 장면인지 안 보임) — 주변 어둡게(focus) 없음
-    bg: "ep/ep05-alesia/ai/thumb_bg.jpg",
+    bg: "ep/ep05-alesia/ai/thumb_bg3.jpg",
     bgPos: "50% 60%",
     bgFilter: "saturate(1.12) contrast(1.06) brightness(1.04)", // 컬러
     tv: true,
@@ -1568,7 +1568,7 @@ export const PAROHO_V2: Record<string, ThumbV2Props> = {
     why: { q: "안팎으로 둘러싸인 쪽이 어떻게 이겼나?", e: "의아함 · 긴장" },
     alts: [
       { tag: "카이사르의 벽", tagStyle: "black", line1: "포위하다가", line2: "{포위당했다}", box2: true }, // 단정 반전형
-      { bg: "ep/ep05-alesia/ai/thumb_bg3.jpg", tag: "16km + 21km", tagStyle: "cream", line1: "[두 겹] 벽 사이에", line2: "스스로 갇힌 로마군" }, // 미스터리형 · 위에서 본 두 겹 벽
+      { bg: "ep/ep05-alesia/ai/thumb_bg.jpg", tag: "16km + 21km", tagStyle: "cream", line1: "[두 겹] 벽 사이에", line2: "스스로 갇힌 로마군" }, // 미스터리형 · 위에서 본 두 겹 벽
       { bg: "ep/ep05-alesia/ai/thumb_bg2.jpg", tag: "기원전 52 | 갈리아", tagStyle: "yellow", line1: "[5배]의 적에게", line2: "둘러싸인 카이사르" }, // 숫자 대비형 · 몰려오는 대군 시점
     ],
   }, // ALTS:ep05-alesia n=3
