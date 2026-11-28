@@ -29,7 +29,7 @@ from common import ep_dirs, env, load_board, log_error, read_json, retry, sessio
 W, H = 1536, 1024
 
 
-def fit(img):
+def fit(img, W=W, H=H):
     """3:2 (1536x1024)로 가운데 잘라 맞춤."""
     img = img.convert("RGB")
     w, h = img.size
@@ -95,13 +95,13 @@ def cf_account(s, tok):
     return CF_ACC["id"]
 
 
-def gen_cloudflare(s, prompt, seed=0):
+def gen_cloudflare(s, prompt, seed=0, steps=None):
     tok = env("CF_API_TOKEN", required=True)
     acc = cf_account(s, tok)
     r = s.post(
         f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {tok}"},
-        json={"prompt": prompt[:2000], "steps": int(env("CF_STEPS") or 4)},  # seed는 Cloudflare가 받지 않음(400)
+        json={"prompt": prompt[:2000], "steps": steps or int(env("CF_STEPS") or 4)},  # seed는 Cloudflare가 받지 않음(400)
         timeout=180,
     )
     if r.status_code >= 400:
@@ -179,7 +179,8 @@ def main(ep, thumb=False):
         elif prov == "gemini":
             call = lambda: gen_gemini(s, prompt)  # noqa: E731
         elif prov == "cloudflare":
-            call = lambda: gen_cloudflare(s, prompt, seed)  # noqa: E731
+            # 썸네일 배경은 최대 단계(8)로 더 선명하게 (2026-11-28 사용자 지시: 썸네일 그림이 잘 안 보임)
+            call = lambda: gen_cloudflare(s, prompt, seed, 8 if name.startswith("thumb_") else None)  # noqa: E731
         else:
             call = lambda: gen_pollinations(s, prompt, seed)  # noqa: E731
         # 크레딧 소진이면 같은 엔진을 4번 다시 부르지 않고 곧바로 대체 경로로 (렌더 전체가 멈추지 않게)
@@ -214,7 +215,16 @@ def main(ep, thumb=False):
                 continue
             fit(img).save(p, quality=92)
             continue  # 대체 그림은 서명을 남기지 않음 → 원래 엔진이 살아나면 다시 그림
-        fit(img).save(p, quality=92)
+        if name.startswith("thumb_"):
+            # 썸네일 배경: Real-ESRGAN 4배 화질 개선 뒤 2400x1600으로 저장 (1920x1080 썸네일에서 흐릿하지 않게). 실패하면 그대로
+            try:
+                from enhance import upscale
+                img = upscale(img.convert("RGB"))
+            except Exception as e:  # noqa: BLE001
+                print(f"  썸네일 화질 개선 건너뜀: {str(e)[:120]}")
+            fit(img, 2400, 1600).save(p, quality=94)
+        else:
+            fit(img).save(p, quality=92)
         man[name] = sig
         NEW["n"] += 1
         write_json(out / "ai.json", man)
